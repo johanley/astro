@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <!-- Android 4.x and old IE need polyfills before the main js: -->    
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script>
+    
+    <title>test4</title>
+  </head>
+  
+  <body>
+    <h2>My Map</h2>
+    
+    
+    <div id="map" class="map"></div>
+     <script>
+      var projection = ol.proj.get('EPSG:4326');
+      var projectionExtent = projection.getExtent();
+      var size = ol.extent.getWidth(projectionExtent) / 256;
+      var resolutions = new Array(14);
+      var matrixIds = new Array(14);
+      for (var z = 0; z < 14; ++z) {
+        // generate resolutions and matrixIds arrays for this WMTS
+        resolutions[z] = size / Math.pow(2, z);
+        matrixIds[z] = z;
+      }
+
+      var map = new ol.Map({
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM(),
+            opacity: 0.7
+          }),
+          new ol.layer.Tile({
+            opacity: 0.7,
+            source: new ol.source.WMTS({
+              url: 'http://datapoint.metoffice.gov.uk/public/data/inspire/view/wmts?key=c8258e8b-bf20-45ed-8e95-ca0d76682419',
+              layer: 'RADAR_UK_Composite_Highres',
+              matrixSet: 'EPSG:4326',
+              format: 'image/png',
+              projection: projection,
+              version: '1.0.0',
+              tileGrid: new ol.tilegrid.WMTS({
+                origin: ol.extent.getTopLeft(projectionExtent),
+                resolutions: resolutions,
+                matrixIds: matrixIds
+              }),
+              style: 'default',
+              wrapX: true
+            })
+          })
+        ],
+        target: 'map',
+        controls: ol.control.defaults({
+          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
+            collapsible: false
+          })
+        }),
+        view: new ol.View({
+          center: ol.proj.fromLonLat([0, 52.0]),  //longitude first!
+          zoom: 7
+        })
+      });
+    </script>
+  </body>
+  
+</html>

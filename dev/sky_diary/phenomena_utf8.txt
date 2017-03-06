@@ -1,0 +1,948 @@
+﻿                           PHENOMENA SEARCH                            
+                  From: 2016 Oct 01  To: 2018 Jan 31                   
+     
+Phenomena found:                            Date           Comment
+                                            (UT1)
+                                                   d  h
+New Moon                                 2016 Oct  1 00    401579.717 km
+Europa in conjunction with Moon          2016 Oct  1 07    2.64° North
+Pollux in conjunction with Vesta         2016 Oct  1 12    8.16° North
+Spica in conjunction with Moon           2016 Oct  2 03    5.78° South
+Hygiea in conjunction with Moon          2016 Oct  2 17    6.82° South
+Hebe in conjunction with Moon            2016 Oct  2 19    7.37° North
+Venus in conjunction with Moon           2016 Oct  3 17    5.03° South
+Moon at apogee                           2016 Oct  4 11    406096.075 km
+Juno in conjunction with Moon            2016 Oct  4 14    5.38° North
+Regulus in conjunction with Psyche       2016 Oct  5 04    1.09° North
+Europa in conjunction with Sun           2016 Oct  5 06    5.03° North
+Davida in conjunction with Moon          2016 Oct  5 23    1.61° North
+Antares in conjunction with Moon         2016 Oct  6 02    9.88° South
+Saturn in conjunction with Moon          2016 Oct  6 08    3.81° South
+Iris in conjunction with Moon            2016 Oct  6 13    4.05° South
+Flora in conjunction with Moon           2016 Oct  7 15    5.15° South
+Interamnia in conjunction with Moon      2016 Oct  7 16    3.19° South
+Mars in conjunction with Moon            2016 Oct  8 12    7.00° South
+Pluto in conjunction with Moon           2016 Oct  9 03    3.20° South
+First Quarter                            2016 Oct  9 05    394263.975 km
+Antares in conjunction with Davida       2016 Oct 10 13   11.27° South
+Jupiter in conjunction with Mercury      2016 Oct 11 04    0.87° South
+Mercury in conjunction with Jupiter      2016 Oct 11 04    0.87° North
+Pallas in conjunction with Moon          2016 Oct 11 10   13.80° North
+Neptune in conjunction with Moon         2016 Oct 13 06    1.16° South
+Juno in conjunction with Venus           2016 Oct 14 06   11.15° North
+Venus in conjunction with Juno           2016 Oct 14 06   11.15° South
+Interamnia in conjunction with Flora     2016 Oct 14 19    2.45° North
+Flora in conjunction with Interamnia     2016 Oct 14 19    2.45° South
+Uranus at opposition                     2016 Oct 15 11
+Uranus in conjunction with Moon          2016 Oct 16 02    2.84° North
+Full Moon                                2016 Oct 16 04    358473.468 km
+Cybele in conjunction with Moon          2016 Oct 16 12    0.10° South
+Ceres in conjunction with Moon           2016 Oct 16 19    9.54° South
+Moon at perigee                          2016 Oct 17 00    357860.832 km
+Europa in conjunction with Mercury       2016 Oct 18 11    4.01° North
+Mercury in conjunction with Europa       2016 Oct 18 11    4.01° South
+Pluto in conjunction with Mars           2016 Oct 18 23    3.33° North
+Mars in conjunction with Pluto           2016 Oct 18 23    3.33° South
+Aldebaran in conjunction with Moon       2016 Oct 19 07    0.33° South
+Hygiea in conjunction with Hebe          2016 Oct 19 10   14.00° South
+Hebe in conjunction with Hygiea          2016 Oct 19 10   14.00° North
+Cybele at opposition                     2016 Oct 20 04
+Spica in conjunction with Mercury        2016 Oct 20 14    3.56° South
+Ceres at opposition                      2016 Oct 21 05
+Pollux in conjunction with Moon          2016 Oct 22 11   10.58° North
+Last Quarter                             2016 Oct 22 19    380507.911 km
+Vesta in conjunction with Moon           2016 Oct 22 22    2.55° North
+Metis in conjunction with Moon           2016 Oct 24 16    5.74° North
+Eunomia in conjunction with Moon         2016 Oct 24 21    1.29° South
+Regulus in conjunction with Moon         2016 Oct 25 04    1.55° North
+Psyche in conjunction with Moon          2016 Oct 25 16    0.01° North
+Antares in conjunction with Venus        2016 Oct 26 04    3.14° South
+Spica in conjunction with Europa         2016 Oct 27 16    7.88° South
+Mercury in superior conjunction          2016 Oct 27 16    0.51° North
+Jupiter in conjunction with Moon         2016 Oct 28 10    1.42° South
+Spica in conjunction with Moon           2016 Oct 29 10    5.77° South
+Europa in conjunction with Moon          2016 Oct 29 11    2.08° North
+Davida in conjunction with Venus         2016 Oct 30 05    7.48° North
+Venus in conjunction with Davida         2016 Oct 30 05    7.48° South
+Saturn in conjunction with Venus         2016 Oct 30 08    3.03° North
+Venus in conjunction with Saturn         2016 Oct 30 08    3.03° South
+New Moon                                 2016 Oct 30 18    406275.919 km
+Mercury in conjunction with Moon         2016 Oct 30 19    4.32° South
+Hebe in conjunction with Moon            2016 Oct 30 23    6.77° North
+Hygiea in conjunction with Moon          2016 Oct 31 00    7.14° South
+Davida in conjunction with Saturn        2016 Oct 31 04    4.42° North
+Saturn in conjunction with Davida        2016 Oct 31 04    4.42° South
+Hebe in conjunction with Sun             2016 Oct 31 10   10.79° North
+Moon at apogee                           2016 Oct 31 19    406661.670 km
+Hebe in conjunction with Mercury         2016 Nov  1 09   11.36° North
+Mercury in conjunction with Hebe         2016 Nov  1 09   11.36° South
+Juno in conjunction with Moon            2016 Nov  1 14    4.95° North
+Hygiea in conjunction with Mercury       2016 Nov  1 23    2.44° South
+Mercury in conjunction with Hygiea       2016 Nov  1 23    2.44° North
+Antares in conjunction with Moon         2016 Nov  2 08    9.74° South
+Saturn in conjunction with Moon          2016 Nov  2 19    3.72° South
+Davida in conjunction with Moon          2016 Nov  2 20    0.61° North
+Venus in conjunction with Moon           2016 Nov  3 04    6.84° South
+Iris in conjunction with Moon            2016 Nov  3 16    3.41° South
+Interamnia in conjunction with Moon      2016 Nov  4 15    1.55° South
+Flora in conjunction with Moon           2016 Nov  4 21    5.29° South
+Pluto in conjunction with Moon           2016 Nov  5 10    3.04° South
+Mars in conjunction with Moon            2016 Nov  6 12    5.30° South
+First Quarter                            2016 Nov  7 20    386497.594 km
+Pallas in conjunction with Moon          2016 Nov  7 22    9.68° North
+Regulus in conjunction with Eunomia      2016 Nov  7 23    4.05° North
+Hygiea in conjunction with Sun           2016 Nov  8 23    2.36° South
+Neptune in conjunction with Moon         2016 Nov  9 15    1.00° South
+Iris in conjunction with Venus           2016 Nov  9 18    3.62° North
+Venus in conjunction with Iris           2016 Nov  9 18    3.62° South
+Regulus in conjunction with Metis        2016 Nov  9 19    4.35° South
+Uranus in conjunction with Moon          2016 Nov 12 11    2.84° North
+Cybele in conjunction with Moon          2016 Nov 12 16    0.42° South
+Ceres in conjunction with Moon           2016 Nov 12 21    8.47° South
+Metis in conjunction with Eunomia        2016 Nov 13 02    8.90° North
+Eunomia in conjunction with Metis        2016 Nov 13 02    8.90° South
+Moon at perigee                          2016 Nov 14 11    356508.988 km
+Full Moon                                2016 Nov 14 14    356520.182 km
+Aldebaran in conjunction with Moon       2016 Nov 15 17    0.45° South
+Juno in conjunction with Mercury         2016 Nov 16 03   11.52° North
+Mercury in conjunction with Juno         2016 Nov 16 03   11.52° South
+Pollux in conjunction with Moon          2016 Nov 18 19   10.35° North
+Antares in conjunction with Mercury      2016 Nov 18 21    2.82° South
+Vesta in conjunction with Moon           2016 Nov 19 14    2.86° North
+Flora in conjunction with Pluto          2016 Nov 19 17    2.25° South
+Pluto in conjunction with Flora          2016 Nov 19 17    2.25° North
+Last Quarter                             2016 Nov 21 09    388237.681 km
+Regulus in conjunction with Moon         2016 Nov 21 11    1.30° North
+Eunomia in conjunction with Moon         2016 Nov 21 16    3.96° South
+Metis in conjunction with Moon           2016 Nov 21 19    5.88° North
+Interamnia in conjunction with Venus     2016 Nov 21 19    6.03° North
+Venus in conjunction with Interamnia     2016 Nov 21 19    6.03° South
+Psyche in conjunction with Moon          2016 Nov 22 12    0.70° South
+Saturn in conjunction with Mercury       2016 Nov 24 01    3.47° North
+Mercury in conjunction with Saturn       2016 Nov 24 01    3.47° South
+Jupiter in conjunction with Moon         2016 Nov 25 02    1.94° South
+Pluto in conjunction with Venus          2016 Nov 25 03    3.49° North
+Venus in conjunction with Pluto          2016 Nov 25 03    3.49° South
+Spica in conjunction with Moon           2016 Nov 25 16    5.90° South
+Europa in conjunction with Moon          2016 Nov 26 14    1.74° North
+Davida in conjunction with Mercury       2016 Nov 27 08    7.18° North
+Mercury in conjunction with Davida       2016 Nov 27 08    7.18° South
+Moon at apogee                           2016 Nov 27 20    406554.249 km
+Hebe in conjunction with Moon            2016 Nov 28 03    6.53° North
+Hygiea in conjunction with Moon          2016 Nov 28 08    7.29° South
+Flora in conjunction with Venus          2016 Nov 28 16    1.09° North
+Venus in conjunction with Flora          2016 Nov 28 16    1.09° South
+Antares in conjunction with Juno         2016 Nov 29 02   14.56° South
+New Moon                                 2016 Nov 29 12    405613.981 km
+Antares in conjunction with Moon         2016 Nov 29 14    9.67° South
+Juno in conjunction with Moon            2016 Nov 29 14    4.89° North
+Juno in conjunction with Sun             2016 Nov 29 20    9.82° North
+Saturn in conjunction with Moon          2016 Nov 30 08    3.63° South
+Davida in conjunction with Moon          2016 Nov 30 18    0.05° South
+Mercury in conjunction with Moon         2016 Dec  1 04    7.09° South
+Iris in conjunction with Moon            2016 Dec  1 21    2.56° South
+Interamnia in conjunction with Moon      2016 Dec  2 16    0.15° North
+Pluto in conjunction with Moon           2016 Dec  2 17    2.85° South
+Flora in conjunction with Moon           2016 Dec  3 06    5.01° South
+Venus in conjunction with Moon           2016 Dec  3 13    5.81° South
+Interamnia in conjunction with Pluto     2016 Dec  3 21    3.07° North
+Pluto in conjunction with Interamnia     2016 Dec  3 21    3.07° South
+Mars in conjunction with Moon            2016 Dec  5 11    2.95° South
+Pallas in conjunction with Moon          2016 Dec  5 14    6.77° North
+Neptune in conjunction with Moon         2016 Dec  6 22    0.70° South
+First Quarter                            2016 Dec  7 09    379097.283 km
+Pallas in conjunction with Mars          2016 Dec  9 08    9.04° North
+Mars in conjunction with Pallas          2016 Dec  9 08    9.04° South
+Uranus in conjunction with Moon          2016 Dec  9 20    3.01° North
+Cybele in conjunction with Moon          2016 Dec  9 22    0.16° South
+Ceres in conjunction with Moon           2016 Dec 10 02    6.10° South
+Saturn in conjunction with Sun           2016 Dec 10 12    1.30° North
+Iris in conjunction with Mercury         2016 Dec 10 13    3.98° North
+Mercury in conjunction with Iris         2016 Dec 10 13    3.98° South
+Mercury at greatest elongation           2016 Dec 11 05    20.8° East
+Moon at perigee                          2016 Dec 12 23    358460.648 km
+Aldebaran in conjunction with Moon       2016 Dec 13 05    0.46° South
+Full Moon                                2016 Dec 14 00    359447.432 km
+Pollux in conjunction with Moon          2016 Dec 16 05   10.15° North
+Vesta in conjunction with Moon           2016 Dec 16 23    3.87° North
+Regulus in conjunction with Moon         2016 Dec 18 19    1.02° North
+Eunomia in conjunction with Moon         2016 Dec 19 06    6.82° South
+Metis in conjunction with Moon           2016 Dec 19 16    6.60° North
+Davida in conjunction with Sun           2016 Dec 20 02    4.25° North
+Psyche in conjunction with Moon          2016 Dec 20 04    1.16° South
+Last Quarter                             2016 Dec 21 02    396158.485 km
+Solstice                                 2016 Dec 21 11
+Iris in conjunction with Mercury         2016 Dec 21 18    1.82° North
+Mercury in conjunction with Iris         2016 Dec 21 18    1.82° South
+Jupiter in conjunction with Moon         2016 Dec 22 17    2.41° South
+Spica in conjunction with Moon           2016 Dec 22 22    6.14° South
+Europa in conjunction with Moon          2016 Dec 24 16    1.70° North
+Moon at apogee                           2016 Dec 25 06    405870.383 km
+Iris in conjunction with Pluto           2016 Dec 26 07    1.09° North
+Pluto in conjunction with Iris           2016 Dec 26 07    1.09° South
+Hebe in conjunction with Moon            2016 Dec 26 08    6.71° North
+Hygiea in conjunction with Moon          2016 Dec 26 15    7.28° South
+Antares in conjunction with Moon         2016 Dec 26 20    9.73° South
+Juno in conjunction with Moon            2016 Dec 27 16    5.18° North
+Saturn in conjunction with Moon          2016 Dec 27 21    3.60° South
+Davida in conjunction with Moon          2016 Dec 28 18    0.50° South
+Mercury in inferior conjunction          2016 Dec 28 19    2.44° North
+Mercury in conjunction with Moon         2016 Dec 29 05    1.76° South
+New Moon                                 2016 Dec 29 07    399571.298 km
+Pluto in conjunction with Moon           2016 Dec 30 01    2.75° South
+Iris in conjunction with Moon            2016 Dec 30 04    1.51° South
+Interamnia in conjunction with Moon      2016 Dec 30 19    2.00° North
+Flora in conjunction with Moon           2016 Dec 31 16    4.40° South
+Neptune in conjunction with Mars         2017 Jan  1 07    0.02° North
+Mars in conjunction with Neptune         2017 Jan  1 07    0.02° South
+Antares in conjunction with Hygiea       2017 Jan  1 11    2.50° South
+Davida in conjunction with Mercury       2017 Jan  1 17    0.83° North
+Mercury in conjunction with Davida       2017 Jan  1 17    0.83° South
+Venus in conjunction with Moon           2017 Jan  2 09    1.90° South
+Pallas in conjunction with Moon          2017 Jan  2 10    4.75° North
+Pallas in conjunction with Venus         2017 Jan  2 14    6.61° North
+Venus in conjunction with Pallas         2017 Jan  2 14    6.61° South
+Neptune in conjunction with Moon         2017 Jan  3 04    0.40° South
+Mars in conjunction with Moon            2017 Jan  3 07    0.24° South
+Earth at perihelion                      2017 Jan  4 14    0.983309436 AU
+First Quarter                            2017 Jan  5 20    373554.488 km
+Uranus in conjunction with Moon          2017 Jan  6 02    3.27° North
+Cybele in conjunction with Moon          2017 Jan  6 07    0.48° North
+Ceres in conjunction with Moon           2017 Jan  6 11    3.42° South
+Pluto in conjunction with Sun            2017 Jan  7 07    1.01° North
+Juno in conjunction with Saturn          2017 Jan  8 17    9.03° North
+Saturn in conjunction with Juno          2017 Jan  8 17    9.03° South
+Aldebaran in conjunction with Moon       2017 Jan  9 15    0.36° South
+Moon at perigee                          2017 Jan 10 06    363238.471 km
+Antares in conjunction with Hebe         2017 Jan 12 11   16.88° South
+Full Moon                                2017 Jan 12 12    366879.241 km
+Venus at greatest elongation             2017 Jan 12 13    47.1° East
+Pollux in conjunction with Moon          2017 Jan 12 16   10.08° North
+Vesta in conjunction with Moon           2017 Jan 13 01    5.58° North
+Neptune in conjunction with Venus        2017 Jan 13 02    0.41° South
+Venus in conjunction with Neptune        2017 Jan 13 02    0.41° North
+Regulus in conjunction with Moon         2017 Jan 15 05    0.84° North
+Eunomia in conjunction with Moon         2017 Jan 15 14    9.50° South
+Metis in conjunction with Moon           2017 Jan 16 05    8.08° North
+Psyche in conjunction with Moon          2017 Jan 16 15    1.13° South
+Iris in conjunction with Sun             2017 Jan 16 19    2.37° North
+Vesta at opposition                      2017 Jan 18 01
+Jupiter in conjunction with Moon         2017 Jan 19 05    2.69° South
+Spica in conjunction with Moon           2017 Jan 19 06    6.37° South
+Mercury at greatest elongation           2017 Jan 19 10    24.1° West
+Last Quarter                             2017 Jan 19 22    402139.122 km
+Spica in conjunction with Jupiter        2017 Jan 20 21    3.68° South
+Europa in conjunction with Moon          2017 Jan 21 16    2.06° North
+Moon at apogee                           2017 Jan 22 00    404914.424 km
+Davida in conjunction with Mercury       2017 Jan 22 06    2.60° North
+Mercury in conjunction with Davida       2017 Jan 22 06    2.60° South
+Antares in conjunction with Moon         2017 Jan 23 04    9.87° South
+Hebe in conjunction with Moon            2017 Jan 23 12    7.40° North
+Hygiea in conjunction with Moon          2017 Jan 23 23    7.08° South
+Saturn in conjunction with Moon          2017 Jan 24 10    3.62° South
+Juno in conjunction with Moon            2017 Jan 24 17    5.87° North
+Davida in conjunction with Moon          2017 Jan 25 18    0.80° South
+Mercury in conjunction with Moon         2017 Jan 26 01    3.71° South
+Pluto in conjunction with Moon           2017 Jan 26 10    2.76° South
+Iris in conjunction with Moon            2017 Jan 27 12    0.22° South
+Interamnia in conjunction with Moon      2017 Jan 27 23    4.05° North
+New Moon                                 2017 Jan 28 00    389613.481 km
+Interamnia in conjunction with Sun       2017 Jan 28 14    6.23° North
+Flora in conjunction with Moon           2017 Jan 29 04    3.54° South
+Pluto in conjunction with Mercury        2017 Jan 29 17    1.19° North
+Mercury in conjunction with Pluto        2017 Jan 29 17    1.19° South
+Pallas in conjunction with Moon          2017 Jan 30 08    3.25° North
+Neptune in conjunction with Moon         2017 Jan 30 11    0.20° South
+Venus in conjunction with Moon           2017 Jan 31 15    4.06° North
+Mars in conjunction with Moon            2017 Feb  1 01    2.33° North
+Uranus in conjunction with Moon          2017 Feb  2 08    3.48° North
+Cybele in conjunction with Moon          2017 Feb  2 19    1.18° North
+Ceres in conjunction with Moon           2017 Feb  3 02    1.04° South
+Pollux in conjunction with Vesta         2017 Feb  3 02    3.18° North
+First Quarter                            2017 Feb  4 04    370622.831 km
+Pallas in conjunction with Neptune       2017 Feb  5 18    3.11° North
+Neptune in conjunction with Pallas       2017 Feb  5 18    3.11° South
+Aldebaran in conjunction with Moon       2017 Feb  5 22    0.24° South
+Moon at perigee                          2017 Feb  6 14    368815.901 km
+Vesta in conjunction with Moon           2017 Feb  8 23    7.20° North
+Pollux in conjunction with Moon          2017 Feb  9 02   10.10° North
+Regulus in conjunction with Eunomia      2017 Feb 10 18   12.02° North
+Full Moon                                2017 Feb 11 01    377419.733 km
+Eunomia in conjunction with Moon         2017 Feb 11 14   11.27° South
+Regulus in conjunction with Moon         2017 Feb 11 14    0.79° North
+Hygiea in conjunction with Saturn        2017 Feb 12 02    3.23° South
+Saturn in conjunction with Hygiea        2017 Feb 12 02    3.23° North
+Metis in conjunction with Moon           2017 Feb 12 08    9.72° North
+Psyche in conjunction with Moon          2017 Feb 12 19    0.52° South
+Iris in conjunction with Mercury         2017 Feb 13 03    4.63° North
+Mercury in conjunction with Iris         2017 Feb 13 03    4.63° South
+Spica in conjunction with Moon           2017 Feb 15 14    6.47° South
+Jupiter in conjunction with Moon         2017 Feb 15 15    2.70° South
+Interamnia in conjunction with Mercury   2017 Feb 16 13    9.37° North
+Mercury in conjunction with Interamnia   2017 Feb 16 13    9.37° South
+Europa in conjunction with Moon          2017 Feb 18 12    2.89° North
+Last Quarter                             2017 Feb 18 20    404372.825 km
+Moon at apogee                           2017 Feb 18 21    404376.064 km
+Antares in conjunction with Moon         2017 Feb 19 12    9.95° South
+Eunomia at opposition                    2017 Feb 20 11
+Hebe in conjunction with Moon            2017 Feb 20 14    8.70° North
+Saturn in conjunction with Moon          2017 Feb 20 23    3.58° South
+Hygiea in conjunction with Moon          2017 Feb 21 05    6.69° South
+Juno in conjunction with Moon            2017 Feb 21 17    7.04° North
+Metis at opposition                      2017 Feb 22 02
+Davida in conjunction with Moon          2017 Feb 22 17    0.99° South
+Pluto in conjunction with Moon           2017 Feb 22 20    2.79° South
+Spica in conjunction with Jupiter        2017 Feb 23 16    3.82° South
+Iris in conjunction with Moon            2017 Feb 24 22    1.35° North
+Interamnia in conjunction with Moon      2017 Feb 25 04    6.39° North
+Mercury in conjunction with Moon         2017 Feb 26 02    2.49° South
+New Moon                                 2017 Feb 26 15    378195.691 km
+Flora in conjunction with Moon           2017 Feb 26 17    2.52° South
+Neptune in conjunction with Moon         2017 Feb 26 21    0.10° South
+Flora in conjunction with Sun            2017 Feb 27 08    2.91° South
+Uranus in conjunction with Mars          2017 Feb 27 08    0.62° South
+Mars in conjunction with Uranus          2017 Feb 27 08    0.62° North
+Pallas in conjunction with Moon          2017 Feb 27 09    1.96° North
+Venus in conjunction with Moon           2017 Feb 28 20   10.26° North
+Davida in conjunction with Pluto         2017 Mar  1 01    1.77° North
+Pluto in conjunction with Davida         2017 Mar  1 01    1.77° South
+Uranus in conjunction with Moon          2017 Mar  1 16    3.58° North
+Mars in conjunction with Moon            2017 Mar  1 19    4.33° North
+Neptune in conjunction with Sun          2017 Mar  2 03    0.85° South
+Cybele in conjunction with Moon          2017 Mar  2 12    1.73° North
+Flora in conjunction with Neptune        2017 Mar  2 16    2.29° South
+Neptune in conjunction with Flora        2017 Mar  2 16    2.29° North
+Ceres in conjunction with Moon           2017 Mar  2 21    0.85° North
+Psyche at opposition                     2017 Mar  3 06
+Moon at perigee                          2017 Mar  3 08    369062.405 km
+Neptune in conjunction with Mercury      2017 Mar  4 06    1.13° North
+Mercury in conjunction with Neptune      2017 Mar  4 06    1.13° South
+Flora in conjunction with Mercury        2017 Mar  4 22    1.24° South
+Mercury in conjunction with Flora        2017 Mar  4 22    1.24° North
+Aldebaran in conjunction with Moon       2017 Mar  5 03    0.23° South
+First Quarter                            2017 Mar  5 12    370468.466 km
+Mercury in superior conjunction          2017 Mar  7 00    1.69° South
+Vesta in conjunction with Moon           2017 Mar  8 02    7.95° North
+Pollux in conjunction with Moon          2017 Mar  8 08   10.11° North
+Pallas in conjunction with Mercury       2017 Mar 10 01    1.12° North
+Mercury in conjunction with Pallas       2017 Mar 10 01    1.12° South
+Eunomia in conjunction with Moon         2017 Mar 10 11   11.59° South
+Regulus in conjunction with Moon         2017 Mar 10 23    0.80° North
+Metis in conjunction with Moon           2017 Mar 11 04   10.15° North
+Psyche in conjunction with Moon          2017 Mar 11 18    0.37° North
+Full Moon                                2017 Mar 12 15    388858.467 km
+Hebe in conjunction with Saturn          2017 Mar 13 23   13.60° North
+Saturn in conjunction with Hebe          2017 Mar 13 23   13.60° South
+Jupiter in conjunction with Moon         2017 Mar 14 20    2.46° South
+Spica in conjunction with Moon           2017 Mar 14 23    6.44° South
+Pallas in conjunction with Sun           2017 Mar 15 03    0.72° South
+Venus in conjunction with Mercury        2017 Mar 16 23    9.55° North
+Mercury in conjunction with Venus        2017 Mar 16 23    9.55° South
+Europa in conjunction with Moon          2017 Mar 18 01    4.10° North
+Moon at apogee                           2017 Mar 18 17    404649.509 km
+Antares in conjunction with Moon         2017 Mar 18 20    9.89° South
+Equinox                                  2017 Mar 20 10
+Saturn in conjunction with Moon          2017 Mar 20 10    3.44° South
+Hebe in conjunction with Moon            2017 Mar 20 13   10.62° North
+Last Quarter                             2017 Mar 20 16    402269.201 km
+Hygiea in conjunction with Moon          2017 Mar 21 06    6.12° South
+Juno in conjunction with Moon            2017 Mar 21 15    8.74° North
+Pluto in conjunction with Moon           2017 Mar 22 06    2.72° South
+Davida in conjunction with Moon          2017 Mar 22 15    1.11° South
+Cybele in conjunction with Mars          2017 Mar 23 18    3.27° South
+Mars in conjunction with Cybele          2017 Mar 23 18    3.27° North
+Iris in conjunction with Moon            2017 Mar 25 08    3.21° North
+Interamnia in conjunction with Moon      2017 Mar 25 09    9.12° North
+Venus in inferior conjunction            2017 Mar 25 10    8.29° North
+Neptune in conjunction with Moon         2017 Mar 26 08    0.00° North
+Uranus in conjunction with Mercury       2017 Mar 27 06    2.41° South
+Mercury in conjunction with Uranus       2017 Mar 27 06    2.41° North
+Flora in conjunction with Moon           2017 Mar 27 07    1.44° South
+Pallas in conjunction with Moon          2017 Mar 27 12    0.67° North
+Venus in conjunction with Moon           2017 Mar 27 13   11.32° North
+Venus in conjunction with Pallas         2017 Mar 27 21   10.60° North
+New Moon                                 2017 Mar 28 03    367868.370 km
+Uranus in conjunction with Moon          2017 Mar 29 03    3.62° North
+Mercury in conjunction with Moon         2017 Mar 29 07    6.59° North
+Regulus in conjunction with Metis        2017 Mar 29 21    8.73° South
+Flora in conjunction with Venus          2017 Mar 30 07   12.13° South
+Venus in conjunction with Flora          2017 Mar 30 07   12.13° North
+Cybele in conjunction with Moon          2017 Mar 30 08    2.08° North
+Moon at perigee                          2017 Mar 30 13    363853.934 km
+Mars in conjunction with Moon            2017 Mar 30 13    5.48° North
+Ceres in conjunction with Moon           2017 Mar 30 20    2.25° North
+Iris in conjunction with Interamnia      2017 Mar 31 20    6.13° South
+Interamnia in conjunction with Iris      2017 Mar 31 20    6.13° North
+Aldebaran in conjunction with Moon       2017 Apr  1 09    0.34° South
+Mercury at greatest elongation           2017 Apr  1 10    19.0° East
+First Quarter                            2017 Apr  3 19    373043.990 km
+Vesta in conjunction with Moon           2017 Apr  4 12    7.86° North
+Pollux in conjunction with Moon          2017 Apr  4 14    9.99° North
+Eunomia in conjunction with Moon         2017 Apr  6 12   11.06° South
+Metis in conjunction with Moon           2017 Apr  7 04    9.01° North
+Regulus in conjunction with Moon         2017 Apr  7 05    0.72° North
+Psyche in conjunction with Moon          2017 Apr  7 17    0.95° North
+Jupiter at opposition                    2017 Apr  7 22
+Pollux in conjunction with Vesta         2017 Apr  9 12    2.19° North
+Pallas in conjunction with Flora         2017 Apr  9 16    0.98° North
+Flora in conjunction with Pallas         2017 Apr  9 16    0.98° South
+Jupiter in conjunction with Moon         2017 Apr 10 21    2.18° South
+Full Moon                                2017 Apr 11 06    398715.449 km
+Spica in conjunction with Moon           2017 Apr 11 06    6.39° South
+Ceres in conjunction with Mars           2017 Apr 12 17    2.97° South
+Mars in conjunction with Ceres           2017 Apr 12 17    2.97° North
+Uranus in conjunction with Sun           2017 Apr 14 06    0.56° South
+Europa in conjunction with Moon          2017 Apr 14 06    5.30° North
+Antares in conjunction with Moon         2017 Apr 15 04    9.74° South
+Moon at apogee                           2017 Apr 15 10    405474.560 km
+Saturn in conjunction with Moon          2017 Apr 16 18    3.23° South
+Hebe in conjunction with Moon            2017 Apr 17 05   12.96° North
+Hygiea in conjunction with Moon          2017 Apr 18 02    5.47° South
+Juno in conjunction with Moon            2017 Apr 18 07   10.85° North
+Pluto in conjunction with Moon           2017 Apr 18 15    2.55° South
+Davida in conjunction with Moon          2017 Apr 19 09    1.32° South
+Last Quarter                             2017 Apr 19 10    396607.178 km
+Mercury in inferior conjunction          2017 Apr 20 06    1.65° North
+Regulus in conjunction with Metis        2017 Apr 21 19    7.39° South
+Interamnia in conjunction with Moon      2017 Apr 22 13   12.27° North
+Iris in conjunction with Moon            2017 Apr 22 17    5.32° North
+Neptune in conjunction with Moon         2017 Apr 22 20    0.20° North
+Venus in conjunction with Moon           2017 Apr 23 18    5.18° North
+Pallas in conjunction with Moon          2017 Apr 24 16    0.81° South
+Flora in conjunction with Moon           2017 Apr 24 22    0.46° South
+Uranus in conjunction with Moon          2017 Apr 25 16    3.71° North
+Mercury in conjunction with Moon         2017 Apr 25 18    4.51° North
+Iris in conjunction with Neptune         2017 Apr 26 02    5.35° North
+Neptune in conjunction with Iris         2017 Apr 26 02    5.35° South
+New Moon                                 2017 Apr 26 12    360541.901 km
+Cybele in conjunction with Moon          2017 Apr 27 07    2.26° North
+Moon at perigee                          2017 Apr 27 16    359326.787 km
+Ceres in conjunction with Moon           2017 Apr 27 23    3.24° North
+Mars in conjunction with Moon            2017 Apr 28 07    5.77° North
+Aldebaran in conjunction with Moon       2017 Apr 28 18    0.49° South
+Uranus in conjunction with Mercury       2017 Apr 28 18    0.15° North
+Mercury in conjunction with Uranus       2017 Apr 28 18    0.15° South
+Pollux in conjunction with Moon          2017 May  1 20    9.77° North
+Vesta in conjunction with Moon           2017 May  2 07    7.22° North
+First Quarter                            2017 May  3 03    378131.046 km
+Eunomia in conjunction with Moon         2017 May  3 20   10.59° South
+Regulus in conjunction with Moon         2017 May  4 10    0.52° North
+Metis in conjunction with Moon           2017 May  4 13    7.07° North
+Interamnia in conjunction with Neptune   2017 May  4 22   13.48° North
+Neptune in conjunction with Interamnia   2017 May  4 22   13.48° South
+Psyche in conjunction with Moon          2017 May  4 22    0.93° North
+Aldebaran in conjunction with Mars       2017 May  7 07    6.24° South
+Jupiter in conjunction with Moon         2017 May  7 21    2.11° South
+Uranus in conjunction with Mercury       2017 May  7 23    2.23° North
+Mercury in conjunction with Uranus       2017 May  7 23    2.23° South
+Spica in conjunction with Moon           2017 May  8 13    6.44° South
+Full Moon                                2017 May 10 22    404917.146 km
+Europa in conjunction with Moon          2017 May 11 04    5.81° North
+Europa at opposition                     2017 May 12 05
+Antares in conjunction with Moon         2017 May 12 10    9.62° South
+Moon at apogee                           2017 May 12 20    406209.826 km
+Saturn in conjunction with Moon          2017 May 13 23    3.07° South
+Hebe in conjunction with Moon            2017 May 14 11   15.02° North
+Cybele in conjunction with Sun           2017 May 15 02    2.75° South
+Hygiea in conjunction with Moon          2017 May 15 11    4.88° South
+Juno in conjunction with Moon            2017 May 15 15   13.01° North
+Flora in conjunction with Uranus         2017 May 15 17    3.73° South
+Uranus in conjunction with Flora         2017 May 15 17    3.73° North
+Pluto in conjunction with Moon           2017 May 15 21    2.36° South
+Davida in conjunction with Moon          2017 May 16 20    1.86° South
+Mercury at greatest elongation           2017 May 17 23    25.8° West
+Last Quarter                             2017 May 19 01    389073.194 km
+Neptune in conjunction with Moon         2017 May 20 06    0.47° North
+Interamnia in conjunction with Moon      2017 May 20 14   15.85° North
+Iris in conjunction with Moon            2017 May 21 01    7.53° North
+Venus in conjunction with Moon           2017 May 22 13    2.39° North
+Pallas in conjunction with Moon          2017 May 22 20    2.75° South
+Uranus in conjunction with Moon          2017 May 23 05    3.89° North
+Flora in conjunction with Moon           2017 May 23 12    0.27° North
+Mercury in conjunction with Moon         2017 May 24 01    1.61° North
+Cybele in conjunction with Moon          2017 May 25 08    2.30° North
+Aldebaran in conjunction with Ceres      2017 May 25 11    4.48° South
+New Moon                                 2017 May 25 20    357260.997 km
+Moon at perigee                          2017 May 26 01    357207.377 km
+Aldebaran in conjunction with Moon       2017 May 26 04    0.57° South
+Ceres in conjunction with Moon           2017 May 26 05    3.93° North
+Mars in conjunction with Moon            2017 May 27 02    5.35° North
+Pollux in conjunction with Moon          2017 May 29 04    9.55° North
+Pallas in conjunction with Venus         2017 May 30 05    5.60° South
+Venus in conjunction with Pallas         2017 May 30 05    5.60° North
+Vesta in conjunction with Moon           2017 May 30 07    6.27° North
+Eunomia in conjunction with Moon         2017 May 31 11   10.54° South
+Regulus in conjunction with Moon         2017 May 31 17    0.25° North
+Metis in conjunction with Moon           2017 Jun  1 06    4.95° North
+Psyche in conjunction with Moon          2017 Jun  1 09    0.45° North
+First Quarter                            2017 Jun  1 13    385082.746 km
+Uranus in conjunction with Venus         2017 Jun  2 15    1.78° North
+Venus in conjunction with Uranus         2017 Jun  2 15    1.78° South
+Venus at greatest elongation             2017 Jun  3 12    45.9° West
+Jupiter in conjunction with Moon         2017 Jun  4 00    2.32° South
+Spica in conjunction with Moon           2017 Jun  4 18    6.61° South
+Ceres in conjunction with Sun            2017 Jun  6 00    0.68° South
+Europa in conjunction with Moon          2017 Jun  7 00    5.19° North
+Cybele in conjunction with Mercury       2017 Jun  8 00    1.58° South
+Mercury in conjunction with Cybele       2017 Jun  8 00    1.58° North
+Antares in conjunction with Moon         2017 Jun  8 16    9.60° South
+Pallas in conjunction with Uranus        2017 Jun  8 22    8.32° South
+Uranus in conjunction with Pallas        2017 Jun  8 22    8.32° North
+Moon at apogee                           2017 Jun  8 22    406401.132 km
+Full Moon                                2017 Jun  9 13    406271.900 km
+Saturn in conjunction with Moon          2017 Jun 10 01    3.08° South
+Hebe in conjunction with Moon            2017 Jun 10 08   15.49° North
+Hygiea in conjunction with Moon          2017 Jun 11 12    4.47° South
+Juno in conjunction with Moon            2017 Jun 11 15   14.44° North
+Pluto in conjunction with Moon           2017 Jun 12 02    2.27° South
+Aldebaran in conjunction with Mercury    2017 Jun 12 11    5.07° South
+Davida in conjunction with Moon          2017 Jun 12 23    2.95° South
+Regulus in conjunction with Eunomia      2017 Jun 13 07   10.80° North
+Psyche in conjunction with Metis         2017 Jun 13 10    3.88° South
+Metis in conjunction with Psyche         2017 Jun 13 10    3.88° North
+Saturn at opposition                     2017 Jun 15 10
+Neptune in conjunction with Moon         2017 Jun 16 13    0.73° North
+Ceres in conjunction with Mercury        2017 Jun 16 22    0.72° South
+Mercury in conjunction with Ceres        2017 Jun 16 22    0.72° North
+Hebe at opposition                       2017 Jun 17 03
+Interamnia in conjunction with Moon      2017 Jun 17 11   19.82° North
+Last Quarter                             2017 Jun 17 12    381524.476 km
+Iris in conjunction with Moon            2017 Jun 18 08    9.67° North
+Uranus in conjunction with Moon          2017 Jun 19 16    4.14° North
+Pallas in conjunction with Moon          2017 Jun 19 21    5.47° South
+Venus in conjunction with Moon           2017 Jun 20 21    2.37° North
+Flora in conjunction with Moon           2017 Jun 21 01    0.60° North
+Solstice                                 2017 Jun 21 04
+Mercury in superior conjunction          2017 Jun 21 14    1.09° North
+Cybele in conjunction with Moon          2017 Jun 22 08    2.19° North
+Aldebaran in conjunction with Moon       2017 Jun 22 15    0.54° South
+Ceres in conjunction with Moon           2017 Jun 23 10    4.39° North
+Moon at perigee                          2017 Jun 23 11    357937.026 km
+New Moon                                 2017 Jun 24 03    358341.098 km
+Mercury in conjunction with Moon         2017 Jun 24 09    5.28° North
+Mars in conjunction with Moon            2017 Jun 24 20    4.41° North
+Flora in conjunction with Venus          2017 Jun 25 00    1.83° South
+Venus in conjunction with Flora          2017 Jun 25 00    1.83° North
+Pollux in conjunction with Moon          2017 Jun 25 14    9.41° North
+Vesta in conjunction with Moon           2017 Jun 27 12    5.16° North
+Regulus in conjunction with Moon         2017 Jun 28 01    0.03° North
+Eunomia in conjunction with Moon         2017 Jun 28 08   10.88° South
+Mars in conjunction with Mercury         2017 Jun 28 18    0.78° South
+Mercury in conjunction with Mars         2017 Jun 28 18    0.78° North
+Psyche in conjunction with Moon          2017 Jun 29 03    0.26° South
+Metis in conjunction with Moon           2017 Jun 29 06    2.90° North
+Hygiea at opposition                     2017 Jun 29 19
+First Quarter                            2017 Jul  1 01    392686.448 km
+Hebe in conjunction with Saturn          2017 Jul  1 06   17.21° North
+Saturn in conjunction with Hebe          2017 Jul  1 06   17.21° South
+Jupiter in conjunction with Moon         2017 Jul  1 07    2.71° South
+Spica in conjunction with Moon           2017 Jul  2 00    6.83° South
+Juno at opposition                       2017 Jul  2 13
+Pollux in conjunction with Mercury       2017 Jul  3 00    4.87° North
+Earth at aphelion                        2017 Jul  3 20    1.016675594 AU
+Europa in conjunction with Moon          2017 Jul  4 01    3.80° North
+Antares in conjunction with Moon         2017 Jul  5 22    9.69° South
+Moon at apogee                           2017 Jul  6 04    405933.868 km
+Hebe in conjunction with Moon            2017 Jul  7 02   13.33° North
+Saturn in conjunction with Moon          2017 Jul  7 03    3.24° South
+Aldebaran in conjunction with Cybele     2017 Jul  8 04    2.55° South
+Hygiea in conjunction with Moon          2017 Jul  8 07    4.20° South
+Juno in conjunction with Moon            2017 Jul  8 11   14.21° North
+Full Moon                                2017 Jul  9 04    402624.258 km
+Pluto in conjunction with Moon           2017 Jul  9 07    2.31° South
+Davida in conjunction with Moon          2017 Jul  9 21    4.55° South
+Pluto at opposition                      2017 Jul 10 05
+Pollux in conjunction with Mars          2017 Jul 11 23    5.72° North
+Neptune in conjunction with Moon         2017 Jul 13 18    0.87° North
+Aldebaran in conjunction with Venus      2017 Jul 14 11    3.16° South
+Regulus in conjunction with Vesta        2017 Jul 14 15    4.49° South
+Interamnia in conjunction with Moon      2017 Jul 15 03   24.15° North
+Davida at opposition                     2017 Jul 15 21
+Iris in conjunction with Moon            2017 Jul 16 11   11.57° North
+Cybele in conjunction with Venus         2017 Jul 16 11    0.74° South
+Venus in conjunction with Cybele         2017 Jul 16 11    0.74° North
+Last Quarter                             2017 Jul 16 19    375368.280 km
+Uranus in conjunction with Moon          2017 Jul 17 00    4.33° North
+Pallas in conjunction with Moon          2017 Jul 17 20    9.40° South
+Flora in conjunction with Moon           2017 Jul 19 12    0.50° North
+Aldebaran in conjunction with Moon       2017 Jul 20 00    0.44° South
+Cybele in conjunction with Moon          2017 Jul 20 05    1.93° North
+Venus in conjunction with Moon           2017 Jul 20 11    2.73° North
+Ceres in conjunction with Moon           2017 Jul 21 16    4.70° North
+Moon at perigee                          2017 Jul 21 17    361236.387 km
+Pollux in conjunction with Moon          2017 Jul 23 01    9.39° North
+New Moon                                 2017 Jul 23 10    363542.374 km
+Mars in conjunction with Moon            2017 Jul 23 13    3.11° North
+Mercury in conjunction with Moon         2017 Jul 25 09    0.86° South
+Regulus in conjunction with Moon         2017 Jul 25 11    0.07° South
+Vesta in conjunction with Moon           2017 Jul 25 19    3.99° North
+Eunomia in conjunction with Moon         2017 Jul 26 08   11.45° South
+Regulus in conjunction with Mercury      2017 Jul 26 09    1.09° North
+Psyche in conjunction with Moon          2017 Jul 27 01    1.02° South
+Mars in conjunction with Sun             2017 Jul 27 01    1.10° North
+Metis in conjunction with Moon           2017 Jul 27 09    1.07° North
+Jupiter in conjunction with Moon         2017 Jul 28 20    3.14° South
+Spica in conjunction with Moon           2017 Jul 29 08    6.98° South
+Mercury at greatest elongation           2017 Jul 30 05    27.2° East
+First Quarter                            2017 Jul 30 15    399352.949 km
+Europa in conjunction with Moon          2017 Jul 31 11    2.28° North
+Aldebaran in conjunction with Flora      2017 Aug  1 23    0.71° South
+Antares in conjunction with Moon         2017 Aug  2 05    9.79° South
+Moon at apogee                           2017 Aug  2 18    405025.066 km
+Hebe in conjunction with Moon            2017 Aug  3 02    9.42° North
+Saturn in conjunction with Moon          2017 Aug  3 07    3.45° South
+Hygiea in conjunction with Moon          2017 Aug  4 06    3.92° South
+Juno in conjunction with Moon            2017 Aug  4 08   12.26° North
+Iris in conjunction with Uranus          2017 Aug  4 21    8.30° North
+Uranus in conjunction with Iris          2017 Aug  4 21    8.30° South
+Pluto in conjunction with Moon           2017 Aug  5 12    2.43° South
+Davida in conjunction with Moon          2017 Aug  5 18    6.19° South
+Full Moon                                2017 Aug  7 18    394794.690 km
+Neptune in conjunction with Moon         2017 Aug  9 23    0.86° North
+Interamnia in conjunction with Moon      2017 Aug 11 11   28.60° North
+Ceres in conjunction with Venus          2017 Aug 12 14    2.44° North
+Venus in conjunction with Ceres          2017 Aug 12 14    2.44° South
+Uranus in conjunction with Moon          2017 Aug 13 05    4.40° North
+Iris in conjunction with Moon            2017 Aug 13 10   13.14° North
+Pallas in conjunction with Moon          2017 Aug 14 15   15.02° South
+Last Quarter                             2017 Aug 15 01    371377.904 km
+Aldebaran in conjunction with Moon       2017 Aug 16 07    0.38° South
+Flora in conjunction with Moon           2017 Aug 16 20    0.01° North
+Cybele in conjunction with Moon          2017 Aug 17 00    1.49° North
+Moon at perigee                          2017 Aug 18 13    366121.404 km
+Ceres in conjunction with Moon           2017 Aug 18 20    4.94° North
+Venus in conjunction with Moon           2017 Aug 19 05    2.25° North
+Pollux in conjunction with Moon          2017 Aug 19 10    9.41° North
+Mars in conjunction with Moon            2017 Aug 21 05    1.55° North
+New Moon                                 2017 Aug 21 19    372114.496 km
+Pollux in conjunction with Venus         2017 Aug 21 19    7.26° North
+Regulus in conjunction with Moon         2017 Aug 21 20    0.08° South
+Mercury in conjunction with Moon         2017 Aug 22 06    6.16° South
+Vesta in conjunction with Moon           2017 Aug 23 04    2.85° North
+Eunomia in conjunction with Moon         2017 Aug 23 11   12.16° South
+Flora in conjunction with Cybele         2017 Aug 23 16    1.51° South
+Cybele in conjunction with Flora         2017 Aug 23 16    1.51° North
+Psyche in conjunction with Moon          2017 Aug 24 02    1.69° South
+Metis in conjunction with Moon           2017 Aug 24 15    0.47° South
+Juno in conjunction with Hygiea          2017 Aug 24 20   13.89° North
+Hygiea in conjunction with Juno          2017 Aug 24 20   13.89° South
+Jupiter in conjunction with Moon         2017 Aug 25 13    3.49° South
+Spica in conjunction with Moon           2017 Aug 25 17    7.00° South
+Mercury in inferior conjunction          2017 Aug 26 21    4.22° South
+Europa in conjunction with Moon          2017 Aug 28 04    1.07° North
+First Quarter                            2017 Aug 29 08    403486.328 km
+Regulus in conjunction with Mercury      2017 Aug 29 09    4.44° North
+Antares in conjunction with Moon         2017 Aug 29 13    9.80° South
+Moon at apogee                           2017 Aug 30 11    404308.456 km
+Hebe in conjunction with Moon            2017 Aug 30 13    5.56° North
+Saturn in conjunction with Moon          2017 Aug 30 14    3.56° South
+Juno in conjunction with Moon            2017 Aug 31 14    9.65° North
+Hygiea in conjunction with Moon          2017 Aug 31 14    3.47° South
+Pluto in conjunction with Moon           2017 Sep  1 19    2.52° South
+Davida in conjunction with Moon          2017 Sep  1 20    7.33° South
+Mars in conjunction with Mercury         2017 Sep  2 00    4.10° North
+Mercury in conjunction with Mars         2017 Sep  2 00    4.10° South
+Hebe in conjunction with Saturn          2017 Sep  4 05    8.55° North
+Saturn in conjunction with Hebe          2017 Sep  4 05    8.55° South
+Regulus in conjunction with Mars         2017 Sep  5 02    0.75° South
+Neptune at opposition                    2017 Sep  5 05
+Spica in conjunction with Jupiter        2017 Sep  5 11    3.38° South
+Neptune in conjunction with Moon         2017 Sep  6 05    0.77° North
+Full Moon                                2017 Sep  6 07    384378.054 km
+Interamnia in conjunction with Moon      2017 Sep  7 12   32.21° North
+Pollux in conjunction with Ceres         2017 Sep  8 11    4.24° North
+Uranus in conjunction with Moon          2017 Sep  9 10    4.33° North
+Iris in conjunction with Moon            2017 Sep 10 03   14.31° North
+Regulus in conjunction with Mercury      2017 Sep 10 12    0.59° North
+Pallas in conjunction with Moon          2017 Sep 11 04   22.55° South
+Mercury at greatest elongation           2017 Sep 12 10    17.9° West
+Aldebaran in conjunction with Moon       2017 Sep 12 13    0.44° South
+Last Quarter                             2017 Sep 13 06    369900.302 km
+Cybele in conjunction with Moon          2017 Sep 13 14    0.87° North
+Moon at perigee                          2017 Sep 13 16    369859.593 km
+Flora in conjunction with Moon           2017 Sep 14 01    0.73° South
+Pollux in conjunction with Moon          2017 Sep 15 17    9.36° North
+Ceres in conjunction with Moon           2017 Sep 15 22    5.24° North
+Mars in conjunction with Mercury         2017 Sep 16 18    0.06° South
+Mercury in conjunction with Mars         2017 Sep 16 18    0.06° North
+Venus in conjunction with Moon           2017 Sep 18 01    0.55° North
+Regulus in conjunction with Moon         2017 Sep 18 05    0.09° South
+Mars in conjunction with Moon            2017 Sep 18 20    0.14° South
+Mercury in conjunction with Moon         2017 Sep 18 23    0.03° North
+Regulus in conjunction with Venus        2017 Sep 19 23    0.49° South
+New Moon                                 2017 Sep 20 05    382736.983 km
+Vesta in conjunction with Eunomia        2017 Sep 20 10   14.75° North
+Eunomia in conjunction with Vesta        2017 Sep 20 10   14.75° South
+Eunomia in conjunction with Moon         2017 Sep 20 13   12.93° South
+Vesta in conjunction with Moon           2017 Sep 20 13    1.82° North
+Psyche in conjunction with Moon          2017 Sep 21 03    2.24° South
+Metis in conjunction with Moon           2017 Sep 21 22    1.68° South
+Spica in conjunction with Moon           2017 Sep 22 02    6.93° South
+Jupiter in conjunction with Moon         2017 Sep 22 08    3.73° South
+Equinox                                  2017 Sep 22 20
+Europa in conjunction with Moon          2017 Sep 25 02    0.30° North
+Antares in conjunction with Moon         2017 Sep 25 21    9.68° South
+Saturn in conjunction with Moon          2017 Sep 27 00    3.48° South
+Spica in conjunction with Metis          2017 Sep 27 03    5.05° South
+Moon at apogee                           2017 Sep 27 07    404347.579 km
+Hebe in conjunction with Moon            2017 Sep 27 10    2.65° North
+Vesta in conjunction with Sun            2017 Sep 27 14    4.89° North
+First Quarter                            2017 Sep 28 03    403893.440 km
+Juno in conjunction with Moon            2017 Sep 28 03    7.44° North
+Hygiea in conjunction with Moon          2017 Sep 28 07    2.80° South
+Pluto in conjunction with Moon           2017 Sep 29 03    2.46° South
+Davida in conjunction with Moon          2017 Sep 29 05    7.79° South
+Interamnia at opposition                 2017 Oct  1 17
+Neptune in conjunction with Moon         2017 Oct  3 12    0.75° North
+Eunomia in conjunction with Mercury      2017 Oct  4 06   11.14° South
+Mercury in conjunction with Eunomia      2017 Oct  4 06   11.14° North
+Interamnia in conjunction with Moon      2017 Oct  4 10   33.17° North
+Mars in conjunction with Venus           2017 Oct  5 13    0.22° South
+Venus in conjunction with Mars           2017 Oct  5 13    0.22° North
+Eunomia in conjunction with Sun          2017 Oct  5 15    8.73° South
+Vesta in conjunction with Mercury        2017 Oct  5 18    3.84° North
+Mercury in conjunction with Vesta        2017 Oct  5 18    3.84° South
+Full Moon                                2017 Oct  5 19    373412.207 km
+Uranus in conjunction with Moon          2017 Oct  6 16    4.21° North
+Iris in conjunction with Moon            2017 Oct  7 10   14.70° North
+Pallas in conjunction with Moon          2017 Oct  8 11   31.04° South
+Mercury in superior conjunction          2017 Oct  8 21    1.11° North
+Moon at perigee                          2017 Oct  9 06    366855.308 km
+Psyche in conjunction with Mercury       2017 Oct  9 15    0.75° North
+Mercury in conjunction with Psyche       2017 Oct  9 15    0.75° South
+Aldebaran in conjunction with Moon       2017 Oct  9 19    0.60° South
+Psyche in conjunction with Sun           2017 Oct 10 01    1.73° North
+Cybele in conjunction with Moon          2017 Oct 10 23    0.17° North
+Flora in conjunction with Moon           2017 Oct 12 01    1.48° South
+Last Quarter                             2017 Oct 12 12    371124.397 km
+Pollux in conjunction with Moon          2017 Oct 12 22    9.19° North
+Spica in conjunction with Mercury        2017 Oct 13 03    2.94° South
+Ceres in conjunction with Moon           2017 Oct 13 21    5.76° North
+Regulus in conjunction with Moon         2017 Oct 15 11    0.21° South
+Metis in conjunction with Jupiter        2017 Oct 16 21    1.41° North
+Jupiter in conjunction with Metis        2017 Oct 16 21    1.41° South
+Mars in conjunction with Moon            2017 Oct 17 10    1.78° South
+Venus in conjunction with Moon           2017 Oct 18 00    1.97° South
+Jupiter in conjunction with Mercury      2017 Oct 18 15    1.02° North
+Mercury in conjunction with Jupiter      2017 Oct 18 15    1.02° South
+Eunomia in conjunction with Moon         2017 Oct 18 16   13.77° South
+Metis in conjunction with Mercury        2017 Oct 18 23    2.45° North
+Mercury in conjunction with Metis        2017 Oct 18 23    2.45° South
+Vesta in conjunction with Moon           2017 Oct 18 23    0.99° North
+Psyche in conjunction with Moon          2017 Oct 19 05    2.66° South
+Spica in conjunction with Moon           2017 Oct 19 10    6.89° South
+Uranus at opposition                     2017 Oct 19 18
+New Moon                                 2017 Oct 19 19    393502.863 km
+Jupiter in conjunction with Moon         2017 Oct 20 03    3.92° South
+Metis in conjunction with Moon           2017 Oct 20 04    2.57° South
+Mercury in conjunction with Moon         2017 Oct 20 08    5.20° South
+Europa in conjunction with Moon          2017 Oct 23 02    0.06° South
+Antares in conjunction with Moon         2017 Oct 23 05    9.50° South
+Saturn in conjunction with Moon          2017 Oct 24 12    3.25° South
+Moon at apogee                           2017 Oct 25 02    405154.236 km
+Hebe in conjunction with Moon            2017 Oct 25 14    0.77° North
+Juno in conjunction with Moon            2017 Oct 26 00    5.98° North
+Hygiea in conjunction with Moon          2017 Oct 26 05    1.89° South
+Spica in conjunction with Psyche         2017 Oct 26 08    4.16° South
+Pluto in conjunction with Moon           2017 Oct 26 11    2.27° South
+Jupiter in conjunction with Sun          2017 Oct 26 18    1.02° North
+Davida in conjunction with Moon          2017 Oct 26 21    7.72° South
+Antares in conjunction with Europa       2017 Oct 26 23    9.39° South
+Eunomia in conjunction with Venus        2017 Oct 27 11   11.31° South
+Venus in conjunction with Eunomia        2017 Oct 27 11   11.31° North
+First Quarter                            2017 Oct 27 22    400261.093 km
+Pallas at opposition                     2017 Oct 29 00
+Metis in conjunction with Sun            2017 Oct 29 19    2.18° North
+Iris at opposition                       2017 Oct 30 00
+Spica in conjunction with Vesta          2017 Oct 30 03    7.63° South
+Neptune in conjunction with Moon         2017 Oct 30 21    0.88° North
+Interamnia in conjunction with Moon      2017 Oct 31 14   30.84° North
+Spica in conjunction with Venus          2017 Nov  1 15    3.81° South
+Uranus in conjunction with Moon          2017 Nov  3 01    4.19° North
+Vesta in conjunction with Venus          2017 Nov  3 09    3.86° North
+Venus in conjunction with Vesta          2017 Nov  3 09    3.86° South
+Iris in conjunction with Moon            2017 Nov  3 12   13.41° North
+Psyche in conjunction with Venus         2017 Nov  4 01    0.43° North
+Venus in conjunction with Psyche         2017 Nov  4 01    0.43° South
+Full Moon                                2017 Nov  4 05    364001.518 km
+Pallas in conjunction with Moon          2017 Nov  4 13   37.32° South
+Moon at perigee                          2017 Nov  6 00    361438.066 km
+Aldebaran in conjunction with Moon       2017 Nov  6 03    0.76° South
+Hygiea in conjunction with Pluto         2017 Nov  6 10    0.71° North
+Pluto in conjunction with Hygiea         2017 Nov  6 10    0.71° South
+Vesta in conjunction with Psyche         2017 Nov  7 00    3.43° North
+Psyche in conjunction with Vesta         2017 Nov  7 00    3.43° South
+Cybele in conjunction with Moon          2017 Nov  7 05    0.39° South
+Flora in conjunction with Moon           2017 Nov  8 18    1.81° South
+Pollux in conjunction with Moon          2017 Nov  9 04    8.94° North
+Ceres in conjunction with Moon           2017 Nov 10 16    6.80° North
+Last Quarter                             2017 Nov 10 21    375108.291 km
+Regulus in conjunction with Moon         2017 Nov 11 17    0.45° South
+Antares in conjunction with Mercury      2017 Nov 12 15    2.25° South
+Jupiter in conjunction with Venus        2017 Nov 13 06    0.28° South
+Venus in conjunction with Jupiter        2017 Nov 13 06    0.28° North
+Spica in conjunction with Eunomia        2017 Nov 14 02    7.66° North
+Mars in conjunction with Moon            2017 Nov 15 01    3.19° South
+Juno in conjunction with Pluto           2017 Nov 15 04    7.46° North
+Pluto in conjunction with Juno           2017 Nov 15 04    7.46° South
+Spica in conjunction with Moon           2017 Nov 15 16    6.97° South
+Eunomia in conjunction with Moon         2017 Nov 15 17   14.68° South
+Psyche in conjunction with Moon          2017 Nov 16 06    2.93° South
+Vesta in conjunction with Moon           2017 Nov 16 09    0.42° North
+Jupiter in conjunction with Moon         2017 Nov 16 21    4.09° South
+Venus in conjunction with Moon           2017 Nov 17 06    3.96° South
+Metis in conjunction with Moon           2017 Nov 17 11    3.17° South
+Europa in conjunction with Mercury       2017 Nov 17 19    6.92° North
+Mercury in conjunction with Europa       2017 Nov 17 19    6.92° South
+New Moon                                 2017 Nov 18 12    402115.462 km
+Antares in conjunction with Moon         2017 Nov 19 12    9.38° South
+Hebe in conjunction with Pluto           2017 Nov 20 04    1.80° North
+Pluto in conjunction with Hebe           2017 Nov 20 04    1.80° South
+Europa in conjunction with Moon          2017 Nov 20 04    0.12° South
+Mercury in conjunction with Moon         2017 Nov 20 09    6.90° South
+Metis in conjunction with Venus          2017 Nov 20 10    0.86° North
+Venus in conjunction with Metis          2017 Nov 20 10    0.86° South
+Saturn in conjunction with Moon          2017 Nov 21 00    2.99° South
+Moon at apogee                           2017 Nov 21 19    406131.507 km
+Pluto in conjunction with Moon           2017 Nov 22 20    2.04° South
+Hebe in conjunction with Moon            2017 Nov 22 22    0.34° South
+Juno in conjunction with Moon            2017 Nov 23 01    5.20° North
+Hygiea in conjunction with Moon          2017 Nov 23 06    0.80° South
+Davida in conjunction with Moon          2017 Nov 23 17    7.38° South
+Mercury at greatest elongation           2017 Nov 24 00    22.0° East
+First Quarter                            2017 Nov 26 17    393528.825 km
+Neptune in conjunction with Moon         2017 Nov 27 05    1.15° North
+Spica in conjunction with Mars           2017 Nov 28 00    3.36° South
+Interamnia in conjunction with Moon      2017 Nov 28 02   27.08° North
+Saturn in conjunction with Mercury       2017 Nov 28 09    3.05° North
+Mercury in conjunction with Saturn       2017 Nov 28 09    3.05° South
+Uranus in conjunction with Moon          2017 Nov 30 10    4.32° North
+Iris in conjunction with Moon            2017 Nov 30 17   10.66° North
+Pallas in conjunction with Moon          2017 Dec  1 15   38.57° South
+Juno in conjunction with Hebe            2017 Dec  2 04    5.63° North
+Hebe in conjunction with Juno            2017 Dec  2 04    5.63° South
+Aldebaran in conjunction with Moon       2017 Dec  3 13    0.82° South
+Full Moon                                2017 Dec  3 16    357982.592 km
+Moon at perigee                          2017 Dec  4 09    357492.090 km
+Cybele in conjunction with Moon          2017 Dec  4 09    0.52° South
+Flora in conjunction with Moon           2017 Dec  6 02    1.08° South
+Saturn in conjunction with Mercury       2017 Dec  6 12    1.35° North
+Mercury in conjunction with Saturn       2017 Dec  6 12    1.35° South
+Pollux in conjunction with Moon          2017 Dec  6 13    8.72° North
+Vesta in conjunction with Jupiter        2017 Dec  8 00    4.43° North
+Jupiter in conjunction with Vesta        2017 Dec  8 00    4.43° South
+Ceres in conjunction with Moon           2017 Dec  8 07    8.68° North
+Antares in conjunction with Venus        2017 Dec  8 17    5.08° South
+Regulus in conjunction with Moon         2017 Dec  8 23    0.73° South
+Last Quarter                             2017 Dec 10 08    381514.745 km
+Europa in conjunction with Mercury       2017 Dec 11 01    2.94° North
+Mercury in conjunction with Europa       2017 Dec 11 01    2.94° South
+Spica in conjunction with Moon           2017 Dec 12 21    7.18° South
+Cybele at opposition                     2017 Dec 13 00
+Mercury in inferior conjunction          2017 Dec 13 02    1.72° North
+Mars in conjunction with Moon            2017 Dec 13 16    4.16° South
+Eunomia in conjunction with Moon         2017 Dec 13 17   15.67° South
+Psyche in conjunction with Moon          2017 Dec 14 05    3.03° South
+Jupiter in conjunction with Moon         2017 Dec 14 14    4.25° South
+Vesta in conjunction with Moon           2017 Dec 14 19    0.20° North
+Eunomia in conjunction with Mars         2017 Dec 15 00   11.52° South
+Mars in conjunction with Eunomia         2017 Dec 15 00   11.52° North
+Venus in conjunction with Mercury        2017 Dec 15 16    2.22° South
+Mercury in conjunction with Venus        2017 Dec 15 16    2.22° North
+Metis in conjunction with Moon           2017 Dec 15 17    3.51° South
+Antares in conjunction with Moon         2017 Dec 16 18    9.40° South
+Mercury in conjunction with Moon         2017 Dec 17 09    1.76° South
+Venus in conjunction with Moon           2017 Dec 17 18    4.14° South
+Europa in conjunction with Sun           2017 Dec 17 23    3.94° North
+Europa in conjunction with Moon          2017 Dec 18 06    0.03° North
+New Moon                                 2017 Dec 18 07    406403.017 km
+Saturn in conjunction with Moon          2017 Dec 18 13    2.78° South
+Hygiea in conjunction with Hebe          2017 Dec 18 21    1.17° North
+Hebe in conjunction with Hygiea          2017 Dec 18 21    1.17° South
+Moon at apogee                           2017 Dec 19 01    406602.671 km
+Pluto in conjunction with Moon           2017 Dec 20 03    1.89° South
+Juno in conjunction with Moon            2017 Dec 21 04    4.90° North
+Hygiea in conjunction with Moon          2017 Dec 21 08    0.38° North
+Hebe in conjunction with Moon            2017 Dec 21 09    0.93° South
+Davida in conjunction with Moon          2017 Dec 21 16    6.98° South
+Solstice                                 2017 Dec 21 16
+Saturn in conjunction with Sun           2017 Dec 21 21    0.91° North
+Europa in conjunction with Venus         2017 Dec 23 21    4.03° North
+Venus in conjunction with Europa         2017 Dec 23 21    4.03° South
+Neptune in conjunction with Moon         2017 Dec 24 13    1.43° North
+Saturn in conjunction with Venus         2017 Dec 25 18    1.13° North
+Venus in conjunction with Saturn         2017 Dec 25 18    1.13° South
+Interamnia in conjunction with Moon      2017 Dec 25 22   23.61° North
+First Quarter                            2017 Dec 26 09    385606.440 km
+Uranus in conjunction with Moon          2017 Dec 27 18    4.53° North
+Iris in conjunction with Moon            2017 Dec 28 10    8.09° North
+Pallas in conjunction with Moon          2017 Dec 28 22   35.93° South
+Aldebaran in conjunction with Moon       2017 Dec 31 01    0.76° South
+Cybele in conjunction with Moon          2017 Dec 31 13    0.11° South
+Psyche in conjunction with Mars          2018 Jan  1 13    1.52° North
+Mars in conjunction with Psyche          2018 Jan  1 13    1.52° South
+Mercury at greatest elongation           2018 Jan  1 20    22.7° West
+Moon at perigee                          2018 Jan  1 22    356564.819 km
+Full Moon                                2018 Jan  2 02    356602.153 km
+Flora in conjunction with Moon           2018 Jan  2 04    1.01° North
+Europa in conjunction with Saturn        2018 Jan  2 15    2.88° North
+Saturn in conjunction with Europa        2018 Jan  2 15    2.88° South
+Flora at opposition                      2018 Jan  2 18
+Pollux in conjunction with Moon          2018 Jan  2 23    8.63° North
+Earth at perihelion                      2018 Jan  3 06    0.983284268 AU
+Ceres in conjunction with Moon           2018 Jan  4 17   11.42° North
+Regulus in conjunction with Moon         2018 Jan  5 08    0.91° South
+Hebe in conjunction with Davida          2018 Jan  6 09    5.66° North
+Davida in conjunction with Hebe          2018 Jan  6 09    5.66° South
+Jupiter in conjunction with Mars         2018 Jan  7 04    0.21° North
+Mars in conjunction with Jupiter         2018 Jan  7 04    0.21° South
+Last Quarter                             2018 Jan  8 22    389330.889 km
+Spica in conjunction with Moon           2018 Jan  9 04    7.37° South
+Pluto in conjunction with Venus          2018 Jan  9 06    1.22° North
+Venus in conjunction with Pluto          2018 Jan  9 06    1.22° South
+Venus in superior conjunction            2018 Jan  9 07    0.77° South
+Pluto in conjunction with Sun            2018 Jan  9 10    0.44° North
+Eunomia in conjunction with Moon         2018 Jan 10 16   16.76° South
+Psyche in conjunction with Moon          2018 Jan 11 03    2.89° South
+Jupiter in conjunction with Moon         2018 Jan 11 06    4.34° South
+Mars in conjunction with Moon            2018 Jan 11 10    4.56° South
+Vesta in conjunction with Moon           2018 Jan 12 04    0.38° North
+Metis in conjunction with Moon           2018 Jan 12 22    3.63° South
+Antares in conjunction with Moon         2018 Jan 13 00    9.49° South
+Saturn in conjunction with Mercury       2018 Jan 13 07    0.64° North
+Mercury in conjunction with Saturn       2018 Jan 13 07    0.64° South
+Saturn in conjunction with Moon          2018 Jan 15 02    2.63° South
+Moon at apogee                           2018 Jan 15 02    406464.011 km
+Mercury in conjunction with Moon         2018 Jan 15 07    3.36° South
+Europa in conjunction with Moon          2018 Jan 15 08    0.36° North
+Europa in conjunction with Mercury       2018 Jan 15 11    3.72° North
+Mercury in conjunction with Europa       2018 Jan 15 11    3.72° South
+Antares in conjunction with Metis        2018 Jan 15 16    5.87° South
+Pluto in conjunction with Moon           2018 Jan 16 11    1.85° South
+New Moon                                 2018 Jan 17 02    405106.265 km
+Venus in conjunction with Moon           2018 Jan 17 08    2.47° South
+Juno in conjunction with Moon            2018 Jan 18 09    4.89° North
+Hygiea in conjunction with Moon          2018 Jan 18 11    1.59° North
+Davida in conjunction with Moon          2018 Jan 18 16    6.68° South
+Hebe in conjunction with Moon            2018 Jan 18 22    1.26° South
+Neptune in conjunction with Moon         2018 Jan 20 20    1.61° North
+Interamnia in conjunction with Moon      2018 Jan 22 22   20.81° North
+Uranus in conjunction with Moon          2018 Jan 24 01    4.68° North
+Pluto in conjunction with Mercury        2018 Jan 24 17    1.54° North
+Mercury in conjunction with Pluto        2018 Jan 24 17    1.54° South
+First Quarter                            2018 Jan 24 22    378406.419 km
+Iris in conjunction with Moon            2018 Jan 25 10    6.21° North
+Pallas in conjunction with Moon          2018 Jan 25 12   32.09° South
+Psyche in conjunction with Jupiter       2018 Jan 25 16    1.63° North
+Jupiter in conjunction with Psyche       2018 Jan 25 16    1.63° South
+Aldebaran in conjunction with Moon       2018 Jan 27 11    0.68° South
+Cybele in conjunction with Moon          2018 Jan 27 18    0.55° North
+Flora in conjunction with Moon           2018 Jan 29 06    3.35° North
+Moon at perigee                          2018 Jan 30 10    358993.525 km
+Pollux in conjunction with Moon          2018 Jan 30 11    8.63° North
+Ceres at opposition                      2018 Jan 31 13
+Full Moon                                2018 Jan 31 13    360197.777 km
+Ceres in conjunction with Moon           2018 Jan 31 20   13.93° North
+Pallas in conjunction with Iris          2018 Jan 31 21   37.07° South
+Iris in conjunction with Pallas          2018 Jan 31 21   37.07° North
+

@@ -1,0 +1,205 @@
+Pisces Psc
+82 91 ups phi chi psi3 psi2 psi1 phi tau 82
+phi eta pi omi alp xi nu mu zet eps del ome iot the gam kap lam iot
+gam bet
+
+Aries Ari
+39 35 alp bet gam1
+zet eps alp 
+del eps
+41 35
+
+Taurus Tau
+bet tau eps del1 gam the1 alp zet
+tau ups kap1 37 eta
+gam lam 30 xi omi
+alp 90 88 mu nu 10
+136 139 zet 119 126 134
+
+Gemini Gem
+alp tau eps nu
+eps mu eta 1
+bet del zet gam 
+del lam xi
+kap ups iot tau the
+
+Cancer Cnc
+
+
+Leo 
+kap mu zet gam1 eta alp the bet del 60 gam1
+93 del the iot sig tau ups 87 phi 61
+mu eps lam
+omi alp rho
+54 del 93
+
+Vir
+
+Lib
+alp2 bet gam sig alp2
+16 bet 37
+tau ups sig
+
+Sgr
+gam2 del lam phi sig tau zet eps gam2
+zet phi del eps
+mu lam xi2 omi pi rho1 ups
+eps eta
+
+Cap
+alp1 bet rho psi ome 24 zet eps kap del gam iot the tau alp1
+
+UMi
+alp del eps zet eta gam bet zet
+
+Cas
+eps del gam alp bet
+
+Dra
+lam kap alp iot the eta zet chi tau eps rho omi 39 xi nu1 bet gam xi
+xi pi del ups phi zet
+
+UMa
+eta zet eps del gam bet alp
+gam chi psi ome mu lam
+psi nu xi
+omi tau 23 ups phi the 15
+
+Peg
+bet gam alp 55 rho 35 the eps 9 1 2 kap eta bet
+bet mu lam iot
+70 alp xi zet 31
++ tweaks
+
+Equ
+alp bet del gam
+-- bet is 5.1
+
+Del
+gam2 del bet alp gam2
+bet eps
+
+Sge
+gam del bet
+del alp
+
+Vul
+23 15 13 alp 1
+
+Aql
+eps zet gam alp bet the 71
+the del zet
+gam del lam
+
+Sct
+eta bet alp del eta
+del gam
+
+Lyr
+alp eps1 zet1 del2 gam bet zet1 alp
+
+Cyg
+alp gam eta bet1
+del gam eps
+
+Her
+chi phi tau sig eta pi eps zet eta
+iot pi the
+eps del lam mu xi omi
+zet bet alp1 102 109 110 113
+gam bet del
+
+Oph
+eps del lam kap alp bet gam mu eta xi the 44
+eta zet eps del lam
+
+Ser
+pi iot kap gam bet iot
+bet del alp eps mu
+the1 eta omi xi nu
+
+CrB
+the bet alp gam del eps iot xi tau zet2 the
+
+Boo
+alp gam bet mu1 del eps alp
+nu2 bet lam iot the
+zet pi1 omi xi alp eta tau ups
+eps psi ome
+del gam
+
+Com
+bet gam 12 11 36 alp bet
+
+CVn
+
+Crv
+alp eps gam del bet eps
+
+Crt
+
+
+And
+51 xi mu pi alp del bet tau gam1
+del eps zet eta
+alp sig the iot
+omi iot kap lam 8 7 3
+
+Lac
+bet 9 alp 4 5 2 11 6 10 1
+
+Cet
+iot bet eta iot
+eta the zet tau eta
+zet omi del gam nu xi2 mu lam alp gam
+
+Eri
+lam bet ome mu nu omi1 gam pi del eps zet eta pi tau1 tau2 tau3 tau4 tau5 tau6 tau8 tau9 ups2 43 ups4 the1 kap phi chi alp
+
+Ori
+alp gam del bet kap zet alp
+zet eps del
+chi1 nu mu alp
+mu xi chi2
+gam pi6 pi5 pi4 pi3 pi2 pi1 omi2 omi1
+omi2 11 15
+alp lam gam
+
+CMi
+alp bet 6
+
+Mon
+15 13 eps
+13 18 del alp zet
+del bet gam
+
+CMa
+the gam iot mu the
+iot alp bet
+alp pi omi2 del eta
+del sig eps kap lam
+zet eps
+omi2 omi1 xi1
+
+Lep
+the eta zet alp del gam bet eps mu
+alp mu lam kap iot
+
+Hya
+del eps zet eta sig del
+zet the iot alp ups1 ups2 lam mu nu xi bet gam pi 51 58
+
+Sex
+
+Aur
+bet del alp
+alp bet the iot eta alp
+kap the
+
+Per
+omi zet xi eps nu del alp gam eta tau iot kap bet rho
+del 48 mu lam
+58 52 eps
+iot the
+
+Tri

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang='en'>
+<head>
+ <meta charset='UTF-8'>
+ <meta name="keywords" content="astronomy">
+ <meta name="description" content="Constellation polylines">
+ <meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" type="text/css" href="../../css/stylesheet2.css" media="all">
+ <style>
+  table.report {
+    display: inline-block;
+    vertical-align: top; 
+  }
+  body {
+    margin:0.5em;
+    padding: 0;
+    font: 0.75em Verdana, Arial, Helvetica, sans-serif;
+  }
+ </style>
+ <title>Constellation polylines</title>
+ <script src='../../js/ephem.js'></script>
+ <script src='../../js/util.js'></script>
+ <script src='../../js/general-graphics.js'></script>
+ <script src='constellation_code.js'></script>
+ <script> 
+  window.onload = function() {
+    var formInput = requestParams(window);
+    show(formInput);
+  };
+ </script>
+</head>
+<body> 
+ 
+ <div id='output'>
+ </div>
+ 
+ <div id='error'>
+ </div>
+ 
+ 
+</body>
+</html>

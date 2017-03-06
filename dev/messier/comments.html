@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang='en'>
+<head>
+ <meta charset='UTF-8'>
+ <meta name="keywords" content="astronomy">
+ <meta name="description" content="Extract comments and type of each Messier object">
+ <meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all">
+ <title></title>
+ <script src='../../js/ephem.js'></script>
+ <script> 
+  window.onload = function() {
+    var output = document.getElementById('text_output');
+    //messier[0]=["M1",1.4595316,0.3842633,8.4,"Tau","NB","!! famous Crab Neb. supernova remnant","Crab Nebula"];
+    for(var i = 0; i < EPH.messiers.length; ++i){
+      //comment and type only; the other information is defined in another source file
+      output.innerHTML = output.innerHTML + EPH.messiers[i][5] + '\t' + EPH.messiers[i][6] + '\r\n'; 
+    }
+  };
+ </script>
+</head>
+<body>
+ <pre id='text_output' style='font-size: small;'></pre>
+</body>
+</html>

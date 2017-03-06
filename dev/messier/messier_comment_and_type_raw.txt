@@ -1,0 +1,112 @@
+# Source: Observer's Handbook. 
+# Fields are tab-delimited; type and comment; rows in same order as M1..M110. 
+NB  !! famous Crab Neb. supernova remnant
+GC	200-mm telescope needed to resolve
+GC	!! contains many variable stars
+GC	bright globular near Antares
+GC	!! one of the sky's finest globulars
+OC	!! Butterfly Cluster; best at low power
+OC	!! excellent in binocs or rich-field scope
+NB	!! Lagoon Nebula w/open cl. NGC 6530
+GC	smallest of Ophiuchus globulars
+GC	rich globular cluster; M12 is 3°NW
+OC	!! Wild Duck Cl.; the best open cluster?
+GC	loose globular cluster near M10
+GC	!! Hercules Cluster; NGC 6207 0.5°NE
+GC	200-mm telescope needed to resolve
+GC	rich, compact globular
+NB	Eagle Neb. w/open cl.; use neb. filter
+NB	!! Swan or Omega Nebula; use neb. filter
+OC	sparse cluster; 1°S of M17
+GC	oblate globular; M62 4°S
+NB	!! Trifid Nebula; look for dark lanes
+OC	0.7°NE of M20; sparse cluster
+GC	spectacular from southern latitude
+OC	bright, loose open cluster
+OC	rich star cloud; best in big binoculars
+OC	bright but sparse open cluster
+OC	bright, coarse cluster
+NB	!! Dumbbell Nebula; a superb object
+GC	compact globular near M22
+OC	small, poor open cluster 2°S of γ Cygni
+GC	toughest in one-night Messier marathon
+GY	!! Andromeda Gal.; look for dust lanes
+GY	closest companion to M31
+GY	large diffuse spiral; requires dark sky
+OC	best at low power
+OC	!! look for sm. cluster NGC 2158 0.25°S
+OC	bright but scattered group; use low pow.
+OC	!! finest of three Auriga clusters; very rich
+OC	look for small cluster NGC 1907 0.5°S
+OC	very sparse cluster; use low power
+OC	double star Winneke 4; separation 50arcsec
+OC	4°S of Sirius; bright but coarse
+NB	!! Orion Nebula; finest in northern sky
+NB	detached part of Orion Nebula
+OC	!! Beehive or Praesepe; use low power
+OC	!! Pleiades; look for subtle nebulosity
+OC	!! contains planetary nebula NGC 2438
+OC	coarse cluster 1.5°W of M46
+OC	former lost Messier; large sparse cl.
+GY	very bright elliptical
+OC	between Sirius & Procyon; use low mag
+GY	!! Whirlpool Galaxy; superb in big scope
+OC	young, rich cl.; faint Bubble Neb. nearby
+GC	150-mm telescope needed to resolve
+GC	not easily resolved
+GC	bright, loose globular cluster
+GC	within a rich starfield
+NB	!! Ring Nebula; an amazing smoke ring
+GY	bright barred spiral; M59 and M60 1°E
+GY	bright elliptical paired with M60
+GY	bright elliptical with M59 and NGC 4647
+GY	face-on two-armed spiral
+GC	asymmetrical; in rich field
+GY	!! Sunflower Galaxy; bright, elongated
+GY	!! Black Eye Gal; eye needs big scope
+GY	!! bright elongated spiral
+GY	!! M65 and NGC 3628 in same field
+OC	one of the oldest star clusters known
+GC	150-mm telescope needed to resolve
+GC	small, poor globular cluster
+GC	small globular 2°E of M69
+GC	loose globular; looks like an open cluster
+GC	near the Saturn Nebula, NGC 7009
+OC	group of four stars only; an asterism
+GY	faint, elusive spiral; tough in small scope
+GC	small and distant; 59,000 ly away
+NB	Little Dumbell; faint but distinct
+GY	a Seyfert galaxy; with starlike nucleus
+NB	bright featureless reflection nebula
+GC	200-mm telescope needed to resolve
+GC	very compressed globular
+GY	!! bright spiral visible in binoculars
+GY	!! the exploding galaxy; M81 0.5°S
+GY	large and diffuse; superb from far south
+GY	!! w/M86 in Markarian's Chain
+GY	bright elliptical shape
+GY	!! w/many NGC galaxies in Chain
+GY	famous jet and black hole
+GY	bright multiple-arm spiral
+GY	elliptical; resembles M87 but smaller
+GY	bright barred spiral near M89
+GY	some lists say M91=M58, not NGC 4548
+GC	9°NE of M13; fine but often overlooked
+OC	compact, bright cluster; fairly rich
+GY	very bright and comet-like
+GY	bright barred spiral
+GY	M95 in same field
+NB	Owl Nebula; distinct grey oval
+GY	nearly edge-on spiral near star 6 Com. B.
+GY	nearly face-on spiral near M98
+GY	face-on spiral with starlike nucleus
+GY	!! Pinwheel Gal; diffuse face-on spiral
+GY	or is M102=M101? (look for NGC 5907)
+OC	three NGC open clusters nearby
+GY	!! Sombrero Galaxy; look for dust lane
+GY	bright elliptical near M95 and M96
+GY	!! superb large, bright spiral
+GC	small, faint globular
+GY	nearly edge-on; paired with M97 0.75°SE
+GY	barred spiral near γ UMA
+GY	more distant companion to M31

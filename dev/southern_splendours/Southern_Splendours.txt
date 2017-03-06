@@ -1,0 +1,78 @@
+Weird quotes. Double stars. Not readily parseable.
+Encoding??
+
+
+1 55 Scl G-SBm 0 14.9 −39 12 7.9 32 × 6 ! in 100-mm scope: diffuse splinter 
+2 104 Tuc GC 0 24.1 −72 5 4 50 !!! 47 Tuc; yellow core in 370-mm scope 
+3 β Tuc Dbl* 0 31.5 −62 58 4.3, 4.5  27″ ! both blue-white 
+4 SMC Tuc G-SBm 0 52.7 −72 50 2.3 5°× 3° !!! many NGCs included 
+5 362 Tuc GC 1 3.2 −70 51 6.8 14 ! Milky Way GC beside SMC; CC III 
+6 p Eri Dbl* 1 39.8 −56 12 5.8, 5.8  12″ ! both yellow-orange dwarfs 
+7 1097 For G-SBb 2 46.3 −30 17 9.3 13 × 8 ! in 300-mm scope: bar and tough arms 
+8 θ Eri Dbl* 2 58.3 −40 18 3.2, 4.1  8.4″ ! both white 
+9 1313 Ret G-SBd 3 18.3 −66 30 8.9 9 × 7 in 370-mm scope: bar, one spiral arm 
+10  For Gal Cl. 3 22.7 −37 12 — — position is for bright 1316, Fornax A 
+11 1365 For G-SBc 3 33.6 −36 8 9.5 14 × 10 !! in 300-mm scope: bar with 2 spiral arms 
+12 f Eri Dbl* 3 48.6 −37 37 4.9, 5.4 8.1″ ! yellowish stars 
+13 1566 Dor G-Sc 4 20 −54 56 9.4 13 × 9 !! in 250-mm scope: two classic spiral arms 
+14 ι Pic Dbl* 4 50.9 −53 28 5.6, 6.5  12.5″ ! very nice yellow pair 
+15 1851 Col GC 5 14.1 −40 3 7.1 12 ! brightest centre of any GC; CC II 
+16 LMC Dor G-SBm 5 23.6 −69 45 0.1 11°× 9° !!! many nights’ work for large apertures 
+17 2070 Dor EN/OC 5 38.7 −69 6 5.4 20 !!! Tarantula Nebula; “spider legs” easy 
+18 γ Vol Dbl* 7 8.7 −70  30 3.9, 5.4  14.4″ ! gold and light-green pair 
+19 2451 Pup OC 7 45.4 −37 57 2.8 50 ! two OCs in radial line, 400 ly apart
+20 2477 Pup OC 7 52.2 −38 32 5.8 20 !! 300*; arcs of 12th-mag. –13th-mag. stars 
+21 2516 Car OC 7 58 −60 45 3.8 22 !! 100*; resembles the Beehive but richer 
+22 γ Vel Dbl* 8 9.5 −47 20 1.8, 4.1 41″ ! 4*; 1.8-mag. star is brightest Wolf–Rayet 
+23 2547 Vel OC 8 10.2 −49 14 4.7 25 ! The Heart Cluster (description by Dyer) 
+24 IC 2391 Vel OC 8 40.3 −52 55 2.6 60 ! ο Vel Cluster; bright stars; fine in binocs 
+25 2736 Vel SNR 9 0.4 –45 54 — 20x0.5 ! Pencil Nebula, part of Vela SNR; use filter 
+26 2808 Car GC 9 12 −64 52 6.2 14 ! brightest CC I; like a pile of sand 
+27 3114 Car OC 10 2.7 −60 6 4.2 35 ! 120*; four arcs of stars in binocs 
+28 3132 Vel PN 10 7.7 −40 26 9.2 0.8 Eight-Burst Nebula; colourless 
+29 3199 Car EN 10 17.1 −57 55 9 22 ! crescent formed by Wolf–Rayet star 
+30 3201 Vel GC 10 17.6 −46 25 6.9 20 star chains right through core; CC X 
+31 3293 Car OC 10 35.8 −58 14 4.7 5 !! Gem Cluster; EN/RN/DN involved 
+32 3324 Car EN 10 37.3 −58 38 6.7 15 two-lobed nebula 
+33 IC 2602 Car OC 10 43 −64 24 1.6 100 ! θ Car Cl, a.k.a. the Southern Pleiades 
+34 3372 Car EN 10 45.1 −59 52 2.5 80 !!! Carina NebulaA 
+35 3532 Car OC 11 5.5 −58 44 3 50 !!! Football Cluster; finest OC?; 55′ across 
+36 3699 Cen PN 11 28 −59 57 11.3 1.1 dark rift visible in 200-mm scope 
+37 3766 Cen OC 11 36.3 −61 37 5.3 15 ! triangular; 60*; λ Cen Nebula nearby 
+38 3918 Cen PN 11 50.3 −57 11 8.1 0.2 ! the Blue Planetary; round 
+39 — Mus DN 12 25 −72  —  3° × 12′ ! the Dark Doodad; near 4372 and γ Mus 
+40 4372 Mus GC 12 25.8 −72 39 7.2 19 ! CC XII (size is from NGC 2000.0) 
+41 α Cru Dbl* 12 26.6 −63 6 1.3, 1.6  4.0″ ! blue-white pair; 3rd star 4.9 mag. at 90″ 
+42 DY Cru Red* 12 47.4 −59 42 9v — ! Ruby Crucis; 3′ W of β Cru; B−V is 5.8 
+43 — Cru DN 12 51 −63  — 6° !!! Coalsack; forms head of the Emu DN 
+44 4755 Cru OC 12 53.6 −60 21 4.2 10 ! Jewel Box; sparse in small apertures 
+45 4833 Mus GC 12 59.6 −70 52 6.9 14 ! CC VIII (magnitude is from W.E. Harris) 
+46 4945 Cen G-SBcd 13 5.5 −49 28 8.4 20 × 4 ! in 500-mm scope: dark lane on SW edge 
+47 5128 Cen G-S0pec 13 25.5 −43 1 6.8 26 × 20 !! Cen A; merging spiral and ellipticalB 
+48 5139 Cen GC 13 26.8 −47 29 3.9 55 !!! Omega Cen; huge rich oval; CC VIII 
+49 5189 Mus PN 13 33.5 −65 59 9.5 2.6 ! the Spiral Planetary; use OIII filter 
+50 M83 Hya G-SABc 13 37 −29 52 7.6 16 × 13 !! in 200-mm: bar, 1 arm; 370-mm: 3 arms 
+51 5286 Cen GC 13 46.4 −51 22 7.4 11 ! CC V; bluish PN 5307 nearby 
+52 5460 Cen OC 14 7.6 −48 18 5.6 35 25 straggling*; trapezoidal asterism in S 
+53 α Cen Dbl* 14 39.6 −60 50 0.0, 1.3  4.1″ !! rapidly changing yellow pair: 22″–1.7″ 
+54 5822 Lup OC 15 4 –54 20 6.5 35 ! triangular; stars are in discrete clumps 
+55 5927 Lup GC 15 28 −50 40 8 6 CC VIII; pair with Nor GC 5946 
+56 B228 Lup DN 15 45 −34  —  4° × 20′ ! an unknown wonder; opacity 6 
+57 5986 Lup GC 15 46.1 −37 47 7.6 10 200-mm resolves large core; CC VII 
+58 6025 TrA OC 16 3.6 −60 25 5.1 15 ! triangular, in three clumps 
+59 6067 Nor OC 16 13.2 −54 13 5.6 15 ! 100*; many pairs 
+60 6087 Nor OC 16 18.9 −57 54 5.4 15 ! 40*; embedded in Norma Star Cloud 
+61 6124 Sco OC 16 25.3 −40 40 5.8 40 100*; many trios around circumference 
+62 6231 Sco OC 16 54.2 −41 50 2.6 14 !! ζ, 6231, and Tr 24 form the False Comet 
+63 6242 Sco OC 16 55.5 −39 28 6.4 9 23*; good for small scopes 
+64 6259 Sco OC 17 0.7 −44 39 8 15 like a fainter M11; 120* 
+65 6281 Sco OC 17 4.8 −37 53 5.4 8 25*; shines in modest scopes 
+66 6302 Sco PN 17 13.7 −37 6 9.6 1.5 × 0.5 Bug Nebula; bright core; knots at tips 
+67 IC 4651 Ara OC 17 24.7 −49 55 6.9 10 ! loops and chains of 70 equal-mag. stars 
+68 6388 Sco GC 17 36.3 −44 44 6.8 10 450-mm scope resolves faint stars; CC III 
+69 6397 Ara GC 17 40.7 −53 40 5.3 31 !! easily resolved 10th-mag. stars; CC IX 
+70 6541 CrA GC 18 8 −43 42 6.3 15 ! huge outer halo; CC III 
+71 6723 Sgr GC 18 59.6 −36 38 6.8 13 ! CC VII; part of fine complex below 
+72 6726–7 CrA RN 19 1.7 −36 54 — 9 × 7 ! 7th-mag. stars involvedC 
+73 6752 Pav GC 19 10.9 −59 59 5.3 29 !! easily resolved 11th-mag. stars; CC VID 
+74 7582 Gru G-SBb 23 18.4 −42 22 10.2 4 × 1 brightest member of Grus Quartet 

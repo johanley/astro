@@ -1,0 +1,112 @@
+WMTS is like WMS. 
+WMTS is an optimization, to speed up returning images.
+The images are pre-generated in standard 'tiles', without customization of bounding-boxes.
+The client requests one tile at a time, for each layer. 
+So, clients are slower, but servers are faster.
+
+WMTS spec:  
+OGC Open Geospatial Consortium, 2010
+http://www.opengeospatial.org/standards/wmts
+http://portal.opengeospatial.org/files/?artifact_id=35326
+
+  tile matrix: collection of tiles for a fixed scale (row and column)
+    scale-denominator: with respect to pixel size of 0.28mm (larger means coarser resolution)
+    matrixWidth, matrixHeight: num-rows and columns (tile index is 0-based)
+    tileCol, tileRow: 0-based tile indexes 
+    tileHeight, tileWidth: height-width of each tile in pixels
+    top-left: CRS coords of top-left pixel, min x, max y (CRS origin at bottom left!)
+       CRS is a real-world coordinate of some sort?? meters?? projections??
+    tileSpanX,Y: the length of the side of a tile (meters)
+    tileMatrixMinX,MaxY: the top left corner in CRS coords (meters)
+    tileMatrixMaxX,MinY: the bottom right corner in CRS coords (meters)
+    cell size: 'pixel size in terrain units'
+
+  tile matrix set: n * tile matrix  * m * styles * p * formats
+  
+  usually server set up: one tile matrix set, and N layers
+  
+  'well-known scale sets': shared by many servers, such that clients can more 
+  easily aggregate tiles from multiple servers.
+  google maps scale set:
+    zoom 0: 1 tile, 256*256 pixels, whole world
+    zoom 1: 2*2 tiles, 256*256
+    ... and so on...
+  
+  
+  convert bbox to tile indices that cover the bbox: appendix H in the spec
+  http://www.opengeospatial.org/standards/wmts
+          
+  bounding-box deduced from other params
+  get-capabilities, get-tile, get-feature-info
+  bounding-boxes and scales are constrained!
+
+Projection used by open street map: EPS:3857
+https://en.wikipedia.org/wiki/Web_Mercator
+Cuts off the poles around 85 deg lat.
+Meridians are equally spaced everywhere, but the parallels of latitude stretch out away from the equator.
+
+Task:
+ position > bounding box > desired tiles needed > tile assembly
+ do for two layers: basic map + radar data
+ 
+
+Met Office in the UK:
+ OpenLayers (js) + WMTS (server)?
+
+http://www.metoffice.gov.uk/datapoint/support/documentation/inspire-layers-detailed-documentation
+  They use special projections. EPS:4258 seems to be the default.
+  BUT this pages say they use google-mercator for rainfall: http://www.metoffice.gov.uk/datapoint/product/rainfall-radar-map-layer
+  Radar capabilities
+    http://datapoint.metoffice.gov.uk/public/data/inspire/view/wmts?REQUEST=getcapabilities&key=c8258e8b-bf20-45ed-8e95-ca0d76682419
+    KVP encoding
+    EPS:4326, to various scales
+  
+http://datapoint.metoffice.gov.uk/public/data/inspire/view/wmts?REQUEST=gettile&LAYER=RADAR_UK_Composite_Highres&FORMAT=image/png&TILEMATRIXSET=EPSG:4258&TILEMATRIX=EPSG:4258:0&TILEROW=0&TILECOL=0&DIM_TIME=2013-11-20T11:15:00Z&STYLE=Bitmap%201km%20Blue-Pale%20blue%20gradient%200.01%20to%2032mm%2Fhr&key=c8258e8b-bf20-45ed-8e95-ca0d76682419
+  protocol: kvp, soap, (procedural) rest (resource)
+http://dev.openlayers.org/docs/files/OpenLayers/Layer/WMTS-js.html
+layer
+proj
+zoom-level
+tile-row
+tile-col
+time
+style
+
+Open Layers
+Access a WMTS via js:
+https://openlayers.org/en/latest/examples/wmts.html
+ needs: html5 and ecmascript5; IE 9 and Android 4.x need polyfills
+ renderers: canvas, webgl, and dom; canvas most widely supported
+ need a div or other block-level element as a top-level container for the map; 
+   the div can of course be styled
+ the code needs to be run after the doc is loaded
+    place at end, or detect the onload event
+ default proj: Web Mercator projection (EPSG:3857)
+ projection: any
+ default WMS version is 1.3.0
+ ol.source.XYZ - you can consider X and Y to indicate the column and row of the grid and Z to represent the zoom level.
+ 'feature' - something flagged on the ground
+    'interaction': event handling for a feature
+it's a big library; you have the option of creating a custom build, to reduce js size; uses a Closure Compiler, that 
+runs on the JRE.
+  uses meters as its coords, not degrees!
+  convert lat-long to meters: 
+     https://openlayers.org/en/latest/doc/faq.html#why-is-my-map-centered-on-the-gulf-of-guinea-or-africa-the-ocean-null-island-
+     long before lat! 
+  same as OpenStreetMap
+map
+ layers[]  (tile|image|vector)
+   tile
+     opacity
+     source    -- eg OpenStreetMap, Bing, WMTS
+       url
+       layer   -- (tile|image|vector); vector data is rendered client side
+       matrixSet
+       projection
+       tileGrid
+   target (div)
+   controls
+   view
+     center  -- what exactly are these numbers?
+     zoom
+     default proj     

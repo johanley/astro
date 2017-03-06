@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='en'> 
+ <head> 
+  <title>Stub Web App 3.1</title> 
+ </head>
+ <body>
+  <P>This is an skeleton web app, using the Servlet 3.1 specification. 
+  
+  <P>Tools used:
+  <ul>
+   <li><a href='http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html'>JDK 7.0</a>: javac, java, javadoc
+   <li><a href='https://java.net/downloads/servlet-spec/Final/servlet-3_1-final.pdf'>Servlet Spec 3.1</a> (May 2013)
+   <li><a href='http://tomcat.apache.org/whichversion.html'>Tomcat 8.0</a>
+   <li><a href='http://download.oracle.com/otn-pub/jcp/jsp-2_3-mrel2-eval-spec/JSP2.3MR.pdf?AuthParam=1479597035_ce9a9353f38f0209bf22e23d50e2469b'>JSP 2.3</a>
+   <li>EL 3.1 (expression language ${blah}, etc., part of JSP)
+   <li><a href='http://stackoverflow.com/questions/4928271/how-to-install-jstl-the-absolute-uri-http-java-sun-com-jstl-core-cannot-be-r'>JSTL 1.2</a> taglibs (c, fmt, fn).
+   This jar is not included in Tomcat, so it's placed in this app's lib directory. 
+   It works on Servlet 2.4+. 
+   (Some might choose to put this jar in a shared folder in the server, to make it visible to all apps. 
+   Careful: that will work only in the absence of a version conflict between apps.) 
+   This jar is needed only at runtime, so you should not add it to the project's classpath. 
+   <li>UTF-8 encoding: all content is encoded as UTF-8, including Java files.
+   <li>JDK logging
+  </ul>
+  
+  <P>To do:
+  <ul>
+   <li>add an optional title param to the head tag
+   <li>add a tag for navigation back home, and also an H2 with the app name in it, at the top
+   <li>SqlFileReader class; similar: map this+name to a jsp
+   <li>form: list N objects; delete one at a time
+   <li>form: add an item; parse into a model object; store the model in a dao
+   <li>form: edit an existing object from the database, and save the changes
+   <li>file upload: post, save to somehere? output the size, type, name. add 'multipart-config' to the web.xml.
+   There are actually two defined APIs defined in 3.2, a good way (Collection of Parts) and a bad way (InputStream).
+   Part has mime-type, headers, and an InputStream. Content-disposition='form-data' means its regular form data, not a file.
+   So, you can mix form upload controls with regular controls. 
+   <li>filter example: performance monitor
+   <li>init-param?
+   <li>the running app should link to its own javadoc, with source code links
+   <li>a bit of javascript?
+   <li>Ant, build.xml for basic scripting needs
+   <li>app-reload, app-stop-start, app-redepoly, server-restart
+   <li>Tomcat config: reloadable, hot swap, watched resources, jrebel
+   <li>login with persistence of the session
+   <li>url treatment, forward-redirect
+   <li>session survival, and serializable objects
+   <li>review the spec for 3.1 and 3.0; File Uploading, async servlets (perf opt), programmatic login/logout.
+   <li>annotations: does the web.xml override the code? its a merge of sorts.
+   <li>annotations: slower startup, needs to scan 'web.app.metadata-complete' setting in web.xml. 
+   <li>annotations:  "The order can be specified in the deployment descriptor only." [8.1] likely applies to filters too.  
+   <li>annotations: web.xml overrides.
+   <li>Subversion? Why?
+   <li>JUnit? To demo that the test can be in the same package as the target
+  </ul>
+  
+  <P>Files specific to Eclipse configuration are also included, as a convenience.
+  
+  <P>This file is meant to be referenced by the javadoc tool, and incorporated into javadoc output.
+  
+ </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en'>
+<head>
+ <meta charset='UTF-8'>
+ <meta name="keywords" content="astronomy">
+ <meta name="description" content="Star charts for amateur astronomers.">
+ <meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all">
+ <title>Star chart</title>
+</head>
+<body>
+<h2>Star chart <a href='../../index.html' class='home'>Home</a></h2>
+
+
+<P>
+ <form method='GET' action='star_chart_graphic.html' class='user-input-small' id='input_form'>
+  <table>
+    <tr><td>Date-time:<td><input type='text' name='date_time' title='Example: 2016-03-01 18:00. Leave empty to use the current date and time.' >
+    <tr><td>Time scale:<td><select name='time_scale'><option title='Local Time (defined by your browser)' value='LT'>Local Time<option title='Universal Time (UT1, to be precise)' value='UT'>Universal Time<option title='Terrestrial Time (fundamental physics time)' value='TT'>Terrestrial Time</select>
+     <tr><td>Location:<td><input type='text' name='location_name' value='Ottawa' title='Name of your observing site'>
+     <tr><td>Latitude:<td><input type='text' name='latitude' value='45.403' title='Latitude in degrees'> 
+     <tr><td>Longitude:<td><input type='text' name='longitude' value='-75.664' title='Longitude in degrees. Negative west of Greenwich'>
+     <tr><td>Limiting Visual Mag:<td><input type='text' name='limiting_mag' value='5.1' title='Higher number means show dimmer stars'>
+     <tr><td>Limiting Mag Messiers:<td><input type='text' name='limiting_mag_messiers' value='11.0'>
+     <tr><td>Center on object:<td><input type='text' name='center_object' title='Name of the object. Overrides RA, Dec setting.'>
+     <tr><td>Center RA on:<td><input type='text' name='center_ra' title='Right ascension in degrees' value='85' >
+     <tr><td>Center Dec on:<td><input type='text' name='center_dec' title='Declination in degrees' value='0' >
+     <tr><td>Chart width (degrees):<td><input type='text' name='chart_width' value='30'>
+     <tr><td>Include Bayer number:<td><input type='checkbox' name='include_bayer' value='1' checked>
+     
+     <tr><td colspan='2' style="text-align:center">
+      <input type='submit' value='Show the star chart'>
+  </table>
+ </form>
+
+<ol>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=10&center_dec=15&chart_width=47'>Psc</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=35&center_dec=20&chart_width=45'>Ari</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=70&center_dec=15&chart_width=45'>Tau</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=105&center_dec=20&chart_width=45'>Gem</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=130&center_dec=20&chart_width=30'>Cnc</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=161&center_dec=15&chart_width=45'>Leo</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=198&center_dec=0&chart_width=50'>Vir</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=12.0&limiting_mag_messiers=15.0&center_object=&center_ra=187&center_dec=14&chart_width=10'>Galaxies CVn</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=230&center_dec=-17&chart_width=35'>Lib</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=251&center_dec=-30&chart_width=30'>Sco</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=277&center_dec=-25&chart_width=30'>Sgr</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=315&center_dec=-20&chart_width=30'>Cap</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=335&center_dec=-10&chart_width=50'>Aqr</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=0&center_dec=90&chart_width=30'>UMi</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=15&center_dec=60&chart_width=30'>Cas</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=330&center_dec=67&chart_width=30'>Cep</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=270&center_dec=67&chart_width=50'>Dra</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=60&center_dec=67&chart_width=30'>Cam</a>
+ <li><a href='http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=5.0&limiting_mag_messiers=11.0&center_object=&center_ra=180&center_dec=55&chart_width=60'>UMa</a>
+ <li><a href=''></a>
+</ol>
+</body>
+</html>

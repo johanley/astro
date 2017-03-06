@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang='en'>
+<head>
+ <meta charset='UTF-8'>
+ <meta name="keywords" content="astronomy">
+ <meta name="description" content="Extract constellation polylines.">
+ <meta name="viewport" content="width=device-width">
+ <link rel="stylesheet" type="text/css" href="../../css/stylesheet2.css" media="all">
+ <title>Constellation polylines</title>
+</head>
+<body>
+<h2>Constellation polylines <a href='../../index.html' class='home'>Home</a></h2>
+<P>
+ <form method='GET' action='constellation_graphic.html' class='user-input-small' id='input_form'>
+  <table>
+    <tr><td>Constellation abbr:<td><input type='text' name='constellation_abbr'>
+    <tr><td>Stars (Bayer as 'alp, bet1' etc., or Flamsteed num):<td><textarea name='star_designations' size='50' rows='10' cols='80'></textarea>
+     <tr><td colspan='2' style="text-align:center">
+      <input type='submit' value='List Constellation Stars'>
+  </table>
+ </form>
+ 
+ No commas between stars.
+ One row per polyline.
+
+</body>
+</html>

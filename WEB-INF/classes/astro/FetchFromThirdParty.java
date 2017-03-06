@@ -1,0 +1,267 @@
+package astro;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.Writer;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.UUID;
+import java.util.logging.Logger;
+
+import javax.imageio.ImageIO;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import astro.util.LoggingConfigImpl;
+import astro.util.Util;
+
+/**
+<P>This server exists for one reason: getting around CORS (cross-origin) issues in javascript.
+The client is not, by default, allowed to access content from third-party servers.
+The workaround here is to fetch content on the client's behalf.
+
+<P>Currently, these types of files are supported:
+<ul> 
+ <li>.png (the default)
+ <li>.xml (rss feeds)
+</ul>
+Adding support for other file types, if ever needed, should be easy.
+
+<P>Example URLs:
+<pre>
+localhost:8081/playtime/fetch/?url=http://bazoodi.com/&ext=png
+localhost:8081/playtime/fetch/?url=http://weather.gc.ca/rss/city/on-118_e.xml&ext=xml
+localhost:8081/playtime/fetch/?radarStation=XFT
+playtime.ca/fetch/?url=http://weather.gc.ca/rss/city/on-118_e.xml&ext=xml
+</pre>
+*/
+public final class FetchFromThirdParty  extends HttpServlet {
+  
+  public static final String ENCODING = "UTF-8";  
+  
+  /** Initialize logging. */
+  @Override public void init(ServletConfig aConfig) throws ServletException {
+    super.init(aConfig);
+    LoggingConfigImpl loggingConfig = new LoggingConfigImpl();
+    loggingConfig.setup(aConfig);
+    fLogger.config("Starting fetcher servlet.");
+  }
+  
+  /** 
+   Return a resource (image or text) from the web, from a third-party's server.
+   Only GET operations are supported.
+  */
+  @Override protected void doGet(HttpServletRequest aRequest, HttpServletResponse aResponse) throws ServletException, IOException {
+    if (isBadRequest(aRequest)){
+      sendFailedResponse("Request too large.", aRequest, aResponse);
+    }
+    else {
+      //String url = aRequest.getQueryString().substring("url=".length());
+      String url = aRequest.getParameter("url");
+      String radarStation = aRequest.getParameter("radarStation");
+      if (Util.textHasContent(url)){
+        String extension = aRequest.getParameter("ext");
+        if (extension == null || extension.equals("")){
+          extension = PNG;
+        }
+        fetchFromThirdParty(url, extension, aRequest, aResponse);
+      }
+      else if (Util.textHasContent(radarStation)){
+        returnUrlOfMostRecentRadarImage(radarStation, aResponse);
+      }
+    }
+  }
+  
+  //PRIVATE
+  private static final Logger fLogger = Util.getLogger(FetchFromThirdParty.class);
+  private static final String PNG = "png";
+  private static final String XML = "xml";
+  private static final String TXT = "txt";
+  private static final Integer NUM_RADAR_IMAGES = 3;
+ 
+  private void fetchFromThirdParty(String aURL, String extension, HttpServletRequest aRequest, HttpServletResponse aResponse) throws ServletException, IOException {
+    fLogger.info("Fetching URL: " + aURL);
+    File file = buildOutputFile(aURL, extension);
+    //fLogger.fine("Temp file name: " + file.getName());
+    String mimeType = "";
+    if (PNG.equals(extension)){
+      //fLogger.fine("Fetching image from web."); 
+      BufferedImage image = fetchImage(aURL);
+      saveAsTempFile(image, file);
+      //fLogger.fine("Serving as image file.");
+      mimeType = "image/png";
+    }
+    else if (XML.equals(extension)){
+      String text = fetchText(aURL, ENCODING);
+      saveAsTempFile(text, file, ENCODING);
+      //fLogger.fine("Serving as a text file."); 
+      mimeType = "text/xml";
+    }
+    else if (TXT.equals(extension)){
+      String text = fetchText(aURL, ENCODING);
+      saveAsTempFile(text, file, ENCODING);
+      //fLogger.fine("Serving as a text file."); 
+      mimeType = "text/plain";
+    }
+    serveFile(file, aRequest, aResponse, mimeType);
+    //fLogger.fine("Deleting temporary file."); 
+    deleteTempFile(file);
+  }
+  
+  /** Return null if a problem occurs. */
+  private BufferedImage fetchImage(String aURL) {
+    BufferedImage result = null;
+    try {
+      //fLogger.info("Formats known to the currently registered readers: " + Arrays.asList(ImageIO.getReaderFormatNames()));
+      //fLogger.info("Trying to fetch image. URL: " + aURL);
+      URL url = new URL(aURL);
+      result = ImageIO.read(url);
+      //fLogger.info("Result: "  + result);
+    } 
+    catch (IOException e) {
+      fLogger.severe("Failed to fetch. " + e.getClass().getCanonicalName() + " " + e.getMessage());
+      e.printStackTrace();
+    }
+    return result;
+  }
+  
+  /** Return null if a problem occurs. */
+  private String fetchText(String aURL, String aEncoding) {
+    WebPageFetcher fetcher = new WebPageFetcher();
+    return fetcher.fetch(aURL, aEncoding);
+  }
+  
+  /** 
+   Temp output file in the servlet's temp dir. 
+   Build a nonce name, unique to the host.
+   Assumes a WMS server-style URL.
+   Currently, only .png files are supported (easy to extend).
+  */ 
+  private File buildOutputFile(String url, String extension){
+    String name = "";
+    UUID nonce = UUID.randomUUID(); //eg '067e6162-3b6f-4ae2-a171-2470b63dff00'
+    name = name + nonce.toString();
+    name = name + "." + extension;
+    File tempDir = (File)getServletContext().getAttribute("javax.servlet.context.tempDir");
+    File result = new File(tempDir, name);
+    return result;
+  }
+
+  /** Uses the built-in temp directory defined by the servlet spec. */
+  private void saveAsTempFile(BufferedImage image, File outputfile){
+    try {
+      ImageIO.write(image, "png", outputfile);
+    } 
+    catch (IOException e) {
+      fLogger.severe("Unable to save image to file: " + e + " " + e.getMessage());
+    }    
+  }
+  
+  /** Uses the built-in temp directory defined by the servlet spec. */
+  private void saveAsTempFile(String text, File outputFile, String encoding){
+    Writer out = null;
+    try {
+      try {
+        out = new OutputStreamWriter(new FileOutputStream(outputFile), encoding);
+        out.write(text);
+      }
+      finally {
+        if (out != null) out.close();
+      }    
+    }
+    catch (IOException e) {
+      e.printStackTrace();
+    } 
+  }
+
+  private void serveFile(File file, HttpServletRequest aRequest, HttpServletResponse aResponse, String mimeType) throws IOException {
+    aResponse.setContentType(mimeType);
+    InputStream input = null;
+    try {
+      ServletOutputStream output = aResponse.getOutputStream();
+      input = new FileInputStream(file);
+      //transfer input stream to output stream, via a buffer
+      byte[] buffer = new byte[2048];
+      int bytesRead;    
+      while ((bytesRead = input.read(buffer)) != -1) {
+         output.write(buffer, 0, bytesRead);
+      }
+    }
+    catch(IOException ex){
+      fLogger.severe("Unable to serve file: " + file);
+    }
+    finally {
+      if (input != null) input.close();
+    }
+  }
+  
+  private void deleteTempFile(File file){
+    file.delete();
+  }
+  
+  private boolean isBadRequest(HttpServletRequest aRequest){
+    return (aRequest.getContentLength() > 50*1024); 
+  }
+ 
+  private void sendFailedResponse(String aText, HttpServletRequest aRequest, HttpServletResponse aResponse){
+    sendErrorResponse(aText, 500, aRequest, aResponse);
+  }
+  
+  /** Send data to the client as text. Does not use HTML. Headers are added here. */
+  private void sendErrorResponse(String aText, int aStatus, HttpServletRequest aRequest, HttpServletResponse aResponse){
+    try {
+      aResponse.setStatus(aStatus);
+      //fLogger.fine("Sending response in uncompressed form, as UTF-8. Length: " + aText.length());
+      String utf8Text = new String(aText.getBytes(), ENCODING);
+      aResponse.setCharacterEncoding("UTF-8");
+      aResponse.setContentLength(utf8Text.getBytes().length); 
+      aResponse.setContentType("application/text");
+      PrintWriter out = aResponse.getWriter();
+      out.append(utf8Text);
+    } 
+    catch (IOException ex) {
+      //in practice this won't happen - better handling???
+      ex.printStackTrace();
+    }
+  }
+
+  private void returnUrlOfMostRecentRadarImage(String radarStation, HttpServletResponse response){
+    RadarImageUrls radarUrls = new RadarImageUrls(radarStation, NUM_RADAR_IMAGES);
+    Radar radar = new Radar(NUM_RADAR_IMAGES);
+    String json = radar.returnJsonMostRecentRadarImages(radarStation);
+    serveAsJson(json, response);
+  }
+  
+  private void redirectTo(String url, HttpServletResponse response){
+    try {
+      response.sendRedirect(url);
+    } 
+    catch (IOException e) {
+      //this should never happen
+      e.printStackTrace();
+    }
+  }
+  
+  private void serveAsJson(String jsonText, HttpServletResponse response){
+    //fLogger.fine("Sending json response: " + jsonText);
+    response.setContentType("application/json");
+    try {
+      response.getOutputStream().print(jsonText);
+    }
+    catch(IOException ex){
+      
+      fLogger.severe("Unable to serve json: " + jsonText);
+    }
+  }
+}
+ 

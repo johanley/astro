@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <!-- Android 4.x and old IE need polyfills before the main js: -->    
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script>
+    
+    <title>OpenLayers 3 example</title>
+  </head>
+  
+  <body>
+    <h2>My Map</h2>
+    
+    
+    <div id="map" class="map"></div>
+    
+    <script>
+      var map = new ol.Map({
+        target: 'map',    // the div above
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()   //OpenStreetMap
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-75.66, 45.40]),  //longitude first!
+          zoom: 12
+        })
+      });
+    </script>
+  </body>
+  
+</html>

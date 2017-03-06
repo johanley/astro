@@ -1,0 +1,45 @@
+# Source: http://astropixels.com/caldwell/caldwellcat.html  below -35 deg decl only
+# I manually entered separators. Be careful: Eclipse may auto-convert tabs to spaces!!
+# Id,NCG etc,Type,Mag,Size,Distance,Ra,Dec,Constellation,Season,Common Name,Link(Wikipediea)
+68,6729,Bn,9.7,1.0,424,19 01.9,-36 57,CrA,summer,,NGC_6729
+69,6302,Pl,12.8,0.8,5200,17 13.7,-37 06,Sco,summer,Bug Nebula,NGC_6302
+70,300,Sp,8.1,20x13,3900000,00 54.9,-37 41,Scl,autumn,,NGC_300
+71,2477,Oc,5.8,27,3700,07 52.3,-38 33,Pup,winter,,NGC_2477
+72,55,Sb,8.2,32x6,4200000,00 14.9,-39 11,Scl,autumn,,NGC_55
+73,1851,Gc ,7.3,11,39400,05 14.1,-40 03,Col,winter,,NGC_1851
+74,3132,Pl,8.2,0.8,2000,10 07.7,-40 26,Vel,spring,Eight Burst Nebula,NGC_3132
+75,6124,Oc,5.8,29,1500,16 25.6,-40 40,Sco,summer,,NGC_6124
+76,6231,Oc,2.6,15,6000,16 54.0,-41 48,Sco,summer,,NGC_6231
+77,5128,Px,7.0,18x14,16 million,13 25.5,-43 01,Cen,spring,Centaurus A,Centaurus_A
+78,6541,Gc,6.6,13,22300,18 08.0,-43 42,CrA,summer,,NGC_6541
+79,3201,Gc,6.7,18,17000,10 17.6,-46 25,Vel,spring,,NGC_3201
+80,5139,Gc,3.6,36,17300,13 26.8,-47 29,Cen,spring,Omega Centauri,Omega_Centauri
+81,6352,Gc,8.1,7,18600,17 25.5,-48 25,Ara,summer,,NGC_6352
+82,6193,Oc,5.2,15,4300,16 41.3,-48 46,Ara,summer,,NGC_6193
+83,4945,Sp,9.5,20x4,17 million,13 05.4,-49 28,Cen,spring,,NGC_4945
+84,5286,Gc,7.6,9,36000,13 46.4,-51 22,Cen,spring,,NGC_5286
+85,IC 2391,Oc,2.5,50,500,08 40.2,-53 04,Vel,winter,Omicron Vel Cluster,IC_2391
+86,6397,Gc,5.6,26,7500,17 40.7,-53 40,Ara,summer,,NGC_6397
+87,1261,Gc,8.4,7,55500,03 12.3,-55 13,Hor,winter,,NGC_1261
+88,5823,Oc,7.9,10,3400,15 05.7,-55 36,Cir,summer,,NGC_5823
+89,6087,Oc,5.4,12,3300,16 18.9,-57 54,Nor,summer,S Norma Cluster,NGC_6087
+90,2867,Pl,9.7,0.2,5500,09 21.4,-58 19,Car,spring,,NGC_2867
+91,3532,Oc,3.0,55,1600,11 06.4,-58 40,Car,spring,,NGC_3532
+92,3372,Bn,6.2,120x120,7500,10 43.8,-59 52,Car,spring,Eta Carinae Nebula,Carina_Nebula
+93,6752,Gc,5.4,20,13000,19 10.9,-59 59,Pav,summer,,NGC_6752
+94,4755,Oc,4.2,10,4900,12 53.6,-60 20,Cru,spring,,Jewel Box,Jewel_Box_(star_cluster)
+95,6025,Oc,5.1,12,2500,16 03.7,-60 30,TrA,summer,,NGC_6025
+96,2516,Oc,3.8,30,1300,07 58.3,-60 52,Car,winter,,NGC_2516 
+97,3766,Oc,5.3,12,5800,11 36.1,-61 37,Cen,spring,,NGC_3766
+98,4609,Oc,6.9,5,4200,12 42.3,-62 58,Cru,spring,,NGC_4609
+99,-,Dn,,400x300,610,12 53.0,-63 00,Cru,spring,Coalsack Nebula,Coalsack_Nebula
+100,IC 2944,Oc,4.5,15,6000,11 36.6,-63 02,Cen,spring,Lambda Centauri Nebula,IC_2944
+101,6744,Sb,9.0,16x10,34 million,19 09.8,-63 51,Pav,summer,,NGC_6744
+102,IC 2602,Oc,1.9,50,492,10 43.2,-64 24,Car,spring,Theta Car Cluster,IC_2602
+103,2070,Bn,1.0,40x25,170000,05 38.7,-69 06,Dor,winter,Tarantula Nebula,Tarantula_Nebula
+104,362,Gc,6.6,13,27700,01 03.2,-70 51,Tuc,autumn,,NGC_362
+105,4833,Gc,7.3,14,19600,12 59.6,-70 53,Mus,spring,,NGC_4833
+106,104,Gc,4.0,31,14700,00 24.1,-72 05,Tuc,autumn,47 Tucanae,47_Tucanae
+107,6101,Gc,9.3,11,49900,16 25.8,-72 12,Aps,summer,,NGC_6101
+108,4372,Gc,7.8,19,18900,12 25.8,-72 40,Mus,spring,,NGC_4372
+109,3195,Pl,11.6,40x35,5400,10 09.5,-80 52,Cha,spring,,NGC_3195

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Configuration of the web app. Deployment descriptor. -->
+
+<!-- 
+This preamble in the 'web-app' part below changes for each version of the servlet spec.  
+Since Tomcat has its own conf/web.xml file, you can always copy it from there.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd"
+    version="2.5">
+>
+    
+  <description>Astronomy Tonight</description>
+  <display-name>Astronomy Tonight</display-name>
+  
+  <!-- 1 web app = 1 context = N servlets -->
+  <context-param>
+   <!-- This lets you refer to the app name in JSPs, without hard-coding the name everywhere. -->
+   <!-- Use '${initParam.appName}' to refer to this data in a JSP. -->
+   <param-name>appName</param-name>
+   <param-value>Astronomy Tonight</param-value>
+  </context-param>
+  
+  <context-param>
+   <param-name>lastUpdatedOn</param-name>
+   <param-value>2017-03-04</param-value>
+  </context-param>
+
+  <!-- Update on every new deploy to prod. -->
+  <!-- CSS and JS: Avoid problems with hitting the browser cache after a new deployment. (Pat Heard's technique.) -->  
+  <!-- Append this number to file names in markup, eg 'styles.css?ver=1' or 'code.js?ver=1'. Update the ver value for each new deployment. -->  
+  <context-param>
+   <param-name>ver</param-name>
+   <param-value>2</param-value>
+  </context-param>
+
+  <context-param>
+   <param-name>analyticsOn</param-name>
+   <param-value>false</param-value>
+  </context-param>
+  
+  <context-param>
+   <!-- This is an API key that John O'Hanley acquired from the UK Met Office (Datapoint). --> 
+   <!-- Such things are meant to be kept secret. --> 
+   <param-name>metOfficeApiKey</param-name>
+   <param-value>register with Datapoint, and put your key here</param-value>
+  </context-param>
+  
+  <context-param>
+   <param-name>isDev</param-name>
+   <param-value>false</param-value>
+  </context-param>
+  
+  <!-- IMPORTANT: an app can have N servlets. -->
+  
+  <servlet>
+    <description>Workaround for sites that don't support CORS: such sites don't allow this app's javascript to fetch data from them.</description>
+    <servlet-name>FetchFromThirdParty</servlet-name>
+    <servlet-class>astro.FetchFromThirdParty</servlet-class>
+    <init-param>
+      <description>
+        Location for logging file. Uses JDK logging.  
+        MUST END WITH a directory separator.
+        Example :'C:\log\playtime\'.
+      </description>
+      <param-name>LoggingDirectory</param-name>
+      <param-value>/home/webjcom/web4j.com/logs/astronomytonight/</param-value>
+    </init-param>
+    <init-param>
+      <description>
+       Logging levels for various loggers. 
+      </description>
+      <param-name>LoggingLevels</param-name>
+      <param-value>astro.level=FINEST</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup> <!-- forces the container to init the servlet when the app starts; the integer controls order -->
+  </servlet>
+  
+  <servlet>
+    <description>Using a servlet to serve simple items (html, jsp) is future-friendly, since it lets the impl change with no change in URL</description>
+    <servlet-name>HideImpl</servlet-name>
+    <servlet-class>astro.HideImpl</servlet-class>
+    <load-on-startup>2</load-on-startup> 
+  </servlet>
+  
+  <!-- 
+   Servlet mappings come in various styles. 
+   Precedence: 
+     1. path (url), longest match wins 
+     2. 'extension', such as *.do 
+     3. the default servlet of the container (mapped to '/') 
+   Tomcat has two built-in servlets, mapped to *.jsp, and '/'. 
+   You shouldn't override those built-in mappings.
+  --> 
+
+  <servlet-mapping>
+    <servlet-name>FetchFromThirdParty</servlet-name>
+    <url-pattern>/fetch/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>HideImpl</servlet-name>
+    <url-pattern>*.sky</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+    <session-timeout>15</session-timeout> <!-- minutes -->
+  </session-config>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 
+    Tomcat has many mime-mapping entries in its web.xml.
+    You shouldn't repeat them here.
+    In general, Tomcat's web.xml config is amalgamated with this file.  
+  --> 
+  
+  <!-- See JSP 2.1 spec for details. --> 
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <page-encoding>UTF-8</page-encoding>          
+      <!-- Include at the top of every *.jsp file -->
+      <include-prelude>/WEB-INF/JspHeader.jspf</include-prelude> 
+      <!-- Remove annoying blank lines in JSPs (include a similar directive in TagHeader.jspf) -->
+      <trim-directive-whitespaces>true</trim-directive-whitespaces> 
+    </jsp-property-group>
+    <!-- Pointers to tag library descriptor files. -->
+    <taglib>
+      <!-- Custom tag library, part of this app. -->
+      <taglib-uri>/stub</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/stub.tld</taglib-location> 
+    </taglib>
+    <!-- JSTL: standard tag libraries. Just point to these files. You never change their content. -->
+    <taglib>
+      <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/fmt.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>http://java.sun.com/jsp/jstl/functions</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/fn.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+
+</web-app>  

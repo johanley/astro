@@ -1,0 +1,206 @@
+Rough notes about what is left to do.
+--------------------------------------------------------------------------------------
+
+BUG use-current-location fails on my android tablet
+  charts, satellite: add finger events for dragging to a new center
+  
+BUG: canvas rendering on Apple screens is poor, especially the text
+  detect-retina and double the scale
+    https://coderwall.com/p/vmkk6a/how-to-make-the-canvas-not-look-like-crap-on-retina
+  
+BUG the time zone issue; how to offset the time by x minutes; attach an offset to the location? 
+   what about change of offset?
+  
+  // BUG weird rendering of planet symbols on samsung devices, others; coloured backgrounds
+  // ask stackoverflow?
+  
+  // BUG UK weather radar not accessible; probs with both open layers and leaflet
+  
+  // BUG poor rendering of curves drawn on the canvas, esp on smaller devices
+  
+  // BUG the planisphere can only be drawn if sun-moon-planets are selected? time controls?
+  
+  // BUG: use 'number' type in form input?
+  
+  // BUG: the code that prepops forms from URL params does no escaping when injecting data into the DOM
+  
+  // is the css liquid layout ok, or does it need to be improved? some displays are crappy
+  
+  // UK weather: link in caption?
+  // translate codes into text; make sure French translations are in place too?
+  
+  // observation window: put a wee little dot to indicate the current time
+  
+  // can some world-weather api give me all other countries, current conditions and forecast? eg for Africa?
+  //  http://openweathermap.org/api ? not the greatest in terms of timeliness
+  
+  // Meteosat: needs CORS access; they are planning to add it (email 2016-12-27)
+  
+  // principal new features: 
+  //   horizon views (ecliptic, twilight for the given window, sensitive to Sun's azimuth), 
+  //   physical views of the Sun and planets 
+  //   three.js rendering of the planisphere 
+    
+  // UK weather data
+  //   http://www.metoffice.gov.uk/datapoint
+  //   Need to include this in my UK MetOffice credit: "Contains public sector information licensed under the Open Government Licence"
+  // Example URL
+  //   http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/xml/3840?res=3hourly&key=YOUR_KEY_GOES_HERE
+  //   http://datapoint.metoffice.gov.uk/public/data/....  is the preamble
+  // Forecast: 3-hours (out to 5d hence) or daily, 5000 locations, json or xml.
+  // All daily forecasts for location x:
+  //  http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/[LocationID]?res=daily&key=[API key]
+  // JSON response: http://www.metoffice.gov.uk/datapoint/product/uk-daily-site-specific-forecast/detailed-documentation
+  // 5000 sites: http://www.metoffice.gov.uk/datapoint/support/documentation/uk-locations-site-list-detailed-documentation
+  // Problem: the user can't infer the site id, as they can in Canada.
+  //
+  // Hourly Observations are for 140 places, not 5000!  http://www.metoffice.gov.uk/datapoint/product/uk-hourly-site-specific-observations
+  // List of places: http://www.metoffice.gov.uk/datapoint/support/documentation/uk-observations-site-list-detailed-documentation
+  // I NEED TO USE THESE 140 PLACES, NOT THE 5000!
+  //
+  // Radar for the UK????
+  //   the url is not obvious: http://www.metoffice.gov.uk/public/weather/observation/rainfall-radar#?map=Rainfall&fcTime=1482579000&zoom=5&lon=-4.00&lat=55.01
+  //   OpenLayers tiles: https://openlayers.org/en/latest/examples/wms-tiled.html
+  //      Can use js in the browser, to do the same thing, on my end
+    
+  //
+  //   all data sets: http://www.metoffice.gov.uk/datapoint/product/list
+  //   observations (140 places), forecasts (every 3 hours), tiled radar images (Web Map Tile service)   
+  // UK weather radar (18 stations) has url with lat-long, no station id required:
+  //    http://www.metoffice.gov.uk/public/weather/observation/rainfall-radar#?map=Rainfall&fcTime=1481436000&zoom=7&lon=-4.68&lat=56.49
+  //
+  // Eumetsat WMS Server ??? new experimental server !!??:
+  //    http://www.eumetsat.int/website/home/Images/EUMETView/index.html
+  //    WMS capabilities (Gaia tool) : http://eumetview.eumetsat.int/geoserver/wms
+  //     channels: 
+  //             msg_ir108  (meteosat second generation, geostationary)
+  //             msg_vis006
+  // Example URL (Gaia: Map layer, properties) 
+  //  http://eumetview.eumetsat.int/geoserv/wms?SERVICE=WMS&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=meteosat:msg_vis006&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG:4326&BBOX=-11.1523918226068,30.6418455813954,0.48155275283938,40.4508576744186&WIDTH=817&HEIGHT=860
+  // Meteosat: needs CORS access; they are planning to add it (email 2016-12-27)
+  //  NO CORS support!! The quality of this source is MUCH HIGHER than that of the MET Office.
+    http://eumetview.eumetsat.int/geoserv/wms?SERVICE=WMS&
+    REQUEST=GetMap&
+    SERVICE=WMS&
+    VERSION=1.1.1&
+    LAYERS=meteosat:msg_vis006&
+    STYLES=&
+    FORMAT=image/png&
+    BGCOLOR=0xFFFFFF&
+    TRANSPARENT=TRUE&
+    SRS=EPSG:4326&
+    BBOX=-11.1523918226068,30.6418455813954,0.48155275283938,40.4508576744186&
+    WIDTH=817&
+    HEIGHT=860
+  */
+                
+  //    http://www.eumetsat.int/website/home/Images/EUMETView/index.html
+  //    http://eumetview.eumetsat.int/mapviewer/
+  // France radar
+  //   https://donneespubliques.meteofrance.fr/?fond=rubrique&id_rubrique=27
+  //   http://www.meteo-bretagne.fr/observations-radar-pluie has this animation for brest:
+  //   http://www.meteo-bretagne.fr/radar/radar-anim.gif?6.9692077079366E+17
+  // Italy
+  //   http://www.meteo.it/radar/italia/nordovest/
+  //      img:  http://img2.meteo.it/forecastimg/radar/italia/NO-arpap_04.jpg 
+  
+  // there is some space for drawing in the corner's of the planisphere: libration?
+  
+  // planets: sun pos is needed for each planet pos; sun pos is imprecise.
+  // can I improve the Sun's precision?
+  // Earth-Moon barycentre: offset by 0.73*8.8 ~ 6 arcsec for the sun's pos
+  // I could account for that in an approximate way, using the Moons longitude; enough to get to ~1 arcsec precision
+  // This would mean special treatment for the Earth-Sun geometry, but that's OK.
+  
+  // make code.js more modular? especially the planisphere
+  
+  // amalgamate predictable items into the calendar? 
+  //    meteor shower peaks, occultations
+  //    that would make a LOT of sense
+  
+  // large tabular calendar? separate page?
+  
+  // 3d Moon, for libration
+  
+  // planisphere: drag to rotate about the zenith; finder chart: drag to change center (or arrows)
+  
+  // planisphere: 3d view, using three.js?
+  
+  // git: clean the code
+  //   document the thing - wait till I decide to use mean orbits or not
+  //   it really needs unit tests of some sort
+  
+  // rounding: ephem.js needs a way to round its 'when' objects: nearest second, minute, hour, day
+  //    the impl will need to use the odometer 
+  
+  // the large cloud form should be sensitive to the device's width + height
+  //    find out which is smaller, and use it as the square dimension
+  
+  // title of the page: add the location name, test with apostrophes
+  // the location name is always a request param; escape the special chars
+  
+  // translate:
+  //    diary: needs french trans for the descr (continual)
+  //    messiers: needs french trans for the comments (one-time only)
+  //    phenomena: generated from MICA
+  
+  // change planisphere projection to stereographic: more pleasing to the eye ?
+  
+  // planisphere -> details: popup, or new page
+  
+  // the link to the form should pre-pop the form with the existing settings, so that a user can tweak them
+  
+  // horizon - east +-45d, NE to SW, plate-carre
+  
+  // horizon - west, +-45d, NW to SW, plate-carre
+  
+  // saturn physical ephemeris; physical representation of all the planets; size, orientation of pole
+  // diagram, sun's physical ephem, rotational axis params
+    
+  // png for favicon.ico - star-shape?
+  
+  // percent of the time the skies are clear; day, night, hour, all; fetch the yearly data from 
+  // env canada, and parse in javascript; input weather station id, year.
+  
+  // alt-az: include flag? change to a click event? other?
+  
+  // open layers: amalgamate the map of light pollution produced by that French chap
+  /*
+  Past 24 hrs - chart of temperature, wind speed, 
+  
+  Transient phenomena: supernovas.
+  
+  All national meteorological orgs:
+    https://en.wikipedia.org/wiki/Servizio_Meteorologico
+    
+  Italy
+    http://www.meteoam.it/
+    forecast
+      html iframe snippets for maps
+      http://www.meteoam.it/page/widget-html-e-script-siti-web      
+   
+  France - Météo France
+    https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=98&id_rubrique=34  
+    has WMS, but no weather radar?
+    weather conditions in code, ascii form
+       https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32
+    
+  Japan - Japan Meteorological Agency
+    site map 
+     http://www.jma.go.jp/jma/en/quickinfo/quickinfo.html
+    radar 
+      http://www.jma.go.jp/en/radnowc/
+      as 1 png, guess the url's date time, seems to be every 10m
+    satellite: 'rapid scan' is every 2.5 min, zooms in on Japan
+      can I assume a projection? 
+      can I guess the time?
+      http://www.jma.go.jp/en/gms150jp/imgs/0/infrared/1/20170205023500-00.png
+        2017-02-05 11:35:00 Japan Standard Time (02:35 UTC)
+     weather conditions
+       images, separate for wind and temperature
+         http://www.jma.go.jp/en/amedas/201.html?elementCode=1 
+     weather forecast
+        images:
+        http://www.jma.go.jp/en/jikei/331.html
+                
+  Can I use that American GUI to infer the URLs worldwide?

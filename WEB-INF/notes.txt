@@ -1,0 +1,77 @@
+Design and impl notes.
+ 
+Design
+-------------------------------
+Advertising: not on this site. Ads are slow and ugly, and would represent a serious degradation of the site, for little benefit.
+UTF-8 encoding is used everywhere.
+The site is friendly to screens of different sizes. For smaller screens, landscape is best.
+Screens can be printed on a printer.
+Only a small number of pages on the site; 3 pairs of form + graphic items
+User language: English. I have partially (80%) translated the output of the main summary screen into French, for the Canadian users.
+How accurate are the positions? The goal is to have largest errors of about 2-3 arcsec, with errors usually quite a bit lower.
+However, not quite there yet: the planets are fine, but the bottleneck is that the position of the Sun/Earth
+is insufficiently precise.
+Google analytics is used. It's slow, and degrades the user's enjoyment of the site; there's a switch in web.xml to turn it on and off.
+ 
+Implementation
+---------------------------------
+95% js + 5% java
+Overall, the spirit of the implementation is:
+  keep it simple and minimal
+  don't make the user wait any more than they have to
+  javascript is amusing to code in, and is preferred over java
+  to keep costs down, we don't want to serve large amounts of data to the client (so, avoid serving images)
+jquery isn't used, but I have no strong objection to adding it, if it would have a measureable benefit.
+The days of extensive differences in browser implementations seem to be fading.
+So far I haven't used it, and I haven't found it to be a problem yet.
+relational database: none
+Number of unit tests: 0. It would be nice to have some unit  tests for the ephem.js functions.
+The app runs in a servlet container. (Tomcat 6?)
+ephem.js, a single file, holds all core astronomy calculations.
+Meant for 'today', not for 4000 B.C.
+Periodic manual updates to data are needed, to stay current. 
+  monthly: comets
+  yearly: orbits, occn's, events, YBS precession
+Each country's weather data is unique; it's hard to find easy-to-use data sources.
+  It's best if the third party data sources have servers that add a CORS header: this makes it easy to access the data using javascript.
+  As a workaround, my server is set up to act as a go-between between the app's js, and the third party. That is, the server side acts as
+  a kind of proxy, and does the fetch first, then makes it accessible to javascript callers.
+  The kinds of weather data sources from third parties:
+    rss feeds, wms servers, wmst servers, simple links to images
+The '.sky' convention hides impl details.
+  An implementation may evolve from simpler to more complex forms:
+    simple HTML > simple JSP
+        simple JSP > servlet + simple JSP
+Using '.sky' hides how a feature is implemented. The '.sky' extension is mapped to a servlet. That servlet can
+forward control to an HTML file, a JSP file, or a servlet, as needed. All that mapping is done internally, and is kept hidden from the client.
+Versioning of stylesheets and js files.
+In web.xml, there is a version setting. That setting is appended to all references to .css and .js files.
+The setting is updated every time there's at least 1 such file changed, between one update of the app and the next.
+This is done to prevent the browser from using cached (and obsolete) versions of the same file.
+It's not necessary to apply this versioning to .sky URLs themselves.
+Cross Site Scripting defenses.
+  Some forms have text which is reflected back into the DOM (for example, the Location name). In those cases, the input
+  is escaped when it's placed into the DOM.
+Package by feature
+  By default, all the items related to a single feature are placed in a single directory.
+  There are 3 features at present:
+    /main
+        /chart
+        /satellite
+  For example, each feature has a code.js file. That file is not placed in /js, because the code isn't shared with any other feature.
+/js - javascript that is shared between N features
+ephem.js, util.js, general-graphics.js
+All use IIFE's to separate private functions from public ones, and minimize the number of global obj's created
+For example, the ephem.js file exports a single object in global scope (named EPH).
+Javascript is used in a functional style of programming
+In this app, in javascript the following naming convention is used: 'goes_like_this'
+Note the use of Greek letters in the code, to allow better comparison with reference material. It also reads better.
+ephem.js is large; no attempt will be made to modularize it.
+EPH functions have a nice, curt way of getting quickly to the final result
+   when, where, opts
+   the 'when' object is nice; large number of aliases for the instant are simply precalculated in case of need
+Examples of using ephem.js and its EPH object:
+ 
+Version history
+2015-10 began building the app on johnohanley.ca, as a hobby
+2017-03 deployed to astronomytonight.net. The design was upgraded somewhat, to be more robust.

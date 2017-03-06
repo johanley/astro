@@ -1,0 +1,9 @@
+<%-- Jsp fragment. Header included at the start of every jsp file --%>
+<%-- Referenced in web.xml, under jsp-config. --%>
+<%@ page pageEncoding="UTF-8" contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
+<%@ taglib prefix="stub" uri="/stub" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+
