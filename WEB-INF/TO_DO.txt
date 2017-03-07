@@ -136,9 +136,6 @@ BUG the time zone issue; how to offset the time by x minutes; attach an offset t
   // the large cloud form should be sensitive to the device's width + height
   //    find out which is smaller, and use it as the square dimension
   
-  // title of the page: add the location name, test with apostrophes
-  // the location name is always a request param; escape the special chars
-  
   // translate:
   //    diary: needs french trans for the descr (continual)
   //    messiers: needs french trans for the comments (one-time only)
@@ -148,15 +145,10 @@ BUG the time zone issue; how to offset the time by x minutes; attach an offset t
   
   // planisphere -> details: popup, or new page
   
-  // the link to the form should pre-pop the form with the existing settings, so that a user can tweak them
-  
   // horizon - east +-45d, NE to SW, plate-carre
   
   // horizon - west, +-45d, NW to SW, plate-carre
   
-  // saturn physical ephemeris; physical representation of all the planets; size, orientation of pole
-  // diagram, sun's physical ephem, rotational axis params
-    
   // png for favicon.ico - star-shape?
   
   // percent of the time the skies are clear; day, night, hour, all; fetch the yearly data from 
