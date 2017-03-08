@@ -1,6 +1,5 @@
 /*
  Library of low-precision astronomical calculations.
-  2016-01-24: 1187 lines, with 166 of preliminary comments. 
  
  Nice example of a well done planisphere (js) : 
    http://www.etwright.org/astro/plani.html
@@ -53,37 +52,9 @@ Position of the geomagnetic north pole:
     British Geological Survey
     http://www.geomag.bgs.ac.uk/education/poles.html
     
-Amateurs in other countries
- NZ
- Australia
- France : afastronomie.fr 
- Italy: http://www.uai.it/pubblicazioni/uainews/11-uainews/8887-almanacco-2017-disponibile-per-i-soci-uai.html
-     
-   
- In:
-  precession, 
-  delta_t, 
-  mean orbital elements (planets, as a function of when), 
-  osculating orbital elements, for current year (asteroids, comets; static, good only for ~1 year)  
-  refraction,
-  parallax (Moon, Venus, Mars only?)
-  geometric positions
-  
-This tool uses traditional Greek letters for items:
-   makes it clearer
-   matches the Explanatory Supplement
-   easier to read
-   easier to match to textbook equations
-   pleasing to use Unicode, not ascii
-   BUT it's harder to type; as workaround, have notepad open, with the chars, for copy-pasting
-
-The default coords returned here are a mixture. 
-The problems: 
-  different use cases have different needs
-  it's best to avoid making precession calculations for a large number of objects all at once
-To make the current sky, you need mean-equinox.
-Stars are high in number, so you want to avoid applying precession to all of them (planisphere).
-The caller can override this behavior if desired. 
+Coordinate systems used vary according to different cases.
+To make the current sky, you need the mean-equinox (or even the apparent one).
+Stars are high in number, so you want to avoid applying precession to all of them at once (in the planisphere).
 ----------------------------------------------------------
 mean-equinox     j2000          j2016.5 (near current mean-equinox)
 ----------------------------------------------------------
@@ -92,66 +63,11 @@ moon             minor planets  messier
                  meteor showers
 ----------------------------------------------------------
 
- TODO
-  IS THERE ANY WAY OF SPECIFY THE TIME ZONE, INSTEAD OF RELYING ON THE BROWSER/OS SETTINGS???
-    LT + offset of some sort; Date knows msecs from epoch, and the moment
-    always force the entry of the offset from UT? optional?
-
-  ecliptic: Aldebaran, and other bright stars? Regulus, Spica, Antares
-  Neptune disappears on this day 2016-07-26, for this star chart (neighbouring days are ok):
-    http://localhost:8081/playtime/sky/astro/today/star_chart_graphic.html?date_time=2016-07-26&time_scale=LT&location_name=Ottawa&latitude=45.403&longitude=-75.664&limiting_mag=8.0&limiting_mag_messiers=11.0&center_object=neptune&center_ra=85&center_dec=0&chart_width=10
-  
-  Precession, projection, base ephem calc, parallax? more than 1?:
-     I think I forgot to apply precession to the star catalog.
-     Neptune seems to be off by 10' of arc, compared on the chart with obs hand., 2016-07-31
-     Uranus seems to be off by 30' of arc, 2017-01-01
-     Ephem seems ok (I think).
-      
-  memoization is very useful; should use for precession angles, and likely other things too.
-  the ecliptic should show the zodiac constellations too
-  if a meteor shower is current, show it's radiant on the planisphere, if it's above the horizon
-  add: map the names of bright stars, to ybs data?
-  add: constellation lines (tedious)
-  layout: flexgrid is new to CSS
-  unit tests
-
-  weather alerts make the table really wide.  
-  why is 'tbody' repeated for each row in my tables?
-  verify compliant markup
-  planets: percent of max size? seems like a useful number! for the moon, % of its median size is a better stat
-  better grouping of controls?
-  'favourable' flag  very useful in many contexts!!
-  comets mag 10: visible in 20*80 binocs; usually a few at any given time
-  comets mag 12: usually ~6 comets this bright
-   https://in-the-sky.org/data/comets.php
-   http://cometchasing.skyhound.com/   
-    http://www.skyandtelescope.com/observing/comets-to-catch-in-2016123020153012/
-     PanSTARRS (C/2014 S2)
-     PanSTARRS (C/2013 X1)
-     252P/LINEAR
-     45P/Honda-Mrkos-Pajdusakova
-     Ikeya-Murakami (P/2010 V1)
-     226P/Pigott-LINEAR-Kowalski
-     
-  a default output option for rounding/units of all data
- 
-  consider: if 'ephem' always points to a when, then passing ephem+when is unwanted
-  better test page, that shows expected and actual (with minor diffs for precision)
-  consider: adding novae
-    
-  do i need to precess heliocentric lbr, xyz? or should i dump them?
-     the calc for saturn's rings uses heliocentric coords of date
-  
- consider: can N conversion functions be passed as varargs params, to be done in sequence?
- consider: tool-tip for items in the planisphere would be superb!
- add ISS apparitions (International Space Station); HST too?
-   much like standard Keplerian orbits
-   artificial_satt {
-     name, orbit{}, ephem{}
-   }
-   
- add heliocentric xyz coord conversion (from lbr?)
- add: Saturn's ring geometry; fix the calc of Saturn's apparent magnitude
+Consider: memoization is very useful; should use for precession angles, and likely other things too.
+Consider: if 'ephem' always points to a when, then passing ephem+when is unwanted
+Consider: can N conversion functions be passed as varargs params, to be done in sequence?
+Consider: tool-tip for items in the planisphere would be good.
+add heliocentric xyz coord conversion (from lbr?)
 
 -----------------------------------------------------------------------
 
@@ -161,9 +77,6 @@ moon             minor planets  messier
  References
  Astronomical Algorithms, Jean Meeus, 1st edition, 1991
    Unless otherwise noted, algorithms are based on Meeus
- Planet orbital elements
-   http://ssd.jpl.nasa.gov/txt/p_elem_t1.txt
- Meteor showers
    
  Explanatory Supplement to the Astronomical Almanac and Ephemeris
    an old edition:
@@ -172,7 +85,7 @@ moon             minor planets  messier
  Units
  * When it seems helpful, units can are sometimes appended to variable names, as in blah_km to denote kilometers
  * All angles are in radians, unless otherwise specified.
- * Distances are in different units depending on context (km, AU).
+ * Distances are in different units depending on context (mostly AU, sometimes km).
  * Dates and times are unusual in that different algorithms use different ways of 
    describing a moment in time. Interconversion between these is simple but annoying. 
    In an attempt to make things easier for the caller, this library makes use of a 'when' 
