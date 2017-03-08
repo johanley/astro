@@ -1,5 +1,5 @@
 # astro
-Full source for astronomytonight.net, a site for amateur astronomers. The site has basic astronomy data for any location, and weather data for specific countries (the US, Canada, and the UK). Customizable for your observing location.
+Full source for [astronomytonight.net](http://astronomytonight.net/main/form.sky), a site for amateur astronomers. The site has basic astronomy data for any location, and weather data for specific countries (the US, Canada, and the UK). Customizable for your observing location.
 
 # Running locally
 The code is roughly 95% javascript, and 5% Java.
