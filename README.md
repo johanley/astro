@@ -7,15 +7,16 @@ No relational database is used.
 The site is implemented as a .war file (servlets), running on [Tomcat](http://tomcat.apache.org/whichversion.html). 
 Courtesy binaries of the Java classes are checked into source, for those who don't care about changing the Java code.
 
-In order to run the app, you will need a Java Runtime Environment (JRE). 
+In order to run the app, you will need a Java Runtime Environment (JRE), and Tomcat (or a similar servlet container). 
 In order to compile new versions of the Java code, you will need a Java Development Kit (JDK).
 
 In prod, the version of Tomcat is version 6, running on JRE 1.6. (That's a bit stale.)
 
-The layout of the source tree matches the runtime layout of the web site. 
-Thus, running the app locally is simply a matter of pointing Tomcat to the root of the project. 
-The WEB-INF directory is specific to servlets and Java code. 
-The 'dev' directory contains tools (Java and/or javascript) that aren't needed at runtime, so the dev directory is removed in the prod depolyment.
+The layout of the source tree matches the runtime layout of the web site.  
+* running the app locally is simply a matter of pointing Tomcat to the root of the project. (Point the `docBase` of the Tomcat context to the root of the source tree, for example.) 
+* Java classes are compiled-in-place, in the same directory as the source .java file 
+* the `WEB-INF` directory is specific to servlets and Java code. 
+* the 'dev' directory contains tools (Java and/or javascript) that aren't needed at runtime, so the dev directory is removed in the prod depolyment.
 
 Other items to note:
 * all files should use UTF-8 encoding.
