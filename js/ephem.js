@@ -2793,7 +2793,7 @@ var EPH = (function(){
     Important: these are ordered by increasing 'when'. All times are in UT.
     The 'when' property here is simple text, not a 'when' object.
     Important: simple text comparison is used to bracket the times.
-    Missing : eclipses, X at aphelion, X stationary, ad hoc text
+    Missing from raw output of the MICA tool: eclipses, X at aphelion, X stationary, ad hoc text
   */  
   var all_events = [
      {when:'UT 2016-10-01 00',text:'New Moon 401579.717 km'},
@@ -2900,7 +2900,7 @@ var EPH = (function(){
      {when:'UT 2017-02-05 22',text:'Aldebaran 0.24°S of Moon'},
      {when:'UT 2017-02-06 14',text:'Moon at perigee 368815.901 km'},
      {when:'UT 2017-02-09 02',text:'Pollux 10.10°N of Moon'},
-     {when:'UT 2017-02-11 01',text:'Full Moon 377419.733 km'},
+     {when:'UT 2017-02-11 01',text:'Penumbral ECLIPSE Full Moon 377419.733 km'},
      {when:'UT 2017-02-11 14',text:'Regulus 0.79°N of Moon'},
      {when:'UT 2017-02-15 14',text:'Spica 6.47°S of Moon'},
      {when:'UT 2017-02-15 15',text:'Jupiter 2.70°S of Moon'},
@@ -2910,7 +2910,7 @@ var EPH = (function(){
      {when:'UT 2017-02-20 23',text:'Saturn 3.58°S of Moon'},
      {when:'UT 2017-02-23 16',text:'Spica 3.82°S of Jupiter'},
      {when:'UT 2017-02-26 02',text:'Mercury 2.49°S of Moon'},
-     {when:'UT 2017-02-26 15',text:'New Moon 378195.691 km'},
+     {when:'UT 2017-02-26 15',text:'Annular ECLIPSE New Moon 378195.691 km'},
      {when:'UT 2017-02-26 21',text:'Neptune 0.10°S of Moon'},
      {when:'UT 2017-02-27 08',text:'Uranus 0.62°S of Mars'},
      {when:'UT 2017-02-28 20',text:'Venus 10.26°N of Moon'},
@@ -3041,7 +3041,7 @@ var EPH = (function(){
      {when:'UT 2017-08-02 05',text:'Antares 9.79°S of Moon'},
      {when:'UT 2017-08-02 18',text:'Moon at apogee 405025.066 km'},
      {when:'UT 2017-08-03 07',text:'Saturn 3.45°S of Moon'},
-     {when:'UT 2017-08-07 18',text:'Full Moon 394794.690 km'},
+     {when:'UT 2017-08-07 18',text:'Partial umbral ECLIPSE Full Moon 394794.690 km'},
      {when:'UT 2017-08-09 23',text:'Neptune 0.86°N of Moon'},
      {when:'UT 2017-08-13 05',text:'Uranus 4.40°N of Moon'},
      {when:'UT 2017-08-15 01',text:'Last Quarter 371377.904 km'},
@@ -3050,7 +3050,7 @@ var EPH = (function(){
      {when:'UT 2017-08-19 05',text:'Venus 2.25°N of Moon'},
      {when:'UT 2017-08-19 10',text:'Pollux 9.41°N of Moon'},
      {when:'UT 2017-08-21 05',text:'Mars 1.55°N of Moon'},
-     {when:'UT 2017-08-21 19',text:'New Moon 372114.496 km'},
+     {when:'UT 2017-08-21 19',text:'Total ECLIPSE New Moon 372114.496 km'},
      {when:'UT 2017-08-21 20',text:'Regulus 0.08°S of Moon'},
      {when:'UT 2017-08-22 06',text:'Mercury 6.16°S of Moon'},
      {when:'UT 2017-08-25 13',text:'Jupiter 3.49°S of Moon'},
@@ -3188,7 +3188,7 @@ var EPH = (function(){
      {when:'UT 2018-01-27 11',text:'Aldebaran 0.68°S of Moon'},
      {when:'UT 2018-01-30 10',text:'Moon at perigee 358993.525 km'},
      {when:'UT 2018-01-30 11',text:'Pollux 8.63°N of Moon'},
-     {when:'UT 2018-01-31 13',text:'Full Moon 360197.777 km'}
+     {when:'UT 2018-01-31 13',text:'Total ECLIPSE Full Moon 360197.777 km'}
   ];
   
   /* Events within the next n days, in ascending order. The date-time returned uses LT.*/
