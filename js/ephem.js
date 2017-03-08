@@ -1,85 +1,32 @@
 /*
- Library of low-precision astronomical calculations.
+ Javascript library of basic, low-precision astronomical calculations.
  
- Nice example of a well done planisphere (js) : 
-   http://www.etwright.org/astro/plani.html
-   http://freestarcharts.com/
-   
-Another js lib:
-  https://github.com/mivion/ephemeris
-
- The old Explanatory Supplement:
-   https://ia600301.us.archive.org/28/items/astronomicalalmanac1961/131221-explanatory-supplement-1961.pdf
-   comet mag: page 132
-   mag, phase of the planets: pg 311
-   moonrise, set: pg 403; can have events 0, 1, or 2 events (high latitudes)! (sun always has 2)
-
- Ephemerides, for comparison:
- http://aa.usno.navy.mil/data/index.php 
- http://ssd.jpl.nasa.gov/?planet_pos   max err 10' for Saturn, 1800-2050
- http://ssd.jpl.nasa.gov/txt/aprx_pos_planets.pdf
- http://ssd.jpl.nasa.gov/horizons.cgi#top
- http://astropixels.com/ephemeris/planets/mercury2016.html    
- http://theskylive.com/ceres-info - nice!!
- http://aa.usno.navy.mil/data/docs/mrst.php -- good rise and set times for various objects
+ The intent of this tool is to provide reasonably accurate positions within a year or so of the current date.  
+ If you need arc-second precision for the year 2000 B.C., you won't find it here.
+ (Higher precision over longer time periods requires significantly more effort.)
  
- Yale Bright Star r5 catalog
-  http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50
- Messier catalog
-   http://astropixels.com/messier/messiercat.html
- Caldwell catalog
-   http://astropixels.com/caldwell/caldwellcat.html 
- Minor planets
-   https://www.ast.cam.ac.uk/~jds/
-   http://www.minorplanetcenter.net/iau/Ephemerides/EphemOrbEls.html
-   http://www.minorplanetcenter.net/iau/info/CometOrbitFormat.html
-   For mag estimates, I use M1, K1 from JPL (I don't grok the MPC system; not explicit).
-   I could use the JPL for both orbit and mag, if I wanted
-     http://ssd.jpl.nasa.gov/sbdb.cgi#top
-Comets
-  https://www.ast.cam.ac.uk/~jds/  - what to list, brightest only
-  http://ssd.jpl.nasa.gov/sbdb.cgi#top   - orbit data
- Meteor showers
-   http://www.imo.net/files/data/vmdb/vmdbrad.txt   --  the radiant catalog, 2012-01-17
-   http://www.imo.net/data
-   http://imo.net/files/data/calendar/cal2016.pdf
-   http://www.imo.net/calendar/2014
+ The data used by this library requires periodic updating in order to retain its accuracy.
+ 
+ This module places a single javascript object called 'EPH' in global scope.
+ (A convention in Javascript is to name global objects using capital letters.)
 
-Dominic Ford, BAA
-  https://in-the-sky.org/about.php
+ Different coordinate systems are used in different cases.
+ To make the current sky, you need the mean-equinox-equator-of-date (or even the apparent one).
+ When presenting stars in a planisphere, it's likely best to 'pre-precess' catalog positions to some nearby date.
+ ----------------------------------------------------------
+ mean-equinox     j2000          j2017.5 (or similar)
+ ----------------------------------------------------------
+ sun              planets        stars
+ moon             minor planets  messier
+                  meteor showers
+ ----------------------------------------------------------
 
-Position of the geomagnetic north pole:
-    British Geological Survey
-    http://www.geomag.bgs.ac.uk/education/poles.html
-    
-Coordinate systems used vary according to different cases.
-To make the current sky, you need the mean-equinox (or even the apparent one).
-Stars are high in number, so you want to avoid applying precession to all of them at once (in the planisphere).
-----------------------------------------------------------
-mean-equinox     j2000          j2016.5 (near current mean-equinox)
-----------------------------------------------------------
-sun              planets        stars
-moon             minor planets  messier
-                 meteor showers
-----------------------------------------------------------
-
-Consider: memoization is very useful; should use for precession angles, and likely other things too.
-Consider: if 'ephem' always points to a when, then passing ephem+when is unwanted
-Consider: can N conversion functions be passed as varargs params, to be done in sequence?
-Consider: tool-tip for items in the planisphere would be good.
-add heliocentric xyz coord conversion (from lbr?)
-
------------------------------------------------------------------------
-
- Places a single object called EPH in global scope.
- (The convention in Javascript is to name global objects using capital letters.)
-  
  References
  Astronomical Algorithms, Jean Meeus, 1st edition, 1991
-   Unless otherwise noted, algorithms are based on Meeus
+   Unless otherwise noted, algorithms are based on Meeus.
    
  Explanatory Supplement to the Astronomical Almanac and Ephemeris
-   an old edition:
+   an old edition is here:
    https://ia600301.us.archive.org/28/items/astronomicalalmanac1961/131221-explanatory-supplement-1961.pdf
  
  Units
@@ -97,10 +44,12 @@ add heliocentric xyz coord conversion (from lbr?)
    Note that in Javascript, a Date object already carries both UT and local time zone data.
    Does a JS Date refer to UT1 or UTC? The current date will refer to UTC, civil time.
    But JS has no notion of leap second, so the distinction may be impossible to make. 
+ * Longitude is taken negative west of Greenwich. This is contrary to the style adopted by Meeus, but in agreement 
+   with many modern tool, such as Google Maps.
 
- Longitude is taken negative west of Greenwich. This is contrary to the style adopted by Meeus.
-
- Central to this tool are these conventional objects, having important data:
+---------------------------------------------------------------------------------------------
+  Central to this tool are these conventional objects, having important data:
+  
   //all the aliases for a given moment in time  
   when {
     .. fill this out later
@@ -156,8 +105,66 @@ add heliocentric xyz coord conversion (from lbr?)
    size  - apparent angular size of the disk, seconds of arc
   }
   
- The implementation uses an 'immediately-invoked function expression' pattern.
+ Consider: memoization is very useful; should use for precession angles, and likely other things too.
+ Consider: if 'ephem' always points to a when, then passing ephem+when is unwanted
+ Consider: can N conversion functions be passed as varargs params, to be done in sequence?
+ Consider: add heliocentric xyz coord conversion (from lbr?)
+
+ ---------------------------------------------------------------------------------
+ Nice example of a well done planisphere (js) : 
+   http://www.etwright.org/astro/plani.html
+   http://freestarcharts.com/
+   
+ Another js lib:
+  https://github.com/mivion/ephemeris
+
+ The old Explanatory Supplement:
+   https://ia600301.us.archive.org/28/items/astronomicalalmanac1961/131221-explanatory-supplement-1961.pdf
+   comet mag: page 132
+   mag, phase of the planets: pg 311
+   moonrise, set: pg 403; can have events 0, 1, or 2 events (high latitudes)! (sun always has 2)
+
+ Ephemerides, for comparison:
+ http://aa.usno.navy.mil/data/index.php 
+ http://ssd.jpl.nasa.gov/?planet_pos   max err 10' for Saturn, 1800-2050
+ http://ssd.jpl.nasa.gov/txt/aprx_pos_planets.pdf
+ http://ssd.jpl.nasa.gov/horizons.cgi#top
+ http://astropixels.com/ephemeris/planets/mercury2016.html    
+ http://theskylive.com/ceres-info - nice!!
+ http://aa.usno.navy.mil/data/docs/mrst.php -- good rise and set times for various objects
+ 
+ Yale Bright Star r5 catalog
+  http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50
+ Messier catalog
+   http://astropixels.com/messier/messiercat.html
+ Caldwell catalog
+   http://astropixels.com/caldwell/caldwellcat.html 
+ Minor planets
+   https://www.ast.cam.ac.uk/~jds/
+   http://www.minorplanetcenter.net/iau/Ephemerides/EphemOrbEls.html
+   http://www.minorplanetcenter.net/iau/info/CometOrbitFormat.html
+   For mag estimates, I use M1, K1 from JPL (I don't grok the MPC system; not explicit).
+   I could use the JPL for both orbit and mag, if I wanted
+     http://ssd.jpl.nasa.gov/sbdb.cgi#top
+ Comets
+  https://www.ast.cam.ac.uk/~jds/  - what to list, brightest only
+  http://ssd.jpl.nasa.gov/sbdb.cgi#top   - orbit data
+ Meteor showers
+   http://www.imo.net/files/data/vmdb/vmdbrad.txt   --  the radiant catalog, 2012-01-17
+   http://www.imo.net/data
+   http://imo.net/files/data/calendar/cal2016.pdf
+   http://www.imo.net/calendar/2014
+ Dominic Ford, BAA
+  https://in-the-sky.org/about.php
+ Position of the geomagnetic north pole:
+    British Geological Survey
+    http://www.geomag.bgs.ac.uk/education/poles.html
+    
+-----------------------------------------------------------------------
+  
+ This implementation uses an 'immediately-invoked function expression' (IIFE) pattern.
  This is done to put 1 item in global scope, instead of N.
+ To see the data visible to a user of the EPH object, go to the bottom of this file.
 */
 var EPH = (function(){ 
 
