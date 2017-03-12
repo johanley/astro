@@ -8,25 +8,19 @@
 >
 
   <description>Custom tags not available in JSTL</description>
-  <display-name>stub</display-name>
+  <display-name>Astro</display-name>
   <tlib-version>1.1</tlib-version>
-  <short-name>stub</short-name>
-  <uri>/stub</uri>
+  <short-name>s</short-name>
+  <uri>/s</uri>
     
-    <!--
     <tag>
-     <description>
-      Simple empty tag which optionally emits its body, as 
-      help text for the current page.
-     </description>
-     <name>help</name>
-     <tag-class>
-      hirondelle.fish.help.ShowHelpTag
-     </tag-class>
+     <description>Translates English text markup into the user's chosen language.</description>
+     <name>txt</name>
+     <tag-class>astro.translate.TranslatorTag</tag-class>
      <body-content>scriptless</body-content>
     </tag>
-    -->
-    
+
+    <!-- Example syntax, if needed later.    
     <function>
      <description> 
        Escapes ampersand characters in URLs.  
@@ -38,5 +32,6 @@
      <function-class>app.util.EscapeChars</function-class>
      <function-signature>java.lang.String forHrefAmpersand(java.lang.String)</function-signature>
     </function>
+    -->
         
 </taglib>

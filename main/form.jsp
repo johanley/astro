@@ -697,6 +697,7 @@ If you need a work-around, then just temporarily change your computer's time zon
 
 <P>Code last updated on: ${initParam.lastUpdatedOn}. 
 <P>Created by <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).  
+<P>Do you want to improve this site? Astronomytonight.net is open source (<a href='https://github.com/johanley/astro'>github</a>). 
 
 <tags:analytics/>
 

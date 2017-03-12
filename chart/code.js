@@ -45,7 +45,6 @@ var show = function(input){
     }
   };
   var apply_default_settings_if_absent = function(){
-    default_setting('preferred_lang', 'e');
     default_setting('place_at_top', 'north');
     default_setting('date_time', when_as_input_str()); 
     default_setting('time_scale', 'LT');

@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang='en'>
+<html lang='<s:txt>en</s:txt>'>
 <head>
  <meta charset='UTF-8'>
- <meta name="keywords" content="astronomy">
- <meta name="description" content="Star charts for amateur astronomers.">
+ <meta name="keywords" content="<s:txt>astronomy, custom, star chart</s:txt>">
+ <meta name="description" content="<s:txt>Star charts for amateur astronomers.</s:txt>">
  <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="../css/styles.css<tags:ver/>" media="all">
- <title>Star chart</title>
+ <title><s:txt>Star chart</s:txt></title>
  <script src='../js/ephem.js<tags:ver/>'></script>
  <script src='../js/util.js<tags:ver/>'></script>
  <script>
@@ -53,7 +53,6 @@
      };
   };
   
-   
   window.onload = function() {
     populate_names_of_known_objects();
     activate_lat_long_autofill();
@@ -62,61 +61,69 @@
  </script>
 </head>
 <body>
-<h2>Star chart <a href="../main/form.sky" class='home'>Home</a></h2>
-
+<h2><s:txt>Star chart</s:txt> 
+ <span class='home'>
+  <form style='display:inline;'>
+   <select onChange="if (this.value) window.location.href=this.value" style='vertical-align:text-top;'>
+    <option value='form.sky'>Language
+     <option value='form.sky?lang=en'>English
+     <option value='form.sky?lang=fr'>Français
+   </select>
+  </form>
+ <a href='../main/form.sky'><s:txt>Home</s:txt></a>
+ </span>
+</h2>
 
 <P>
  <form method='GET' action='graphic.sky' class='user-input-small' id='input_form'>
   <table>
-     <tr><td>Center on object*:<td>
-         <select name='center_object' id='center_object' title='Name of the object. Overrides RA, Dec setting.' autofocus>
+     <tr><td><s:txt>Center on object</s:txt>*:<td>
+         <select name='center_object' id='center_object' title='<s:txt>Name of the object. Overrides RA, Dec setting.</s:txt>' autofocus>
            <option>  
          </select>
-     <tr><td>Center on RA*:<td><input type='text' name='center_ra' id='center_ra' title='Right ascension in degrees' value='0' > 
-     <tr><td>Center on Dec*:<td><input type='text' name='center_dec' id='center_dec' title='Declination in degrees' value='0' >
-     <tr><td title='Translation is not complete.'>Preferred language:<td>
-         <select name='preferred_lang' id='preferred_lang' title='Output in English or French'>
-           <option value='e' selected>English
-           <option value='f'>French 
-         </select>
-     <tr><td>Place at top:<td>
+     <tr><td><s:txt>Center on RA</s:txt>*:<td><input type='text' name='center_ra' id='center_ra' title='<s:txt>Right ascension in degrees</s:txt>' value='0' > 
+     <tr><td><s:txt>Center on Dec</s:txt>*:<td><input type='text' name='center_dec' id='center_dec' title='<s:txt>Declination in degrees</s:txt>' value='0' >
+     <tr><td><s:txt>Place at top</s:txt>:<td>
          <select name='place_at_top' id='place_at_top'>
-           <option value='north' selected>North
-           <option value='south'>South
+           <option value='north' selected><s:txt>North</s:txt>
+           <option value='south'><s:txt>South</s:txt>
          </select>
-     <tr><td>Date-time (defaults to now):<td><input type='text' name='date_time' id='date_time' title='Example: 2016-03-01 18:00. Leave empty to use the current date and time.' >
-     <tr><td>Time scale:<td><select name='time_scale' id='time_scale'><option title='Local Time (defined by your browser)' value='LT'>Local Time<option title='Universal Time (UT1, to be precise)' value='UT'>Universal Time<option title='Terrestrial Time (fundamental physics time)' value='TT'>Terrestrial Time</select>
-     <tr><td>Location:<td><input type='text' name='location_name' id='location_name' value='Ottawa' title='Name of your observing site'>
-     <tr><td>Latitude:<td><input type='text' id='latitude' name='latitude' value='45.403' title='Latitude in degrees'>
-        <td><button type='button' id='lat_long_autofill' title='Let the browser fill in lat/long'>Use current location</button>
-     <tr><td>Longitude:<td><input type='text' id='longitude' name='longitude' id='longitude' value='-75.664' title='Longitude in degrees. Negative west of Greenwich'>
+     <tr><td><s:txt>Date-time (defaults to now)</s:txt>:<td><input type='text' name='date_time' id='date_time' title='<s:txt>Example: 2016-03-01 18:00. Leave empty to use the current date and time.</s:txt>' >
+     <tr><td><s:txt>Time scale</s:txt>:<td>
+       <select name='time_scale' id='time_scale'>
+         <option title='<s:txt>Local Time (defined by your browser)</s:txt>' value='LT'><s:txt>Local Time</s:txt>
+         <option title='<s:txt>Universal Time (UT1, to be precise)</s:txt>' value='UT'><s:txt>Universal Time</s:txt>
+         <option title='<s:txt>Terrestrial Time (fundamental physics time)</s:txt>' value='TT'><s:txt>Terrestrial Time</s:txt>
+       </select>
+     <tr><td><s:txt>Location</s:txt>:<td><input type='text' name='location_name' id='location_name' value='Ottawa' title='<s:txt>Name of your observing site</s:txt>'>
+     <tr><td><s:txt>Latitude</s:txt>:<td><input type='text' id='latitude' name='latitude' value='45.403' title='<s:txt>Latitude in degrees</s:txt>'>
+        <td><button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Use current location</s:txt></button>
+     <tr><td><s:txt>Longitude</s:txt>:<td><input type='text' id='longitude' name='longitude' id='longitude' value='-75.664' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
      
-     <tr><td>Limiting stellar magnitude:<td><input type='text' name='limiting_mag' id='limiting_mag' value='8.0' title='Higher number means show dimmer stars'>
-     <tr><td>Chart width in degrees:<td><input type='text' name='chart_width' id='chart_width'value='30'>
-     <tr><td>Style:<td>
+     <tr><td><s:txt>Limiting stellar magnitude</s:txt>:<td><input type='text' name='limiting_mag' id='limiting_mag' value='8.0' title='<s:txt>Higher number means show dimmer stars</s:txt>'>
+     <tr><td><s:txt>Chart width in degrees</s:txt>:<td><input type='text' name='chart_width' id='chart_width'value='30'>
+     <tr><td><s:txt>Style</s:txt>:<td>
          <select name='style' id='style' >
-           <option value='regular' selected>Regular
-           <option value='print_friendly'>Print-friendly 
+           <option value='regular' selected><s:txt>Regular</s:txt>
+           <option value='print_friendly'><s:txt>Print-friendly</s:txt> 
          </select>
-     <tr><td>Show identifiers (multi-select):<td>
+     <tr><td><s:txt>Show identifiers (multi-select)</s:txt>:<td>
          <select name='show_identifiers' id='show_identifiers' multiple='multiple'>
            <option value='bayer' selected>Bayer
            <option value='flamsteed' selected>Flamsteed 
          </select>
      <tr>
        <td>
-       <td><input type='submit' value='Show the star chart'>
-       <td><a href='form.sky'><button type='button' id='revert_to_default'>Default settings</button></a>
+       <td><input type='submit' value='<s:txt>Show the star chart</s:txt>'>
+       <td><a href='form.sky'><button type='button' id='revert_to_default'><s:txt>Default settings</s:txt></button></a>
   </table>
  </form>
 
-<P>Note:
+<P><s:txt>Note</s:txt>:
 <ul>
- <li>all items are optional, except for <em>center on</em>. You can either choose a specific object, or enter a specific 
- right ascension and declination.
- <li>the location, latitude, and longitude are used only for lunar parallax. 
- <li>the other items show default values. 
-  Usually, just accepting the defaults is adequate.
+ <li><s:txt>all items are optional, except for <em>center on</em>. You can either choose a specific object, or enter a specific right ascension and declination.</s:txt>
+ <li><s:txt>the location, latitude, and longitude are used only for lunar parallax.</s:txt> 
+ <li><s:txt>the other items show default values. Usually, just accepting the defaults is adequate.</s:txt>
 </ul> 
  
 <tags:analytics/>

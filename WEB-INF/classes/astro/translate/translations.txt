@@ -1,0 +1,110 @@
+{en}{fr}
+{Home}{Accueil}
+{Credits}{Attributions}
+
+{GOES satellite images}{Images satellite GOES}
+{Back to Form}{Retourner au formulaire}
+
+{canada, united states, weather, clouds, satellite, goes, visible, infrared, imagery}
+{canada, etas-unis, météo, nuages, satellite, goes, visible, infrarouge}
+{Recent satellite images from the GOES weather satellite (NOAA).}
+{Images satellites actuelles de la satellite météorologique GOES (NOAA).}
+{The form below lets you browse current imagery from the GOES geosynchronous satellite. 
+ These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
+ The default settings in the form below show the Canadian Maritime provinces.} 
+{Le formulaire ci-dessous est pour explorer les images actuelles de la satellite géostationnaire GOES. 
+ Ces images sont surtout impressionantes quand le soleil est de faible altitude, et les ombres sont plus importants.
+ La définition par défaut montre les provinces Maritimes du Canada.} 
+{Latitude in degrees}{Latitude en degrés}
+{Longitude in degrees. Negative west of Greenwich}{Longitude en degrés. Négative à l&apos;ouest de Greenwich}
+{Let the system decide}{Laisser le système décider}
+{Auto-detect}{Auto-détecter}
+{Day time}{Le jour}
+{Visible (day-time)}{Visible (pendant le jour)}
+{Night time}{La nuit}
+{IR (night-time)}{IR (pendant la nuit)}
+{Show the large-scale satellite image (clouds)}
+{Montrer l&apos;image satellite à grande échelle (les nuages)}
+{Latitude}{Latitude}
+{Longitude}{Longitude}
+{Degrees on a side}{Taille en degrés}
+{Pixels on a side}{Taille en pixels}
+{Channel: visible or infrared?}{Visible ou infrarouge?}
+{imagery from the GOES geostationary weather satellite}
+{images de la satellite géostationnaire météorologique GOES}
+{server for NOAA images captured by the GOES satellite}
+{serveur pour les images NOAA de la satellite GOES}
+{Typically, you will use the visible channel during the day, and the infrared channel at night.}
+{Normalement, on utilise le visible pendant le jour, et l'infrarouge pendant la nuit.}
+{Atlantic Provinces}{Provinces atlantiques}
+{Canada West}{Canada: ouest}
+{Canada East}{Canada: est}
+{US NE}{ÉU: ne}
+{US SE}{ÉU: se}
+{US California}{ÉU: Californie}
+{West}{Ouest}
+{East}{Est}
+{North}{Nord}
+{South}{Sud}
+{Zoom in}{Zoomer vers le gros plan}
+{Zoom out}{Zoomer ver le petit plan}
+{Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.}
+{Navigation: touches flèches, touches de défilement vers le haut/bas, roue du souris, glisser le souris}
+
+
+
+{Star chart}{Carte du ciel}
+{astronomy, custom, star chart}{astronomie, cartes du ciel}
+{Star charts for amateur astronomers.}{Cartes du ciel pour les astronomes amateurs.}
+{Center on object}{Centrer sur un object}
+{Name of the object. Overrides RA, Dec setting.}{Nom de l&apos;object. Prévaloir l&apos;ascension droite, déclinaison}
+{Center on RA}{Centrer sur α}
+{Right ascension in degrees}{Ascension droite en degrés}
+{Center on Dec}{Centrer sur δ}
+{Declination in degrees}{Declinaison en degrés}
+{Place at top}{Mettre en haut}
+{Date-time (defaults to now)}{Date et temps (l&apos;heure actuelle par défaut)}
+{Example: 2016-03-01 18:00. Leave empty to use the current date and time.}{Exemple: 2016-03-01 18:00. Laissez vide pour employer l&apos;heure actuelle.}
+{Time scale}{Échelle de temps}
+{Local Time (defined by your browser)}{Temps locale (défini par votre navigateur)}
+{Local Time}{Temps locale}
+{Universal Time (UT1, to be precise)}{Temps universel (UT1, plus précisement)}
+{Universal Time}{Temps universel}
+{Terrestrial Time (fundamental physics time)}{Temps terrestre (temps fondamental de la physique)}
+{Terrestrial Time}{Temps terrestre}
+{Location}{Location}
+{Name of your observing site}{Nom du votre site d&observation}
+{Use current location}{Employer la location actuelle}
+{Let the browser fill in lat/long}{Laisser le navigateur remplir latitude et longitude}
+{Limiting stellar magnitude}{Limite de la magnitude stellaire}
+{Higher number means show dimmer stars}{Plus grande veut dire voir des étoiles moins brillantes}
+{Chart width in degrees}{Largeur de la carte en degrés}
+{Style}{Style}
+{Regular}{Régulier}
+{Print-friendly}{Pour imprimer}
+{Show identifiers (multi-select)}{Montrer les noms}
+{Show the star chart}{Montrer la carte du ciel}
+{Default settings}{Défaut}
+{Note}{À noter}
+{all items are optional, except for <em>center on</em>. You can either choose a specific object, or enter a specific right ascension and declination.}
+{tous les champs sonts facultatifs, sauf <em>centrer sur</em>. Vous pouvez ou choisir un objet particulier, ou entrer une α, δ particulier.}
+{the location, latitude, and longitude are used only for lunar parallax.}
+{la location, latitude, et longitude sont employés seulement pour calculer le parallax lunaire.}
+{the other items show default values. Usually, just accepting the defaults is adequate.}
+{les autres choses ont des valeurs par défauts. Souvent, simplement employer les défauts est suffisant.}
+
+
+
+{degs}{degs}
+{Place}{Location}
+{Time}{Temps}
+{Lat}{Lat}
+{Long}{Long}
+{Num minutes UT is in advance of browser's local time (LT)}{}
+{year}{année}
+{month}{mois}
+{day}{jour}
+{hour}{heure}
+{min}{min}
+{sec}{sec}
+{Form}{Formulaire}

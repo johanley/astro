@@ -53,6 +53,20 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
    <param-value>false</param-value>
   </context-param>
   
+  <filter>
+   <description>
+    Detects user choices for the language of the user interface.
+   </description>
+   <display-name>Language Detector</display-name>
+   <filter-name>LanguageDetector</filter-name>
+   <filter-class>astro.translate.LanguageDetector</filter-class>
+  </filter>
+  
+  <filter-mapping>
+   <filter-name>LanguageDetector</filter-name>
+   <url-pattern>*.sky</url-pattern>
+  </filter-mapping>
+  
   <!-- IMPORTANT: an app can have N servlets. -->
   
   <servlet>
@@ -131,9 +145,9 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
     </jsp-property-group>
     <!-- Pointers to tag library descriptor files. -->
     <taglib>
-      <!-- Custom tag library, part of this app. -->
-      <taglib-uri>/stub</taglib-uri>
-      <taglib-location>/WEB-INF/tlds/stub.tld</taglib-location> 
+      <!-- Custom tag library. -->
+      <taglib-uri>/s</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/astro.tld</taglib-location> 
     </taglib>
     <!-- JSTL: standard tag libraries. Just point to these files. You never change their content. -->
     <taglib>
