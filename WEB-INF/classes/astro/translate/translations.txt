@@ -100,7 +100,8 @@
 {Time}{Temps}
 {Lat}{Lat}
 {Long}{Long}
-{Num minutes UT is in advance of browser's local time (LT)}{}
+{Num minutes UT is in advance of browser's local time (LT)}
+{Nombre de minutes que le Temps Universel (UT) est en avance du temps du navigateur (LT)}
 {year}{année}
 {month}{mois}
 {day}{jour}
