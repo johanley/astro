@@ -19,11 +19,14 @@ To run the app locally on Tomcat:
 * a plain, default install of Tomcat will have its server running on localhost:8080/
 
 After you've installed Tomcat, the last step is to point Tomcat to the root of the project tree for astronomytonight.net 
-that you downloaded from github. You do that by creating in this location
-* `tomcat-home/conf/Catalina/localhost/astro.xml`
+that you downloaded from github. You do that by creating a file in this location
+* `{tomcat-home}/conf/Catalina/localhost/astro.xml`
 
-This .xml file (called a context file) simply contains a pointer to the root of the project tree. An example (which you will need to modify, of course):
+This astro.xml file (called a context file) simply contains a pointer to the root of the project tree. An example (which you will need to modify, of course):
 `<Context docBase="C:\myname\projects\astro\" reloadable="true"></Context>`
+
+The name of the `astro.xml` file controls the URL under which you'll see the app running:  
+* `localhost:8080/astro/`
 
 The layout of the source tree matches the runtime layout of the web site.  
 * running the app locally is simply a matter of pointing Tomcat to the root of the project. (Point the `docBase` of the Tomcat context to the root of the source tree, for example.) 
