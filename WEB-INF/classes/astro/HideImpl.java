@@ -42,7 +42,6 @@ public class HideImpl extends HttpServlet {
     }
     else {
       //map all /blah/blah.sky paths to a corresponding /blah/blah.jsp, under the app root
-      String path = aRequest.getServletPath();
       replaceExtensionWith(".jsp", aRequest, aResponse);
       //or pass execution to some class, which will later forward/redirect as needed
     }
@@ -61,19 +60,19 @@ public class HideImpl extends HttpServlet {
 
   /** In the simplest case, just forward to the corresponding .html or .jsp in the app root */
   private void replaceExtensionWith(String replacement, HttpServletRequest aRequest, HttpServletResponse aResponse){
-    String path = "";
-    Integer ext = aRequest.getServletPath().indexOf(EXT); // eg main/form.html
-    String urlStart = aRequest.getServletPath().substring(0, ext);
+    String path = aRequest.getServletPath(); // eg /main/form.sky
+    Integer ext = aRequest.getServletPath().indexOf(EXT); //location of .sky
+    String urlStart = aRequest.getServletPath().substring(0, ext); //part before .sky
     if (path.endsWith(EXT)){
-      path = urlStart + replacement; 
+      path = urlStart + replacement; //.sky to .jsp 
     }
     else {
       String urlEnd = aRequest.getServletPath().substring(ext + EXT.length());
-      path = urlStart + replacement + urlEnd;
+      path = urlStart + replacement + urlEnd; //change .sky to .jsp, and then append any items after .sky
     }
     forwardTo(path, aRequest, aResponse);
   }
-
+  
   private void forwardTo(String destination, HttpServletRequest aRequest, HttpServletResponse aResponse){
       RequestDispatcher dispatcher = aRequest.getRequestDispatcher(destination);
       aResponse.setCharacterEncoding("UTF-8");

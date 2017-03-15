@@ -3,7 +3,7 @@
  Always stretch the contrast: otherwise it's too low.
  Current impl uses Web Mapping Service (WMS) servers.
 */
-var showClouds = function(input, current_solar_alt_degs, output_image, title, satellite_name){
+var showClouds = function(input, current_solar_alt_degs, output_image, satellite_name){
 
   /* these are all required */
   var size_pixels = parseInt(input.pixels_on_a_side);
@@ -116,7 +116,6 @@ var showClouds = function(input, current_solar_alt_degs, output_image, title, sa
   */
   var showTheImage = function(url, output, stretch_contrast){
     var canvas = document.getElementById(output);
-    canvas.title = title;
     setCanvasSizeToMatchImageSize(canvas);
     var ctx = canvas.getContext("2d");
     var img = new Image();

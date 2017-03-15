@@ -35,7 +35,7 @@ public class TranslatorTag extends TagHelper {
    The format of data in the file is <tt>{Saturn}{Saturne}</tt>. 
    English first, French second, and so on.
    The braces are the separators. 
-   Follows an ordering convention, without naming the language.  
+   An ordering convention is used, without naming the language: English first, French second (and so on).  
    The units must come in tuples; if they get out of the conventional order, things will get completely messed up! 
    But if that happens, the problem should be obvious.   
    Multiline data is allowed.
@@ -43,7 +43,7 @@ public class TranslatorTag extends TagHelper {
   public static final String TRANSLATIONS_FILE_NAME = "translations.txt";
   
   /**
-   Key for a hard-coded file path:  {@value}.
+   Name of a file in the same directory as this class:  {@value}.
    If an error is found when trying to translate, then an error message is appended to this file. 
   */
   public static final String TRANSLATION_ERRORS_FILE_NAME = "translation_errors.txt";
@@ -57,12 +57,9 @@ public class TranslatorTag extends TagHelper {
   @Override protected String getEmittedText(String englishText) throws JspException, IOException {
     enusureInitialized();
     String result = englishText;
-    HttpSession session = getRequest().getSession(DO_NOT_CREATE); 
-    if (session != null){
-      String langChoice = (String)session.getAttribute(LanguageDetector.KEY_NAME_SESSION);
-      if (Util.textHasContent(langChoice) && Util.textHasContent(englishText)){
-        result = translate(englishText, langChoice);
-      }
+    String langChoice = getLanguageChoice();
+    if (Util.textHasContent(langChoice) && Util.textHasContent(englishText)){
+      result = translate(englishText, langChoice);
     }
     return result;
   }
@@ -80,7 +77,7 @@ public class TranslatorTag extends TagHelper {
   private enum Language {
     ENGLISH("en", 1),
     FRENCH("fr", 2);
-    //OTHER LANGS GO HERE
+    //NOTE TO THE FUTURE: OTHER LANGS GO HERE
     private Language(String key, Integer groupIdx){
       KEY = key; //the same as the <html lang='en'> attribute: en, fr, etc
       GROUP_IDX = groupIdx; //the order of appearance in the translations file; a regex matching group index
@@ -107,6 +104,15 @@ public class TranslatorTag extends TagHelper {
   private static void main(String... args) throws IOException {
     log("Starting.");
   }
+
+  private String getLanguageChoice(){
+    String result = "";
+    HttpSession session = getRequest().getSession(DO_NOT_CREATE); 
+    if (session != null){
+      result = (String)session.getAttribute(LanguageDetector.KEY_NAME_SESSION);
+    }
+    return result;
+  }
   
   private String translate(String englishText, String langChoice /*'en', 'fr', etc*/){
     String result = englishText.trim();
@@ -125,7 +131,7 @@ public class TranslatorTag extends TagHelper {
         error1(englishText);
       }
     }
-    log("Translated '" + englishText + "' to '" + result + "'");
+    //log("Translated '" + englishText + "' to '" + result + "'");
     return result;
   }
   

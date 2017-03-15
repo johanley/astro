@@ -25,7 +25,7 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
   
   <context-param>
    <param-name>lastUpdatedOn</param-name>
-   <param-value>2017-03-04</param-value>
+   <param-value>2017-03-15</param-value>
   </context-param>
 
   <!-- Update on every new deploy to prod. -->
@@ -33,7 +33,7 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
   <!-- Append this number to file names in markup, eg 'styles.css?ver=1' or 'code.js?ver=1'. Update the ver value for each new deployment. -->  
   <context-param>
    <param-name>ver</param-name>
-   <param-value>2</param-value>
+   <param-value>3</param-value>
   </context-param>
 
   <context-param>

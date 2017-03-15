@@ -69,7 +69,7 @@
  <script> 
   window.onload = function() {
     var formInput = UTIL.requestParams(window);
-    show(formInput, "${initParam.metOfficeApiKey}", ${initParam.isDev});
+    show(formInput, "${initParam.metOfficeApiKey}", ${initParam.isDev}, "<s:txt>en</s:txt>");
   };
   window.onorientationchange = function() { 
     location.reload();
@@ -79,26 +79,27 @@
 <body> 
  
  <table id='summary' class='report' style='margin-top:0;'>
+    <tr><th><s:txt>Place</s:txt><th><s:txt>Time</s:txt><th title="<s:txt>Local Mean Sidereal Time</s:txt>"><s:txt>LMST</s:txt><th><s:txt>Lat</s:txt><th><s:txt>Long</s:txt><th><s:txt>UT - LT</s:txt>
  </table>
  <span style='white-space:nowrap;'  class='no-print'>
  <form id='date_time_controls' method='GET' action='' class='no-print' style="display:inline; margin:0.25em;">
    <input type='submit' name='go' value='&lt;' onclick="go_plus=0;"  class='no-print' >
    <input type='text' name='num_steps' id='num_steps' size='4'  class='no-print' >
    <select name='date_time_unit' id='date_time_unit'  class='no-print' >
-     <option>year
-     <option>month
-     <option selected>day
-     <option>hour
-     <option>min
-     <option>sec
+     <option value='year'><s:txt>year</s:txt>
+     <option value='month'><s:txt>month</s:txt>
+     <option value='day' selected><s:txt>day</s:txt>
+     <option value='hour'><s:txt>hour</s:txt>
+     <option value='min'><s:txt>min</s:txt>
+     <option value='sec'><s:txt>sec</s:txt>
    </select>
    <input type='submit' name='go' value='&gt;' onclick="go_plus=1;"  class='no-print' >
  </form>
 
   <form style="display:inline; margin:0.25em;">
    <select onChange="if (this.value) window.location.href=this.value">
-     <option value=''>Location
-     <option value=''>---Canada---
+     <option value=''><s:txt>Choose a location</s:txt>
+     <option value=''><s:txt>---Canada---</s:txt>
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Banff&latitude=51%2E18&longitude=-115%2E57&locations=51%2E18,-115%2E57&weather_station=49&radar_station=XSM&clear_sky_clock_station_id=BnffAB'>AB Banff
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Calgary&latitude=51%2E03&longitude=-114%2E09&locations=51%2E03,-114%2E09&weather_station=52&radar_station=XSM&clear_sky_clock_station_id=Calgary'>AB Calgary
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Edmonton&latitude=53%2E54&longitude=-113%2E50&locations=53%2E54,-113%2E50&weather_station=50&radar_station=WHK&clear_sky_clock_station_id=Edmonton'>AB Edmonton
@@ -184,7 +185,7 @@
      <option value='graphic%2Esky?country=cda&prov=SK&location_name=Saskatoon&latitude=52%2E13&longitude=-106%2E69&locations=52%2E13,-106%2E69&weather_station=40&radar_station=XRA&clear_sky_clock_station_id=Saskatoon'>SK Saskatoon
      <option value='graphic%2Esky?country=cda&prov=SK&location_name=Swift+Current&latitude=50%2E29&longitude=-107%2E79&locations=50%2E29,-107%2E79&weather_station=41&radar_station=XBU&clear_sky_clock_station_id=SwtCrnSK'>SK Swift Current
      <option value='graphic%2Esky?country=cda&prov=YT&location_name=Whitehorse&latitude=60%2E72&longitude=-135%2E06&locations=60%2E72,-135%2E06&weather_station=16&radar_station=&clear_sky_clock_station_id=WhthrsYK'>YT Whitehorse
-     <option value=''>---U.S.A.---
+     <option value=''><s:txt>---U.S.A.---</s:txt>
      <option value='graphic%2Esky?country=us&location_name=Anchorage&latitude=61%2E20&longitude=-149%2E88&locations=61%2E20,-149%2E88&radar_station=AHG&clear_sky_clock_station_id=AnchorAK'>AK Anchorage
      <option value='graphic%2Esky?country=us&location_name=Phoenix&latitude=33%2E43&longitude=-112%2E09&locations=33%2E43,-112%2E09&radar_station=IWA&clear_sky_clock_station_id=Phoenix'>AZ Phoenix
      <option value='graphic%2Esky?country=us&location_name=Los+Angeles&latitude=34%2E03&longitude=-118%2E31&locations=34%2E03,-118%2E31&radar_station=SOX&clear_sky_clock_station_id=LAXCA'>CA Los Angeles
@@ -232,7 +233,7 @@
      <option value='graphic%2Esky?country=us&location_name=Norfolk&latitude=36%2E86&longitude=-76%2E29&locations=36%2E86,-76%2E29&radar_station=AKQ&clear_sky_clock_station_id=TidewaterVA'>VA Norfolk
      <option value='graphic%2Esky?country=us&location_name=Seattle&latitude=47%2E60&longitude=-122%2E32&locations=47%2E60,-122%2E32&radar_station=ATX&clear_sky_clock_station_id=Seattle'>WA Seattle
      <option value='graphic%2Esky?country=us&location_name=Spokane&latitude=47%2E67&longitude=-117%2E42&locations=47%2E67,-117%2E42&radar_station=OTX&clear_sky_clock_station_id=SpknWA'>WA Spokane
-     <option value=''>---United Kingdom---
+     <option value=''><s:txt>---United Kingdom---</s:txt>
      <option value='graphic%2Esky?country=uk&location_name=Aberdeen&latitude=57%2E14&longitude=-2%2E11&locations=57%2E14,-2%2E11&weather_station=3091&'>Aberdeen
      <option value='graphic%2Esky?country=uk&location_name=Belfast&latitude=54%2E59&longitude=-5%2E93&locations=54%2E59,-5%2E93&weather_station=3917&'>Belfast
      <option value='graphic%2Esky?country=uk&location_name=Cardiff&latitude=51%2E48&longitude=-3%2E18&locations=51%2E48,-3%2E18&weather_station=3716&'>Cardiff
@@ -253,52 +254,146 @@
    </select>
   </form>
   
-  <a href='form.sky' id='link_back' class='no-print'>Form</a>
+  <a href='form.sky' id='link_back' class='no-print'><s:txt>Form</s:txt></a>
  </span>
  
 
  <P>
  <div>  
   <table id='weather' class='report weather'></table>
-  <canvas id='clouds' class='no-print cloud' style='margin:0.25em;'></canvas>
+  <canvas id='clouds' class='no-print cloud' style='margin:0.25em;' title='<s:txt>Satellite image, a few minutes ago</s:txt>'></canvas>
   <img id='radar' class='no-print radar'>
   <canvas id='radar_us'  class='no-print radar' style='margin:0.25em;'></canvas> 
   <div id='radar_uk'  class="no-print radar" style='margin:0.25em;float:right;'></div>  
   <!-- <div id='radar_uk'  class="no-print radar" style='float:right;margin:0.25em;'></div> -->  
  </div>
  
-<P><canvas id='ecliptic'  class='sky no-print'></canvas>
-<P><canvas id='observation_window'  class='no-print'></canvas>
+<P><canvas id='ecliptic' class='sky no-print' title='<s:txt>Ecliptic, showing the planets and Moon</s:txt>'></canvas>
+<P><canvas id='observation_window' class='no-print' title='<s:txt>Observation window: twilight and brightness of the Moon</s:txt>'></canvas>
 <P><canvas id='planisphere' class='no-print'></canvas>
  
 <P style='text-align:center;'><img id='clear_sky_clock' src='' class='no-print' style='border-radius: 10px;'>
 <P>
-<canvas id='libration' class='sky no-print' ></canvas>
-<canvas id='galilean_satellites'  class='sky no-print'  style='margin-right:0.25em;'></canvas>
+<canvas id='libration' class='sky no-print' title='<s:txt>Lunar libration, phase, and change in size from mean</s:txt>'></canvas>
+<canvas id='galilean_satellites'  class='sky no-print'  style='margin-right:0.25em;' title='<s:txt>Galilean satellites of Jupiter</s:txt>'></canvas>
  
  <table id='sun_and_moon_and_planets_table' class='report' style="text-align:right;">
+  <caption><s:txt>Sun, Moon, and Planets</s:txt> 
+   <tr style="text-align:center;">
+    <th><s:txt>Name</s:txt>
+    <th><s:txt>Const</s:txt>
+    <th><s:txt>Elong</s:txt>
+    <th><s:txt>Mag</s:txt>
+    <th><s:txt>Size</s:txt>
+    <th><s:txt>Illum</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>α
+    <th>δ
+    <th><s:txt>Rise</s:txt>
+    <th><s:txt>Transit</s:txt>
+    <th><s:txt>Set</s:txt>  
  </table>
+ 
  <table id='diary_table' class='report'>
+   <caption><s:txt>Sky Diary</s:txt>
+   <tr>
+    <th><s:txt>When</s:txt> 
+    <th><s:txt>Description</s:txt>
  </table>
  
  <table id='minor_planet_table' class='report'>
- </table>
- <table id='comet_table' class='report'>
- </table>
- <table id='jupiter_satellite_phenomena' class='report'>
+   <caption><s:txt>Minor Planets</s:txt> 
+   <tr>
+    <th><s:txt>Name</s:txt>
+    <th><s:txt>Elong</s:txt>
+    <th><s:txt>Mag</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>α
+    <th>δ
  </table>
  
+ <table id='comet_table' class='report'>
+  <caption><a href="https://www.ast.cam.ac.uk/~jds/"><s:txt>Bright Comets</s:txt></a> 
+  <tr>
+    <th><s:txt>Name</s:txt>
+    <th><s:txt>Elong</s:txt>
+    <th><s:txt>Mag</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>α
+    <th>δ
+    <th><s:txt>Trend</s:txt>
+    <th><s:txt>Visible</s:txt>
+ </table>
+ 
+ <table id='jupiter_satellite_phenomena' class='report' title='<s:txt>Times are approximate</s:txt>'>
+  <caption><s:txt>Jupiter Satellite Phenomena</s:txt>
+   <tr>
+    <th><s:txt>When</s:txt>
+    <th><s:txt>Satellite</s:txt>
+    <th><s:txt>Event</s:txt>
+ </table>
  
  <table id='aurora_table' class='report'>
+   <caption><a href="http://www.swpc.noaa.gov/products/aurora-30-minute-forecast"><s:txt>Auroral Activity Level</s:txt></a> 
  </table>
- <table id='occultation_table' class='report'>
+ 
+ <table id='occultation_table' class='report' title='<s:txt>Occultation times are approximate</s:txt>'>
+  <caption><a href="http://www.lunar-occultations.com/iota/iotandx.htm"><s:txt>Occultations</s:txt></a>
+  <tr>
+   <th><s:txt>When</s:txt>
+   <th><s:txt>ZC</s:txt>
+   <th><s:txt>Mag</s:txt>
+   <th><s:txt>Ph</s:txt>
+   <th><s:txt>El</s:txt>
+   <th><s:txt>PA</s:txt>
+   <th><s:txt>Alt</s:txt>
  </table>
+ 
  <table id='meteor_shower_table' class='report'>
+   <caption><s:txt>Meteor Showers</s:txt> 
+   <tr>
+    <th><s:txt>Name</s:txt> 
+    <th><s:txt>Desig</s:txt>
+    <th><s:txt>Peak</s:txt>
+    <th><s:txt>Km/s</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>r
+    <th><s:txt>ZHR</s:txt>
+    <th><s:txt>ZHR</s:txt> x
  </table>
 
  <br><table id='messiers' class='report'>
+  <caption><s:txt>Messier Objects</s:txt>
+  <tr>
+    <th><s:txt>Name</s:txt>
+    <th><s:txt>Const</s:txt>
+    <th><s:txt>Chart</s:txt>
+    <th><s:txt>Mag</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>α
+    <th>δ
+    <th><s:txt>Type</s:txt>
+    <th><s:txt>Comment</s:txt>
  </table>
+ 
  <br><table id='caldwells' class='report'>
+  <caption><s:txt>Caldwell Objects</s:txt>
+  <tr>
+    <th><s:txt>Name</s:txt>
+    <th><s:txt>Const</s:txt>
+    <th><s:txt>Chart</s:txt>
+    <th><s:txt>Mag</s:txt>
+    <th><s:txt>Alt</s:txt>
+    <th><s:txt>Az</s:txt>
+    <th>α
+    <th>δ
+    <th><s:txt>Type</s:txt>
+    <th><s:txt>Comment</s:txt>
  </table>
  
  <tags:analytics/>

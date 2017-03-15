@@ -33,13 +33,17 @@ public class LanguageDetector implements Filter {
   /** Name of a request param, or a cookie: {@value}.*/
   public static final String KEY_NAME = "lang";
   
-  /** Name of the lang as stored in the session. This name will avoid possible collisions with other tools: {@value}.*/
+  /** 
+   Name of the lang <em>as stored in the session</em>: {@value}. 
+   Using this name will avoid possible collisions with other tools.
+  */
   public static final String KEY_NAME_SESSION = "astro.lang";
 
+  /** Detect the user's chosen language, if any. */
   @Override public void doFilter(ServletRequest aRequest, ServletResponse aResponse, FilterChain aChain) throws IOException, ServletException {
     HttpServletRequest request = (HttpServletRequest) aRequest;
     HttpServletResponse response = (HttpServletResponse) aResponse;
-    fLogger.fine("Detect language filter.");
+    log("Detect language filter.");
     detectAndUpdateLanguageChoice(request, response); //executed *before* regular servlet processing
     aChain.doFilter(aRequest, aResponse);
     //code here is executed *after* regular servlet processing
@@ -59,11 +63,11 @@ public class LanguageDetector implements Filter {
   
   private void detectAndUpdateLanguageChoice(HttpServletRequest request, HttpServletResponse response){
     String current = currentLangChoice(request);
-    fLogger.fine("Current lang choice in session: " + current);
+    log("Current lang choice in session: " + current);
     String incoming = incomingLangChoice(request);
-    fLogger.fine("Incoming lang choice: " + incoming);
+    log("Incoming lang choice: " + incoming);
     if (hasChanged(incoming, current)){
-      fLogger.fine("Updating the user's lang choice from: " + current + " to: "+ incoming);
+      log("Updating the user's lang choice from: " + current + " to: "+ incoming);
       updateTo(incoming, request, response);
     }
   }
@@ -112,7 +116,13 @@ public class LanguageDetector implements Filter {
     HttpSession session = request.getSession(CREATE_SESSION_IF_ABSENT);
     session.setAttribute(KEY_NAME_SESSION, incoming);
     Cookie userCookie = new Cookie(KEY_NAME, incoming);
-    userCookie.setMaxAge(60*60*24*365); //1 year
+    userCookie.setMaxAge(10*60*60*24*365); //10 years
+    userCookie.setPath("/");
     response.addCookie(userCookie);    
+  }
+  
+  /** Intended for debugging only. */
+  private void log(String text){
+    //fLogger.fine(text); 
   }
 }

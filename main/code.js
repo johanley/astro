@@ -1,7 +1,7 @@
 /* 
  Show numerous ephemerides for the given input date.
 */
-var show = function(input, MET_OFFICE_API_KEY, is_dev){
+var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
 
   var start = new Date().getTime();
 
@@ -19,7 +19,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     }
   };
   var apply_default_settings_if_absent = function(){
-    default_setting('preferred_lang', 'e');
     default_setting('date_time', ''); //now
     default_setting('time_scale', 'LT');
     default_setting('limiting_mag', '5.1');
@@ -137,37 +136,13 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
   );
   opts_rads.equinox = when; //equinox of date
 
+  //this impl suffices for 2 langs (list); it's a simple matter to change it to handle N langs instead (map) 
   var all_text = [];
   var populate_translations = function(){
     all_text['e'] = 'f';
-    all_text['Place'] = 'Endroit';
-    all_text['Time'] = 'Temps';
-    all_text['Weather'] = 'Météo';
-    all_text['When'] = 'Quand';
-    all_text['Sky Diary'] = 'Journal du ciel';
-    all_text['Sun, Moon, and Planets'] = 'Soleil, lune, et planètes';
-    all_text['Name'] = 'Nom';
-    all_text['Size'] = 'Taille';
-    all_text['Mag'] = 'Éclat';
-    all_text['Rise'] = 'Lever';
-    all_text['Set'] = 'Coucher';
-    all_text['Comment'] = 'Commentaire';
-    all_text['Bright Comets'] = 'Comètes brilliantes';
-    all_text['Messier Objects'] = 'Objets Messier';
-    all_text['Caldwell Objects'] = 'Objets Caldwell';
-    all_text['Minor Planets'] = 'Astéroïdes';
-    all_text['Meteor Showers'] = 'Pluies de météores';
-    all_text['Elong'] = 'Élong';
-    all_text['Desig'] = 'Désig';
-    all_text['Peak'] = 'Max';
-    all_text['ZHR'] = 'THZ';
-    
-    all_text['Sun'] = 'Soleil';
-    all_text['Moon'] = 'Lune';
-    all_text['Mercury'] = 'Mércure';
-    all_text['Venus'] = 'Vénus';
-    all_text['Saturn'] = 'Saturne';
-    
+    all_text['Population index; smaller means brighter'] = 'Indice de population; plus petit signifie plus brilliant';
+    all_text['Factor by which ZHR is multiplied, for current alt and limiting mag'] = 'Muliplier THZ par ce facteur, pour l&apos;effet de hauteur';
+        
     all_text['SSW'] = 'SSO';
     all_text['SW'] = 'SO';
     all_text['WSW'] = 'OSO';
@@ -184,7 +159,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     all_text['Fr'] = 'Ven';
     all_text['Sa'] = 'Sam';
     
-    all_text['Trend'] = 'Tendance';
     all_text['bright'] = 'brilliante';
     all_text['fade'] = 'diminuer';
     all_text['steady'] = 'constante';
@@ -193,45 +167,34 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     all_text['early morning'] = 'tôt le matin';
     all_text['early evening'] = 'tôt le soir';
     
-    all_text['Auroral Activity Level'] = "Aurore: niveau d'activité";
-    
-    all_text['Observation window: twilight and brightness of the Moon'] = 'Limites de temps pour observer: crépuscule, illumination de la lune'
-    all_text['Ecliptic, showing the planets and Moon'] = "Écliptique, avec les planètes et la lune";
-    all_text['Galilean satellites of Jupiter'] = 'Satellites galiléens de Jupiter';
-    all_text['Lunar libration, phase, and change in size from mean'] = 'Lune: libration, phase, et changement de taille par rapport au moyen';
-    all_text['Satellite image, a few minutes ago'] = 'Image satellite, il y a quelques instants';
-    all_text['Clear Sky Clock, predicted sky conditions'] = 'Les conditions du ciel (prévisions)';
-
-    all_text['Occultation times are approximate'] = 'Les temps sont approximatifs';
-    all_text['Star'] = 'Étoile';
-    all_text['El'] = 'Él';
     all_text['PA'] = 'AP';
     all_text['DD'] = 'DS'; //sombre, claire
     all_text['DB'] = 'DC';
     all_text['RD'] = 'RS';
     all_text['RB'] = 'RC';
     
-    all_text['Jupiter Satellite Phenomena'] = 'Phénomènes des satellites de Jupiter';
-    all_text['Times are approximate'] = 'Les temps sont approximatifs';
     all_text['Europa'] = 'Europe';
     all_text['Ganymede'] = 'Ganymède';
     all_text['Event'] = 'Phénomène';
     all_text['Shadow transit'] = "Passage d'ombre";
     all_text['Satellite transit'] = 'Passage';
-    all_text['Egress'] = 'Finir';
-    all_text['Ingress'] = 'Commencer';
+    all_text['Egress'] = 'Fin';
+    all_text['Ingress'] = 'Début';
     all_text['Disappearance'] = 'Disparition';
     all_text['Reappearance'] = 'Réapparition';
     
-    all_text['LMST'] = 'TSML';
-    all_text['Local Mean Sidereal Time'] = 'Temps sidéral moyen local';
-    all_text['Chart'] = 'Carte';
-    
+    // for the planisphere legend
+    all_text['Radiant'] = 'Radiant';
+    all_text['Messier'] = 'Messier';
+    all_text['Comet'] = 'Comète';
+        
+    all_text['Chart'] = 'Carte'; //messier table    
   };
   populate_translations();
   var trans = function(english_key){
     var result = english_key;
-    if (input.preferred_lang === 'f'){
+    if (lang === 'fr'){
+      //this data structure handles only one other lang; can be easily changed to handle N langs 
       if (all_text[english_key]){
         result = all_text[english_key];
       }
@@ -317,8 +280,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       when_text = when_text.substring(0, when_text.length-7) + trans(when_text.substring(when_text.length-3));
     }
     var lmst = EPH.lmst(when, opts_rads.where);
-    summary.innerHTML = summary.innerHTML + NL + '<tr><th>' + trans('Place') + '<th>' + trans('Time') + '<th title="' + trans('Local Mean Sidereal Time') + '">' + trans('LMST') + '<th>Lat<th>Long<th>UT - LT' + NL;
-    summary.innerHTML = summary.innerHTML + NL + 
+    summary.innerHTML = NL + summary.innerHTML + NL + 
       '   <tr><td><a href="' +  google_maps_link() + '">' + UTIL.escapeHtml(input.location_name) + '</a>' +    
       '<td>' + when_text +  
       '<td>' + lmst.hour + ':' + lmst.min + ':' + lmst.sec.substring(0,2) +   
@@ -441,10 +403,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     }
     else {
       rows = planet_rows(false);
-      table.innerHTML = table.innerHTML + NL + 
-       '<caption>' + trans('Sun, Moon, and Planets') + NL + 
-       '<tr style="text-align:center;" ><th>' + trans('Name') + '<th>Const<th>' + trans('Elong') + '<th>' + trans('Mag') + '<th>' + trans('Size') + '<th>Illum<th>Alt<th>Az<th>α<th>δ<th>' + trans('Rise') + '<th>Transit<th>' + trans('Set') + NL  
-      ;
       for (i=0; i < rows.length; ++i){
         populate_sun_moon_planets_table(rows[i]);
       }
@@ -581,7 +539,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       dont_show(canvas);
     }
     else {
-      canvas.title = trans('Ecliptic, showing the planets and Moon');
       GRAPH.line(ctx, 0, h/2, w, h/2); //horizontal ecliptic in the middle
       for(i=1; i <= 7; ++i){ // ticks at top, intervals of 45 degrees
         tweak = 1;
@@ -770,7 +727,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       dont_show(canvas);
     }
     else {
-      canvas.title = trans('Observation window: twilight and brightness of the Moon');
       obs_window = EPH.observation_window(when, opts_rads, parseInt(input.twilight)); 
       planets = planets_etc.length > 0 ? planets_etc : planet_rows(false);
       for(i=0; i < planets.length; ++i){
@@ -847,7 +803,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     }
     else {
       var JUPITERS_RADIUS = w * 0.015; //the coords of the satellites take this as unit distance 
-      canvas.title = trans('Galilean satellites of Jupiter');
       jupiter =  {x: w/2, y: h/2, radius: JUPITERS_RADIUS};
       GRAPH.spot(ctx, jupiter.x, jupiter.y, jupiter.radius); //Jupiter's disk in the middle
       satellites = EPH.physical_jupiter(when).satellites;
@@ -874,7 +829,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       dont_show(table);
     }
     else {
-      table.innerHTML = table.innerHTML + NL + '<caption>' + trans('Sky Diary') + NL + '<tr><th>' + trans('When') + '<th>' + trans('Description');
       for(var i=0; i < events.length; i++){
         when_string = events[i].when.toStringLT(WEEKDAYS);
         when_string = when_string.substring(3, when_string.length-9) + when_string.substring(when_string.length-4);
@@ -888,17 +842,13 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
   };
   add_to_diary_table(EPH.current_events(when, 7));
   
-  var add_to_deep_sky_object_table = function(rows, node_name, title, link_fn /*optional*/){
+  var add_to_deep_sky_object_table = function(rows, node_name, link_fn /*optional*/){
     var thing, ephem;
     var table = document.getElementById(node_name);
     if (input['exclude_' + node_name] === '1' || rows.length === 0){
       dont_show(table);
     }
     else {
-      table.innerHTML = table.innerHTML + NL +
-        '<caption>' + trans(title) + NL +
-        '<tr><th>' + trans('Name') + '<th>Const<th>' + trans('Chart') + '<th>' + trans('Mag') + '<th>Alt<th>Az<th>α<th>δ<th>Type<th>' + trans('Comment')
-      ;
       for(var i = 0; i < rows.length; i++){
         thing = rows[i].thing;
         ephem = rows[i].ephem;
@@ -929,11 +879,11 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
   };
   var min_alt = 25;
   var visible_messiers = EPH.find_visible_messiers(when, opts.where, min_alt, parseFloat(input.limiting_mag_messiers), opts);
-  add_to_deep_sky_object_table(visible_messiers, 'messiers', 'Messier Objects', messier_link);
+  add_to_deep_sky_object_table(visible_messiers, 'messiers', messier_link);
   var visible_caldwells = EPH.find_visible_caldwells(when, opts.where, min_alt, parseFloat(input.limiting_mag_messiers), opts);
-  add_to_deep_sky_object_table(visible_caldwells, 'caldwells', 'Caldwell Objects', caldwell_link);
+  add_to_deep_sky_object_table(visible_caldwells, 'caldwells', caldwell_link);
   
-  var populate_table = function(things, node_name, exclude_flag, table_name){
+  var populate_table = function(things, node_name, exclude_flag){
     var table = document.getElementById(node_name);
     if (things.length === 0 || input[exclude_flag] === '1'){
       dont_show(table);
@@ -946,10 +896,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
         rows.push({thing: things[i], ephem: ephem});
       }
       rows.sort(highest_first);
-      table.innerHTML = table.innerHTML + NL + 
-        '<caption>' + trans(table_name) + NL + 
-        '<tr><th>' + trans('Name') + '<th>' + trans('Elong') + '<th>' + trans('Mag') + '<th>Alt<th>Az<th>α<th>δ' + NL
-      ;
       for(i=0; i < rows.length; ++i){
         thing = rows[i].thing;
         ephem = rows[i].ephem;
@@ -966,12 +912,9 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       }
     }
   };
-  //IF I ADD '.elong' TO MESSIERS, THEN THIS CAN BE REUSED A 3RD TIME
-  populate_table(EPH.as_array(EPH.minor_planets), 'minor_planet_table', 'exclude_minor_planets', 'Minor Planets');
-  //populate_table(EPH.as_array(EPH.comets), 'comet_table', 'exclude_comets', 'Bright Comets');
+  populate_table(EPH.as_array(EPH.minor_planets), 'minor_planet_table', 'exclude_minor_planets');
 
-
-  var populate_comets_table = function(things, node_name, exclude_flag, table_name){
+  var populate_comets_table = function(things, node_name, exclude_flag){
     var table = document.getElementById(node_name);
     if (things.length === 0 || input[exclude_flag] === '1'){
       dont_show(table);
@@ -984,10 +927,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
         rows.push({thing: things[i], ephem: ephem});
       }
       rows.sort(highest_first);
-      table.innerHTML = table.innerHTML + NL + 
-        '<caption><a href="https://www.ast.cam.ac.uk/~jds/">' + trans(table_name) + "</a>" + NL + 
-        '<tr><th>' + trans('Name') + '<th>' + trans('Elong') + '<th>' + trans('Mag') + '<th>Alt<th>Az<th>α<th>δ<th>' + trans('Trend') + '<th>Visible' + NL
-      ;
       for(i=0; i < rows.length; ++i){
         thing = rows[i].thing;
         ephem = rows[i].ephem;
@@ -1006,7 +945,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       }
     }
   };
-  populate_comets_table(EPH.as_array(EPH.comets), 'comet_table', 'exclude_comets', 'Bright Comets');
+  populate_comets_table(EPH.as_array(EPH.comets), 'comet_table', 'exclude_comets');
   
 
   var add_to_meteor_shower_table = function(showers){
@@ -1016,22 +955,20 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       dont_show(table);
     }
     else {
-      table.innerHTML = table.innerHTML + NL + 
-       '<caption>' + trans('Meteor Showers') + NL + 
-       '<tr><th>' + trans('Name') + '<th>' + trans('Desig') + '<th>' + trans('Peak') + '<th>Km/s<th>Alt<th>Az<th>r<th>' + trans('ZHR') + '<th>' + trans('ZHR') + ' x' + NL
-      ;
       for(var i=0; i < showers.length; i++){
         zhr_factor = showers[i].zhr_factor ? EPH.round_and_pad(showers[i].zhr_factor, 2) : '';
+        var title1 = trans('Population index; smaller means brighter');
+        var title2 = trans('Factor by which ZHR is multiplied, for current alt and limiting mag');
         table.innerHTML = table.innerHTML + NL + 
           '   <tr><td>' + showers[i].name +
           '<td>' + showers[i].symbol + 
           '<td>' + showers[i].peak_time.toStringLT().substring(2, 19) + 
-          '<td title="Meteor speed">' + showers[i].v +  
+          '<td>' + showers[i].v +  
           '<td>' + EPH.round_and_pad(showers[i].radiant.a,1) + DEG +
           '<td>' + EPH.round_and_pad(showers[i].radiant.A,1) + DEG + 
-          '<td title="Population index; smaller means brighter">' + showers[i].r + 
+          '<td title="' + title1 + '">' + showers[i].r + 
           '<td>' + showers[i].zhr + 
-          '<td title="Factor by which ZHR is multiplied, for current alt and limiting mag">' + zhr_factor
+          '<td title="' + title2 + '">' + zhr_factor
         ;
       }
     }
@@ -1151,7 +1088,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       }
       if (satellite){
         var sun = EPH.position('sun', EPH.when_now(), opts);
-        showClouds(input, sun.a, 'clouds', trans('Satellite image, a few minutes ago'), satellite);
+        showClouds(input, sun.a, 'clouds', satellite);
       }
       else {
         dont_show(document.getElementById('clouds'));
@@ -1509,7 +1446,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       dont_show(canvas);
     }
     else {
-      canvas.title = trans('Lunar libration, phase, and change in size from mean');
       var current_dist, percent_diff, mean_dist = 384400; //km
       for(i=0; i < 2*n_days; ++i){
         when_libration = when_start.delta(i * ONE_DAY*0.5);
@@ -1717,9 +1653,9 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
     var x = 20; // top left corner
     var y = 20;
     var items = [
-      {title: 'Messier', drawer: draw_deep_sky_object},
-      {title: 'Comet', drawer: draw_comet},
-      {title: 'Radiant', drawer: draw_meteor_shower_radiant}
+      {title: trans('Messier'), drawer: draw_deep_sky_object},
+      {title: trans('Comet'), drawer: draw_comet},
+      {title: trans('Radiant'), drawer: draw_meteor_shower_radiant}
     ];
     ctx.save();
     ctx.textAlign="left";
@@ -1924,7 +1860,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       var geomagnetic_latitude = EPH.round(EPH.geomagnetic_latitude(where_aurora(), EPH.when_now()),1);
       var min_kp_level = min_aurora_kp_level(geomagnetic_latitude);
       if (max_aurora_level_in_current(kp_array) >= min_kp_level){
-        table.innerHTML = table.innerHTML + NL + '<caption><a href="http://www.swpc.noaa.gov/products/aurora-30-minute-forecast">' + trans('Auroral Activity Level') + '</a>' + ' (lat. ' + geomagnetic_latitude + '°)'; 
         for (var i=0; i < kp_array.length; i++){
           when = EPH.when(kp_array[i].datetime);
           when_text = trans(when.toStringLT(WEEKDAYS));
@@ -1957,9 +1892,6 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       min_mag = parseFloat(input.occultations_min_mag);
       var occns = fetch_occultation_predictions(where_aurora(), when, look_ahead, min_mag);
       if (occns.length > 0){
-        table.title = trans('Occultation times are approximate');
-        table.innerHTML = table.innerHTML + NL + '<caption><a href="http://www.lunar-occultations.com/iota/iotandx.htm">' + trans('Occultations') + '</a>';
-        table.innerHTML = table.innerHTML + NL + '   <tr><th>' + trans('Time')+'<th>'+trans('Star')+'<th>'+trans('Mag')+'<th>'+trans('Ph')+'<th>'+trans('El')+'<th>'+ trans('PA') + '<th>Alt';
         for (var i=0; i < occns.length; i++){
           // {UT:'2016-10-20 21:08:18', star:'ZC 123', mag:5.5, ph:'DD', el:92, pa:145}
           occn = occns[i];
@@ -1992,7 +1924,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       'Oc': 'Occultation',
       'Ec': 'Eclipse'
     };
-    return long_text[abbr];
+    return trans(long_text[abbr]);
   };  
   var ph_action = function(ph/*Sh.I*/){
     var parts = ph.split("\.");
@@ -2003,7 +1935,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       'D': 'Disappearance',
       'R': 'Reappearance'
     };
-    return long_text[abbr];
+    return trans(long_text[abbr]);
   };  
   var show_jupiter_satellite_phenomena = function(){
     var table = document.getElementById('jupiter_satellite_phenomena');
@@ -2013,13 +1945,10 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev){
       obs_window = EPH.observation_window(when, opts_rads, parseInt(input.twilight)); 
       events = fetch_jupiter_satellite_phenomena(obs_window.sunset, obs_window.sunrise, opts.where);
       if (events.length > 0){
-        table.title = trans('Times are approximate');
-        table.innerHTML = table.innerHTML + NL + '<caption>' + trans('Jupiter Satellite Phenomena') + '</a>';
-        table.innerHTML = table.innerHTML + NL + '   <tr><th>' + trans('Time')+'<th>'+trans('Satellite')+'<th>'+trans('Event') ;
         for (var i=0; i < events.length; i++){
           event = events[i];
           when_text = EPH.when(event.when).toStringLT().substring(0,22);
-          table.innerHTML  = table.innerHTML + NL + '  <tr><td>' + when_text + '<td>' + satts[event.satt] + '<td>' + ph_type(event.ph) + ', ' + ph_action(event.ph) + NL;
+          table.innerHTML  = table.innerHTML + NL + '  <tr><td>' + when_text + '<td>' + trans(satts[event.satt]) + '<td>' + ph_type(event.ph) + ', ' + ph_action(event.ph) + NL;
         }
       }
       else {

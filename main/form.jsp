@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang='en'>
+<html lang='<s:txt>en</s:txt>'>
 <head>
  <meta charset='UTF-8'>
- <meta name="keywords" content="astronomy, ephemerides, low precision, amateur, canada, united states, united kingdom, weather, radar, clouds">
- <meta name="description" content="Data of interest to amateur astronomers. Includes weather for North America and the United Kingdom.">
+ <meta name="keywords" content="<s:txt>astronomy, ephemerides, low precision, amateur, canada, united states, united kingdom, weather, radar, clouds</s:txt>">
+ <meta name="description" content="<s:txt>Data of interest to amateur astronomers. Includes weather for North America and the United Kingdom.</s:txt>">
  <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="../css/styles.css<tags:ver/>" media="all">
- <title>The sky tonight</title>
+ <title><s:txt>The sky tonight</s:txt></title>
 </head>
  <script src='find_closest_clear_sky_clock.js<tags:ver/>'></script>
  <script src='../js/util.js<tags:ver/>'></script>
@@ -37,7 +37,7 @@
    csc_find_nearest.onclick = function(){
      var lat = document.getElementById('latitude').value;
      var long = document.getElementById('longitude').value;
-     this.innerHTML = 'Scanning.....';
+     this.innerHTML = '<s:txt>Scanning...</s:txt>';
      if (lat && long){
        var target = {};
        target.φ = lat; 
@@ -45,7 +45,7 @@
        var callback = function(id){
          //console.log('The nearest station id: ' + id);
          document.getElementById('clear_sky_clock_station_id').value = id;
-         document.getElementById('csc_find_nearest_station').innerHTML = 'Find nearest';
+         document.getElementById('csc_find_nearest_station').innerHTML = '<s:txt>Find nearest</s:txt>';
        };
        find_closest_csc_url(target, callback);
      }
@@ -62,7 +62,7 @@
        );
      }
      else {
-       lat_long_auto.innerHTML = 'Disabled by browser';
+       lat_long_auto.innerHTML = '<s:txt>Disabled by browser</s:txt>';
      }
    };
 
@@ -142,20 +142,30 @@
   };
  </script>
 <body>
-<h2>Astronomy Tonight</h2>
+<h2><s:txt>Astronomy Tonight</s:txt>
+ <span class='home'>
+  <form style='display:inline;'>
+   <select onChange="if (this.value) window.location.href=this.value" style='vertical-align:text-top;'>
+    <option value='form.sky'>Language
+     <option value='form.sky?lang=en'>English
+     <option value='form.sky?lang=fr'>Français
+   </select>
+  </form>
+ </span>
+</h2>
 
-This tool collects together, on a single page, basic information of interest to most amateur astronomers. 
-It's most useful for residents of Canada, the US, and the UK. Outside of those areas, no weather data is shown.
+<s:txt>This tool collects together, on a single page, basic information of interest to most amateur astronomers. 
+It's most useful for residents of Canada, the US, and the UK. Outside of those areas, no weather data is shown.</s:txt>
 
-<P>Below you will find a large form that lets you customize the output data.
+<P><s:txt>Below you will find a large form that lets you customize the output data.
 Its defaults are for Ottawa, the capital of Canada. 
-As a convenience, here are the results for some selected locations (Canada, US, and UK only):
+As a convenience, here are the results for some selected locations (Canada, US, and UK only)</s:txt>: 
 
 <P>
   <form >
    <select onChange="if (this.value) window.location.href=this.value">
-     <option value=''>Choose a location
-     <option value=''>---Canada---
+     <option value=''><s:txt>Choose a location</s:txt>
+     <option value=''><s:txt>---Canada---</s:txt>
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Banff&latitude=51%2E18&longitude=-115%2E57&locations=51%2E18,-115%2E57&weather_station=49&radar_station=XSM&clear_sky_clock_station_id=BnffAB'>AB Banff
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Calgary&latitude=51%2E03&longitude=-114%2E09&locations=51%2E03,-114%2E09&weather_station=52&radar_station=XSM&clear_sky_clock_station_id=Calgary'>AB Calgary
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Edmonton&latitude=53%2E54&longitude=-113%2E50&locations=53%2E54,-113%2E50&weather_station=50&radar_station=WHK&clear_sky_clock_station_id=Edmonton'>AB Edmonton
@@ -241,7 +251,7 @@ As a convenience, here are the results for some selected locations (Canada, US, 
      <option value='graphic%2Esky?country=cda&prov=SK&location_name=Saskatoon&latitude=52%2E13&longitude=-106%2E69&locations=52%2E13,-106%2E69&weather_station=40&radar_station=XRA&clear_sky_clock_station_id=Saskatoon'>SK Saskatoon
      <option value='graphic%2Esky?country=cda&prov=SK&location_name=Swift+Current&latitude=50%2E29&longitude=-107%2E79&locations=50%2E29,-107%2E79&weather_station=41&radar_station=XBU&clear_sky_clock_station_id=SwtCrnSK'>SK Swift Current
      <option value='graphic%2Esky?country=cda&prov=YT&location_name=Whitehorse&latitude=60%2E72&longitude=-135%2E06&locations=60%2E72,-135%2E06&weather_station=16&radar_station=&clear_sky_clock_station_id=WhthrsYK'>YT Whitehorse
-     <option value=''>---U.S.A.---
+     <option value=''><s:txt>---U.S.A.---</s:txt>
      <option value='graphic%2Esky?country=us&location_name=Anchorage&latitude=61%2E20&longitude=-149%2E88&locations=61%2E20,-149%2E88&radar_station=AHG&clear_sky_clock_station_id=AnchorAK'>AK Anchorage
      <option value='graphic%2Esky?country=us&location_name=Phoenix&latitude=33%2E43&longitude=-112%2E09&locations=33%2E43,-112%2E09&radar_station=IWA&clear_sky_clock_station_id=Phoenix'>AZ Phoenix
      <option value='graphic%2Esky?country=us&location_name=Los+Angeles&latitude=34%2E03&longitude=-118%2E31&locations=34%2E03,-118%2E31&radar_station=SOX&clear_sky_clock_station_id=LAXCA'>CA Los Angeles
@@ -289,7 +299,7 @@ As a convenience, here are the results for some selected locations (Canada, US, 
      <option value='graphic%2Esky?country=us&location_name=Norfolk&latitude=36%2E86&longitude=-76%2E29&locations=36%2E86,-76%2E29&radar_station=AKQ&clear_sky_clock_station_id=TidewaterVA'>VA Norfolk
      <option value='graphic%2Esky?country=us&location_name=Seattle&latitude=47%2E60&longitude=-122%2E32&locations=47%2E60,-122%2E32&radar_station=ATX&clear_sky_clock_station_id=Seattle'>WA Seattle
      <option value='graphic%2Esky?country=us&location_name=Spokane&latitude=47%2E67&longitude=-117%2E42&locations=47%2E67,-117%2E42&radar_station=OTX&clear_sky_clock_station_id=SpknWA'>WA Spokane
-     <option value=''>---United Kingdom---
+     <option value=''><s:txt>---United Kingdom---</s:txt>
      <option value='graphic%2Esky?country=uk&location_name=Aberdeen&latitude=57%2E14&longitude=-2%2E11&locations=57%2E14,-2%2E11&weather_station=3091&'>Aberdeen
      <option value='graphic%2Esky?country=uk&location_name=Belfast&latitude=54%2E59&longitude=-5%2E93&locations=54%2E59,-5%2E93&weather_station=3917&'>Belfast
      <option value='graphic%2Esky?country=uk&location_name=Cardiff&latitude=51%2E48&longitude=-3%2E18&locations=51%2E48,-3%2E18&weather_station=3716&'>Cardiff
@@ -311,27 +321,28 @@ As a convenience, here are the results for some selected locations (Canada, US, 
   </form>
   
 
-<P>The information is customized for your location, and includes:
+<P><s:txt>The information is customized for your location, and includes</s:txt>:
 <ul>
- <li>current weather conditions and forecast.
- <li>weather radar images (usually not available in the far north).
- <li>satellite images showing cloud cover (not available in the far north).
- <li>the Clear Sky Clock (Canada and the US only).
- <li>positions of the Sun, Moon, and planets.
- <li>selected asteroids and bright comets. 
- <li>a current diary of sky phenomena.
- <li>Messier/Caldwell objects appearing above the horizon (highest altitude first).
- <li>a planisphere showing the night sky.
- <li>the current observation window, showing the Sun's rise-set times, times of twilight, and the Moon's rise-set times.
- <li>lunar libration, for today and the upcoming month.
- <li>positions of the Galilean satellites of Jupiter.
- <li>upcoming meteor showers (if any).
- <li>auroral activity level (if above your configured threshold).
- <li>upcoming occultations at your location (if any).
- <li>phenomena related to the Galilean satellites of Jupiter (if any).
+ <li><s:txt>current weather conditions and forecast.</s:txt>
+ <li><s:txt>weather radar images (usually not available in the far north).</s:txt>
+ <li><s:txt>satellite images showing cloud cover (not available in the far north).</s:txt>
+ <li><s:txt>the Clear Sky Clock (Canada and the US only).</s:txt>
+ <li><s:txt>positions of the Sun, Moon, and planets.</s:txt>
+ <li><s:txt>selected asteroids and bright comets.</s:txt>
+ <li><s:txt>a current diary of sky phenomena.</s:txt>
+ <li><s:txt>Messier/Caldwell objects appearing above the horizon (highest altitude first).</s:txt>
+ <li><s:txt>a planisphere showing the night sky.</s:txt>
+ <li><s:txt>the current observation window, showing the Sun's rise-set times, times of twilight, and the Moon's rise-set times.</s:txt>
+ <li><s:txt>lunar libration, for today and the upcoming month.</s:txt>
+ <li><s:txt>positions of the Galilean satellites of Jupiter.</s:txt>
+ <li><s:txt>upcoming meteor showers (if any).</s:txt>
+ <li><s:txt>auroral activity level (if above your configured threshold).</s:txt>
+ <li><s:txt>upcoming occultations at your location (if any).</s:txt>
+ <li><s:txt>phenomena related to the Galilean satellites of Jupiter (if any).</s:txt>
 </ul>
 
-<P>These links will help you look up the data you need when filling out the form:
+<P><s:txt>These links will help you look up the data you need when filling out the form</s:txt>:
+<s:txt>
 <ul>
  <li>latitude and longitude: the quickest way is to click the <em>Use current location</em> button, which will use your browser's default location. 
  Otherwise, use <a href='https://www.google.ca/maps/'>Google Maps</a>: right-click on a location, and select "What's here?", to see the corresponding latitude and longitude.
@@ -341,65 +352,66 @@ As a convenience, here are the results for some selected locations (Canada, US, 
  already entered in the form. 
  Otherwise, use <a href='http://www.cleardarksky.com/'>cleardarksky.com</a> to infer the station id.
 </ul>
+</s:txt>
 
-<P>If the meaning of an item in the form below is unclear to you, try and hover your mouse over the item; some items have a tooltip.
-Required items are marked with *.
+<P><s:txt>If the meaning of an item in the form below is unclear to you, try and hover your mouse over the item; some items have a tooltip.
+Required items are marked with *.</s:txt>
 
 <P>
  <form method='GET' action='graphic.sky' class='user-input-small' id='input_form'>
   <table>
     
-     <tr><td>Country*:<td>
+     <tr><td><s:txt>Country</s:txt>*:<td>
          <select name='country' id='country' required>
-           <option value='cda'>Canada
-           <option value='us'>USA 
-           <option value='uk'>United Kingdom 
-           <option value='other'>Other (no weather data) 
+           <option value='cda'><s:txt>Canada</s:txt>
+           <option value='us'><s:txt>United States</s:txt>
+           <option value='uk'><s:txt>United Kingdom</s:txt> 
+           <option value='other'><s:txt>Other (no weather data)</s:txt>
          </select>
-     <tr><td>Location name*:<td><input type='text' required id='location_name' name='location_name' value='Ottawa' title='Name of your observing site'>
-     <tr><td>Latitude*:<td><input type='text' id='latitude' required name='latitude' value='45.40' title='Latitude in degrees'>
-             <button type='button' id='lat_long_autofill' title='Let the browser fill in lat/long'>Use current location</button>
-     <tr><td>Longitude*:<td><input type='text' id='longitude' required name='longitude' value='-75.66' title='Longitude in degrees. Negative west of Greenwich'>
+     <tr><td><s:txt>Location name</s:txt>*:<td><input type='text' required id='location_name' name='location_name' value='Ottawa' title='<s:txt>Name of your observing site</s:txt>'>
+     <tr><td><s:txt>Latitude</s:txt>*:<td><input type='text' id='latitude' required name='latitude' value='45.40' title='<s:txt>Latitude in degrees</s:txt>'>
+             <button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Use current location</s:txt></button>
+     <tr><td><s:txt>Longitude</s:txt>*:<td><input type='text' id='longitude' required name='longitude' value='-75.66' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
      <tr id='row_clear_sky_clock_station_id'>
-       <td>Clear Sky Chart station id*
+       <td><s:txt>Clear Sky Chart station id</s:txt>*
        <td>
-         <input name='clear_sky_clock_station_id' id='clear_sky_clock_station_id' value='FLO' size='10' title='Station id, used by the Clear Sky Clock website, for your location'>
-         <button type='button' id='csc_find_nearest_station' title='Use the lat/long input above to find the nearest Clear Sky Clock'>Use lat/long</button>
-     <tr id='row_radar_station_cda'><td>Radar Station*:<td>
-         <select id='radar_station_cda' name='radar_station' title='Nearest radar station. Id used by Environment Canada'>
-           <option value='WHK'>AB - Carvel, near Edmonton
-           <option value='WHN'>AB - Jimmy Lake, near Cold Lake 
-           <option value='XBU'>AB - Schuler, near Medicine Hat 
-           <option value='WWW'>AB - Spirit River, near Grande Prairie 
-           <option value='XSM'>AB - Strathmore, near Calgary 
-           <option value='WUJ'>BC - Aldergrove, near Vancouver 
+         <input name='clear_sky_clock_station_id' id='clear_sky_clock_station_id' value='FLO' size='10' title='<s:txt>Station id, used by the Clear Sky Clock website, for your location</s:txt>'>
+         <button type='button' id='csc_find_nearest_station' title='<s:txt>Use the lat/long input above to find the nearest Clear Sky Clock</s:txt>'><s:txt>Use lat/long</s:txt></button>
+     <tr id='row_radar_station_cda'><td><s:txt>Radar Station</s:txt>*:<td>
+         <select id='radar_station_cda' name='radar_station' title='<s:txt>Nearest radar station. Id used by Environment Canada</s:txt>'>
+           <option value='WHK'>AB - Carvel (Edmonton)
+           <option value='WHN'>AB - Jimmy Lake (Cold Lake) 
+           <option value='XBU'>AB - Schuler (Medicine Hat) 
+           <option value='WWW'>AB - Spirit River (Grande Prairie) 
+           <option value='XSM'>AB - Strathmore (Calgary) 
+           <option value='WUJ'>BC - Aldergrove (Vancouver) 
            <option value='XPG'>BC - Prince George 
-           <option value='XSS'>BC - Silver Star Mountain, near Vernon 
+           <option value='XSS'>BC - Silver Star Mountain (Vernon) 
            <option value='XSI'>BC - Victoria 
-           <option value='XFW'>MB - Foxwarren, near Brandon 
-           <option value='XWL'>MB - Woodlands, near Winnipeg 
-           <option value='XNC'>NB - Chipman, near Frederiction 
-           <option value='WTP'>NL - Holyrood, near St. John's 
-           <option value='XME'>NL - Marble Mountain, near Corner Brook 
+           <option value='XFW'>MB - Foxwarren (Brandon) 
+           <option value='XWL'>MB - Woodlands (Winnipeg) 
+           <option value='XNC'>NB - Chipman (Frederiction) 
+           <option value='WTP'>NL - Holyrood (St. John's) 
+           <option value='XME'>NL - Marble Mountain (Corner Brook) 
            <option value='XGO'>NS - Halifax 
-           <option value='XMB'>NS - Marion Bridge, near Sydney 
-           <option value='WBI'>ON - Britt, near Sudbury 
+           <option value='XMB'>NS - Marion Bridge (Sydney) 
+           <option value='WBI'>ON - Britt (Sudbury) 
            <option value='XDR'>ON - Dryden 
-           <option value='WSO'>ON - Exeter, near London 
-           <option value='XFT' selected>ON - Franktown, near Ottawa 
-           <option value='WKR'>ON - King City, near Toronto 
-           <option value='WGJ'>ON - Montreal River, near Sault Ste. Marie 
-           <option value='XTI'>ON - Northeast Ontario, near Timmins 
-           <option value='XNI'>ON - Superior West, near Thunder Bay 
-           <option value='WMB'>QC - Lac Castor, near Saguenay 
-           <option value='XLA'>QC - Landrienne, near Rouyn-Noranda 
-           <option value='WMN'>QC - McGill, near Montréal 
-           <option value='XAM'>QC - Val d'Irène, near Mont-Joli 
-           <option value='WVY'>QC - Villeroy, Trois-Rivières 
-           <option value='XBE'>SK - Bethune, near Regina 
-           <option value='XRA'>SK - Radisson, near Saskatoon 
+           <option value='WSO'>ON - Exeter (London) 
+           <option value='XFT' selected>ON - Franktown (Ottawa) 
+           <option value='WKR'>ON - King City (Toronto) 
+           <option value='WGJ'>ON - Montreal River (Sault Ste. Marie) 
+           <option value='XTI'>ON - Northeast Ontario (Timmins) 
+           <option value='XNI'>ON - Superior West (Thunder Bay) 
+           <option value='WMB'>QC - Lac Castor (Saguenay) 
+           <option value='XLA'>QC - Landrienne (Rouyn-Noranda) 
+           <option value='WMN'>QC - McGill (Montréal) 
+           <option value='XAM'>QC - Val d'Irène (Mont-Joli) 
+           <option value='WVY'>QC - Villeroy (Trois-Rivières) 
+           <option value='XBE'>SK - Bethune (Regina) 
+           <option value='XRA'>SK - Radisson (Saskatoon) 
          </select>
-     <tr id='row_radar_station_us' style='display:none;'><td>Radar Station*<td><input id='radar_station_us' name='radar_station' title='Nearest US Radar Station Id, eg TYX (NOAA)'  disabled="true">
+     <tr id='row_radar_station_us' style='display:none;'><td><s:txt>Radar Station</s:txt>*<td><input id='radar_station_us' name='radar_station' title='<s:txt>Nearest US Radar Station Id, eg TYX (NOAA)</s:txt>' disabled="true">
      <tr id='row_prov_cda'><td>Province*
          <td>
          <select id='prov_cda' name='prov'>
@@ -417,11 +429,11 @@ Required items are marked with *.
            <option value='NT'>NT
            <option value='YT'>YT
          </select>
-     <tr id='row_weather_station_cda'><td>Weather Station ID*<td><input id='weather_station_cda' name='weather_station' value='118' title='Environment Canada ID for the nearest weather station'>
+     <tr id='row_weather_station_cda'><td><s:txt>Weather Station ID</s:txt>*<td><input id='weather_station_cda' name='weather_station' value='118' title='<s:txt>Environment Canada ID for the nearest weather station</s:txt>'>
 
-     <tr id='row_weather_station_uk' style='display:none;'><td>Weather Station*
+     <tr id='row_weather_station_uk' style='display:none;'><td><s:txt>Weather Station</s:txt>*
        <td>
-       <select id='weather_station_uk' name='weather_station' title='Met Office ID for the nearest weather station' disabled="true">
+       <select id='weather_station_uk' name='weather_station' title='<s:txt>Met Office name for the nearest weather station</s:txt>' disabled="true">
         <option value='3091'>Aberdeen - Aberdeen Airport
         <option value='3080'>Aberdeenshire - Aboyne
         <option value='3088'>Aberdeenshire - Inverbervie
@@ -572,37 +584,35 @@ Required items are marked with *.
         <option value='3953'>Valentia Observatory
       </select>     
      
-     
-     
-     <tr><td title='Translation is not complete.'>Preferred language:<td>
-         <select name='preferred_lang' id='preferred_lang' title='Output in English or French'>
-           <option value='e' selected>English
-           <option value='f'>French 
-         </select>
-     <tr><td>Date-time:<td><input type='text' id='date_time' name='date_time' title='Example: 2016-03-01 18:00. Leave empty to use the current date and time.' >
-     <tr><td>Time scale:<td><select name='time_scale' id='time_scale'><option title='Local Time (defined by your browser)' value='LT'>Local Time<option title='Universal Time (UT1, to be precise)' value='UT'>Universal Time<option title='Terrestrial Time (fundamental physics time)' value='TT'>Terrestrial Time</select>
-     <tr><td>Show locations<td><input name='locations' id='locations' title='Latitude and longitude; separate with a semi-colon' value='45.510,-73.675;44.228,-76.492;45.255,-76.262' size='40'>
-     <tr><td>Limiting Visual Mag:<td><input type='text' name='limiting_mag' id='limiting_mag' value='5.3' title='Higher number means show dimmer stars'>
-     <tr><td>Limiting Mag Messier/Caldwell:<td><input type='text' name='limiting_mag_messiers' id='limiting_mag_messiers' value='11.0'>
-     <tr><td>Limiting Mag Messier/Caldwell (planisphere):<td><input type='text' name='limiting_mag_messiers_planisphere' id='limiting_mag_messiers_planisphere' value='8.0'>
-     <tr><td>Clouds: degrees on a side<td><input name='degrees_on_a_side' id='degrees_on_a_side' value='3'>
-     <tr><td>Clouds: pixels on a side<td><input name='pixels_on_a_side' id='pixels_on_a_side' value='480'>
-     <tr><td>Clouds: visible or infrared?
+     <tr><td><s:txt>Date-time</s:txt>:<td><input type='text' id='date_time' name='date_time' title='<s:txt>Example: 2016-03-01 18:00. Leave empty to use the current date and time.</s:txt>' >
+     <tr><td><s:txt>Time scale</s:txt>:<td>
+       <select name='time_scale' id='time_scale'>
+        <option title='<s:txt>Local Time (defined by your browser)</s:txt>' value='LT'><s:txt>Local Time</s:txt>
+        <option title='<s:txt>Universal Time (UT1, to be precise)</s:txt>' value='UT'><s:txt>Universal Time</s:txt>
+        <option title='<s:txt>Terrestrial Time (fundamental physics time)</s:txt>' value='TT'><s:txt>Terrestrial Time</s:txt>
+       </select>
+     <tr><td><s:txt>Show locations</s:txt><td><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='45.510,-73.675;44.228,-76.492;45.255,-76.262' size='40'>
+     <tr><td><s:txt>Limiting Visual Mag</s:txt>:<td><input type='text' name='limiting_mag' id='limiting_mag' value='5.3' title='<s:txt>Higher number means show dimmer stars</s:txt>'>
+     <tr><td><s:txt>Limiting Mag Messier/Caldwell</s:txt>:<td><input type='text' name='limiting_mag_messiers' id='limiting_mag_messiers' value='11.0'>
+     <tr><td><s:txt>Limiting Mag Messier/Caldwell (planisphere)</s:txt>:<td><input type='text' name='limiting_mag_messiers_planisphere' id='limiting_mag_messiers_planisphere' value='8.0'>
+     <tr><td><s:txt>Clouds: degrees on a side</s:txt><td><input name='degrees_on_a_side' id='degrees_on_a_side' value='3'>
+     <tr><td><s:txt>Clouds: pixels on a side</s:txt><td><input name='pixels_on_a_side' id='pixels_on_a_side' value='480'>
+     <tr><td><s:txt>Clouds: visible or infrared?</s:txt>
          <td>
          <select name='layer' id='layer'>
-           <option value='auto_detect' title='Let the system decide' selected>Auto-detect
-           <option value='visible' title='Day time'>Visible (day-time)
-           <option value='ir' title='Night time'>IR (night-time)
+           <option value='auto_detect' title='<s:txt>Let the system decide</s:txt>' selected><s:txt>Auto-detect</s:txt>
+           <option value='visible' title='<s:txt>Day time</s:txt>'><s:txt>Visible (day-time)</s:txt>
+           <option value='ir' title='<s:txt>Night time</s:txt>'><s:txt>IR (night-time)</s:txt>
          </select>
-     <tr><td>Twilight
+     <tr><td><s:txt>Twilight</s:txt>
          <td>
          <select name='twilight' id='twilight'>
-           <option value='-18' title='Sun 18 degrees below the horizon'>Astronomical
-           <option value='-12' title='Sun 12 degrees below the horizon' selected>Nautical
-           <option value='-6' title='Sun 6 degrees below the horizon'>Civil
+           <option value='-18' title='<s:txt>Sun 18 degrees below the horizon</s:txt>'><s:txt>Astronomical</s:txt>
+           <option value='-12' title='<s:txt>Sun 12 degrees below the horizon</s:txt>' selected><s:txt>Nautical</s:txt>
+           <option value='-6' title='<s:txt>Sun 6 degrees below the horizon</s:txt>'><s:txt>Civil</s:txt>
          </select>
-     <tr><td>Planisphere rotation angle:<td>
-         <select name='planisphere_rotation_angle' id='planisphere_rotation_angle' title='Controls the default orientation of the planisphere'>
+     <tr><td><s:txt>Planisphere rotation angle</s:txt>:<td>
+         <select name='planisphere_rotation_angle' id='planisphere_rotation_angle' title='<s:txt>Controls the default orientation of the planisphere</s:txt>'>
            <option>0
            <option>45
            <option>90
@@ -612,9 +622,9 @@ Required items are marked with *.
            <option>270
            <option>315
          </select>
-     <tr title='Controls when you see aurora activity data'><td>Minimum auroral activity level:<td>
-         <select name='aurora_min_activity_level' id='aurora_min_activity_level' title='Kp, planetary mean'>
-           <option value='-1'>Default for your latitude
+     <tr title='<s:txt>Controls when you see aurora activity data</s:txt>'><td><s:txt>Minimum auroral activity level</s:txt>:<td>
+         <select name='aurora_min_activity_level' id='aurora_min_activity_level' title='<s:txt>Kp, planetary mean</s:txt>'>
+           <option value='-1'><s:txt>Default for your latitude</s:txt>
            <option>0
            <option>1
            <option>2
@@ -626,57 +636,57 @@ Required items are marked with *.
            <option>8
            <option>9
          </select>
-     <tr><td>Occultations: num days to look ahead<td><input name='occultations_num_days_ahead' id='occultations_num_days_ahead' value='10'>
-     <tr><td>Occultations: min magnitude<td><input name='occultations_min_mag' id='occultations_min_mag' value='6'>
+     <tr><td><s:txt>Occultations: num days to look ahead</s:txt><td><input name='occultations_num_days_ahead' id='occultations_num_days_ahead' value='10'>
+     <tr><td><s:txt>Occultations: min magnitude</s:txt><td><input name='occultations_min_mag' id='occultations_min_mag' value='6'>
      
-     <tr><td>Exclude clouds?<td><input name='exclude_clouds' id='exclude_clouds'' type='checkbox' value='1'>
-     <tr><td>Exclude radar?<td><input name='exclude_radar' id='exclude_radar' type='checkbox' value='1'>
-     <tr><td>Exclude ecliptic?<td><input name='exclude_ecliptic' id='exclude_ecliptic' type='checkbox' value='1'>
-     <tr><td>Exclude Sun, Moon, and Planets?<td><input name='exclude_sun_moon_planets' id='exclude_sun_moon_planets' type='checkbox' value='1'>
-     <tr><td>Exclude sky diary?<td><input name='exclude_sky_diary' id='exclude_sky_diary' type='checkbox' value='1'>
-     <tr><td>Exclude minor planets?<td><input name='exclude_minor_planets' id='exclude_minor_planets' type='checkbox' value='1'>
-     <tr><td>Exclude comets?<td><input name='exclude_comets' id='exclude_comets' type='checkbox' value='1'>
-     <tr><td>Exclude Messier objects?<td><input name='exclude_messiers' id='exclude_messiers' type='checkbox' value='1'>
-     <tr><td>Exclude Caldwell objects?<td><input name='exclude_caldwells' id='exclude_caldwells' type='checkbox' value='1'>
-     <tr><td>Exclude meteor showers?<td><input name='exclude_meteor_showers' id='exclude_meteor_showers' type='checkbox' value='1'>
-     <tr><td>Exclude Galilean satellites?<td><input name='exclude_galilean_satellites' id='exclude_galilean_satellites' type='checkbox' value='1'>
-     <tr><td>Exclude observation window?<td><input name='exclude_observation_window' id='exclude_observation_window' type='checkbox' value='1'>
-     <tr><td>Exclude current weather?<td><input name='exclude_current_weather_conditions' id='exclude_current_weather_conditions' type='checkbox' value='1'>
-     <tr><td>Exclude weather forecast?<td><input name='exclude_weather_forecast' id='exclude_weather_forecast' type='checkbox' value='1'>
-     <tr><td>Exclude libration?<td><input name='exclude_libration' id='exclude_libration' type='checkbox' value='1'>
-     <tr><td>Exclude planisphere?<td><input name='exclude_planisphere' id='exclude_planisphere' type='checkbox' value='1'>
-     <tr><td>Exclude Clear Sky Clock?<td><input name='exclude_clear_sky_clock' id='exclude_clear_sky_clock' type='checkbox' value='1'>
-     <tr><td>Exclude aurora?<td><input name='exclude_aurora' id='exclude_aurora' type='checkbox' value='1'>
-     <tr><td>Exclude occultations?<td><input name='exclude_occultations' id='exclude_occultations' type='checkbox' value='1'>
-     <tr><td>Exclude Jupiter satellite phenomena?<td><input name='exclude_jupiter_satellite_phenomena' id='exclude_jupiter_satellite_phenomena' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude clouds</s:txt><td><input name='exclude_clouds' id='exclude_clouds'' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude radar</s:txt><td><input name='exclude_radar' id='exclude_radar' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude ecliptic</s:txt><td><input name='exclude_ecliptic' id='exclude_ecliptic' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Sun, Moon, and Planets</s:txt><td><input name='exclude_sun_moon_planets' id='exclude_sun_moon_planets' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude sky diary</s:txt><td><input name='exclude_sky_diary' id='exclude_sky_diary' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude minor planets</s:txt><td><input name='exclude_minor_planets' id='exclude_minor_planets' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude comets</s:txt><td><input name='exclude_comets' id='exclude_comets' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Messier objects</s:txt><td><input name='exclude_messiers' id='exclude_messiers' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Caldwell objects</s:txt><td><input name='exclude_caldwells' id='exclude_caldwells' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude meteor showers</s:txt><td><input name='exclude_meteor_showers' id='exclude_meteor_showers' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Galilean satellites</s:txt><td><input name='exclude_galilean_satellites' id='exclude_galilean_satellites' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude observation window</s:txt><td><input name='exclude_observation_window' id='exclude_observation_window' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude current weather</s:txt><td><input name='exclude_current_weather_conditions' id='exclude_current_weather_conditions' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude weather forecast</s:txt><td><input name='exclude_weather_forecast' id='exclude_weather_forecast' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude libration</s:txt><td><input name='exclude_libration' id='exclude_libration' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude planisphere</s:txt><td><input name='exclude_planisphere' id='exclude_planisphere' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Clear Sky Clock</s:txt><td><input name='exclude_clear_sky_clock' id='exclude_clear_sky_clock' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude aurora</s:txt><td><input name='exclude_aurora' id='exclude_aurora' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude occultations</s:txt><td><input name='exclude_occultations' id='exclude_occultations' type='checkbox' value='1'>
+     <tr><td><s:txt>Exclude Jupiter satellite phenomena</s:txt><td><input name='exclude_jupiter_satellite_phenomena' id='exclude_jupiter_satellite_phenomena' type='checkbox' value='1'>
      
      <tr><td colspan='2' style="text-align:center">
-      <input type='button' value='Exclude none' id='exclude_none'>
-      <input type='button' value='Exclude all' id='exclude_all'>
-      <input type='submit' value='SHOW the sky tonight'>
-      <a href='form.sky'>Reset</a>
+      <input type='button' value='<s:txt>Exclude none</s:txt>' id='exclude_none'>
+      <input type='button' value='<s:txt>Exclude all</s:txt>' id='exclude_all'>
+      <input type='submit' value='<s:txt>SHOW the sky tonight</s:txt>'>
+      <a href='form.sky'><s:txt>Reset</s:txt></a>
   </table>
  </form>
 
- <P><b>There is a defect related to time zones.</b> 
+<s:txt><P><b>There is a defect related to time zones.</b> 
 Example: if you are in Ottawa, then you can view data for Washington DC, since those two cities are in the same time zone.
 If you are in Ottawa and you view data for Los Angeles, however, then the times are going to be messed up.
 <em>Everything works fine only if you stay in the same time zone used by your browser.</em>
 Most of the time, this defect won't bother you, because you're usually concerned with nearby locations.
 (This problem is caused by how Javascript treats dates and times.
 There are ways around this problem, but I haven't done anything about it yet. 
-If you need a work-around, then just temporarily change your computer's time zone setting.) 
+If you need a work-around, then just temporarily change your computer's time zone setting.)</s:txt> 
 
  
  <a id='clouds_large_graphic'></a>
- <P> <b>The satellite imagery is particularly useful, because it shows detailed cloud information.</b> 
+ <s:txt><P><b>The satellite imagery is particularly useful, because it shows detailed cloud information.</b> 
  The satellite image generated by the above form centers on a given location, and has a small area.
  It's also interesting to see the clouds over a large area of the country. 
  The images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
- Here's a <a href='../satellite/form.sky'>form for showing larger cloud images</a>.  
+ Here's a <a href='../satellite/form.sky'>form for showing larger cloud images</a>.</s:txt>  
 
-<P>Credits:
-<ul>
+<P><s:txt>Credits</s:txt>:
+<s:txt><ul>
  <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: many algorithms used here are taken from this book.  
  <li><a href='http://weather.gc.ca/canada_e.html'>Environment Canada</a> : current conditions, forecasts, and radar images.
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : current US weather conditions, forecasts, and radar images.
@@ -687,17 +697,21 @@ If you need a work-around, then just temporarily change your computer's time zon
  <li><a href='http://www.imo.net'>International Meteor Organization</a> : Meteor shower <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>data</a>.
  <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, Comet section : current comet data.
  <li><a href='http://ssd.jpl.nasa.gov/sbdb.cgi#top'>Jet Propulsion Laboratory</a> : Orbital elements for asteroids and comets.
- <li><a href='http://www.geomag.bgs.ac.uk/education/poles.html'>British Geological Survey</a> : Position of the geomagnetic north pole.
- <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : Auroral activity (Kp).
+ <li><a href='http://www.geomag.bgs.ac.uk/education/poles.html'>British Geological Survey</a> : position of the geomagnetic north pole.
+ <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : auroral activity (Kp).
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : occultation predictions.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : sky diary, phenomena for Galilean satellites.
- <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions, forecast, and radar images
- <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe (via the Met Office)
-</ul>
+ <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions and forecast.
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe (via the Met Office).
+</ul></s:txt>
 
-<P>Code last updated on: ${initParam.lastUpdatedOn}. 
-<P>Created by <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).  
-<P>Do you want to improve this site? Astronomytonight.net is open source (<a href='https://github.com/johanley/astro'>github</a>). 
+<P><s:txt>Code last updated on</s:txt>: ${initParam.lastUpdatedOn}.
+ 
+<s:txt><P>Help to improve astronomytonight.net: 
+ <ul>  
+  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).
+  <li>contribute via <a href='https://github.com/johanley/astro'>github</a>.
+ </ul></s:txt> 
 
 <tags:analytics/>
 

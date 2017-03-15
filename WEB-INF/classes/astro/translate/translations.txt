@@ -13,8 +13,8 @@
  These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
  The default settings in the form below show the Canadian Maritime provinces.} 
 {Le formulaire ci-dessous est pour explorer les images actuelles de la satellite géostationnaire GOES. 
- Ces images sont surtout impressionantes quand le soleil est de faible altitude, et les ombres sont plus importants.
- La définition par défaut montre les provinces Maritimes du Canada.} 
+ Ces images sont surtout impressionantes quand le soleil est de faible hauteur, et les ombres sont plus importants.
+ La définition par défaut montre les provinces maritimes du Canada.} 
 {Latitude in degrees}{Latitude en degrés}
 {Longitude in degrees. Negative west of Greenwich}{Longitude en degrés. Négative à l&apos;ouest de Greenwich}
 {Let the system decide}{Laisser le système décider}
@@ -64,7 +64,7 @@
 {Declination in degrees}{Declinaison en degrés}
 {Place at top}{Mettre en haut}
 {Date-time (defaults to now)}{Date et temps (l&apos;heure actuelle par défaut)}
-{Example: 2016-03-01 18:00. Leave empty to use the current date and time.}{Exemple: 2016-03-01 18:00. Laissez vide pour employer l&apos;heure actuelle.}
+{Example: 2016-03-01 18:00. Leave empty to use the current date and time.}{Exemple: 2016-03-01 18:00. Laissez le champs vide pour indiquer l&apos;heure actuelle.}
 {Time scale}{Échelle de temps}
 {Local Time (defined by your browser)}{Temps locale (défini par votre navigateur)}
 {Local Time}{Temps locale}
@@ -73,11 +73,10 @@
 {Terrestrial Time (fundamental physics time)}{Temps terrestre (temps fondamental de la physique)}
 {Terrestrial Time}{Temps terrestre}
 {Location}{Location}
-{Name of your observing site}{Nom du votre site d&observation}
+{Name of your observing site}{Nom du votre site d&apos;observation}
 {Use current location}{Employer la location actuelle}
 {Let the browser fill in lat/long}{Laisser le navigateur remplir latitude et longitude}
 {Limiting stellar magnitude}{Limite de la magnitude stellaire}
-{Higher number means show dimmer stars}{Plus grande veut dire voir des étoiles moins brillantes}
 {Chart width in degrees}{Largeur de la carte en degrés}
 {Style}{Style}
 {Regular}{Régulier}
@@ -109,3 +108,325 @@
 {min}{min}
 {sec}{sec}
 {Form}{Formulaire}
+
+
+
+{astronomy, ephemerides, low precision, amateur, canada, united states, united kingdom, weather, radar, clouds}
+{astronomie, éphémérides, basse précision, amateur, canada, étas-unis, royaume-uni, météo, radar, nuages}
+{Data of interest to amateur astronomers. Includes weather for North America and the United Kingdom.}
+{Données pour les astronomes amateurs. La météo pour l&apos;Amerique du nord et le Royaume-Uni est inclu.}
+{The sky tonight}{Le ciel ce soir}
+{Scanning...}{Un moment SVP...}
+{Find nearest}{Trouver le plus proche}
+{Disabled by browser}{Désactiver par le navigateur} 
+{Astronomy Tonight}{Astronomie ce soir}
+{This tool collects together, on a single page, basic information of interest to most amateur astronomers. 
+It's most useful for residents of Canada, the US, and the UK. Outside of those areas, no weather data is shown.}
+
+{Ce site rassemble, sur une seule page, les données générales qui intéressent la plupart des astronomes amateurs.
+Il est particulièrement utile pour les résidents du Canada, les Étas-Unis, et le Royaume-Uni. Pour tous les autres pays, il n'y a pas de données météorologiques.}
+
+{Below you will find a large form that lets you customize the output data.
+Its defaults are for Ottawa, the capital of Canada. 
+As a convenience, here are the results for some selected locations (Canada, US, and UK only)}
+{Ci-dessous vous trouverez un formulaire pour adapter les données.
+Les défauts sont pour Ottawa, la capitale du Canada.
+Pour vous aider, voici quelques résultats pour des locations particulières (seulement pour le Canada, les É-U, et le R-U)}
+
+{Choose a location}{Choissisez une location}
+{---Canada---}{---Canada---}
+{---U.S.A.---}{---É-U---}
+{---United Kingdom---}{---Royaume-Unie---}
+
+
+{The information is customized for your location, and includes}
+{L'information est localisée. Les données incluses}
+{current weather conditions and forecast.}
+{la météo actuelle, et les prévisions.}
+{weather radar images (usually not available in the far north).}
+{images radars (pas disponible dans le grand nord).}
+{satellite images showing cloud cover (not available in the far north).}
+{images satellites, montrant les nuages (pas disponible dans le grand nord).}
+{the Clear Sky Clock (Canada and the US only).}
+{la Prévision Astro du Ciel (seulement pour le Canada et les É-U).}
+{positions of the Sun, Moon, and planets.}
+{positions du soleil, la lune, et les planètes.}
+{selected asteroids and bright comets.}
+{les astéroïdes et les comètes les plus brilliants.}
+{a current diary of sky phenomena.}
+{les phénomènes actuels du ciel.}
+{Messier/Caldwell objects appearing above the horizon (highest  first).}
+{les objets de Messier/Caldwell au dessus de l'horizon (en ordre de hauteur).}
+{a planisphere showing the night sky.}
+{une planisphère du ciel.}
+{the current observation window, showing the Sun's rise-set times, times of twilight, and the Moon's rise-set times.}
+{l'intervalle d'observation actuel, montrant le coucher et le lever du soleil, le crépuscule, et le lever et le coucher de la lune.}
+{lunar libration, for today and the upcoming month.}
+{la libration lunaire, pour aujourd'hui et le prochain mois.}
+{positions of the Galilean satellites of Jupiter.}
+{les positions des satellites galiléens de Jupiter.}
+{upcoming meteor showers (if any).}
+{les essaims de météores actuels (s'ils existent).}
+{auroral activity level (if above your configured threshold).}
+{le niveau de l'activité aurorale (si au-dessus d'un certain niveau).}
+{upcoming occultations at your location (if any).}
+{les occultations dans les prochains jours (s'ils existent).}
+{phenomena related to the Galilean satellites of Jupiter (if any).}
+{les phénomènes des satellites galiléens de Jupiter (s'il existent).}
+
+{These links will help you look up the data you need when filling out the form}
+{Ces liens vous aideront de trouver les données desirées quand vous remplissez le formulaire}
+
+{<ul>
+ <li>latitude and longitude: the quickest way is to click the <em>Use current location</em> button, which will use your browser's default location. 
+ Otherwise, use <a href='https://www.google.ca/maps/'>Google Maps</a>: right-click on a location, and select "What's here?", to see the corresponding latitude and longitude.
+ <li>radar id for US locations: use <a href='http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no'>NOAA/NWS</a>.
+ <li>clear sky clock: the quickest way is to click the <em>Use lat/long</em> button, 
+ and the system will find the station that's nearest to the latitude and longitude location you've 
+ already entered in the form. 
+ Otherwise, use <a href='http://www.cleardarksky.com/'>cleardarksky.com</a> to infer the station id.
+</ul>}
+{<ul>
+ <li>le latitude et longitude: la méthode la plus efficace est de cliquer sur le lien <em>Employer la location actuelle</em>, qui utilisera la location de votre navigateur. 
+ Sinon, employez <a href='https://www.google.ca/maps/'>Google Maps</a>: cliquez à droite sur la location, et choissisez "What's here?", pour voir le latitude et longitude pour cette location.
+ <li>l'indicateur de la station radar dans les Étas-Unis: utilisez <a href='http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no'>NOAA/NWS</a>.
+ <li>la Prévision Astro du Ciel: la méthode la plus efficace est de cliquer sur le lien <em>Employez lat/long</em>, 
+ et le système trouvera la station qui est la plus proche au latitude et longitude que vous avez déjà mis dans le formulaire. 
+ Sinon, employez <a href='http://www.cleardarksky.com/'>cleardarksky.com</a> pour trouver l'identificateur de la station.
+</ul>}
+
+{If the meaning of an item in the form below is unclear to you, try and hover your mouse over the item; some items have a tooltip.
+Required items are marked with *.}
+{Si le sens de quelque chose dans le formulaire ci-dessous n'est pas clair, essayez de mettre le souris au-dessus du mot; parfois il y a une infobulle.
+Les choses obligatoires sont indiqués avec *.}
+
+{<P><b>There is a defect related to time zones.</b> 
+Example: if you are in Ottawa, then you can view data for Washington DC, since those two cities are in the same time zone.
+If you are in Ottawa and you view data for Los Angeles, however, then the times are going to be messed up.
+<em>Everything works fine only if you stay in the same time zone used by your browser.</em>
+Most of the time, this defect won't bother you, because you're usually concerned with nearby locations.
+(This problem is caused by how Javascript treats dates and times.
+There are ways around this problem, but I haven't done anything about it yet. 
+If you need a work-around, then just temporarily change your computer's time zone setting.)}
+
+{<P><b>Il y a un problème avec les les fuseaux horaires.</b> 
+Par exemple: si on se trouve à Ottawa, on peut voir les données correctes pour Washington DC, car les deux villes se trouvent dans le mème fuseau horaire.
+Toutefois, si on se trouve à Ottawa, on ne peut pas voir les données correctes pour Los Angeles: les temps ne sont pas correctes.
+<em>Tout va bien seulement si on reste dans le mème fuseau horaire emloyé par votre navigateur.</em>
+La plupart du temps, ce problème ne va pas vous déranger, car les locations proches sont les plus intéressantes.
+(La cause de ce problème est le design du langage Javascript.
+Il y a des méthodes pour résoudre ce problème, mais, pour le moment, il est toujours dans le système. 
+Si il faut voir les données correctes pour une location dans un autre fuseau horaire, vous pouvez toujours changer le fuseau horaire de votre navigateur.)}
+
+
+{<P><b>The satellite imagery is particularly useful, because it shows detailed cloud information.</b> 
+ The satellite image generated by the above form centers on a given location, and has a small area.
+ It's also interesting to see the clouds over a large area of the country. 
+ The images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
+ Here's a <a href='../satellite/form.sky'>form for showing larger cloud images</a>.}  
+
+ {<P><b>Les images satellites sont particulièrement utiles, car elles montrent les nuages d'une manière détaillée.</b> 
+ Ici, l'image satellite est centrée sur une location particulière, et l'image est d'une superficie restreinte.
+ Il est aussi intéressant de voir ces images pour une région plus grande. 
+ Les images sont impressionantes surtout quand le soleil est de faible hauteur, et les ombres sont plus longs. 
+ Voici un <a href='../satellite/form.sky'>formulaire pour voir des images satellites plus grandes</a>.}  
+ 
+{Code last updated on}
+{Dernier mise à jour}
+
+{<P>Help to improve astronomytonight.net: 
+ <ul>  
+  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).
+  <li>contribute via <a href='https://github.com/johanley/astro'>github</a>.
+ </ul>} 
+{<P>Pour améliorer le site astronomytonight.net: 
+ <ul>  
+  <li>envoyez des corrections et suggestions à <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).
+  <li>contribuez au moyen de <a href='https://github.com/johanley/astro'>github</a>.
+ </ul>} 
+
+{<ul>
+ <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: many algorithms used here are taken from this book.  
+ <li><a href='http://weather.gc.ca/canada_e.html'>Environment Canada</a> : current conditions, forecasts, and radar images.
+ <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : current US weather conditions, forecasts, and radar images.
+ <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: server for NOAA images captured by the GOES satellite (clouds).
+ <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> of the Royal Astronomical Society of Canada: comments on the Messier objects, and osculating orbital elements for planets.
+ <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>revision 5</a>.
+ <li>Allen Rahill (Canadian Meteorological Center) and Attilla Danko: <a href='http://www.cleardarksky.com/csk/'>Clear Sky Clock</a> images.
+ <li><a href='http://www.imo.net'>International Meteor Organization</a> : Meteor shower <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>data</a>.
+ <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, Comet section : current comet data.
+ <li><a href='http://ssd.jpl.nasa.gov/sbdb.cgi#top'>Jet Propulsion Laboratory</a> : Orbital elements for asteroids and comets.
+ <li><a href='http://www.geomag.bgs.ac.uk/education/poles.html'>British Geological Survey</a> : position of the geomagnetic north pole.
+ <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : auroral activity (Kp).
+ <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : occultation predictions.
+ <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : sky diary, phenomena for Galilean satellites.
+ <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions and forecast.
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe (via the Met Office).
+</ul>}
+{<ul>
+ <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: beaucoup d'algorithmes employez ici sont décrits dans ce livre.  
+ <li><a href='http://weather.gc.ca/canada_f.html'>Environnement Canada</a> : conditions actuelles, prévisions, et images radars.
+ <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : conditions actuelles pour les É-U, prévisions, et images radars.
+ <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: serveur pour les images satellite GOES (pour les nuages).
+ <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> du Royal Astronomical Society of Canada: commentaires sur les objets de Messier, et les éléments orbitaux osculateurs des planètes.
+ <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>révision 5</a>.
+ <li>Allen Rahill (Centre météorologique canadien) et Attilla Danko: images <a href='http://www.cleardarksky.com/csk/'>Prévision Astro du Ciel</a>.
+ <li><a href='http://www.imo.net'>International Meteor Organization</a> : <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>données</a> pour les essaims météores.
+ <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, section comète : données pour les comètes actuelles.
+ <li><a href='http://ssd.jpl.nasa.gov/sbdb.cgi#top'>Jet Propulsion Laboratory</a> : éléments orbitaux pour les astéroïdes et les comètes.
+ <li><a href='http://www.geomag.bgs.ac.uk/education/poles.html'>British Geological Survey</a> : position du pôle géomagnetique.
+ <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : activité aurorale (Kp).
+ <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : prévisions des occultations.
+ <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : phénomènes du jour, phénomènes des satellites galiléens de Jupiter.
+ <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : conditions actuelles pour le R-U, et les prévisions.
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : images satellites Meteosat pour l'Europe (au moyen du Met Office).
+</ul>}
+ 
+{Country}{Pays}
+{Canada}{Canada}
+{United States}{États-Unis}
+{United Kingdom}{Royaume-Uni}
+{Other (no weather data)}{Autre (pas de météo)}
+
+
+
+{Location name}{Nom de la location}
+{Clear Sky Chart station id}{Identificateur de Prévision Astro du Ciel}
+{Station id, used by the Clear Sky Clock website, for your location}{Identificateur, défini par le site web ClearDarkSky.com}
+{Use the lat/long input above to find the nearest Clear Sky Clock}{Employer le lat/long ci-dessus pour trouver celui qui est le plus proche}
+{Use lat/long}{Employer lat/long}
+
+{Radar Station}{Station radar}
+{Nearest radar station. Id used by Environment Canada}{La station radar la plus proche. Identificateur d&apos;Environnement Canada}
+{Nearest US Radar Station Id, eg TYX (NOAA)}{La station radar la plus proche, p.e. TYX (NOAA)}
+{Weather Station ID}{Identificateur de la station météo}
+{Environment Canada ID for the nearest weather station}{Identificateur de l&apos;Environnement Canada pour la station la plus proche}
+     
+{Met Office name for the nearest weather station}{Nom de la station la plus proche}
+{Weather Station}{Station météo}
+{Date-time}{Date et temps}
+
+{Show locations}{Indiquer des locations}
+{Latitude and longitude; separate with a semi-colon}{Latitude et longitude, séparé par un point-virgule}
+
+{Limiting Visual Mag}{Limite de la magnitude visuelle}
+{Higher number means show dimmer stars}{Plus grand veut dire moins brilliant}
+{Limiting Mag Messier/Caldwell}{Magnitude des objets de Messier/Caldwell}
+{Limiting Mag Messier/Caldwell (planisphere)}{Magnitude des objets de Messier/Caldwell (planisphère)}
+{Clouds: degrees on a side}{Nuages: largeur en degrés}
+{Clouds: pixels on a side}{Nuages: largeur en pixels}
+
+{Clouds: visible or infrared?}{Nuages: visible ou infrarouge?}
+
+{Twilight}{Crépuscule}
+{Sun 18 degrees below the horizon}
+{Le soleil est 18 degrés au dessus de l&apos;horizon}
+{Astronomical}{Astronomique}
+{Sun 12 degrees below the horizon}
+{Le soleil est 12 degrés au dessus de l&apos;horizon}
+{Nautical}{Nautique}
+{Sun 6 degrees below the horizon}
+{Le soleil est 6 degrés au dessus de l&apos;horizon}
+{Civil}{Civil}
+
+{Planisphere rotation angle}{L&apos;angle de rotation de la planisphère}
+{Controls the default orientation of the planisphere}{Controller l&apos;orientation de la planisphère}
+
+{Controls when you see aurora activity data}{Contrôler quand les données pour les aurores sont visibles}
+{Minimum auroral activity level}{Le niveau minimum d&apos;activité aurorale}
+{Kp, planetary mean}{Kp, moyen planétaire}
+{Default for your latitude}{Défaut pour votre latitude}
+
+{Occultations: num days to look ahead}{Occultations: combien de jours en avance}
+{Occultations: min magnitude}{Occultations: magnitude minimum}
+
+{Exclude clouds}{Exclure les nuages}
+{Exclude radar}{Exclure le radar}
+{Exclude ecliptic}{Exclure l&apos;écliptique}
+{Exclude Sun, Moon, and Planets}{Exclure le soleil, la lune, et les planètes}
+{Exclude sky diary}{Exclure les phénomènes quotidiens}
+{Exclude minor planets}{Exclure les astèroïdes}
+{Exclude comets}{Exclure les comètes}
+{Exclude Messier objects}{Exclure les objets de Messier}
+{Exclude Caldwell objects}{Exclure les objets de Caldwell}
+{Exclude meteor showers}{Exclure les essaims de météores}
+{Exclude Galilean satellites}{Exclure les satellites galiléens}
+{Exclude observation window}{Exclure l&apos;intervalle d'observation}
+{Exclude current weather}{Exclure la météo actuelle}
+{Exclude weather forecast}{Exclure les prévisions}
+{Exclude libration}{Exclure la libration}
+{Exclude planisphere}{Exclure la planisphère}
+{Exclude Clear Sky Clock}{Exclure la Prévision Astro du Ciel}
+{Exclude aurora}{Exclure les aurores}
+{Exclude occultations}{Exclure les occultations}
+{Exclude Jupiter satellite phenomena}{Exclure les phenomènes des satellites de Jupiter}
+     
+
+{Exclude none}{Exclure rien}
+{Exclude all}{Exclure tout}
+{SHOW the sky tonight}{MONTREZ le ciel ce soir}
+{Reset}{Recommencer}
+
+{Local Mean Sidereal Time}{Temps sidéral locale moyen}
+{LMST}{TSLM}
+{UT - LT}{UT - LT}
+
+
+{Satellite image, a few minutes ago}{Image satellite, il y a quelques minutes}
+{Ecliptic, showing the planets and Moon}{Écliptique, avec les planètes et la lune}
+{Observation window: twilight and brightness of the Moon}{Limites de temps pour observer: crépuscule, illumination de la lune}
+{Lunar libration, phase, and change in size from mean}{Lune: libration, phase, et changement de taille par rapport au moyen}
+{Galilean satellites of Jupiter}{Satellites galiléens de Jupiter}
+
+{Sun, Moon, and Planets}{Soleil, lune, et planètes}
+{Name}{Nom}
+{Const}{Const}
+{Elong}{Élong}
+{Mag}{Mag}
+{Size}{Taille}
+{Illum}{Illum}
+{Alt}{Hau}
+{Az}{Az}
+{Rise}{Lever}
+{Transit}{Méridien}
+{Set}{Coucher}  
+
+{Sky Diary}{Journal du ciel}
+{When}{Quand}
+{Description}{Description}
+{Minor Planets}{Astéroïdes}
+{Bright Comets}{Comètes brilliantes}
+{Trend}{Tendance}
+{Visible}{Visible}
+
+
+{Occultation times are approximate}{Les temps sont approximatifs}
+{Occultations}{Occultations}
+{ZC}{ZC}
+{Ph}{Ph}
+{El}{Él}
+{PA}{AP}
+
+
+{Messier Objects}{Objets de Messier}
+{Caldwell Objects}{Objets de Caldwell}
+{Chart}{Carte}
+{Type}{Type}
+{Comment}{Commentaire}
+{Messier/Caldwell objects appearing above the horizon (highest altitude first).}
+{Les objets de Messier/Caldwell au dessus de l&apos;horizon (avec le plus haut en premier).}
+
+{Jupiter Satellite Phenomena}{Phénomènes des satellites galiléens}
+{Satellite}{Satellite}
+{Event}{Phénomène}
+
+{Auroral Activity Level}{Niveau d&apos;activité aurorale} 
+
+{Meteor Showers}{Essaims de météores}
+{Desig}{Désig}
+{Peak}{Max}
+{ZHR}{THZ}
+{Km/s}{Km/s}
+
+{Times are approximate}{Les temps sont approximatifs}
+

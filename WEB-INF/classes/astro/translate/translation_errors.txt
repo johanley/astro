@@ -1,2 +1,5 @@
-Err1. English text not found: 'Home'
-Sat Mar 11 19:17:31 EST 2017 Page:org.apache.jsp.chart.graphic_jsp Err1. English text not found: 'Num minutes UT is in advance of browser's local time (LT)'
+Sat Mar 11 20:20:41 EST 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Disabled by browser'
+Wed Mar 15 18:10:48 EDT 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Messier/Caldwell objects appearing above the horizon (highest altitude first).'
+Wed Mar 15 18:10:57 EDT 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Messier/Caldwell objects appearing above the horizon (highest altitude first).'
+Wed Mar 15 18:11:05 EDT 2017 Page:org.apache.jsp.main.graphic_jsp Err1. English text not found: 'Times are approximate'
+Wed Mar 15 18:11:22 EDT 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Messier/Caldwell objects appearing above the horizon (highest altitude first).'
