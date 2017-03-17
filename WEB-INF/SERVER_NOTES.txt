@@ -2,7 +2,7 @@ Manual deployment
 -------------------------
  copy all to a temp dir
  remove unwanted items
-   .settings, .classpath, .project
+   .git, .settings, .classpath, .project
    /dev dir can be removed
  cross-origin server
     change url for the server, from localhost to the domain

@@ -186,7 +186,8 @@ public class TranslatorTag extends TagHelper {
     Scanner scanner = new Scanner(inputStream, FILE_ENCODING);
     try {
       while (scanner.hasNextLine()){
-        text.append(scanner.nextLine() + NL);
+        //it's important to preserve the newline character!!
+        text.append(scanner.nextLine() + sameNewLineAsTranslationsFile());
       }
     }
     finally{
@@ -197,11 +198,12 @@ public class TranslatorTag extends TagHelper {
   
   private static void log(String text){
     //System.out.println(text);
-    logger.fine(text);
+    //logger.fine(text);
   }
   
   private void error1(String englishText) {
-    String errMsg = "Err1. English text not found: '" + englishText + "'";
+    Boolean hasWindowsNL = englishText.contains("\r\n");
+    String errMsg = "Err1. English text not found. Length:" + englishText.length() + " Windows NL?: " + hasWindowsNL + " Text: '" + englishText + "'";
     writeToTranslationsErrorFile(errMsg);
   }
   
@@ -232,5 +234,24 @@ public class TranslatorTag extends TagHelper {
     catch(IOException ex){
       log("IOException. Can't log error: " + errMessage);
     }
+  }
+  
+  /** 
+   It's important to retain the original NL chars in the translations file.
+   Otherwise, multiline items won't be found/translated.
+   In JSP land, I see that N-line text has \r\n at the end, even on a Linux host. 
+   So that has to be preserved when reading the translations back in.  
+  */
+  private String sameNewLineAsTranslationsFile(){
+    return OS.WINDOWS.NEWLINE;
+  }
+  
+  private enum OS {
+    WINDOWS("\r\n"),
+    UNIX("\n");
+    private OS(String newline){
+      NEWLINE = newline; 
+    }
+    String NEWLINE;
   }
 }

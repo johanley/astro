@@ -142,6 +142,17 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     all_text['e'] = 'f';
     all_text['Population index; smaller means brighter'] = 'Indice de population; plus petit signifie plus brilliant';
     all_text['Factor by which ZHR is multiplied, for current alt and limiting mag'] = 'Muliplier THZ par ce facteur, pour l&apos;effet de hauteur';
+    all_text['Weather'] = 'Météo';
+
+    all_text['Sun'] = 'Soleil';
+    all_text['Moon'] = 'Lune';
+    all_text['Mercury'] = 'Mercure';
+    all_text['Venus'] = 'Vénus';
+    all_text['Mars'] = 'Mars';
+    all_text['Jupiter'] = 'Jupiter';
+    all_text['Saturn'] = 'Saturne';
+    all_text['Uranus'] = 'Uranus';
+    all_text['Neptune'] = 'Neptune';
         
     all_text['SSW'] = 'SSO';
     all_text['SW'] = 'SO';
