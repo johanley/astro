@@ -32,6 +32,10 @@ that you downloaded from github. You do that by creating a file in this location
 This `astro.xml` file (called a context file) simply contains a pointer to the root of the project tree. An example (which you will need to modify, of course):
 * `<Context docBase="C:\myname\projects\astro\" reloadable="true"></Context>`
 
+Finally, there is a silly change you need to make to `js\util.js`. 
+There's a reference to port 8081, which you will likely need to change to port 8080 (Tomcat's default port), or to 
+whatever port you're running Tomcat on.   
+
 The name of the `astro.xml` file controls the URL under which you'll see the app running:  
 * `localhost:8080/astro/`
 
