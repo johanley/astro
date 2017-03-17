@@ -74,18 +74,6 @@ public class TranslatorTag extends TagHelper {
   */
   private static Map<String /*en text*/, Map<String /*fr, it, ...*/, String /*translated text*/>> TRANSLATIONS = null;
   
-  private enum Language {
-    ENGLISH("en", 1),
-    FRENCH("fr", 2);
-    //NOTE TO THE FUTURE: OTHER LANGS GO HERE
-    private Language(String key, Integer groupIdx){
-      KEY = key; //the same as the <html lang='en'> attribute: en, fr, etc
-      GROUP_IDX = groupIdx; //the order of appearance in the translations file; a regex matching group index
-    }
-    String KEY;
-    Integer GROUP_IDX;
-  }
-  
   private static final String ONE_LANG = "\\{([^{}]+)\\}";
   private static final String SPACER = "(?:\\s*)";
   private static final Boolean DO_NOT_CREATE = false;
@@ -243,15 +231,6 @@ public class TranslatorTag extends TagHelper {
    So that has to be preserved when reading the translations back in.  
   */
   private String sameNewLineAsTranslationsFile(){
-    return OS.WINDOWS.NEWLINE;
-  }
-  
-  private enum OS {
-    WINDOWS("\r\n"),
-    UNIX("\n");
-    private OS(String newline){
-      NEWLINE = newline; 
-    }
-    String NEWLINE;
+    return OperatingSys.WINDOWS.NEWLINE;
   }
 }
