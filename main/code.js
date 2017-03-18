@@ -1972,4 +1972,21 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
   };
   show_jupiter_satellite_phenomena();
   
+  var url_to_large_satellite_image = function(){
+    var result = '../satellite/graphic.sky?degrees_on_a_side=10&pixels_on_a_side=800';
+    result = result + '&latitude=' + UTIL.escapeHtml(input.latitude);
+    result = result + '&longitude=' + UTIL.escapeHtml(input.longitude);
+    result = result + '&layer=' + UTIL.escapeHtml(input.layer);
+    return result;
+  };
+  var show_a_larger_satellite_image = function(){
+    window.location.href = url_to_large_satellite_image(); 
+  };
+  var link_to_large_satellite_image = function(){
+    if (input.country === 'cda' || input.country === 'us'){
+      document.getElementById('clouds').onclick = show_a_larger_satellite_image;
+    }
+  };
+  link_to_large_satellite_image();
+  
 };
