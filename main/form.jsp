@@ -107,7 +107,7 @@
      var canada_only = ['row_radar_station_cda', 'row_weather_station_cda', 'row_prov_cda'];
      var us_only = ['row_radar_station_us'];
      var uk_only = ['row_weather_station_uk'];
-     if ('canada' === country){
+     if ('cda' === country){
        show_all(canada_only);
        hide_all(us_only); 
        hide_all(uk_only); 
