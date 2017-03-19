@@ -261,7 +261,7 @@
  <P>
  <div>  
   <table id='weather' class='report weather'></table>
-  <canvas id='clouds' class='no-print cloud' style='margin:0.25em;' title='<s:txt>Satellite image, a few minutes ago</s:txt>'></canvas>
+  <canvas id='clouds' class='no-print cloud' style='margin:0.25em;' title='<s:txt>Satellite image. Click for a larger image.</s:txt>'></canvas>
   <img id='radar' class='no-print radar'>
   <canvas id='radar_us'  class='no-print radar' style='margin:0.25em;'></canvas> 
   <div id='radar_uk'  class="no-print radar" style='margin:0.25em;float:right;'></div>  

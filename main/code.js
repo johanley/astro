@@ -1967,6 +1967,9 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     result = result + '&latitude=' + UTIL.escapeHtml(input.latitude);
     result = result + '&longitude=' + UTIL.escapeHtml(input.longitude);
     result = result + '&layer=' + UTIL.escapeHtml(input.layer);
+    if (input.locations){
+      result = result + '&locations=' + UTIL.escapeHtml(input.locations)
+    }
     return result;
   };
   var show_a_larger_satellite_image = function(){

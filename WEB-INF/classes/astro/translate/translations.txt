@@ -374,7 +374,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 {UT - LT}{UT - LT}
 
 
-{Satellite image, a few minutes ago}{Image satellite, il y a quelques minutes}
+{Satellite image. Click for a larger image.}{Image satellite. Cliquez pour une image plus grande.}
 {Ecliptic, showing the planets and Moon}{Écliptique, avec les planètes et la lune}
 {Observation window: twilight and brightness of the Moon}{Limites de temps pour observer: crépuscule, illumination de la lune}
 {Lunar libration, phase, and change in size from mean}{Lune: libration, phase, et changement de taille par rapport au moyen}
