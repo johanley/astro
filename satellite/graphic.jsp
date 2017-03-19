@@ -17,45 +17,16 @@
     font: 0.75em Verdana, Arial, Helvetica, sans-serif;
   }
  </style>
- <title><s:txt>GOES satellite images</s:txt></title>
+ <title><s:txt>Satellite images</s:txt></title>
  <script src='../js/ephem.js<tags:ver/>'></script>
  <script src='../js/util.js<tags:ver/>'></script>
+ <script src='../js/general-graphics.js<tags:ver/>'></script>
  <script src='code.js<tags:ver/>'></script>
+ <script src='satellite.js<tags:ver/>'></script>
  <script>
-  var click_on = function(id){
-    var link = document.getElementById(id);
-    link.click();
-  };
-  var use_arrow_keys = function(){
-      var PAGE_UP = 33, PAGE_DOWN = 34;
-      var LEFT_ARROW = 37, UP_ARROW = 38, RIGHT_ARROW = 39, DOWN_ARROW = 40;
-      document.onkeydown = function(e) {
-        switch (e.keyCode) {
-          case PAGE_UP: 
-              click_on('incr_in');
-              break;
-          case PAGE_DOWN: 
-              click_on('incr_out');
-              break;
-          case LEFT_ARROW:
-              click_on('incr_w');
-              break;
-          case UP_ARROW:
-              click_on('incr_n');
-              break;
-          case RIGHT_ARROW:
-              click_on('incr_e');
-              break;
-          case DOWN_ARROW:
-              click_on('incr_s');
-              break;
-        }
-    };
-  };
   window.onload = function() {
     var formInput = UTIL.requestParams(window);
-    show_large_scale_clouds(formInput, 'clouds');
-    use_arrow_keys();
+    show_large_satellite_image(formInput, 'clouds');
   };
  </script>
 </head>

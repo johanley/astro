@@ -1080,26 +1080,16 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     console.log('US radar (topography) : ' + topo_url);
     topo_img.src = UTIL.crossDomainUrl(topo_url); 
   };
-  var is_covered_by_meteosat = function(){
-    return (-70 <= opts.where.φ) && (opts.where.φ <= 70) && (-70 <= opts.where.λ) && (opts.where.λ <= 70);
-    //return false; 
-  };
+  
   var show_clouds_and_radar = function(){
     //clouds, from a satellite image 
     if (input.exclude_clouds === '1'){
       dont_show(document.getElementById('clouds'));
     }
     else {
-      var satellite;
-      if (input.country === 'cda' || input.country === 'us'){
-         satellite = 'goes';
-      }
-      else if (is_covered_by_meteosat()){
-         satellite = 'meteosat';
-      }
-      if (satellite){
+      if (SATELLITE.is_position_supported(parseFloat(input.latitude), parseFloat(input.longitude))){
         var sun = EPH.position('sun', EPH.when_now(), opts);
-        showClouds(input, sun.a, 'clouds', satellite);
+        SATELLITE.show_image(input, sun.a, 'clouds'); 
       }
       else {
         dont_show(document.getElementById('clouds'));
@@ -1983,7 +1973,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     window.location.href = url_to_large_satellite_image(); 
   };
   var link_to_large_satellite_image = function(){
-    if (input.country === 'cda' || input.country === 'us'){
+    if (input.country !== 'other'){
       document.getElementById('clouds').onclick = show_a_larger_satellite_image;
     }
   };

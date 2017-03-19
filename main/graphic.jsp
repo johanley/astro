@@ -57,7 +57,7 @@
  <script src='../js/general-graphics.js<tags:ver/>'></script>
  <script src='code.js<tags:ver/>'></script>
  <script src='precipitation.js<tags:ver/>'></script>
- <script src='clouds.js<tags:ver/>'></script>
+ <script src='../satellite/satellite.js<tags:ver/>'></script>
  <script src='aurora.js<tags:ver/>'></script>
  <script src='occultations.js<tags:ver/>'></script>
  <script src='jupiter_satellite_phenomena.js<tags:ver/>'></script>

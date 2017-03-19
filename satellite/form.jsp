@@ -6,10 +6,10 @@
  <meta name="description" content="<s:txt>Recent satellite images from the GOES weather satellite (NOAA).</s:txt>">
  <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="../css/styles.css<tags:ver/>" media="all">
- <title><s:txt>GOES satellite images</s:txt></title>
+ <title><s:txt>Satellite images</s:txt></title>
 </head>
 <body>
-<h2><s:txt>GOES satellite images</s:txt> 
+<h2><s:txt>Satellite images</s:txt> 
  <span class='home'>
   <form style='display:inline;'>
    <select onChange="if (this.value) window.location.href=this.value" style='vertical-align:text-top;'>
@@ -24,7 +24,8 @@
 
 
  <P>
- <s:txt>The form below lets you browse current imagery from the GOES geosynchronous satellite. 
+ <s:txt>The form below lets you browse current imagery from the GOES and Meteosat geosynchronous satellites.
+ GOES has images for North America, and Meteosat has images for Europe and Africa.
  These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
  The default settings in the form below show the Canadian Maritime provinces.</s:txt> 
  
@@ -41,6 +42,7 @@
            <option value='visible' title='<s:txt>Day time</s:txt>'><s:txt>Visible (day-time)</s:txt>
            <option value='ir' title='<s:txt>Night time</s:txt>'><s:txt>IR (night-time)</s:txt>
          </select>
+     <tr><td><s:txt>Show locations</s:txt><td><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='46.25, -63.13' size='40'>
      <tr><td colspan='2' style="text-align:center">
       <input type='submit' value='<s:txt>Show the large-scale satellite image (clouds)</s:txt>'>
   </table>
@@ -50,8 +52,9 @@
 
 <P><s:txt>Credits</s:txt>:
 <ul>
- <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : <s:txt>imagery from the GOES geostationary weather satellite</s:txt>.
+ <li><a href='http://radar.weather.gov/'>NOAA/NWS</a>: <s:txt>imagery from the GOES geostationary weather satellite</s:txt>.
  <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: <s:txt>server for NOAA images captured by the GOES satellite</s:txt>.
+ <li><a href='http://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html'>EUMETSAT</a>: <s:txt>imagery from the Meteosat geostationary weather satellite</s:txt>.
 </ul>
 
 <tags:analytics/>

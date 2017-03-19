@@ -2,19 +2,22 @@
 {Home}{Accueil}
 {Credits}{Attributions}
 
-{GOES satellite images}{Images satellite GOES}
+{Satellite images}{Images satellites}
 {Back to Form}{Retourner au formulaire}
 
 {canada, united states, weather, clouds, satellite, goes, visible, infrared, imagery}
 {canada, etas-unis, météo, nuages, satellite, goes, visible, infrarouge}
 {Recent satellite images from the GOES weather satellite (NOAA).}
-{Images satellites actuelles de la satellite météorologique GOES (NOAA).}
-{The form below lets you browse current imagery from the GOES geosynchronous satellite. 
+{Images satellites actuelles du satellite météorologique GOES (NOAA).}
+{The form below lets you browse current imagery from the GOES and Meteosat geosynchronous satellites.
+ GOES has images for North America, and Meteosat has images for Europe and Africa.
  These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
  The default settings in the form below show the Canadian Maritime provinces.} 
-{Le formulaire ci-dessous est pour explorer les images actuelles de la satellite géostationnaire GOES. 
+{Le formulaire ci-dessous est pour explorer les images actuelles des satellites géostationnaires GOES et Météosat.
+ Le satellite GOES a des images de l'Amerique du Nord, et le satellite Météosat a des images de l'Europe et de l'Afrique.
  Ces images sont surtout impressionantes quand le soleil est de faible hauteur, et les ombres sont plus importants.
- La définition par défaut montre les provinces maritimes du Canada.} 
+ Par défaut, le formulaire montre les provinces maritimes du Canada.} 
+ 
 {Latitude in degrees}{Latitude en degrés}
 {Longitude in degrees. Negative west of Greenwich}{Longitude en degrés. Négative à l&apos;ouest de Greenwich}
 {Let the system decide}{Laisser le système décider}
@@ -30,10 +33,9 @@
 {Degrees on a side}{Taille en degrés}
 {Pixels on a side}{Taille en pixels}
 {Channel: visible or infrared?}{Visible ou infrarouge?}
-{imagery from the GOES geostationary weather satellite}
-{images de la satellite géostationnaire météorologique GOES}
-{server for NOAA images captured by the GOES satellite}
-{serveur pour les images NOAA de la satellite GOES}
+{imagery from the GOES geostationary weather satellite}{images du satellite géostationnaire météorologique GOES}
+{imagery from the Meteosat geostationary weather satellite}{images du satellite géostationnaire météorologique Météosat}
+{server for NOAA images captured by the GOES satellite}{serveur pour les images NOAA du satellite GOES}
 {Typically, you will use the visible channel during the day, and the infrared channel at night.}
 {Normalement, on utilise le visible pendant le jour, et l'infrarouge pendant la nuit.}
 {Atlantic Provinces}{Provinces atlantiques}
@@ -216,7 +218,7 @@ Toutefois, si on se trouve à Ottawa, on ne peut pas voir les données correctes
 La plupart du temps, ce problème ne va pas vous déranger, car les locations proches sont les plus intéressantes.
 (La cause de ce problème est le design du langage Javascript.
 Il y a des méthodes pour résoudre ce problème, mais, pour le moment, il est toujours dans le système. 
-Si il faut voir les données correctes pour une location dans un autre fuseau horaire, vous pouvez toujours changer le fuseau horaire de votre navigateur.)}
+S'il faut voir les données correctes pour une location dans un autre fuseau horaire, vous pouvez toujours changer le fuseau horaire de votre navigateur.)}
 
 
 {<P><b>The satellite imagery is particularly useful, because it shows detailed cloud information.</b> 
@@ -279,7 +281,7 @@ Si il faut voir les données correctes pour une location dans un autre fuseau ho
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : prévisions des occultations.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : phénomènes du jour, phénomènes des satellites galiléens de Jupiter.
  <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : conditions actuelles pour le R-U, et les prévisions.
- <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : images satellites Meteosat pour l'Europe (au moyen du Met Office).
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : images satellites Météosat pour l'Europe.
 </ul>}
  
 {Country}{Pays}
