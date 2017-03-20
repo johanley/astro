@@ -160,7 +160,7 @@ public class StationLinkGenerator implements ClipboardOwner {
     result = result + "location_name=" + name + "&";
     result = result + "latitude=" + lat + "&";
     result = result + "longitude=" + longit + "&";
-    result = result + "locations=" + lat + "," + longit + "&";
+    //result = result + "locations=" + lat + "," + longit + "&";
     if (!isUS){
       result = result + "weather_station=" + weather_stn_id + "&"; //blank if missing
     }
@@ -208,7 +208,7 @@ public class StationLinkGenerator implements ClipboardOwner {
     result = result + "location_name=" + name + "&";
     result = result + "latitude=" + lat + "&";
     result = result + "longitude=" + longit + "&";
-    result = result + "locations=" + lat + "," + longit + "&";
+    //result = result + "locations=" + lat + "," + longit + "&";
     result = result + "weather_station=" + weather_stn_id + "&"; 
     
     //escape special chars

@@ -260,20 +260,36 @@ var SATELLITE = (function(){
     return result;
   };
   
+  var draw_center = function(ctx, params){
+    var size = 4;
+    GRAPH.tickMarkVertical(ctx, 0.5*params.size_pixels, 0.5*params.size_pixels, size);
+    GRAPH.tickMarkHorizontal(ctx, 0.5*params.size_pixels, 0.5*params.size_pixels, size);
+  };
+  
   var draw_location = function(width_frac, height_frac, ctx, params){
     GRAPH.spot(ctx, width_frac*params.size_pixels, height_frac*params.size_pixels, 2);
   };
   
+  var draw_with = function(color, ctx){
+    ctx.fillStyle = color; 
+    ctx.strokeStyle = color; 
+  };
+  
   var draw_locations_on_satellite_image = function(params, canvas_id){
     var ctx = document.getElementById(canvas_id).getContext("2d");
-    ctx.fillStyle = 'rgb(0,200,0)'; 
+    var black = 'rgb(0,0,0)';
+    var green = 'rgb(0,200,0)';
+    draw_with(black, ctx);
     //console.log('Drawing the location at the center of the satellite image.');
-    draw_location(0.5, 0.5, ctx, params);
+    draw_center(ctx, params);
+    draw_with(green, ctx);
     for(var i = 0; i < params.locations.length; ++i){
       //console.log('Drawing location at longitude ' + params.locations[i].longitude);
-      var width_frac = Math.abs(params.locations[i].longitude - params.nw_corner.longitude)/params.size_degrees;
-      var height_frac = Math.abs(params.nw_corner.latitude - params.locations[i].latitude)/params.size_degrees; 
-      draw_location(width_frac, height_frac, ctx, params); 
+      var width_frac = (params.locations[i].longitude - params.nw_corner.longitude)/params.size_degrees;
+      var height_frac = (params.nw_corner.latitude - params.locations[i].latitude)/params.size_degrees;
+      if (width_frac >= 0 && height_frac >= 0){
+        draw_location(width_frac, height_frac, ctx, params); 
+      }
     }
   };
   
