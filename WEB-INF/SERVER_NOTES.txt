@@ -115,3 +115,8 @@ Jupiter Satellite Phenomena
   C:\johanley\Projects\playtime\sky\astro\today>C:\jdk1.6.0\bin\java JupiterSatellitePhenomena
   Replace the contents of: 
      C:\johanley\Projects\playtime\sky\astro\today\jupiter_satellite_phenomena.js
+
+     
+Saturn
+  ephem.js: FUDGE_FACTOR_FOR_MISSING_RINGS
+  if still needed, review the fudge-factor used to get better apparent magnitudes for Saturn.     

@@ -1917,7 +1917,8 @@ var EPH = (function(){
     },
     add_physical: function(ephem){
       var i = degs(ephem.phase);
-      ephem.mag = -8.68 + 5 * Math.log10(ephem.r * ephem.Δ); //MISSING: TERMS FOR THE RINGS
+      var FUDGE_FACTOR_FOR_MISSING_RINGS =  -1.1; //gives the correct answer near opposition, 2017-06-15
+      ephem.mag = -8.68 + 5 * Math.log10(ephem.r * ephem.Δ) + FUDGE_FACTOR_FOR_MISSING_RINGS;
       ephem.size = size_rads(82.73, ephem.Δ); 
     },
     ephem: function(when){
