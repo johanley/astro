@@ -139,6 +139,9 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
 {---Canada---}{---Canada---}
 {---U.S.A.---}{---É-U---}
 {---United Kingdom---}{---Royaume-Unie---}
+{---Europe---}{---Europe---}
+{---Africa---}{---Afrique---}
+{---Middle East---}{---Moyen orient---}
 
 
 {The information is customized for your location, and includes}
@@ -432,3 +435,28 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 
 {Times are approximate}{Les temps sont approximatifs}
 
+{BC, AB}{BC, AB}
+{SK, MN}{SK, MN}
+{Ontario}{Ontario}
+{Québec}{Québec}
+{East Coast}{Atlantique}
+{New England}{Nouvelle-Angleterre}
+{Florida}{Floride}
+{California}{Californie}
+{Italy}{Italie}
+{Egypt}{Égypte}
+{South Africa}{Afrique du Sud}
+{Libya}{Libye}
+{Congo}{Congo}
+{Saudi Arabia}{Arabie saoudite}
+{Nigeria}{Nigeria}
+{Ethiopia}{Éthiopie}
+{Morocco}{Maroc}
+{Greece}{Grèce}
+{Germany}{Allemagne}
+{Oregon}{Oregon}
+{Iowa}{Iowa}
+{Colorado}{Colorado}
+{Iraq}{Irak}
+{France}{France}
+{Spain}{Espagne}
