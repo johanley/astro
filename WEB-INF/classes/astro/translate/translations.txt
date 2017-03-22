@@ -135,10 +135,10 @@ As a convenience, here are the results for some selected locations (Canada, US, 
 Les défauts sont pour Ottawa, la capitale du Canada.
 Pour vous aider, voici quelques résultats pour des locations particulières (seulement pour le Canada, les É-U, et le R-U)}
 
-{Choose a location}{Choissisez une location}
+{Choose a location}{Choisir une location}
 {---Canada---}{---Canada---}
 {---U.S.A.---}{---É-U---}
-{---United Kingdom---}{---Royaume-Unie---}
+{---United Kingdom---}{---Royaume-Uni---}
 {---Europe---}{---Europe---}
 {---Africa---}{---Afrique---}
 {---Middle East---}{---Moyen orient---}
@@ -369,7 +369,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 
 {Exclude none}{Exclure rien}
 {Exclude all}{Exclure tout}
-{SHOW the sky tonight}{MONTREZ le ciel ce soir}
+{SHOW the sky tonight}{MONTRER le ciel ce soir}
 {Reset}{Recommencer}
 
 {Local Mean Sidereal Time}{Temps sidéral locale moyen}

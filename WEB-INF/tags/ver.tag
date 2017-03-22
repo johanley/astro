@@ -1,1 +1,1 @@
-<%@ include file="/WEB-INF/TagHeader.jspf" %>?ver=${initParam.ver}
+<%@ include file="/WEB-INF/TagHeader.jspf" %><%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>?ver=${initParam.ver}

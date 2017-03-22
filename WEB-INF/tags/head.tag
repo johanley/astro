@@ -1,5 +1,6 @@
 <%-- Repeated markup that appears in the HEAD tag. --%>
 <%@ include file="/WEB-INF/TagHeader.jspf" %>
+<%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
  <%-- Note how the app name and version is config data, not hardcoded. --%>
  <title>Name: ${initParam.appName}</title> 
   

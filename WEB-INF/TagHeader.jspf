@@ -1,7 +1,7 @@
 <%-- This is very similar to JspHeader.jspf, in that it exists to reduce repetition. --%> 
 <%-- This file is included in all .tag files. In this case, those references need to be added manually --%>
 <%-- to each .tag file, since there's no mechanism in web.xml for doing so. --%>
-<%@ tag pageEncoding="UTF-8"  trimDirectiveWhitespaces="true" %>
+<%-- The pageEncoding directive is not included here; it doesn't work here. Put it in the tag file instead. --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
