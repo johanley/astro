@@ -50,4 +50,4 @@ Other items to note:
 * no javascript modularization tool or build tool is used.
 * preferred js naming style: `like_this`, but it doesn't really matter that much.
 * note the use of Greek letters in the code: it reads much better, and lets you compare more easily with other sources.
-* periodic manual updates to data are needed to keep the data current, but the effort required is not onerous (20 minutes monthly, 2 hours yearly).
+* periodic manual updates to data are needed to keep the data current, but the effort required is not onerous (20 minutes monthly, 3 hours yearly).
