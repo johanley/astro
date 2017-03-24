@@ -7,14 +7,26 @@
  <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" href="../css/styles.css<tags:ver/>" media="all">
  <style>
+  body {
+    margin:0.5em;
+    padding: 0;
+  }
   table.report {
     display: inline-block;
     vertical-align: top; 
   }
-  body {
-    margin:0.5em;
-    padding: 0;
-    font: 0.75em Verdana, Arial, Helvetica, sans-serif;
+  #canvas-container {
+     width: 100%;
+     text-align:center;
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+  }
+  canvas {
+     display: inline;
+  }
+  canvas#clouds {
+    border-radius:10px; 
+    margin:0.25em; 
   }
  </style>
  <title><s:txt>Satellite images</s:txt></title>
@@ -32,6 +44,8 @@
 </head>
 <body> 
 
+<div style='width:100%; text-align:center;'>
+
  <!-- these links are set dynamically in code --> 
  <table class='report'>
    <td><a id='incr_w' href='' title='<s:txt>West</s:txt>'>◀</a>
@@ -47,14 +61,19 @@
     <tags:locations_sat_image/>
    </select>
   </form>
-    
+  
  <a href='form.sky'><s:txt>Form</s:txt></a>
+</div>
 
- <br><canvas id='clouds' class='no-print' style='border-radius:10px; margin:0.25em;'></canvas>
+<div id="canvas-container">  
+ <canvas id='clouds'></canvas>
+</div>
  
- <P><s:txt>Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.</s:txt>
- 
- <tags:analytics/>
+<div style='width:100%; text-align:center;'>
+  <s:txt>Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.</s:txt>
+</div>
+
+<tags:analytics/>
   
 </body>
 </html>

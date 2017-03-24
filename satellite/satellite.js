@@ -81,9 +81,24 @@ var SATELLITE = (function(){
     return result;
   };
   
+  var pixels_on_a_side_default = function(){
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    var smallest_dimension = Math.min(width, height);
+    return Math.floor(smallest_dimension * 0.90);
+  };
+  
+  var pixels_on_a_side = function(val){
+    var result = pixels_on_a_side_default();
+    if (val) {
+      result = parseInt(val);
+    }
+    return result;  
+  };
+  
   /* Collects all the input params, and that data which is simply-derived from the input. */  
   var image_parameters = function(input, current_solar_alt_degs, canvas_id){
-    var size_pixels = parseInt(input.pixels_on_a_side);
+    var size_pixels = pixels_on_a_side(input.pixels_on_a_side);
     var size_degrees = parseFloat(input.degrees_on_a_side);
     var latitude = parseFloat(input.latitude);
     var longitude = parseFloat(input.longitude);
@@ -320,7 +335,8 @@ var SATELLITE = (function(){
   
   return {
     is_position_supported: is_position_supported,
-    show_image: show_image
+    show_image: show_image,
+    pixels_on_a_side: pixels_on_a_side 
   };
 
 }()); // the top level function is invoked here; its return value is stored in SATELLITE, a global variable

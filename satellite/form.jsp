@@ -8,6 +8,12 @@
  <link rel="stylesheet" href="../css/styles.css<tags:ver/>" media="all">
  <title><s:txt>Satellite images</s:txt></title>
 </head>
+<script>
+  <tags:geolocation/>
+  window.onload = function() {
+    activate_lat_long_autofill();
+  };
+</script>
 <body>
 <h2><s:txt>Satellite images</s:txt> 
  <span class='home'>
@@ -38,10 +44,11 @@
  <P>
  <form method='GET' action='graphic.sky' class='user-input-small' id='input_form_clouds'>
   <table>
-     <tr><td><s:txt>Latitude</s:txt>:<td><input type='text' name='latitude' value='47' title='<s:txt>Latitude in degrees</s:txt>'> 
-     <tr><td><s:txt>Longitude</s:txt>:<td><input type='text' name='longitude' value='-64' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
+     <tr><td><s:txt>Latitude</s:txt>:<td><input type='text' name='latitude' id='latitude' value='47' title='<s:txt>Latitude in degrees</s:txt>'> 
+     <tr><td><s:txt>Longitude</s:txt>:<td><input type='text' name='longitude' id='longitude' value='-64' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
+         <td><button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Use current location</s:txt></button>
      <tr><td><s:txt>Degrees on a side</s:txt><td><input name='degrees_on_a_side' value='10'>
-     <tr><td><s:txt>Pixels on a side</s:txt><td><input name='pixels_on_a_side' value='800'>
+     <tr><td><s:txt>Pixels on a side (override)</s:txt><td><input id='pixels_on_a_side' name='pixels_on_a_side' value=''>
      <tr><td><s:txt>Channel: visible or infrared?</s:txt>
          <td>
          <select name='layer'>
@@ -49,8 +56,8 @@
            <option value='visible' title='<s:txt>Day time</s:txt>'><s:txt>Visible (day-time)</s:txt>
            <option value='ir' title='<s:txt>Night time</s:txt>'><s:txt>IR (night-time)</s:txt>
          </select>
-     <tr><td><s:txt>Show locations</s:txt><td><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='46.25, -63.13' size='40'>
-     <tr><td colspan='2' style="text-align:center">
+     <tr><td><s:txt>Show locations</s:txt><td colspan='2'><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='46.25, -63.13' size='40'>
+     <tr><td><td colspan='2'>
       <input type='submit' value='<s:txt>Show the large-scale satellite image (clouds)</s:txt>'>
   </table>
  </form>

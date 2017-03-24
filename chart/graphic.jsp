@@ -10,7 +10,6 @@
   body {
     margin:0.5em;
     padding: 0;
-    font: 0.75em Verdana, Arial, Helvetica, sans-serif;
   }
   table.report {
     display: inline-block;
@@ -19,7 +18,8 @@
   #canvas-container {
      width: 100%;
      text-align:center;
-     margin-top: 1.0em;
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
   }
   canvas {
      display: inline;
@@ -59,18 +59,9 @@
    <input type='text' name='num_degs' id='num_degs' size='2' value=''> <s:txt>degs</s:txt>
  </form>
  
- <table id='summary' class='report' style='margin-top:0;'>
-   <tr>
-   <th><s:txt>Place</s:txt>
-   <th><s:txt>Time</s:txt>
-   <th><s:txt>Lat</s:txt>
-   <th><s:txt>Long</s:txt>
-   <th title="<s:txt>Num minutes UT is in advance of browser's local time (LT)</s:txt>">UT - LT
- </table>
- 
  <form id='date_time_controls' method='GET' action='' style="display:inline; margin:0.25em;">
    <input type='submit' name='go' value='&lt;' onclick="go_plus=0;">
-   <input type='text' name='num_steps' id='num_steps' size='4' value='1'>
+   <input type='text' name='num_steps' id='num_steps' size='2' value='1'>
    <select name='date_time_unit' id='date_time_unit'>
      <option value='year'><s:txt>year</s:txt>
      <option value='month'><s:txt>month</s:txt>
@@ -90,7 +81,17 @@
  <canvas id='star_chart'></canvas>
 </div>
  
+<div style='width:100%; text-align:center;'>
+ <table id='summary' class='report' style='margin-top:0;'>
+   <tr>
+   <th><s:txt>Place</s:txt>
+   <th><s:txt>Time</s:txt>
+   <th><s:txt>Lat</s:txt>
+   <th><s:txt>Long</s:txt>
+   <th title="<s:txt>Num minutes UT is in advance of browser's local time (LT)</s:txt>">UT - LT
+ </table>
  <P><s:txt>Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.</s:txt>
+</div>
  
  <tags:analytics/>
  

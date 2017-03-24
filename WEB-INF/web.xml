@@ -33,7 +33,7 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
   <!-- Append this number to file names in markup, eg 'styles.css?ver=1' or 'code.js?ver=1'. Update the ver value for each new deployment. -->  
   <context-param>
    <param-name>ver</param-name>
-   <param-value>3</param-value>
+   <param-value>10</param-value>
   </context-param>
 
   <context-param>

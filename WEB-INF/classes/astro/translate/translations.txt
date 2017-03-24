@@ -32,6 +32,7 @@
 {Longitude}{Longitude}
 {Degrees on a side}{Taille en degrés}
 {Pixels on a side}{Taille en pixels}
+{Pixels on a side (override)}{Taille en pixels (adapter)}
 {Channel: visible or infrared?}{Visible ou infrarouge?}
 {imagery from the GOES geostationary weather satellite}{images du satellite géostationnaire météorologique GOES}
 {imagery from the Meteosat geostationary weather satellite}{images du satellite géostationnaire météorologique Météosat}
@@ -88,7 +89,7 @@
 {Default settings}{Défaut}
 {Note}{À noter}
 {all items are optional, except for <em>center on</em>. You can either choose a specific object, or enter a specific right ascension and declination.}
-{tous les champs sonts facultatifs, sauf <em>centrer sur</em>. Vous pouvez ou choisir un objet particulier, ou entrer une α, δ particulier.}
+{tous les champs sonts facultatifs, sauf <em>centrer sur</em>. Vous pouvez choisir un objet particulier, ou entrer une position particulière (α, δ).}
 {the location, latitude, and longitude are used only for lunar parallax.}
 {la location, latitude, et longitude sont employés seulement pour calculer le parallax lunaire.}
 {the other items show default values. Usually, just accepting the defaults is adequate.}

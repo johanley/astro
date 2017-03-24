@@ -31,7 +31,7 @@ var show_large_satellite_image = function(input, output_image){
     var idx1 = current_url.indexOf(incr_param_name + '=');
     var idx2 = current_url.indexOf('&', idx1);
     var old_val = current_url.substring(idx1 + incr_param_name.length + 1, idx2); // can be negative, '-78'
-    var new_val = parseFloat(old_val) + incr_amount; //need to coerce to math, not string concat
+    var new_val = 0 + parseFloat(old_val) + incr_amount; //need to coerce to math, not string concat
     var new_url_start = current_url.substring(0, idx1 + incr_param_name.length);
     var new_url_end = current_url.substring(idx2);
     var new_url = new_url_start + '=' + new_val + new_url_end;
@@ -121,7 +121,7 @@ var show_large_satellite_image = function(input, output_image){
         displacement.y = stop.y - start.y;
         //console.log('Displacement ' + displacement.x + ' ' + displacement.y);
         var new_center = {}; //calc the new center coords latitude, longitude, and stay in range
-        var degs_per_pixel = parseFloat(input.degrees_on_a_side) / parseInt(input.pixels_on_a_side); 
+        var degs_per_pixel = parseFloat(input.degrees_on_a_side) / SATELLITE.pixels_on_a_side(input.pixels_on_a_side); 
         new_center.latitude = parseFloat(input.latitude) + displacement.y * degs_per_pixel; 
         new_center.longitude = parseFloat(input.longitude) - displacement.x * degs_per_pixel;
         //somewhat dangerously, I overwrite the input object; this is reasonably safe since the page is about to be reloaded

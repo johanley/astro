@@ -36,22 +36,7 @@
     populate_options_from_array(EPH.caldwells);
   };
   
-  var activate_lat_long_autofill = function(){
-     var lat_long_auto = document.getElementById('lat_long_autofill');
-     lat_long_auto.onclick = function(){
-       if (navigator.geolocation){
-         navigator.geolocation.getCurrentPosition(
-           function(pos){
-             document.getElementById('latitude').value = pos.coords.latitude;
-             document.getElementById('longitude').value = pos.coords.longitude;
-           }
-         );
-       }
-       else {
-         lat_long_auto.innerHTML = 'Disabled by browser';
-       }
-     };
-  };
+  <tags:geolocation/>
   
   window.onload = function() {
     populate_names_of_known_objects();

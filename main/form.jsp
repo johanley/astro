@@ -11,7 +11,8 @@
  <script src='find_closest_clear_sky_clock.js<tags:ver/>'></script>
  <script src='../js/util.js<tags:ver/>'></script>
  <script src='../js/ephem.js<tags:ver/>'></script>
- <script> 
+ <script>
+  <tags:geolocation/> 
   window.onload = function() {
    var is_dev = ${initParam.isDev}; 
    var exclude_none = document.getElementById('exclude_none');
@@ -51,21 +52,8 @@
      }
    };
    
-   var lat_long_auto = document.getElementById('lat_long_autofill');
-   lat_long_auto.onclick = function(){
-     if (navigator.geolocation){
-       navigator.geolocation.getCurrentPosition(
-         function(pos){
-           document.getElementById('latitude').value = pos.coords.latitude;
-           document.getElementById('longitude').value = pos.coords.longitude;
-         }
-       );
-     }
-     else {
-       lat_long_auto.innerHTML = '<s:txt>Disabled by browser</s:txt>';
-     }
-   };
-
+   activate_lat_long_autofill(); //in geolocations.tag
+   
    /*
     IMPORTANT: Naming convention for rows and controls, in the form below. 
     Example

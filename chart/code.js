@@ -53,7 +53,7 @@ var show = function(input){
     default_setting('longitude', '0');
     default_setting('limiting_mag', '8.0');
     default_setting('chart_width', '30');
-    default_setting('show_identifiers', ['bayer']);  
+    //default_setting('show_identifiers', ['bayer']);  
     default_setting('style', 'regular');
   };
   apply_default_settings_if_absent();
@@ -678,7 +678,7 @@ var show = function(input){
     var chart = {}, ephem;
     chart.width = EPH.rads(parseInt(input.chart_width));
     var canvas = document.getElementById('star_chart');
-    canvas.width = window.innerWidth*0.94;
+    canvas.width = window.innerWidth*0.95;
     canvas.height = window.innerHeight*.85;
     var ctx = canvas.getContext('2d');
     //ctx.fillStyle = 'rgb(36,55,114)'; //blue background

@@ -82,7 +82,7 @@ public class SatImageLinkGenerator implements ClipboardOwner {
     The data file has the name of the place as well. 
     The name varies in exact meaning; it could be a country, it could be a region of a country. 
   */
-  private static final String STATIC_URL = "graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=800&"; 
+  private static final String STATIC_URL = "graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&"; 
   
   private void read_csv_and_build_links(String fileName, String encoding) throws FileNotFoundException, UnsupportedEncodingException {
     log("Reading from file: " + fileName);
