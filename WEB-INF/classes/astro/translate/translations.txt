@@ -267,7 +267,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : occultation predictions.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : sky diary, phenomena for Galilean satellites.
  <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions and forecast.
- <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe (via the Met Office).
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe.
 </ul>}
 {<ul>
  <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: beaucoup d'algorithmes employez ici sont décrits dans ce livre.  

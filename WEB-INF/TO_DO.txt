@@ -1,28 +1,9 @@
 Rough notes about what is left to do.
 --------------------------------------------------------------------------------------
 
-BUG use-current-location fails on my android tablet
-  charts, satellite: add finger events for dragging to a new center
-  
-BUG: canvas rendering on Apple screens is poor, especially the text
-  detect-retina and double the scale
-    https://coderwall.com/p/vmkk6a/how-to-make-the-canvas-not-look-like-crap-on-retina
-  
-BUG the time zone issue; how to offset the time by x minutes; attach an offset to the location? 
-   what about change of offset?
-  
-  // BUG weird rendering of planet symbols on samsung devices, others; coloured backgrounds
-  // ask stackoverflow?
-  
-  // BUG UK weather radar not accessible; probs with both open layers and leaflet
-  
-  // BUG poor rendering of curves drawn on the canvas, esp on smaller devices
-  
   // BUG the planisphere can only be drawn if sun-moon-planets are selected? time controls?
   
   // BUG: use 'number' type in form input?
-  
-  // BUG: the code that prepops forms from URL params does no escaping when injecting data into the DOM
   
   // is the css liquid layout ok, or does it need to be improved? some displays are crappy
   
@@ -34,13 +15,6 @@ BUG the time zone issue; how to offset the time by x minutes; attach an offset t
   // can some world-weather api give me all other countries, current conditions and forecast? eg for Africa?
   //  http://openweathermap.org/api ? not the greatest in terms of timeliness
   
-  // Meteosat: needs CORS access; they are planning to add it (email 2016-12-27)
-  
-  // principal new features: 
-  //   horizon views (ecliptic, twilight for the given window, sensitive to Sun's azimuth), 
-  //   physical views of the Sun and planets 
-  //   three.js rendering of the planisphere 
-    
   // UK weather data
   //   http://www.metoffice.gov.uk/datapoint
   //   Need to include this in my UK MetOffice credit: "Contains public sector information licensed under the Open Government Licence"
@@ -126,15 +100,8 @@ BUG the time zone issue; how to offset the time by x minutes; attach an offset t
   
   // planisphere: 3d view, using three.js?
   
-  // git: clean the code
-  //   document the thing - wait till I decide to use mean orbits or not
-  //   it really needs unit tests of some sort
-  
   // rounding: ephem.js needs a way to round its 'when' objects: nearest second, minute, hour, day
   //    the impl will need to use the odometer 
-  
-  // the large cloud form should be sensitive to the device's width + height
-  //    find out which is smaller, and use it as the square dimension
   
   // translate:
   //    diary: needs french trans for the descr (continual)
@@ -156,7 +123,8 @@ BUG the time zone issue; how to offset the time by x minutes; attach an offset t
   
   // alt-az: include flag? change to a click event? other?
   
-  // open layers: amalgamate the map of light pollution produced by that French chap
+  // open layers: amalgamate the map of light pollution 
+  
   /*
   Past 24 hrs - chart of temperature, wind speed, 
   

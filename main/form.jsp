@@ -537,7 +537,7 @@ If you need a work-around, then just temporarily change your computer's time zon
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : occultation predictions.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : sky diary, phenomena for Galilean satellites.
  <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions and forecast.
- <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe (via the Met Office).
+ <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe.
 </ul></s:txt>
 
 <P><s:txt>Code last updated on</s:txt>: ${initParam.lastUpdatedOn}.
