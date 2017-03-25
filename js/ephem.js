@@ -50,11 +50,38 @@
 ---------------------------------------------------------------------------------------------
   Central to this tool are these conventional objects, having important data:
   
-  //all the aliases for a given moment in time  
+  All the aliases for a given moment in time.
+  **Items refer to UT**, unless 'tt' or 'lt' appears in the name.
+  The given .date property is provided in case you need values in LT.
+  There is no function for converting from one offset/timezone to another. 
   when {
-    .. fill this out later
+    T : number of Julian centuries since J2000
+    T_tt : number of Julian centuries since J2000, expressed in Terrestial Time
+    d : day of the month
+    d_frac : fractional day of the month, with hours-min-sec expressed as a decimal
+    date : date object; a back-door, in case LT values are needed
+    gmst : Greenwich Mean Sidereal Time, 0..2pi
+    hour : hour of the day 0..23
+    jd : Julian Date
+    jd_tt : Julian Date in Terrestial Time
+    m : month of the year 1..12
+    min : minute 0..59
+    mjd : Modified Julian Date
+    msec : milliseconds
+    msec_epoch : milliseconds since the epoch used by Javascript, 1970-01-01.0
+    sec : seconds 0..59
+    weekday : 1..7, in UT, not LT
+    y : calendar year, eg 1957
+    
+    delta(secs) : return a new 'when', that differs from this 'when' by the given number of seconds
+    next() : return a new 'when', 24h ahead of this one
+    prev() : return a new 'when', 24h behind this one
+    startOfDayLT() : return a new 'when', corresponding to the start of the local day
+    endOfDayLT() : return a new 'when', corresponding to the end of the local day
+    toString(), and variations
   }
-  //the location of an observer on the Earth's surface (height is neglected - low precision)
+  
+  The location of an observer on the Earth's surface (height is neglected - low precision)
   where {
     φ - latitude, rads
     λ - longitude, rads
@@ -544,10 +571,10 @@ var EPH = (function(){
       date.setTime(new_msec_epoch);
       return when_from_utc(date);
     };
-    result.next = function(secs){
+    result.next = function(){
       return this.delta(60*60*24);
     };
-    result.prev = function(secs){
+    result.prev = function(){
       return this.delta(-1*60*60*24);
     };
     result.startOfDayLT = function(){
@@ -671,7 +698,12 @@ var EPH = (function(){
     return when_from_julian_year(num, text);
   };
   
-  /* Example: 'UT 2016-01-31 02:56:03.123', plus truncations. */
+  /* 
+   Example: 'UT 2016-01-31 02:56:03.123', plus truncations.
+   Parse an input string into pieces. Those pieces are suited for building a Javascript Date object. 
+   Javascript Date objects know only about UT and LT, not TT. So, when the input has TT, 
+   the seconds are tweaked, in order to get the same instant expressed in terms of UT/LT. 
+  */
   var when_parse = function(text){
     var original_text = text;
     var style = text.substring(0,2); //first 2 letters
@@ -680,14 +712,16 @@ var EPH = (function(){
     var dot = text.indexOf("."); //either a fractional day, or a fractional second (but not both)
     var is_fractional_day = (dot === 10); 
     
+    //first the date parts only
     var date = (space === -1 ? text : text.substring(0, space));
     var parts = date.split('-');
     var year = parseInt(parts[0], 10);
     var month = parseInt(parts[1], 10);
     var day = is_fractional_day ? Math.floor(parseFloat(parts[2])) : parseInt(parts[2], 10);
 
+    //now for the time parts, which all default to zero, if not present in the input text
     var hour = 0, minute = 0, seconds = 0, msecs = 0; //integers all
-    var frac = 0, hour_dec = 0, minute_dec = 0, seconds_dec = 0; // decimal numbers
+    var frac = 0, hour_dec = 0, minute_dec = 0, seconds_dec = 0; // as decimal numbers; used for fractional days
     
     if (! is_fractional_day && text.length > 10){
       //date and time string both present
@@ -697,11 +731,6 @@ var EPH = (function(){
       minute = parts.length > 1 ? parseInt(parts[1],10) : 0;
       if (parts.length > 2){
         seconds_dec = parseFloat(parts[2]);
-        if ('TT' === style){
-          seconds_dec = seconds_dec - delta_t(year);
-        }
-        seconds = Math.floor(seconds_dec);
-        msecs = Math.round((seconds_dec - seconds)*1000); 
       }
     }
     if (is_fractional_day) {
@@ -711,10 +740,18 @@ var EPH = (function(){
       minute_dec = (hour_dec - hour) * 60;
       minute = Math.floor(minute_dec);
       seconds_dec = (minute_dec - minute) * 60;
-      seconds = Math.floor(seconds_dec);
-      msecs = Math.round((seconds_dec - seconds) * 1000);
     }
-    var result; 
+
+    if ('TT' === style){ //tweak the seconds for ΔT 
+      seconds_dec = seconds_dec - delta_t(year); //no longer in 0.0 .. 59.9
+      //**according to javascript docs** for the Date object, the runtime will 'odometer' the adjacent values, if 
+      //seconds is out of the normal range
+    }
+    seconds = Math.floor(seconds_dec);
+    msecs = Math.round((seconds_dec - seconds)*1000); 
+    
+    //now we can build a Javascript Date object corresponding to the desired instant
+    var result;
     if ('LT' === style){
       result = new Date(year, month-1, day, hour, minute, seconds, msecs); 
     }
@@ -2328,6 +2365,11 @@ var EPH = (function(){
     ephem.phase = Math.abs(Math.atan2(numer,denom)); // 0..pi
     
     ephem.illum = (1 + Math.cos(ephem.phase))/2; //0..1
+    
+    //Meeus 316, PA of the bright limb; intended mostly for the Moon, but works for planets too.
+    numer = Math.cos(sun.α) * Math.sin(sun.α - ephem.α);
+    denom = Math.sin(sun.δ) * Math.cos(ephem.δ) - Math.cos(sun.δ) * Math.sin(ephem.δ) * Math.cos(sun.α - ephem.α);
+    ephem.χ = in2pi(Math.atan2(numer, denom));  // 0..2pi position angle of the midpoint of the bright limb; usually near pi/2 or 3pi/2
   }; 
 
   /* The start-end solar longitudes are approximate. 
