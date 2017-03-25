@@ -1807,7 +1807,9 @@ var EPH = (function(){
     add_physical: function(ephem){
       //Meeus page 360
       ephem.size = 2*1.161729E-5/ephem.Δ; // the distance is in AU, not km here
-      ephem.mag = -12.7; //RASC Observer's Handbook
+      //ephem.mag = -12.7; //RASC Observer's Handbook
+      //http://astronomy.stackexchange.com/questions/10246/is-there-a-simple-analytical-formula-for-the-lunar-phase-brightness-curve
+      ephem.mag = -12.73 + 1.49 * Math.abs(ephem.phase) + 0.043 * Math.pow(ephem.phase, 4); 
     },
     ephem: function(when){
       var ephem = this.position(when);
