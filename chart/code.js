@@ -647,15 +647,26 @@ var show = function(input){
      }
   };
   
+  /* Use brightness by default, but apparent angular size IF that would result in a bigger dot. */
+  var planet_size = function(planet, chart){
+    var result = star_size(planet.mag);
+    var size_as_fraction_of_chart_width = planet.size / chart.width; // both in rads
+    var size_in_pixels = Math.floor(size_as_fraction_of_chart_width * chart.w); // pixels
+    if (size_in_pixels > result){
+      result = size_in_pixels;
+    }
+    return result;
+  };
+  
   var plot_planet = function(planet, chart, ctx){
-    var size = star_size(planet.mag);
+    var size = planet_size(planet, chart);
     //override the case in which the planet is dimmer than the input limiting stellar magnitude, to always show the planet
     if (size === -1){ 
       size = 0.1;
     }
     var pos = chart_projection(planet, chart);
     GRAPH.spot(ctx, pos.x, pos.y, size);
-    GRAPH.text(ctx, planet.symbol, pos.x, pos.y+gap);
+    GRAPH.text(ctx, planet.symbol, pos.x, pos.y+size+gap);
   };
   
   var show_planets_etc = function(chart, ctx){
@@ -709,8 +720,6 @@ var show = function(input){
   /* The top-level call. */
   show_star_chart();
 
-  // BUG: with suppressing all star names 
-  //
   // animation, over time or space
   //   with optional trailing path, tick marks ever N days, single object
   //   nice for planets, comets, asteroids, moon
