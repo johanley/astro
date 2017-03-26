@@ -103,8 +103,10 @@ var UTIL = (function(){
         if (control === null) {
           //eg weather_station (name) vs weather_station_cda (id)
           control = document.getElementById(name + '_' + input.country); 
+        }
+        if (control !== null){
+          prepopulate_form_control(input[name], control);
         } 
-        prepopulate_form_control(input[name], control);
       }
     }
   };
