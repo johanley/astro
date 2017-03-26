@@ -1963,7 +1963,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
   show_jupiter_satellite_phenomena();
   
   var url_to_large_satellite_image = function(){
-    var result = '../satellite/graphic.sky?degrees_on_a_side=10&pixels_on_a_side=800';
+    var result = '../satellite/graphic.sky?degrees_on_a_side=10&pixels_on_a_side=';
     result = result + '&latitude=' + UTIL.escapeHtml(input.latitude);
     result = result + '&longitude=' + UTIL.escapeHtml(input.longitude);
     result = result + '&layer=' + UTIL.escapeHtml(input.layer);
