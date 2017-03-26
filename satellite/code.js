@@ -26,16 +26,16 @@ var show_large_satellite_image = function(input, output_image){
    
   var increment_view_link = function(incr_id, incr_param_name, incr_amount){
     //example, replace '...latitude=10&.. with '...latitude=15&...'
-    var anchor = document.getElementById(incr_id);
     var current_url = document.location.href;
-    var idx1 = current_url.indexOf(incr_param_name + '=');
-    var idx2 = current_url.indexOf('&', idx1);
-    var old_val = current_url.substring(idx1 + incr_param_name.length + 1, idx2); // can be negative, '-78'
-    var new_val = 0 + parseFloat(old_val) + incr_amount; //need to coerce to math, not string concat
-    var new_url_start = current_url.substring(0, idx1 + incr_param_name.length);
-    var new_url_end = current_url.substring(idx2);
-    var new_url = new_url_start + '=' + new_val + new_url_end;
-    anchor.href = new_url;
+    var regex = new RegExp(incr_param_name + '=([^&]*)', 'i'); 
+    var OLD_VALUE = 1;
+    var regex_result = regex.exec(current_url);
+    var old_val = parseFloat(regex_result[OLD_VALUE]); 
+    var new_val = old_val + incr_amount; //need to be numbers, not text
+    var old_param = incr_param_name + '=' + old_val;
+    var new_param = incr_param_name + '=' + new_val;
+    var new_url = current_url.replace(old_param, new_param);
+    document.getElementById(incr_id).href = new_url;
   };
 
   /* links to change the lat/long by N degs in the cardinal directions. */  
