@@ -725,7 +725,7 @@ var show = function(input){
   //   nice for planets, comets, asteroids, moon
   //   printable version for the whole year
   //
-  // moon with correct phase, size, and position angle wrt NCP
+  // moon with correct phase, and position angle wrt NCP
   //    this needed for better charting of zoomed-in cases, especially for occultations
   //
   // projection appropriate for horizon views
@@ -740,7 +740,7 @@ var show = function(input){
   //    constellation names?
   //       the abbr is already in ephem.js 
   //       in that case, I would need to input the ra-decl of each constellation manually somewhere; maybe directly in ephem.js
-  //       the French data may be useful here
+  //       the IMCEE French data may be useful here
   // 
   // colors control (html color picker not supported universally)
   // colors for printing: need to re-draw the canvas, with different colors!
