@@ -73,17 +73,18 @@
            <option value='north' selected><s:txt>North</s:txt>
            <option value='south'><s:txt>South</s:txt>
          </select>
-     <tr><td><s:txt>Date-time (defaults to now)</s:txt>:<td><input type='text' name='date_time' id='date_time' title='<s:txt>Example: 2016-03-01 18:00. Leave empty to use the current date and time.</s:txt>' >
+     <tr><td><s:txt>Date-time</s:txt>:<td><input type='text' name='date_time' id='date_time' title='<s:txt>Example: 2016-03-01 18:00. Leave empty to use the current date and time.</s:txt>' >
      <tr><td><s:txt>Time scale</s:txt>:<td>
        <select name='time_scale' id='time_scale'>
          <option title='<s:txt>Local Time (defined by your browser)</s:txt>' value='LT'><s:txt>Local Time</s:txt>
          <option title='<s:txt>Universal Time (UT1, to be precise)</s:txt>' value='UT'><s:txt>Universal Time</s:txt>
          <option title='<s:txt>Terrestrial Time (fundamental physics time)</s:txt>' value='TT'><s:txt>Terrestrial Time</s:txt>
        </select>
+       
      <tr><td><s:txt>Location</s:txt>:<td><input type='text' name='location_name' id='location_name' value='Ottawa' title='<s:txt>Name of your observing site</s:txt>'>
      <tr><td><s:txt>Latitude</s:txt>:<td><input type='text' id='latitude' name='latitude' value='45.403' title='<s:txt>Latitude in degrees</s:txt>'>
-        <td><button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Use current location</s:txt></button>
      <tr><td><s:txt>Longitude</s:txt>:<td><input type='text' id='longitude' name='longitude' id='longitude' value='-75.664' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
+     <tr><td><td><button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Current location</s:txt></button>
      
      <tr><td><s:txt>Limiting stellar magnitude</s:txt>:<td><input type='text' name='limiting_mag' id='limiting_mag' value='8.0' title='<s:txt>Higher number means show dimmer stars</s:txt>'>
      <tr><td><s:txt>Chart width in degrees</s:txt>:<td><input type='text' name='chart_width' id='chart_width'value='30'>
@@ -100,6 +101,8 @@
      <tr>
        <td>
        <td><input type='submit' value='<s:txt>Show the star chart</s:txt>'>
+     <tr>
+       <td>
        <td><a href='form.sky'><button type='button' id='revert_to_default'><s:txt>Default settings</s:txt></button></a>
   </table>
  </form>

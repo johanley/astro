@@ -179,7 +179,7 @@ As a convenience, here are the results for some selected locations (Canada, US, 
 <P><s:txt>These links will help you look up the data you need when filling out the form</s:txt>:
 <s:txt>
 <ul>
- <li>latitude and longitude: the quickest way is to click the <em>Use current location</em> button, which will use your browser's default location. 
+ <li>latitude and longitude: the quickest way is to click the <em>Current location</em> button, which will use your browser's default location. 
  Otherwise, use <a href='https://www.google.ca/maps/'>Google Maps</a>: right-click on a location, and select "What's here?", to see the corresponding latitude and longitude.
  <li>radar id for US locations: use <a href='http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no'>NOAA/NWS</a>.
  <li>clear sky clock: the quickest way is to click the <em>Use lat/long</em> button, 
@@ -205,13 +205,13 @@ Required items are marked with *.</s:txt>
          </select>
      <tr><td><s:txt>Location name</s:txt>*:<td><input type='text' required id='location_name' name='location_name' value='Ottawa' title='<s:txt>Name of your observing site</s:txt>'>
      <tr><td><s:txt>Latitude</s:txt>*:<td><input type='text' id='latitude' required name='latitude' value='45.40' title='<s:txt>Latitude in degrees</s:txt>'>
-             <button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Use current location</s:txt></button>
      <tr><td><s:txt>Longitude</s:txt>*:<td><input type='text' id='longitude' required name='longitude' value='-75.66' title='<s:txt>Longitude in degrees. Negative west of Greenwich</s:txt>'>
+     <tr><td><td><button type='button' id='lat_long_autofill' title='<s:txt>Let the browser fill in lat/long</s:txt>'><s:txt>Current location</s:txt></button>
      <tr id='row_clear_sky_clock_station_id'>
        <td><s:txt>Clear Sky Chart station id</s:txt>*
        <td>
          <input name='clear_sky_clock_station_id' id='clear_sky_clock_station_id' value='FLO' size='10' title='<s:txt>Station id, used by the Clear Sky Clock website, for your location</s:txt>'>
-         <button type='button' id='csc_find_nearest_station' title='<s:txt>Use the lat/long input above to find the nearest Clear Sky Clock</s:txt>'><s:txt>Use lat/long</s:txt></button>
+     <tr><td><td><button type='button' id='csc_find_nearest_station' title='<s:txt>Use the lat/long input above to find the nearest Clear Sky Clock</s:txt>'><s:txt>Use lat/long</s:txt></button>
      <tr id='row_radar_station_cda'><td><s:txt>Radar Station</s:txt>*:<td>
          <select id='radar_station_cda' name='radar_station' title='<s:txt>Nearest radar station. Id used by Environment Canada</s:txt>'>
            <option value='WHK'>AB - Carvel (Edmonton)
@@ -426,7 +426,7 @@ Required items are marked with *.</s:txt>
         <option title='<s:txt>Universal Time (UT1, to be precise)</s:txt>' value='UT'><s:txt>Universal Time</s:txt>
         <option title='<s:txt>Terrestrial Time (fundamental physics time)</s:txt>' value='TT'><s:txt>Terrestrial Time</s:txt>
        </select>
-     <tr><td><s:txt>Show locations</s:txt><td><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='45.510,-73.675;44.228,-76.492;45.255,-76.262' size='40'>
+     <tr><td><s:txt>Show locations</s:txt><td><input name='locations' id='locations' title='<s:txt>Latitude and longitude; separate with a semi-colon</s:txt>' value='45.510,-73.675;44.228,-76.492' size='20'>
      <tr><td><s:txt>Limiting Visual Mag</s:txt>:<td><input type='text' name='limiting_mag' id='limiting_mag' value='5.3' title='<s:txt>Higher number means show dimmer stars</s:txt>'>
      <tr><td><s:txt>Limiting Mag Messier/Caldwell</s:txt>:<td><input type='text' name='limiting_mag_messiers' id='limiting_mag_messiers' value='11.0'>
      <tr><td><s:txt>Limiting Mag Messier/Caldwell (planisphere)</s:txt>:<td><input type='text' name='limiting_mag_messiers_planisphere' id='limiting_mag_messiers_planisphere' value='8.0'>

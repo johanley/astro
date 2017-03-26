@@ -26,14 +26,14 @@
 {Visible (day-time)}{Visible (pendant le jour)}
 {Night time}{La nuit}
 {IR (night-time)}{IR (pendant la nuit)}
-{Show the large-scale satellite image (clouds)}
-{Montrer l&apos;image satellite à grande échelle (les nuages)}
+{Show satellite image}
+{Montrer l&apos;image satellite}
 {Latitude}{Latitude}
 {Longitude}{Longitude}
 {Degrees on a side}{Taille en degrés}
 {Pixels on a side}{Taille en pixels}
 {Pixels on a side (override)}{Taille en pixels (adapter)}
-{Channel: visible or infrared?}{Visible ou infrarouge?}
+{Channel}{Longeur d&apos;onde}
 {imagery from the GOES geostationary weather satellite}{images du satellite géostationnaire météorologique GOES}
 {imagery from the Meteosat geostationary weather satellite}{images du satellite géostationnaire météorologique Météosat}
 {server for NOAA images captured by the GOES satellite}{serveur pour les images NOAA du satellite GOES}
@@ -66,7 +66,6 @@
 {Center on Dec}{Centrer sur δ}
 {Declination in degrees}{Declinaison en degrés}
 {Place at top}{Mettre en haut}
-{Date-time (defaults to now)}{Date et temps (l&apos;heure actuelle par défaut)}
 {Example: 2016-03-01 18:00. Leave empty to use the current date and time.}{Exemple: 2016-03-01 18:00. Laissez le champs vide pour indiquer l&apos;heure actuelle.}
 {Time scale}{Échelle de temps}
 {Local Time (defined by your browser)}{Temps locale (défini par votre navigateur)}
@@ -77,7 +76,7 @@
 {Terrestrial Time}{Temps terrestre}
 {Location}{Location}
 {Name of your observing site}{Nom du votre site d&apos;observation}
-{Use current location}{Employer la location actuelle}
+{Current location}{Location actuelle}
 {Let the browser fill in lat/long}{Laisser le navigateur remplir latitude et longitude}
 {Limiting stellar magnitude}{Limite de la magnitude stellaire}
 {Chart width in degrees}{Largeur de la carte en degrés}
@@ -184,7 +183,7 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
 {Ces liens vous aideront de trouver les données desirées quand vous remplissez le formulaire}
 
 {<ul>
- <li>latitude and longitude: the quickest way is to click the <em>Use current location</em> button, which will use your browser's default location. 
+ <li>latitude and longitude: the quickest way is to click the <em>Current location</em> button, which will use your browser's default location. 
  Otherwise, use <a href='https://www.google.ca/maps/'>Google Maps</a>: right-click on a location, and select "What's here?", to see the corresponding latitude and longitude.
  <li>radar id for US locations: use <a href='http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no'>NOAA/NWS</a>.
  <li>clear sky clock: the quickest way is to click the <em>Use lat/long</em> button, 
