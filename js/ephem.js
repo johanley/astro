@@ -1440,6 +1440,7 @@ var EPH = (function(){
     return { P: P, B: B };
   };
   
+  /* Meeus page 307. Mean equinox of date. */
   var position_moon = function(when){
     var T = when.T;
     //degrees (converted to rads below)
