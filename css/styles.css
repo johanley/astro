@@ -13,25 +13,11 @@ a:visited {
  color: rgb(225,225,225); 
 }
 
-img.photo {
- border-color: rgb(50%,50%,50%);
-}
-canvas.animation {
- border-color: rgb(90%,90%,90%);
-}
-.highlight {
- background-color: #ffff66; 
-}
-
 /* End of the color scheme. */
 
 
 body {
   font: 1.0em Verdana, Arial, Helvetica, sans-serif;
-  /* 
-  margin: 1.0em; 
-  padding: 1.0em;
-  */  
   margin-top: 2.0em; 
   margin-left: 10.0em; 
   margin-right: 10.0em; 
@@ -44,27 +30,8 @@ a {
  border-bottom: 1px dotted; 
 }
 
-/*
-Problems : 
- adds extra line leading.
- links have underline that's too low and thick
-tt {
- line-height:0em; 
- font-family: monospace;
-}
-*/
-
 h2{
-  font: bold 20px Verdana, Arial, Helvetica, sans-serif;
   border-bottom: 1px solid;
-}
-
-h3{
-  font: bold 16px Verdana, Arial, Helvetica, sans-serif;
-}
-
-h4{
-  font: bold 16px Verdana, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -81,13 +48,6 @@ canvas {
 
 img {
   vertical-align: top;
-}
-
-body.essay {
-  margin-top: 2.0em; 
-  margin-left: 10.0em; 
-  margin-right: 10.0em; 
-  padding: 1.0em;
 }
 
 /* 
@@ -173,58 +133,6 @@ table.report caption:before {
  content : " - ";
 }
 
-img.photo {
- margin-top:1.0em;
- margin-bottom:1.0em;
- margin-left:1.0em;
- margin-right:1.0em;
- border-style: solid;
- border-width: 2px;
-}
-
-canvas.animation {
- margin-top:0.0em;
- margin-bottom:1.0em;
- margin-left:1.0em;
- margin-right:1.0em;
- border-style: solid;
- border-width: 2px;
-}
-
-
-#footer{
-  text-align:center;
-  height:24px;
-  padding-top: 10px;
-  padding-left: 0px;
-  font: 11px Verdana, Arial, Helvetica, sans-serif;
-  padding-right: 10px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-}
-
-.small-graphic{
- float:left;
- margin-right:0.2em;
-}
-
-.quotation {
- font-size: 150%;
- margin-bottom: 0.75em;
-}
-
-/* sometimes footer is too high on page */
-div.spacer {
-  height: 14.0em;
-}
-div.smallspacer {
-  height: 7.0em;
-}
-div.bigspacer {
-  height: 30.0em;
-}
-
 .home {
   float:right;
 }
@@ -234,13 +142,6 @@ div.bigspacer {
   /** Remove margin for small screens. */
   body {
     margin: 1.0em; 
-    padding: 0em;
-  }
-}
-@media all and (max-width: 850px) {
-  /** Remove margin for small screens. */
-  body.essay {
-    margin: 0.1em; 
     padding: 0em;
   }
 }

@@ -101,7 +101,7 @@ var show = function(input){
   }
   var ctr = initialize_center();
   
-  var add_summary_blurb_at_top = function(){
+  var add_summary_blurb = function(){
     var summary = document.getElementById('summary');
     summary.innerHTML = summary.innerHTML + NL + 
       '   <tr><td>' + UTIL.escapeHtml(input.location_name) +  
@@ -111,7 +111,7 @@ var show = function(input){
       '<td>' +  new Date().getTimezoneOffset() + 'm'
     ;  
   };
-  add_summary_blurb_at_top();
+  add_summary_blurb();
 
   /* Needed since there's more than 1 form, whose items share names. Return the dom node under the form, whose name matches. */
   var form_child_element_by_name = function(form /*dom node*/, control_name){

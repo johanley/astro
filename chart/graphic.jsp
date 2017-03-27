@@ -35,11 +35,12 @@
  <script src='../js/util.js<tags:ver/>'></script>
  <script src='../js/general-graphics.js<tags:ver/>'></script>
  <script src='code.js<tags:ver/>'></script>
- <script> 
-  window.onload = function() {
+ <script>
+  var show_screen = function(){
     var formInput = UTIL.requestParamsMultivalued(window, ['show_identifiers']);
     show(formInput);
-  };
+  }; 
+  window.onload = show_screen;
  </script>
 </head>
 <body> 
