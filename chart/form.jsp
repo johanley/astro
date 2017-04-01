@@ -43,6 +43,7 @@
     activate_lat_long_autofill();
     UTIL.prepopulate_form_controls(['show_identifiers']);
   };
+  <tags:screen_change/>
  </script>
 </head>
 <body>

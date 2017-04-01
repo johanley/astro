@@ -128,6 +128,7 @@
    show_hide_rows_per_country();
    
   };
+  <tags:screen_change/>
  </script>
 <body>
 <h2><s:txt>Astronomy Tonight</s:txt>

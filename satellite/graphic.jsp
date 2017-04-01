@@ -40,6 +40,7 @@
     var formInput = UTIL.requestParams(window);
     show_large_satellite_image(formInput, 'clouds');
   };
+  <tags:screen_change/>
  </script>
 </head>
 <body> 

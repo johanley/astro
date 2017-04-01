@@ -13,6 +13,7 @@
   window.onload = function() {
     activate_lat_long_autofill();
   };
+  <tags:screen_change/>
 </script>
 <body>
 <h2><s:txt>Satellite images</s:txt> 

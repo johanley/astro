@@ -41,6 +41,7 @@
     show(formInput);
   }; 
   window.onload = show_screen;
+  <tags:screen_change/>
  </script>
 </head>
 <body> 

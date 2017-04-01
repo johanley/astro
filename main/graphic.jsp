@@ -71,9 +71,7 @@
     var formInput = UTIL.requestParams(window);
     show(formInput, "${initParam.metOfficeApiKey}", ${initParam.isDev}, "<s:txt>en</s:txt>");
   };
-  window.onorientationchange = function() { 
-    location.reload();
-  };
+  <tags:screen_change/>
  </script>
 </head>
 <body> 
