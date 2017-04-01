@@ -2188,7 +2188,7 @@ var EPH = (function(){
       T: when("TT 1990-10-28 13:05") 
     }
   );
-  var enke = build_comet('Enke', '2P/Encke', 7.0, 'bright', 'evening', {
+  var enke = build_comet('Enke', '2P/Encke', 6.5, 'fade', 'early morning', {
       equinox: when_j2000,
       epoch: when("TT 2016-11-28"),  
       a: 2.21476565,
@@ -2210,17 +2210,6 @@ var EPH = (function(){
       T: when("TT 2017-06-12.40859890") 
     }
   );
-  var honda_mrkos_pajdusakova = build_comet('Honda Mrkos Pajdusakova', '45P/Honda-Mrkos-Pajdusakova', 9, 'fade', 'morning', {
-      equinox: when_j2000,
-      epoch: when("TT 2017-01-07"),
-      a: 3.02462079, 
-      e: 0.82392643199,
-      i: rads(4.24948438),
-      Ω: rads(89.005064665),
-      ω: rads(326.2641887),
-      T: when("TT 2016-12-31.267332") 
-    }
-  ); 
   var panstarrs_2015_er61 = build_comet('Panstarrs 2015 er61', 'C/2015 ER61 (PANSTARRS)', 9, 'bright', 'early morning', {
       equinox: when_j2000,
       epoch: when("TT 2016-02-26"),
@@ -2232,7 +2221,7 @@ var EPH = (function(){
       T: when("TT 2017-05-09.76856804") 
     }
   );
-  var tuttle_giacobinni_kresak =  build_comet('Tuttle Giacobinni Kresak', '41P/Tuttle-Giacobinni-Kresak', 10, 'bright', 'evening', {
+  var tuttle_giacobinni_kresak =  build_comet('Tuttle Giacobinni Kresak', '41P/Tuttle-Giacobinni-Kresak', 8.5, 'bright', 'evening', {
       equinox: when_j2000,
       epoch: when("TT 2017-02-16"),
       a: 3.083813412556, 
@@ -2243,13 +2232,24 @@ var EPH = (function(){
       T: when("TT 2017-04-12.74959214") 
     }
   );  
+  var lovejoy =  build_comet('Lovejoy', 'C/2017 E4 (Lovejoy)', 9.0, 'bright', 'morning', {
+      equinox: when_j2000,
+      epoch: when("TT 2017-03-16"),
+      a: 7056.512584095, 
+      q: 0.4937052581168357 ,
+      i: rads(88.17830657920311),
+      Ω: rads(223.1822231710),
+      ω: rads(87.206274367),
+      T: when("TT 2017-04-13.29859714") 
+    }
+  );  
   var comets = {
     /*testing only enke_test: enke_test,*/
     enke: enke, 
     johnson:johnson, 
-    honda_mrkos_pajdusakova: honda_mrkos_pajdusakova, 
     panstarrs_2015_er61: panstarrs_2015_er61,
-    tuttle_giacobinni_kresak: tuttle_giacobinni_kresak  
+    tuttle_giacobinni_kresak: tuttle_giacobinni_kresak,
+    lovejoy: lovejoy  
   };
   
   /* Match name to an object, compute its ephemeris, then apply the options. */
