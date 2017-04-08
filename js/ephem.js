@@ -2188,18 +2188,7 @@ var EPH = (function(){
       T: when("TT 1990-10-28 13:05") 
     }
   );
-  var enke = build_comet('Enke', '2P/Encke', 6.5, 'fade', 'early morning', {
-      equinox: when_j2000,
-      epoch: when("TT 2016-11-28"),  
-      a: 2.21476565,
-      e: 0.848333491,
-      i: rads(11.7783682),
-      Ω: rads(334.561109541),
-      ω: rads(186.561039123),
-      T: when("TT 2017-03-10.09193979") 
-    }
-  );
-  var johnson = build_comet('Johnson', 'C/2015 V2 (Johnson)', 9.5, 'bright', 'morning', {
+  var johnson = build_comet('Johnson', 'C/2015 V2 (Johnson)', 9.0, 'bright', 'all night', {
       equinox: when_j2000,
       epoch: when("TT 2016-02-10"),
       q: 1.637142990259, 
@@ -2210,7 +2199,7 @@ var EPH = (function(){
       T: when("TT 2017-06-12.40859890") 
     }
   );
-  var panstarrs_2015_er61 = build_comet('Panstarrs 2015 er61', 'C/2015 ER61 (PANSTARRS)', 9, 'bright', 'early morning', {
+  var panstarrs_2015_er61 = build_comet('Panstarrs 2015 er61', 'C/2015 ER61 (PANSTARRS)', 6.5, 'bright', 'morning', {
       equinox: when_j2000,
       epoch: when("TT 2016-02-26"),
       a: 3032.57267298, 
@@ -2221,7 +2210,7 @@ var EPH = (function(){
       T: when("TT 2017-05-09.76856804") 
     }
   );
-  var tuttle_giacobinni_kresak =  build_comet('Tuttle Giacobinni Kresak', '41P/Tuttle-Giacobinni-Kresak', 8.5, 'bright', 'evening', {
+  var tuttle_giacobinni_kresak =  build_comet('Tuttle Giacobinni Kresak', '41P/Tuttle-Giacobinni-Kresak', 7.5, 'steady', 'all night', {
       equinox: when_j2000,
       epoch: when("TT 2017-02-16"),
       a: 3.083813412556, 
@@ -2232,7 +2221,7 @@ var EPH = (function(){
       T: when("TT 2017-04-12.74959214") 
     }
   );  
-  var lovejoy =  build_comet('Lovejoy', 'C/2017 E4 (Lovejoy)', 9.0, 'bright', 'morning', {
+  var lovejoy =  build_comet('Lovejoy', 'C/2017 E4 (Lovejoy)', 7.5, 'steady', 'morning', {
       equinox: when_j2000,
       epoch: when("TT 2017-03-16"),
       a: 7056.512584095, 
@@ -2243,13 +2232,24 @@ var EPH = (function(){
       T: when("TT 2017-04-13.29859714") 
     }
   );  
+  var borisov =  build_comet('Borisov', 'C/2017 E1 (Borisov)', 9.5, 'steady', 'early morning', {
+      equinox: when_j2000,
+      epoch: when("TT 2017-03-09"),
+      a: 1142537.396887, 
+      q: 0.9001818612,
+      i: rads(14.55233739),
+      Ω: rads(142.71155412267),
+      ω: rads(152.5033801652),
+      T: when("TT 2017-04-10.16156737") 
+    }
+  );  
   var comets = {
     /*testing only enke_test: enke_test,*/
-    enke: enke, 
     johnson:johnson, 
     panstarrs_2015_er61: panstarrs_2015_er61,
     tuttle_giacobinni_kresak: tuttle_giacobinni_kresak,
-    lovejoy: lovejoy  
+    lovejoy: lovejoy,
+    borisov: borisov  
   };
   
   /* Match name to an object, compute its ephemeris, then apply the options. */

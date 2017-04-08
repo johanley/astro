@@ -175,6 +175,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     all_text['steady'] = 'constante';
     all_text['morning'] = 'matin';
     all_text['evening'] = 'soir';
+    all_text['all night'] = 'toute la nuit';
     all_text['early morning'] = 'tôt le matin';
     all_text['early evening'] = 'tôt le soir';
     
