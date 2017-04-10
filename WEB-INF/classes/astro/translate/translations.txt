@@ -90,9 +90,9 @@
 {all items are optional, except for <em>center on</em>. You can either choose a specific object, or enter a specific right ascension and declination.}
 {tous les champs sonts facultatifs, sauf <em>centrer sur</em>. Vous pouvez choisir un objet particulier, ou entrer une position particulière (α, δ).}
 {the location, latitude, and longitude are used only for lunar parallax.}
-{la location, latitude, et longitude sont employés seulement pour calculer le parallax lunaire.}
+{la location, le latitude, et la longitude sont employées seulement pour calculer le parallax lunaire.}
 {the other items show default values. Usually, just accepting the defaults is adequate.}
-{les autres choses ont des valeurs par défauts. Souvent, simplement employer les défauts est suffisant.}
+{les autres choses ont des valeurs par défauts. Les défauts sont souvent suffisants.}
 
 
 
@@ -160,8 +160,6 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
 {les astéroïdes et les comètes les plus brilliants.}
 {a current diary of sky phenomena.}
 {les phénomènes actuels du ciel.}
-{Messier/Caldwell objects appearing above the horizon (highest  first).}
-{les objets de Messier/Caldwell au dessus de l'horizon (en ordre de hauteur).}
 {a planisphere showing the night sky.}
 {une planisphère du ciel.}
 {the current observation window, showing the Sun's rise-set times, times of twilight, and the Moon's rise-set times.}
@@ -177,7 +175,7 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
 {upcoming occultations at your location (if any).}
 {les occultations dans les prochains jours (s'ils existent).}
 {phenomena related to the Galilean satellites of Jupiter (if any).}
-{les phénomènes des satellites galiléens de Jupiter (s'il existent).}
+{les phénomènes des satellites galiléens de Jupiter (s'ils existent).}
 
 {These links will help you look up the data you need when filling out the form}
 {Ces liens vous aideront de trouver les données desirées quand vous remplissez le formulaire}
@@ -192,11 +190,11 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
  Otherwise, use <a href='http://www.cleardarksky.com/'>cleardarksky.com</a> to infer the station id.
 </ul>}
 {<ul>
- <li>le latitude et longitude: la méthode la plus efficace est de cliquer sur le lien <em>Employer la location actuelle</em>, qui utilisera la location de votre navigateur. 
- Sinon, employez <a href='https://www.google.ca/maps/'>Google Maps</a>: cliquez à droite sur la location, et choissisez "What's here?", pour voir le latitude et longitude pour cette location.
+ <li>le latitude et la longitude: la méthode la plus efficace est de cliquer sur le lien <em>Employer la location actuelle</em>, qui utilisera la location de votre navigateur. 
+ Sinon, employez <a href='https://www.google.ca/maps/'>Google Maps</a>: cliquez à droite sur la location, et choissisez "What's here?", pour voir le latitude et la longitude pour cette location.
  <li>l'indicateur de la station radar dans les Étas-Unis: utilisez <a href='http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no'>NOAA/NWS</a>.
  <li>la Prévision Astro du Ciel: la méthode la plus efficace est de cliquer sur le lien <em>Employez lat/long</em>, 
- et le système trouvera la station qui est la plus proche au latitude et longitude que vous avez déjà mis dans le formulaire. 
+ et le système trouvera la station qui est la plus proche au latitude et à la longitude que vous avez déjà mis dans le formulaire. 
  Sinon, employez <a href='http://www.cleardarksky.com/'>cleardarksky.com</a> pour trouver l'identificateur de la station.
 </ul>}
 
@@ -217,7 +215,7 @@ If you need a work-around, then just temporarily change your computer's time zon
 {<P><b>Il y a un problème avec les les fuseaux horaires.</b> 
 Par exemple: si on se trouve à Ottawa, on peut voir les données correctes pour Washington DC, car les deux villes se trouvent dans le mème fuseau horaire.
 Toutefois, si on se trouve à Ottawa, on ne peut pas voir les données correctes pour Los Angeles: les temps ne sont pas correctes.
-<em>Tout va bien seulement si on reste dans le mème fuseau horaire emloyé par votre navigateur.</em>
+<em>Tout va bien seulement si on reste dans le mème fuseau horaire employé par votre navigateur.</em>
 La plupart du temps, ce problème ne va pas vous déranger, car les locations proches sont les plus intéressantes.
 (La cause de ce problème est le design du langage Javascript.
 Il y a des méthodes pour résoudre ce problème, mais, pour le moment, il est toujours dans le système. 
@@ -269,12 +267,12 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe.
 </ul>}
 {<ul>
- <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: beaucoup d'algorithmes employez ici sont décrits dans ce livre.  
+ <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: beaucoup d'algorithmes employés ici sont décrits dans ce livre.  
  <li><a href='http://weather.gc.ca/canada_f.html'>Environnement Canada</a> : conditions actuelles, prévisions, et images radars.
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : conditions actuelles pour les É-U, prévisions, et images radars.
  <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: serveur pour les images satellite GOES (pour les nuages).
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> du Royal Astronomical Society of Canada: commentaires sur les objets de Messier, et les éléments orbitaux osculateurs des planètes.
- <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>révision 5</a>.
+ <li>le catalogue Yale Bright Star, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>révision 5</a>.
  <li>Allen Rahill (Centre météorologique canadien) et Attilla Danko: images <a href='http://www.cleardarksky.com/csk/'>Prévision Astro du Ciel</a>.
  <li><a href='http://www.imo.net'>International Meteor Organization</a> : <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>données</a> pour les essaims météores.
  <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, section comète : données pour les comètes actuelles.
@@ -419,7 +417,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 {Type}{Type}
 {Comment}{Commentaire}
 {Messier/Caldwell objects appearing above the horizon (highest altitude first).}
-{Les objets de Messier/Caldwell au dessus de l&apos;horizon (avec le plus haut en premier).}
+{les objets de Messier/Caldwell au dessus de l&apos;horizon (avec le plus haut en premier).}
 
 {Jupiter Satellite Phenomena}{Phénomènes des satellites galiléens}
 {Satellite}{Satellite}
