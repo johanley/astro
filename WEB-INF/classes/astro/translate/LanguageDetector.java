@@ -19,7 +19,7 @@ import astro.util.Util;
 /**
  Detect the user's choice for their desired language for the UI. English is the default.
  
- <P>Examines two sources of info:
+ <P>Examines two sources of info: 
  <ol>
   <li>a request parameter named <tt>lang</tt>. 
   <b>The value must be the same as that accepted by the lang attribute of the &lt;html&gt; tag.</b>

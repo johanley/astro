@@ -8,7 +8,7 @@ Manual deployment
     change url for the server, from localhost to the domain
     js/util.js
  switch to server version of web.xml
-   size ~ 872 kb (with no dev dir)
+   size ~ 893 kb (with no dev dir)
    review/edit web.xml settings
  zip all into a war file and push to domain
  >cd C:\temp2
@@ -120,3 +120,11 @@ Jupiter Satellite Phenomena
 Saturn
   ephem.js: FUDGE_FACTOR_FOR_MISSING_RINGS
   if still needed, review the fudge-factor used to get better apparent magnitudes for Saturn.     
+  
+Git reminders
+ git status
+ git commit -a -m "astuha"
+ git pull origin master
+ git push origin master
+ git add -- adds to staging
+ git checkout a.txt -- revert  

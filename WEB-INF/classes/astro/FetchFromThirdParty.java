@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.io.Writer;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.UUID;
 import java.util.logging.Logger;
 
@@ -34,6 +34,7 @@ The workaround here is to fetch content on the client's behalf.
 <ul> 
  <li>.png (the default)
  <li>.xml (rss feeds)
+ <li>.txt (plain text)
 </ul>
 Adding support for other file types, if ever needed, should be easy.
 
@@ -55,6 +56,7 @@ public final class FetchFromThirdParty  extends HttpServlet {
     LoggingConfigImpl loggingConfig = new LoggingConfigImpl();
     loggingConfig.setup(aConfig);
     fLogger.config("Starting fetcher servlet.");
+    fLogger.config("Location of temp files: " + getServletContext().getAttribute("javax.servlet.context.tempdir"));
   }
   
   /** 
@@ -91,7 +93,7 @@ public final class FetchFromThirdParty  extends HttpServlet {
  
   private void fetchFromThirdParty(String aURL, String extension, HttpServletRequest aRequest, HttpServletResponse aResponse) throws ServletException, IOException {
     fLogger.info("Fetching URL: " + aURL);
-    File file = buildOutputFile(aURL, extension);
+    File file = buildOutputFile(extension);
     //fLogger.fine("Temp file name: " + file.getName());
     String mimeType = "";
     if (PNG.equals(extension)){
@@ -128,9 +130,8 @@ public final class FetchFromThirdParty  extends HttpServlet {
       result = ImageIO.read(url);
       //fLogger.info("Result: "  + result);
     } 
-    catch (IOException e) {
-      fLogger.severe("Failed to fetch. " + e.getClass().getCanonicalName() + " " + e.getMessage());
-      e.printStackTrace();
+    catch (IOException ex) {
+      logProblem("Can't fetch image. URL: " + aURL, ex);
     }
     return result;
   }
@@ -144,15 +145,13 @@ public final class FetchFromThirdParty  extends HttpServlet {
   /** 
    Temp output file in the servlet's temp dir. 
    Build a nonce name, unique to the host.
-   Assumes a WMS server-style URL.
-   Currently, only .png files are supported (easy to extend).
   */ 
-  private File buildOutputFile(String url, String extension){
+  private File buildOutputFile(String extension){
     String name = "";
     UUID nonce = UUID.randomUUID(); //eg '067e6162-3b6f-4ae2-a171-2470b63dff00'
     name = name + nonce.toString();
     name = name + "." + extension;
-    File tempDir = (File)getServletContext().getAttribute("javax.servlet.context.tempDir");
+    File tempDir = (File)getServletContext().getAttribute("javax.servlet.context.tempdir"); //CASE-SENSITIVE!!
     File result = new File(tempDir, name);
     return result;
   }
@@ -162,13 +161,23 @@ public final class FetchFromThirdParty  extends HttpServlet {
     try {
       ImageIO.write(image, "png", outputfile);
     } 
-    catch (IOException e) {
-      fLogger.severe("Unable to save image to file: " + e + " " + e.getMessage());
-    }    
+    catch (IOException ex) {
+      logFileProblem("Unable to save image bytes to a temp file.", outputfile, ex);
+    }
+    
+    if (!outputfile.exists()){
+      fLogger.severe("Unable to write temp image file.");
+    }
+    else if (outputfile.length() == 0) {
+      fLogger.severe("Temp image file has 0 length.");
+    }
   }
   
   /** Uses the built-in temp directory defined by the servlet spec. */
   private void saveAsTempFile(String text, File outputFile, String encoding){
+    if (text.length() < 1){
+      fLogger.severe("Text fetched from web has 0 length.");
+    }
     Writer out = null;
     try {
       try {
@@ -179,9 +188,20 @@ public final class FetchFromThirdParty  extends HttpServlet {
         if (out != null) out.close();
       }    
     }
-    catch (IOException e) {
-      e.printStackTrace();
-    } 
+    catch (IOException ex) {
+      logFileProblem("Unable to save text file bytes to a temp file.", outputFile, ex);
+    }
+    
+    if (!outputFile.exists()){
+      fLogger.severe("Unable to write temp text file.");
+    }
+    else if (outputFile.length() == 0) {
+      fLogger.severe("Temp text file has 0 length.");
+    }
+    else {
+      //fLogger.info("Saved temp file: " + outputFile.getAbsolutePath());
+      //fLogger.info("Size of saved temp file: " + outputFile.length());
+    }
   }
 
   private void serveFile(File file, HttpServletRequest aRequest, HttpServletResponse aResponse, String mimeType) throws IOException {
@@ -196,9 +216,10 @@ public final class FetchFromThirdParty  extends HttpServlet {
       while ((bytesRead = input.read(buffer)) != -1) {
          output.write(buffer, 0, bytesRead);
       }
+      //fLogger.info("Served saved file: " + file.getAbsolutePath());
     }
     catch(IOException ex){
-      fLogger.severe("Unable to serve file: " + file);
+      logFileProblem("Unable to serve temp file.", file, ex);
     }
     finally {
       if (input != null) input.close();
@@ -230,13 +251,12 @@ public final class FetchFromThirdParty  extends HttpServlet {
       out.append(utf8Text);
     } 
     catch (IOException ex) {
-      //in practice this won't happen - better handling???
-      ex.printStackTrace();
+      //in practice this won't happen
+      logProblem("Problem sending an error response.", ex);
     }
   }
 
   private void returnUrlOfMostRecentRadarImage(String radarStation, HttpServletResponse response){
-    RadarImageUrls radarUrls = new RadarImageUrls(radarStation, NUM_RADAR_IMAGES);
     Radar radar = new Radar(NUM_RADAR_IMAGES);
     String json = radar.returnJsonMostRecentRadarImages(radarStation);
     serveAsJson(json, response);
@@ -259,9 +279,30 @@ public final class FetchFromThirdParty  extends HttpServlet {
       response.getOutputStream().print(jsonText);
     }
     catch(IOException ex){
-      
       fLogger.severe("Unable to serve json: " + jsonText);
     }
+  }
+  
+  private void logProblem(String msg, Throwable ex){
+    fLogger.severe(msg);
+    fLogger.severe("Exception message: " + ex.getMessage() + " toString: " + ex.toString());
+    fLogger.severe("Java version: " + System.getProperty("java.version"));
+    fLogger.severe(getStackTrace(ex));
+  }
+  
+  private void logFileProblem(String msg, File file, Throwable ex){
+    logProblem(msg, ex);
+    fLogger.severe("File name: " + file);
+    fLogger.severe("Absolute path: " + file.getAbsolutePath());
+    fLogger.severe("File exists: " + file.exists());
+    fLogger.severe("Length: " + file.length());
+  }
+  
+  private String getStackTrace(Throwable aThrowable) {
+    Writer result = new StringWriter();
+    PrintWriter printWriter = new PrintWriter(result);
+    aThrowable.printStackTrace(printWriter);
+    return result.toString();
   }
 }
  
