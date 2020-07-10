@@ -25,7 +25,7 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
   
   <context-param>
    <param-name>lastUpdatedOn</param-name>
-   <param-value>2017-03-15</param-value>
+   <param-value>2019-11-27</param-value>
   </context-param>
 
   <!-- Update on every new deploy to prod. -->

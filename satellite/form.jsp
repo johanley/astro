@@ -31,8 +31,7 @@
 
 
  <P>
- <s:txt>The form below lets you browse current imagery from the GOES and Meteosat geosynchronous satellites.
- GOES has images for North America, and Meteosat has images for Europe and Africa.
+ <s:txt>The form below lets you browse current imagery from the GOES geosynchronous satellites, for North America.
  These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
  The default settings in the form below show the Canadian Maritime provinces.</s:txt> 
  
@@ -67,8 +66,10 @@
 <P><s:txt>Credits</s:txt>:
 <ul>
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a>: <s:txt>imagery from the GOES geostationary weather satellite</s:txt>.
+ <!--
  <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: <s:txt>server for NOAA images captured by the GOES satellite</s:txt>.
  <li><a href='http://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html'>EUMETSAT</a>: <s:txt>imagery from the Meteosat geostationary weather satellite</s:txt>.
+ -->
 </ul>
 
 <tags:analytics/>

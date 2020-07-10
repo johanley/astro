@@ -133,6 +133,7 @@ var UTIL = (function(){
   /*
     This function exists only because of CORS issues in accessing data on another domain.
     Returns an altered URL, that is funnelled through a proxy, to get around CORS restrictions.
+    It can also be used to get around calling https from http.
   */ 
   function crossDomainUrl(url){
     var corsProxy = 'http://localhost:8081/astro/fetch/?url=';

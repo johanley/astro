@@ -178,6 +178,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     all_text['all night'] = 'toute la nuit';
     all_text['early morning'] = 'tôt le matin';
     all_text['early evening'] = 'tôt le soir';
+    all_text['conjunction'] = 'conjonction';
     
     all_text['PA'] = 'AP';
     all_text['DD'] = 'DS'; //sombre, claire
@@ -1172,13 +1173,19 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
   };
   var us_weather_url = function(output_type){
     var result = 'http://forecast.weather.gov/MapClick.php?lat=' + EPH.degs(opts.where.φ) + '&lon=' + EPH.degs(opts.where.λ) + '&FcstType=' + output_type;
-    //console.log(result);
+    //result = UTIL.crossDomainUrl(result); 
+    console.log('US Weather url: ' + result);
     return result;
   };
   // Example URL:  http://forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json
+  // I've seen this redirect. For example, for Charleston SC
+  //    http://marine.weather.gov/MapClick.php?lat=32.77&lon=-79.95&FcstType=json
+  // Problem: that second server doesn't support CORS, the way the first one does
+  // Looks like there may be N-server issues, whereby a load-balancer might pick a server with CORS, or it might not. 
   var show_current_weather_us = function() {
     var table = document.getElementById('weather');
-    fetch_json(us_weather_url('json'), function(err, weather){
+    var url = us_weather_url('json');
+    fetch_json(url, function(err, weather){
       if (err != null){
         console.log('Unable to fetch JSON data for US weather: ' + url);
       }
@@ -1272,15 +1279,15 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     }
     return result;
   };  
-  /* Example: http://weather.gc.ca/rss/city/on-118_e.xml */
+  /* Example: https://weather.gc.ca/rss/city/on-118_e.xml */
   var build_canadian_weather_url_rss = function(){
     var prov = input.prov.toLowerCase();
     var weather_stn_id = input.weather_station;
-    return 'http://weather.gc.ca/rss/city/' + prov + '-' + weather_stn_id + '_' + trans('e') + '.xml'; 
+    return 'https://weather.gc.ca/rss/city/' + prov + '-' + weather_stn_id + '_' + trans('e') + '.xml';
   };
-  /* Example: 'http://weather.gc.ca/city/pages/on-118_metric_e.html'. */
+  /* Example: 'https://weather.gc.ca/city/pages/on-118_metric_e.html'. */
   var canadian_weather_title_url = function(){
-    return 'http://weather.gc.ca/city/pages/' + input.prov.toLowerCase() + '-' + input.weather_station + '_metric_' + trans('e') + '.html';
+    return 'https://weather.gc.ca/city/pages/' + input.prov.toLowerCase() + '-' + input.weather_station + '_metric_' + trans('e') + '.html';
   };
   /* Weather warnings interfere with the regular layout. Can't go by absolute index. Must find where the current-conditions start, and proceed from there. */
   var current_conditions_idx = function(entries){
@@ -1297,7 +1304,7 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     var table = document.getElementById('weather');
     var url = build_canadian_weather_url_rss();
     fetch_xml(UTIL.crossDomainUrl(url+'&ext=xml'), function(err, weather){
-      if (err != null){
+      if (err != null || weather === ''){
         console.log('Unable to fetch XML data for Canadian weather rss feed: ' + url);
       }
       else {
@@ -1331,7 +1338,8 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
 
   var show_weather_forecast_us = function(table) {
     var i;
-    fetch_json(us_weather_url('json'), function(err, weather){
+    var url = us_weather_url('json');
+    fetch_json(url, function(err, weather){
       if (err != null){
         console.log('Unable to fetch JSON data for US weather: ' + url);
       }

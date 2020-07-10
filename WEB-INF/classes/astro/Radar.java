@@ -1,6 +1,9 @@
 package astro;
 
 import java.util.List;
+import java.util.logging.Logger;
+
+import astro.util.Util;
 
 /** 
  * List of 31 radar station id's and names (from https://weather.gc.ca/radar/index_e.html): 
@@ -51,9 +54,12 @@ final class Radar {
   }
   
   private Integer numImages;
+  private static final Logger fLogger = Util.getLogger(Radar.class);
+  
 
   //var jsonString = '{"radarUrls" : ["http://localhost:8081/playtime/fetch/?radarStation=' + radar_station + '"]}';
   private String buildJsonStringForRadar(List<String> radarUrls, Integer limitTo){
+    fLogger.info("Radar URLs: " + radarUrls);
     StringBuilder result = new StringBuilder();
     result.append("{\"radarUrls\": [");
     int idx = 0;

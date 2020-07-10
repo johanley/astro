@@ -9,9 +9,20 @@ import java.util.regex.Pattern;
  Return a list of image URLs from a directory listing.
  
 <P>Example directory listing:
-  <pre>http://dd.weather.gc.ca/radar/PRECIPET/GIF/XGO/</pre>
+  <pre>https://dd.weather.gc.ca/radar/PRECIPET/GIF/XNC/</pre>
   
-<P>This class doesn't fetch data from the web; it just processes it.
+<p>Example line of the directory listing: 
+ <pre><img src="/icons/image2.gif" alt="[IMG]"> <a href="201911251500_XNC_COMP_PRECIPET_RAIN.gif">201911251500_XNC_COMP_PRECIPET_RAIN.gif</a>      2019-11-25 15:08   25K</pre>  
+  
+<P>This class doesn't fetch data from the web; it just processes the data that has been fetched.
+
+<P>Info:
+https://dd.weather.gc.ca/radar/doc/README_radar.txt
+THE RADAR STATIONS ARE BEING UPGRADED OVER TIME. There is a change in station id, from 3 letters to 5 (CASxx).
+WMN (Montreal) appears to be down on 2019-11-28.
+
+<P>Broken for several months: change http to https, and added '_COMP_' in the middle of the image url.
+Fixed 2019-11-27.
 */
 public final class RadarImageUrls {
   
@@ -22,10 +33,10 @@ public final class RadarImageUrls {
   */
   public RadarImageUrls(String aRadarStationId, int aNumImages){
     fNumImages = aNumImages;
-    DIRECTORY_URL = "http://dd.weather.gc.ca/radar/PRECIPET/GIF/" + aRadarStationId + "/";
-    URL_PATTERN = Pattern.compile("(?:href=\")([\\d]{12})(?:_" + aRadarStationId + "_PRECIPET_RAIN.gif\")" );
-    START_URL = "http://dd.weather.gc.ca/radar/PRECIPET/GIF/" + aRadarStationId + "/";
-    END_URL = "_" + aRadarStationId + "_PRECIPET_RAIN.gif";
+    DIRECTORY_URL = "https://dd.weather.gc.ca/radar/PRECIPET/GIF/" + aRadarStationId + "/";
+    URL_PATTERN = Pattern.compile("(?:href=\")([\\d]{12})(?:_" + aRadarStationId + "_COMP_PRECIPET_RAIN.gif\")" );
+    START_URL = "https://dd.weather.gc.ca/radar/PRECIPET/GIF/" + aRadarStationId + "/";
+    END_URL = "_" + aRadarStationId + "_COMP_PRECIPET_RAIN.gif";
   }
 
   /** The images are found in a listing at this URL. */
@@ -62,7 +73,7 @@ public final class RadarImageUrls {
 
   /**
    Example lines of the directory listing, of the form: 
-   <img src="/icons/image2.gif" alt="[IMG]"> <a href="201406192240_XGO_PRECIPET_RAIN.gif">201406192240_XGO_PRECIPET_RAIN.gif</a>      19-Jun-2014 22:45   20K
+   <img src="/icons/image2.gif" alt="[IMG]"> <a href="201911251500_XNC_COMP_PRECIPET_RAIN.gif">201911251500_XNC_COMP_PRECIPET_RAIN.gif</a>      2019-11-25 15:08   25K  
   
    Scan for all appearances of the above pattern, and create the corresponding URL. Return only the last few, 
    with the most recent as the last element.

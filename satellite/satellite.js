@@ -1,11 +1,32 @@
 /* 
  Show satellite images. 
- Current impl talks only to WMS servers.  
+ Current impl talks only to WMS servers.
+ The impl chooses a server according to the input lat and long.
+ The channel (visible or IR) depends on the current altitude of the Sun at the given location (fancy!).
+ 
+ Annoying differences between WMS 1.1 and 1.3:
+   - the order of lat-long as it appears in the BBOX parameter changed between WMS 1.1 and WMS 1.3.
+   - the name of the projection request param changes from SRS to CRS
+
+ As usual, servers have a habit of changing, which makes support a nuisance. 
+ Currently, I'm using a single server, and supporting only North America. 
+  - Real Earth SSEC
+     2019-12-02: unstable?
+     'msLoadMap(): Unable to access file. (/home/wms/data/mapfiles/G16-ABI-FD-BAND13.map)'
+     2020-04-16: seeing again, 2020-04-16 Thursday.
+       same error as above; also:
+       'error on line 1 at column 1: Extra content at the end of the document' 
+  - RETIRED: NOAA Nowcoast
+      https://nowcoast.noaa.gov/help/#!section=mapservices
+      https://nowcoast.noaa.gov/help/#!section=map-service-list
+  - RETIRED: Iowa State IEM
+     https://mesonet.agron.iastate.edu/
+  - RETIRED: UK server, Meteosat
+   
 */
 var SATELLITE = (function(){ 
 
   var STRETCH_CONTRAST_ON = true;  
-  var STRETCH_CONTRAST_OFF = true;
 
   /* The bounding box is always square, and centered on the input location. */
   var calc_bounding_box = function(size_degrees, latitude, longitude){
@@ -18,7 +39,7 @@ var SATELLITE = (function(){
     };
   };
   
-  /* Return a simple string id for the layer, (visible|ir). */
+  /* Return a simple string id for the layer, (visible|ir), according to the current altitude of the Sun. */
   var layer_id = function(input_layer, current_solar_alt_degs){
     var result = input_layer;
     if ('auto_detect' === result){
@@ -38,27 +59,29 @@ var SATELLITE = (function(){
   };
   
   /* 
-   If returns empty string, then an image cannot be shown, because the position doesn't match the 
+   Returns the name of the WMS server that fits with the given lat-long.
+   If returns an empty string, then an image cannot be shown, because the position doesn't match the 
    range supported by any server.
-   ASSUMES: the satellites have no positional overlap. 
+   ASSUMES: the servers have no positional overlap. 
   */
-  var satellite_name = function(latitude, longitude){
+  var server_name = function(latitude, longitude){
     var result = '', server, servers, limits; 
     servers = wms_servers(); 
     for (server in servers){
       if (servers.hasOwnProperty(server)){
         limits = servers[server].lat_long_limits;
         if (is_in_range(latitude, limits.φ) && is_in_range(longitude, limits.λ)){
-          result = server;
+          result = server; //the name of the property
           break;
         }
       }
     }
     return result;
   };
-  
+
+  /* Returns an empty string if no server found. Empty strings are falsey. */  
   var is_position_supported = function(latitude, longitude){
-    return satellite_name(latitude, longitude);
+    return server_name(latitude, longitude);
   };
   
   /* Can return an empty array. Each obj in the array has .longitude, .latitude. */  
@@ -104,7 +127,7 @@ var SATELLITE = (function(){
     var longitude = parseFloat(input.longitude);
     var delta = size_degrees/2;
     return {
-      satellite_name: satellite_name(latitude, longitude),
+      server_name: server_name(latitude, longitude),
       canvas_id: canvas_id,
       size_pixels: size_pixels,
       size_degrees: size_degrees,
@@ -122,16 +145,19 @@ var SATELLITE = (function(){
    The parts that vary from one WMS server to the next.
      preamble: the start of the server's URL
      layer_fn: input: the result of image_parameters(); output: a string to be added to the server's URL
-     lat_long_limits: an object with this data: {λ.min, λ.max, φ.min, φ.max} 
+     lat_long_limits: an object with this data: {λ.min, λ.max, φ.min, φ.max}
+     wms_version: version of the WMS protocol 
   */  
-  var make_wms_server = function(preamble, layer_fn, lat_long_limits){
+  var make_wms_server = function(preamble, layer_fn, lat_long_limits, wms_version){
     return {
       preamble: preamble,
       layer_fn: layer_fn, 
-      lat_long_limits: lat_long_limits 
+      lat_long_limits: lat_long_limits,
+      wms_version: wms_version 
     };
   };
-  var goes_layer = function(params){
+  //RETIRED
+  var iowa_state_goes_layer = function(params){
     var result = '';
     var longitude_of_switchover = -101.38; //CAREFUL! the switchover is really diagonal: http://www.goes.noaa.gov/goes-w.html
     var half = params.longitude < longitude_of_switchover ? 'west' : 'east';
@@ -143,9 +169,21 @@ var SATELLITE = (function(){
     }
     return result;
   };
+  //RETIRED
+  var nowcoast_layer = function(params){
+    var result = '&layers=';
+    return ('visible' === params.layer) ?  result + '9' : result + '17'; 
+  };
+  //RETIRED
   var meteosat_layer = function(params){
     var result = '&LAYERS=meteosat:msg_';
     return ('visible' === params.layer) ?  result + 'vis006' : result + 'ir108'; 
+  };
+  var real_earth_ssec_layer = function(params){
+    //Goes-16, Full Disk, True Color and IR 
+    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-TC
+    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-BAND13
+    return ('visible' === params.layer) ?  '?map=G16-ABI-FD-TC.map&LAYERS=latest' : '?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest';
   };
   var make_limits = function(λ_min, λ_max, φ_min, φ_max){
     var result = {};
@@ -155,38 +193,78 @@ var SATELLITE = (function(){
   };
   var wms_servers = function(){
     var result = {};
-    result.goes = make_wms_server(
+    //CURRENTLY USED FOR ALL OF NORTH AMERICA
+    result.real_earth_ssec = make_wms_server(
+      'http://realearth.ssec.wisc.edu/cgi-bin/mapserv',
+      real_earth_ssec_layer,
+      make_limits(-140,-50,0,70),
+      '1.3.0'
+    );
+    //NO LONGER USED:
+    /*
+    result.nowcoast = make_wms_server(
+      'https://nowcoast.noaa.gov/arcgis/services/nowcoast/sat_meteo_imagery_time/MapServer/WmsServer?',
+      nowcoast_layer,
+      make_limits(-140,-50,0,70),
+      '1.3.0'
+    );
+    //currently restricted to the West (higher quality than Nowcoast) 
+    result.iowa_state = make_wms_server(
       'http://mesonet.agron.iastate.edu/cgi-bin/mapserv/mapserv?map=/mesonet/www/apps/iemwebsite/data/wms/goes/',
-       goes_layer,
-       make_limits(-140,-50,0,70)
-    )
+       iowa_state_goes_layer,
+       make_limits(-140,-101,0,70),
+       '1.1.1'
+    );
     result.meteosat = make_wms_server(
       'http://eumetview.eumetsat.int/geoserv/wms?',
       meteosat_layer,
-      make_limits(-56,65,-70,70)
+      make_limits(-56,65,-70,70),
+      '1.1.1'
     );
+    */
     return result;
   };
-  var wms_server_from = function(satellite_name){
-    return wms_servers()[satellite_name];
+  var wms_server_from = function(server_name){
+    return wms_servers()[server_name];
   }
   
   /*
-   GOES example: 
-    ir: http://mesonet.agron.iastate.edu/cgi-bin/mapserv/mapserv?map=/mesonet/www/apps/iemwebsite/data/wms/goes/east_ir.map&LAYERS=east_ir_4km_gray&BBOX=-75,40,-73,41&WIDTH=100&HEIGHT=100&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG:4326
-   METEOSAT examples: 
+   Real Earth SSEC examples:
+    vis: http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
+     ir: http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest&VERSION=1.3.0&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png&WIDTH=480&HEIGHT=480&BBOX=44.58,-66.28,47.58,-63.28&CRS=EPSG
+   Iowa State example (GOES): NO LONGER USED 
+    ir: http://mesonet.agron.iastate.edu/cgi-bin/mapserv/mapserv?map=/mesonet/www/apps/iemwebsite/data/wms/goes/west_ir.map&LAYERS=west_ir_4km_gray&BBOX=-114.35,48.19,-111.35,51.19&WIDTH=480&HEIGHT=480&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG
+   Nowcoast example (GOES East and West): NO LONGER USED
+    ir:  https://nowcoast.noaa.gov/arcgis/services/nowcoast/sat_meteo_imagery_time/MapServer/WmsServer?request=GetMap&format=image/png&version=1.3.0&service=WMS&width=512&height=512&crs=EPSG:4326&bbox=44.76,-64.64,47.76,-61.64&layers=17&styles=
+    vis: https://nowcoast.noaa.gov/arcgis/services/nowcoast/sat_meteo_imagery_time/MapServer/WmsServer?request=GetMap&format=image/png&version=1.3.0&service=WMS&width=512&height=512&crs=EPSG:4326&bbox=44.76,-64.64,47.76,-61.64&layers=9&styles=
+   METEOSAT examples: NO LONGER USED
     vis: http://eumetview.eumetsat.int/geoserv/wms?SERVICE=WMS&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=meteosat:msg_vis006&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG:4326&BBOX=-11.1523918226068,30.6418455813954,0.48155275283938,40.4508576744186&WIDTH=817&HEIGHT=860
     ir: http://eumetview.eumetsat.int/geoserv/wms?SERVICE=WMS&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=meteosat:msg_ir108&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG:4326&BBOX=-11.1523918226068,30.6418455813954,0.48155275283938,40.4508576744186&WIDTH=817&HEIGHT=860    
-   The only differences between the two are the preamble, and the identifier for the layer.
+   
+   Note two annoying differences between WMS 1.1 and WMS 1.3: 
+     - the order of lat-long in the bounding box
+     - the change from param name SRS to CRS
   */  
   var calc_url_satellite_image = function(params){
-    var wms_server = wms_server_from(params.satellite_name);
+    var wms_server = wms_server_from(params.server_name);
     var result = wms_server.preamble;
-    result = result + wms_server.layer_fn(params);
-    result = result + '&BBOX=' + params.bbox.sw_long+',' + params.bbox.sw_lat+',' + params.bbox.ne_long+',' + params.bbox.ne_lat; 
+    //WARNING: for Iowa State, the layer leaks into the base URL; it needs to come first here: 
+    result = result + wms_server.layer_fn(params); 
+    result = result + '&VERSION=' + wms_server.wms_version;
+    result = result + '&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png';
     result = result + '&WIDTH=' + params.size_pixels;
     result = result + '&HEIGHT=' + params.size_pixels;
-    result = result + '&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG:4326';
+    var PROJECTION = 'EPSG:4326';
+    if (wms_server.wms_version === '1.1.1'){
+      result = result + '&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE';
+      result = result + '&BBOX=' + params.bbox.sw_long+',' + params.bbox.sw_lat+',' + params.bbox.ne_long+',' + params.bbox.ne_lat; 
+      result = result + '&SRS=' + PROJECTION;
+    }
+    else {
+      //result = result + '&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE';
+      result = result + '&BBOX=' + params.bbox.sw_lat+',' + params.bbox.sw_long+',' + params.bbox.ne_lat+',' + params.bbox.ne_long; 
+      result = result + '&CRS=' + PROJECTION;
+    }
     console.log("Satellite image url: " + result);
     return result;
   };
@@ -197,7 +275,12 @@ var SATELLITE = (function(){
   };
   
   var supports_cors = function(params){
-    return params.satellite_name === 'goes';
+    var result = 
+      params.server_name === 'real_earth_ssec' ||  
+      params.server_name === 'iowa_state' || 
+      params.server_name === 'nowcoast'
+    ;
+    return result;
   };
 
   /* Showing the image in a canvas instead of an img tag lets you do a contrast stretch on the pixels. */
@@ -216,8 +299,8 @@ var SATELLITE = (function(){
         more_drawing_fn(params, canvas_id);
       }
     };
-    img.onerror = function(){
-      console.log("Error loading satellite image.");
+    img.onerror = function(evt){
+      console.log("Error loading satellite image." + img.src); //the evt object has no useful error data; sad!
     };
     //WACKY: need to add this function; otherwise the onload doesn't fire!! why??
     img.abort = function(){
@@ -239,7 +322,7 @@ var SATELLITE = (function(){
     //console.log('The raw image has been fetched from the network.');
     ctx.drawImage(img, 0, 0);
     if (stretch_contrast){
-      //console.log('Applying a linear contrast stretch to the raw image, since it is a bit dark.');
+      console.log('Applying a linear contrast stretch to the raw image, since it is a bit dark.');
       var image_data = ctx.getImageData(0, 0, canvas.width, canvas.height); 
       var data = image_data.data;
       for (var i = 0; i < data.length; i += 4) {
@@ -254,7 +337,7 @@ var SATELLITE = (function(){
       ctx.putImageData(image_data, 0, 0);
     }
     else {
-      //console.log('Not applying a linear contrast stretch.');
+      console.log('Not applying a linear contrast stretch.');
     }
   };
   
@@ -308,6 +391,11 @@ var SATELLITE = (function(){
     }
   };
   
+  /** Only done for visible, not IR. */
+  var stretch_contrast = function(params){
+    return params.layer === 'visible' ? true : false;
+  };
+  
   /*
    Show a satellite image on a canvas, and allow for its customization.
    Always stretch the contrast: otherwise it's too low.
@@ -326,7 +414,8 @@ var SATELLITE = (function(){
   var show_image = function(input, current_solar_alt_degs, canvas_id, more_drawing_fn){
     var params = image_parameters(input, current_solar_alt_degs, canvas_id);
     var url_satellite_image = calc_url_satellite_image(params);
-    show_the_image(url_satellite_image, canvas_id, STRETCH_CONTRAST_ON, params, more_drawing_fn);
+    //show_the_image(url_satellite_image, canvas_id, STRETCH_CONTRAST_ON, params, more_drawing_fn);
+    show_the_image(url_satellite_image, canvas_id, stretch_contrast(params), params, more_drawing_fn);
   };
   
   //END OF PRIVATE ITEMS

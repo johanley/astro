@@ -1,11 +1,11 @@
 package astro;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-import javax.imageio.ImageIO;
+//import javax.imageio.ImageIO; //this guy is problematic! initialization issues!
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -97,21 +97,25 @@ public final class FetchFromThirdParty  extends HttpServlet {
     //fLogger.fine("Temp file name: " + file.getName());
     String mimeType = "";
     if (PNG.equals(extension)){
-      //fLogger.fine("Fetching image from web."); 
-      BufferedImage image = fetchImage(aURL);
-      saveAsTempFile(image, file);
+      //fLogger.fine("Fetching image from web.");
+      
+      //BufferedImage image = fetchImage(aURL);
+      //saveAsTempFile(image, file);
+      
+      saveImageAsTempFile(aURL, file);
+      
       //fLogger.fine("Serving as image file.");
       mimeType = "image/png";
     }
     else if (XML.equals(extension)){
       String text = fetchText(aURL, ENCODING);
-      saveAsTempFile(text, file, ENCODING);
+      saveTextAsTempFile(text, file, ENCODING);
       //fLogger.fine("Serving as a text file."); 
       mimeType = "text/xml";
     }
     else if (TXT.equals(extension)){
       String text = fetchText(aURL, ENCODING);
-      saveAsTempFile(text, file, ENCODING);
+      saveTextAsTempFile(text, file, ENCODING);
       //fLogger.fine("Serving as a text file."); 
       mimeType = "text/plain";
     }
@@ -121,6 +125,7 @@ public final class FetchFromThirdParty  extends HttpServlet {
   }
   
   /** Return null if a problem occurs. */
+  /* Image IO is problematic: initialization errors in prod.
   private BufferedImage fetchImage(String aURL) {
     BufferedImage result = null;
     try {
@@ -135,6 +140,7 @@ public final class FetchFromThirdParty  extends HttpServlet {
     }
     return result;
   }
+  */
   
   /** Return null if a problem occurs. */
   private String fetchText(String aURL, String aEncoding) {
@@ -157,6 +163,7 @@ public final class FetchFromThirdParty  extends HttpServlet {
   }
 
   /** Uses the built-in temp directory defined by the servlet spec. */
+  /* Image IO is problematic: initialization errors in prod.
   private void saveAsTempFile(BufferedImage image, File outputfile){
     try {
       ImageIO.write(image, "png", outputfile);
@@ -172,9 +179,36 @@ public final class FetchFromThirdParty  extends HttpServlet {
       fLogger.severe("Temp image file has 0 length.");
     }
   }
+  */
+  
+  /** Image IO is problematic: initialization errors in prod. So, we avoid using it here. */
+  private void saveImageAsTempFile(String imageUrl, File outputFile) {
+    InputStream is = null;
+    OutputStream os = null;
+    try {
+      URL url = new URL(imageUrl);
+      try {
+        is = url.openStream();
+        os = new FileOutputStream(outputFile);
+        byte[] b = new byte[2048];
+        int length;
+        while ((length = is.read(b)) != -1) {
+          os.write(b, 0, length);
+        }
+        fLogger.info("Saved image for " + imageUrl);
+      }
+      finally {
+        is.close();
+        os.close();
+      }
+    }
+    catch (Throwable ex){
+      logProblem("Unable to save image file for " + imageUrl, ex);
+    }
+  }  
   
   /** Uses the built-in temp directory defined by the servlet spec. */
-  private void saveAsTempFile(String text, File outputFile, String encoding){
+  private void saveTextAsTempFile(String text, File outputFile, String encoding){
     if (text.length() < 1){
       fLogger.severe("Text fetched from web has 0 length.");
     }
@@ -260,16 +294,6 @@ public final class FetchFromThirdParty  extends HttpServlet {
     Radar radar = new Radar(NUM_RADAR_IMAGES);
     String json = radar.returnJsonMostRecentRadarImages(radarStation);
     serveAsJson(json, response);
-  }
-  
-  private void redirectTo(String url, HttpServletResponse response){
-    try {
-      response.sendRedirect(url);
-    } 
-    catch (IOException e) {
-      //this should never happen
-      e.printStackTrace();
-    }
   }
   
   private void serveAsJson(String jsonText, HttpServletResponse response){

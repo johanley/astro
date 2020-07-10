@@ -14,6 +14,7 @@
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=44.60&longitude=-118.41'><s:txt>Oregon</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=42.92&longitude=-95.03'><s:txt>Iowa</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=40.27&longitude=-107.98'><s:txt>Colorado</s:txt>
+     <%--
      <option value=''><s:txt>---Europe---</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=54.70&longitude=-3.90'><s:txt>United Kingdom</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=42.30&longitude=13.30'><s:txt>Italy</s:txt>
@@ -32,3 +33,4 @@
      <option value=''><s:txt>---Middle East---</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=34.39&longitude=42.11'><s:txt>Iraq</s:txt>
      <option value='graphic.sky?layer=auto_detect&degrees_on_a_side=15&pixels_on_a_side=&latitude=25.60&longitude=43.40'><s:txt>Saudi Arabia</s:txt>
+     --%>

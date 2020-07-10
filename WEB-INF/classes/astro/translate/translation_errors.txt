@@ -1,2 +1,0 @@
-Sat Mar 11 20:20:41 EST 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Disabled by browser'
-Wed Mar 15 18:10:48 EDT 2017 Page:org.apache.jsp.main.form_jsp Err1. English text not found: 'Messier/Caldwell objects appearing above the horizon (highest altitude first).'

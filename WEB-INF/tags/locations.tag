@@ -135,6 +135,7 @@
      <option value='graphic%2Esky?country=us&location_name=Norfolk&latitude=36%2E86&longitude=-76%2E29&radar_station=AKQ&clear_sky_clock_station_id=TidewaterVA'>VA Norfolk
      <option value='graphic%2Esky?country=us&location_name=Seattle&latitude=47%2E60&longitude=-122%2E32&radar_station=ATX&clear_sky_clock_station_id=Seattle'>WA Seattle
      <option value='graphic%2Esky?country=us&location_name=Spokane&latitude=47%2E67&longitude=-117%2E42&radar_station=OTX&clear_sky_clock_station_id=SpknWA'>WA Spokane
+     <%--
      <option value=''><s:txt>---United Kingdom---</s:txt>
      <option value='graphic%2Esky?country=uk&location_name=Aberdeen&latitude=57%2E14&longitude=-2%2E11&weather_station=3091&'>Aberdeen
      <option value='graphic%2Esky?country=uk&location_name=Belfast&latitude=54%2E59&longitude=-5%2E93&weather_station=3917&'>Belfast
@@ -153,3 +154,4 @@
      <option value='graphic%2Esky?country=uk&location_name=Peterborough&latitude=52%2E57&longitude=-0%2E24&weather_station=3462&'>Peterborough
      <option value='graphic%2Esky?country=uk&location_name=Plymouth&latitude=50%2E37&longitude=-4%2E14&weather_station=3827&'>Plymouth
      <option value='graphic%2Esky?country=uk&location_name=Stornoway&latitude=58%2E21&longitude=-6%2E38&weather_station=3026&'>Stornoway
+     --%>

@@ -2,6 +2,8 @@
 {Home}{Accueil}
 {Credits}{Attributions}
 
+{Language}{Langage}
+
 {Satellite images}{Images satellites}
 {Back to Form}{Retourner au formulaire}
 
@@ -9,12 +11,10 @@
 {canada, etas-unis, météo, nuages, satellite, goes, visible, infrarouge}
 {Recent satellite images from the GOES weather satellite (NOAA).}
 {Images satellites actuelles du satellite météorologique GOES (NOAA).}
-{The form below lets you browse current imagery from the GOES and Meteosat geosynchronous satellites.
- GOES has images for North America, and Meteosat has images for Europe and Africa.
+{The form below lets you browse current imagery from the GOES geosynchronous satellites, for North America.
  These images are especially dramatic when the Sun is low in the sky, and produces longer shadows. 
  The default settings in the form below show the Canadian Maritime provinces.} 
-{Le formulaire ci-dessous est pour explorer les images actuelles des satellites géostationnaires GOES et Météosat.
- Le satellite GOES a des images de l'Amerique du Nord, et le satellite Météosat a des images de l'Europe et de l'Afrique.
+{Le formulaire ci-dessous est pour explorer les images actuelles des satellites géostationnaires GOES, pour l'Amerique du Nord.
  Ces images sont surtout impressionantes quand le soleil est de faible hauteur, et les ombres sont plus importants.
  Par défaut, le formulaire montre les provinces maritimes du Canada.} 
  
@@ -123,17 +123,16 @@
 {Disabled by browser}{Désactiver par le navigateur} 
 {Astronomy Tonight}{Astronomie ce soir}
 {This tool collects together, on a single page, basic information of interest to most amateur astronomers. 
-It's most useful for residents of Canada, the US, and the UK. Outside of those areas, no weather data is shown.}
-
+It's most useful for residents of Canada and the US. Outside of those areas, no weather data is shown.}
 {Ce site rassemble, sur une seule page, les données générales qui intéressent la plupart des astronomes amateurs.
-Il est particulièrement utile pour les résidents du Canada, les Étas-Unis, et le Royaume-Uni. Pour tous les autres pays, il n'y a pas de données météorologiques.}
+Il est particulièrement utile pour les résidents du Canada et les Étas-Unis. Pour tous les autres pays, il n'y a pas de données météorologiques.}
 
 {Below you will find a large form that lets you customize the output data.
 Its defaults are for Ottawa, the capital of Canada. 
-As a convenience, here are the results for some selected locations (Canada, US, and UK only)}
+As a convenience, here are the results for some selected locations (Canada and US only)}
 {Ci-dessous vous trouverez un formulaire pour adapter les données.
 Les défauts sont pour Ottawa, la capitale du Canada.
-Pour vous aider, voici quelques résultats pour des locations particulières (seulement pour le Canada, les É-U, et le R-U)}
+Pour vous aider, voici quelques résultats pour des locations particulières (seulement pour le Canada, et les É-U)}
 
 {Choose a location}{Choisir une location}
 {---Canada---}{---Canada---}
@@ -160,7 +159,7 @@ Pour vous aider, voici quelques résultats pour des locations particulières (se
 {les astéroïdes et les comètes les plus brilliants.}
 {a current diary of sky phenomena.}
 {les phénomènes actuels du ciel.}
-{a planisphere showing the night sky.}
+{a stereographic chart of the entire night sky.}
 {une planisphère du ciel.}
 {the current observation window, showing the Sun's rise-set times, times of twilight, and the Moon's rise-set times.}
 {l'intervalle d'observation actuel, montrant le coucher et le lever du soleil, le crépuscule, et le lever et le coucher de la lune.}
@@ -239,12 +238,12 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 
 {<P>Help to improve astronomytonight.net: 
  <ul>  
-  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).
+  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Moncton, Canada).
   <li>contribute via <a href='https://github.com/johanley/astro'>github</a>.
  </ul>} 
 {<P>Pour améliorer le site astronomytonight.net: 
  <ul>  
-  <li>envoyez des corrections et suggestions à <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Ottawa, Canada).
+  <li>envoyez des corrections et suggestions à <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Moncton, Canada).
   <li>contribuez au moyen de <a href='https://github.com/johanley/astro'>github</a>.
  </ul>} 
 
@@ -252,7 +251,8 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: many algorithms used here are taken from this book.  
  <li><a href='http://weather.gc.ca/canada_e.html'>Environment Canada</a> : current conditions, forecasts, and radar images.
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : current US weather conditions, forecasts, and radar images.
- <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: server for NOAA images captured by the GOES satellite (clouds).
+ <!--<li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: server for NOAA images captured by the GOES-West satellite (clouds).-->
+ <li><a href='https://nowcoast.noaa.gov/help/#!section=wms-layer-ids'>NowCOAST</a>: server for NOAA images captured by the GOES satellites (clouds).
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> of the Royal Astronomical Society of Canada: comments on the Messier objects, and osculating orbital elements for planets.
  <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>revision 5</a>.
  <li>Allen Rahill (Canadian Meteorological Center) and Attilla Danko: <a href='http://www.cleardarksky.com/csk/'>Clear Sky Clock</a> images.
@@ -263,14 +263,16 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : auroral activity (Kp).
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : occultation predictions.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : sky diary, phenomena for Galilean satellites.
+ <!--
  <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : current UK weather conditions and forecast.
  <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : Meteosat satellite images for Europe.
+ -->
 </ul>}
 {<ul>
  <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: beaucoup d'algorithmes employés ici sont décrits dans ce livre.  
  <li><a href='http://weather.gc.ca/canada_f.html'>Environnement Canada</a> : conditions actuelles, prévisions, et images radars.
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : conditions actuelles pour les É-U, prévisions, et images radars.
- <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: serveur pour les images satellite GOES (pour les nuages).
+ <!-- <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: serveur pour les images satellite GOES (pour les nuages).-->
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> du Royal Astronomical Society of Canada: commentaires sur les objets de Messier, et les éléments orbitaux osculateurs des planètes.
  <li>le catalogue Yale Bright Star, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>révision 5</a>.
  <li>Allen Rahill (Centre météorologique canadien) et Attilla Danko: images <a href='http://www.cleardarksky.com/csk/'>Prévision Astro du Ciel</a>.
@@ -281,8 +283,10 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><a href='http://www.swpc.noaa.gov/products/station-k-and-indices'>NOAA Space Weather</a> : activité aurorale (Kp).
  <li><a href='http://www.lunar-occultations.com/iota/iotandx.htm'>International Occultation Timing Association</a> : prévisions des occultations.
  <li><a href='http://aa.usno.navy.mil/software/mica/micainfo.php'>US Naval Observatory</a>, Multiyear Interactive Computer Almanac (MICA, v2.2.2) : phénomènes du jour, phénomènes des satellites galiléens de Jupiter.
+ <!--
  <li><a href='http://www.metoffice.gov.uk/datapoint'>Met Office</a> : conditions actuelles pour le R-U, et les prévisions.
  <li><a href='http://www.eumetsat.int/website/home/index.html'>EUMETSAT</a> : images satellites Météosat pour l'Europe.
+ -->
 </ul>}
  
 {Country}{Pays}
@@ -332,8 +336,8 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 {Le soleil est 6 degrés au dessus de l&apos;horizon}
 {Civil}{Civil}
 
-{Planisphere rotation angle}{L&apos;angle de rotation de la planisphère}
-{Controls the default orientation of the planisphere}{Controller l&apos;orientation de la planisphère}
+{Star chart rotation angle}{L&apos;angle de rotation de la planisphère}
+{Controls the default orientation of the star chart}{Controller l&apos;orientation de la planisphère}
 
 {Controls when you see aurora activity data}{Contrôler quand les données pour les aurores sont visibles}
 {Minimum auroral activity level}{Le niveau minimum d&apos;activité aurorale}
@@ -458,3 +462,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 {Iraq}{Irak}
 {France}{France}
 {Spain}{Espagne}
+
+
+{Support for the UK has been removed, due to changes to data servers. Sorry about that.}
+{Les données particulières au Royaume Uni ne sont plus disponibles, à cause des changements au serveurs. Désolé.}
