@@ -1,5 +1,5 @@
 # astro
-Full source for [astronomytonight.net](http://astronomytonight.net/main/form.sky), a site for amateur astronomers. The site has basic astronomy data for any location, and weather data for specific countries (the US, Canada, and the UK). Customizable for your observing location.
+Full source for [astronomytonight.net](http://astronomytonight.net/main/form.sky), a site for amateur astronomers. The site has basic astronomy data for any location, and weather data for specific countries (the US and Canada). Customizable for your observing location.
 
 The layout of the source tree matches the runtime layout of the web site.  
 * running the app locally is simply a matter of pointing Tomcat to the root of the project.  
