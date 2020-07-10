@@ -17,7 +17,7 @@ Courtesy binaries of the Java classes are checked into source, for those who don
 In order to run the app, you will need a Java Runtime Environment (JRE), and Tomcat (or a similar servlet container). 
 In order to compile new versions of the Java code, you will need a Java Development Kit (JDK).
 
-In prod, the version of Tomcat is version 6, running on JRE 1.6. (That's a bit stale.)
+In prod, the version of Tomcat is version 6, running on JRE 1.7. (That's a bit stale.)
 
 To run the app locally on Tomcat:
 * download the code from github, to any location on your machine
