@@ -9,7 +9,10 @@ import java.util.regex.Pattern;
  Return a list of image URLs from a directory listing.
  
 <P>Example directory listing:
-  <pre>https://dd.weather.gc.ca/radar/PRECIPET/GIF/XNC/</pre>
+  <pre>
+  https://dd.weather.gc.ca/radar/PRECIPET/GIF/XNC/
+  https://dd.weather.gc.ca/radar/PRECIPET/GIF/CASRA/  - newer station id's.
+  </pre>
   
 <p>Example line of the directory listing: 
  <pre><img src="/icons/image2.gif" alt="[IMG]"> <a href="201911251500_XNC_COMP_PRECIPET_RAIN.gif">201911251500_XNC_COMP_PRECIPET_RAIN.gif</a>      2019-11-25 15:08   25K</pre>  
@@ -17,12 +20,18 @@ import java.util.regex.Pattern;
 <P>This class doesn't fetch data from the web; it just processes the data that has been fetched.
 
 <P>Info:
+https://eccc-msc.github.io/open-data/msc-data/obs_radar/readme_radarimage-datamart_en/
 https://dd.weather.gc.ca/radar/doc/README_radar.txt
 THE RADAR STATIONS ARE BEING UPGRADED OVER TIME. There is a change in station id, from 3 letters to 5 (CASxx).
 WMN (Montreal) appears to be down on 2019-11-28.
 
-<P>Broken for several months: change http to https, and added '_COMP_' in the middle of the image url.
-Fixed 2019-11-27.
+<P>2019-11-17: Broken for several months: change http to https, and added '_COMP_' in the middle of the image url.
+
+<P>2020-08-23: Partial data-change/migration for new station ids. 
+(I should have done this long ago.)
+
+<P>Current Outages:
+https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html
 */
 public final class RadarImageUrls {
   

@@ -2193,7 +2193,7 @@ var EPH = (function(){
       T: when("TT 1990-10-28 13:05") 
     }
   );
-  var panstarrs_2017_T2 =  build_comet('PanSTARRS (2017 T2)', 'PanSTARRS (2017 T2)', 9.0, 'fade', 'all night', {
+  var panstarrs_2017_T2 =  build_comet('PanSTARRS (2017 T2)', 'PanSTARRS (2017 T2)', 11.0, 'fade', 'evening', {
       equinox: when_j2000,
       epoch: when("TT 2019-03-03"),
       q: 1.614716047120907, 
@@ -2204,7 +2204,7 @@ var EPH = (function(){
       T: when("TT 2020-05-04.91659834") 
     }
   );
-  var neowise_2020_f3 =  build_comet('C/2020 F3 (NEOWISE)', 'C/2020 F3 (NEOWISE)', 1.0, 'fading', 'early morning', {
+  var neowise_2020_f3 =  build_comet('C/2020 F3 (NEOWISE)', 'C/2020 F3 (NEOWISE)', 8.5, 'fade', 'early evening', {
       equinox: when_j2000,
       epoch: when("TT 2020-04-19"),
       q: 0.2946766901808353, 
@@ -2215,7 +2215,7 @@ var EPH = (function(){
       T: when("TT 2020-07-03.68062954") 
     }
   );
-  var lemmon_2019_u6 =  build_comet('C/2019 U6 (Lemmon)', 'C/2019 U6 (Lemmon)', 7.5, 'fade', 'evening', {
+  var lemmon_2019_u6 =  build_comet('C/2019 U6 (Lemmon)', 'C/2019 U6 (Lemmon)', 10.5, 'fade', 'evening', {
       equinox: when_j2000,
       epoch: when("TT 2019-12-23"),
       q: 0.9142791243582419, 
@@ -2226,12 +2226,36 @@ var EPH = (function(){
       T: when("TT 2020-06-18.81966081") 
     }
   );
+  var howell_88p =  build_comet('88P/Howell', '88P/Howell', 10.0, 'bright', 'evening', {
+      equinox: when_j2000,
+      epoch: when("TT 2015-06-24"),
+      a: 3.109298335479711, 
+      e: 0.5630669178622828,
+      i: rads(4.382702189448423),
+      Ω: rads(56.69886661336611),
+      ω: rads(235.9135950149247),
+      T: when("TT 2015-04-06.22986117") 
+    }
+  );
+  var atlas_n1 =  build_comet('C/2019 N1 (ATLAS)', 'C/2019 N1 (ATLAS)', 11.0, 'bright', 'evening', {
+      equinox: when_j2000,
+      epoch: when("TT 2020-03-03"),
+      q: 1.704668606905015, 
+      e: 0.999858397229809,
+      i: rads(82.4244660784081),
+      Ω: rads(13.57818511586666),
+      ω: rads(193.4441968202223),
+      T: when("TT 2020-12-01.80955815") 
+    }
+  );
   
   var comets = {
     /*testing only enke_test: enke_test,*/
-    lemmon_2019_u6: lemmon_2019_u6,
+    panstarrs_2017_T2: panstarrs_2017_T2,
     neowise_2020_f3: neowise_2020_f3, 
-    panstarrs_2017_T2: panstarrs_2017_T2
+    lemmon_2019_u6: lemmon_2019_u6,
+    howell_88p: howell_88p,
+    atlas_n1: atlas_n1
   };
   
   /* Match name to an object, compute its ephemeris, then apply the options. */

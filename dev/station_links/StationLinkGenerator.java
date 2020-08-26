@@ -27,6 +27,14 @@ import java.awt.Toolkit;
   The base data is in a CSV text file.
   CAREFUL: Eclipse will change tabs into spaces randomly when you resave in Eclipse. 
   That file is read in, and a link is generated for each line in the file.
+  
+  <P>Example line of base data for Canada. 
+  Tab-separated, UTF-8.
+  <pre>
+  prov town lat,long weather-stn-id clear-sky-clock-url radar-stn-id flag-x-for-no-sat-image
+  AB  Banff 51.177578, -115.570364  49  http://www.cleardarksky.com/c/BnffABcsk.gif?c=1418437   XSM *
+  </pre>
+  
 
   <P>Compile and run the old fashioned way:
   <pre>
@@ -36,6 +44,9 @@ import java.awt.Toolkit;
 %astro%\dev\station_links>C:\jdk1.6.0\bin\java StationLinkGenerator us
 %astro%\dev\station_links>C:\jdk1.6.0\bin\java StationLinkGenerator uk
   </pre>
+  
+  Output is on the clipboard. Copy into locations.tag.
+  
  */
 public class StationLinkGenerator implements ClipboardOwner {
   
