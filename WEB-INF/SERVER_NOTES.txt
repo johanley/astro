@@ -11,11 +11,6 @@ Manual deployment
    review/edit web.xml settings
  zip all into a war file, copy ROOT.war to C:\temp2 
    size ~ 893 kb (with no dev dir)
- >cd C:\temp2
- >"C:\Program Files\Putty\psftp.exe" webjcom@jpcloudusa026.nshostserver.net
-   cd /home/webjcom/web4j.com/apache-tomcat-6.0.24/webapps-astronomytonight
-   put ROOT.war
-   if Tomcat's autodeploy fails to explode the dir, try a 'touch' of the ROOT.war
    
  
 -------------------------------------
@@ -44,6 +39,7 @@ Messier objects
  apply precession from J2000 to the current year
  http://localhost:8081/astro/dev/messier_precess/form.html 
  put the result in ephem.js, update comments therein
+   see: var build_messiers
  
  
 Caldwell objects 
@@ -51,6 +47,7 @@ Caldwell objects
  WARNING: I am inlining the base J2000 data in caldwell_precess/code.js; referencing doesn't work
  http://localhost:8081/astro/dev/caldwell_precess/form.html 
  put the result in ephem.js, update comments therein
+   see: var build_caldwells
 
 
 Yale Bright Star catalog 
@@ -74,6 +71,8 @@ Planet orbits
   edit ephem.js directly
   Careful: for fast movers, L0 can go around N times between a and b. 
   That needs to be factored in, since the overall rate of change is calculated.
+  If the RASC Observer's Handbook is not available, leaving this out for a few years won't make 
+  much difference in the positions.
   
 
 Asteroid orbits - update
@@ -136,6 +135,20 @@ Jupiter Satellite Phenomena
 Saturn
   ephem.js: FUDGE_FACTOR_FOR_MISSING_RINGS
   if still needed, review the fudge-factor used to get better apparent magnitudes for Saturn.     
+
+Radar stations
+Check each location once. See if it looks normal. 
+Environment Canada is slowly updating radar stations across Canada.
+When that happens, the id for the radar station needs to be updated.
+The file with the data:
+  dev\station_links\cda_links.csv
+  Places with no radar:
+   Fort Mac, Jasper
+   Cranbrook, Terrace
+   Churchill, The Pas, Thompson
+   La Ronge
+   Happy Valley-Goose Bay
+   Whitehorse
   
 Git reminders
 
