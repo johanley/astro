@@ -90,8 +90,15 @@ public final class WebPageFetcher {
      * https://stackoverflow.com/questions/4764611/java-security-invalidalgorithmparameterexception-the-trustanchors-parameter-mus
      * This happens for OpenJDK8. Apparently you need to copy in a cacerts file from a working jre; the default one is empty.
      * 
+     * TLSv1.3 was released in 2018-08. I don't think JRE 1.7 supports it.
+     * 
+     * List the support by the current JRE:
+     * SSLContext.getDefault().getSupportedSSLParameters().getProtocols()
+     * https://stackoverflow.com/questions/10500511/how-to-find-what-ssl-tls-version-is-used-in-java
+     * Looks like Java 11 is the earliest version with TLSv1.3
+     * 
     */
-    System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
+    System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3");
     try {
       url = new URL(targetUrl);
       connection =  url.openConnection();

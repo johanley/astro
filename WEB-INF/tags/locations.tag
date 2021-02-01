@@ -88,7 +88,7 @@
      <option value='graphic%2Esky?country=cda&prov=SK&location_name=Swift+Current&latitude=50%2E29&longitude=-107%2E79&weather_station=41&radar_station=XBU&clear_sky_clock_station_id=SwtCrnSK'>SK Swift Current
      <option value='graphic%2Esky?country=cda&prov=YT&location_name=Whitehorse&latitude=60%2E72&longitude=-135%2E06&weather_station=16&radar_station=&clear_sky_clock_station_id=WhthrsYK'>YT Whitehorse     
      <option value=''><s:txt>---U.S.A.---</s:txt>
-     <option value='graphic%2Esky?country=us&location_name=Anchorage&latitude=61%2E20&longitude=-149%2E88&radar_station=AHG&clear_sky_clock_station_id=AnchorAK'>AK Anchorage
+     <option value='graphic%2Esky?country=us&location_name=Anchorage&latitude=61%2E20&longitude=-149%2E88&radar_station=ALASKA&clear_sky_clock_station_id=AnchorAK'>AK Anchorage
      <option value='graphic%2Esky?country=us&location_name=Phoenix&latitude=33%2E43&longitude=-112%2E09&radar_station=IWA&clear_sky_clock_station_id=Phoenix'>AZ Phoenix
      <option value='graphic%2Esky?country=us&location_name=Los+Angeles&latitude=34%2E03&longitude=-118%2E31&radar_station=SOX&clear_sky_clock_station_id=LAXCA'>CA Los Angeles
      <option value='graphic%2Esky?country=us&location_name=San+Diego&latitude=32%2E74&longitude=-117%2E21&radar_station=NKX&clear_sky_clock_station_id=SanDiego'>CA San Diego

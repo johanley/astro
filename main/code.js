@@ -1042,45 +1042,38 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
         //canv.height = 300; 
       });
   };
-  //Example: http://radar.weather.gov/radar.php?rid=lwx&product=N0R&overlay=11101111&loop=no
+  //Example: https://radar.weather.gov/ridge/lite/KOKX_0.gif
   var show_radar_us_images = function(radar_station_us){
     var canvas = document.getElementById('radar_us');
     var ctx = canvas.getContext('2d');
-    var topo_url, radar_url;
-    var topo_img = new Image();
-    var radar_img;
-    topo_img.onload = function(){
-      console.log('Drawing US radar image (topography).');
-      canvas.height = topo_img.height;
-      canvas.width = topo_img.width;
-      ctx.drawImage(topo_img, 0, 0);
-      radar_img = new Image();
-      radar_img.onload = function(){
-        console.log('Drawing US radar image (radar).');
-        ctx.drawImage(radar_img, 0, 0);
-      };
-      radar_img.onabort = function(){
-        console.log('Abort load of US radar image (radar).');
-      };
-      radar_img.onerror = function(){
-        console.log('Error load of US radar image (radar).');
-      };
-      radar_img.style.display = 'none';
-      radar_url = 'https://radar.weather.gov/ridge/RadarImg/N0R/' + radar_station_us +'_N0R_0.gif';
-      console.log('US radar : ' + radar_url);
-      radar_img.src = UTIL.crossDomainUrl(radar_url); 
+    var radar_url;
+    var radar_img = new Image();
+    radar_img.onload = function(){
+      console.log('Drawing US radar image.');
+      canvas.height = radar_img.height;
+      canvas.width = radar_img.width;
+      ctx.drawImage(radar_img, 0, 0);
     };
-    topo_img.onabort = function(){
-      console.log('Abort load of US radar image (topography).');
+    radar_img.onabort = function(){
+      console.log('ABORT: load of US radar image.');
     }
-    topo_img.onerror = function(){
-      console.log('Error load of US radar image (topography).');
+    radar_img.onerror = function(){
+      console.log('ERROR: load of US radar image.');
     }
-    topo_img.style.display = 'none';
+    radar_img.style.display = 'none';
     //currently, the NOAA server doesn't support CORS; hence need a workaround
-    topo_url = 'https://radar.weather.gov/ridge/Overlays/Topo/Short/' + radar_station_us + '_Topo_Short.jpg';
-    console.log('US radar (topography) : ' + topo_url);
-    topo_img.src = UTIL.crossDomainUrl(topo_url); 
+    //RETIRED IN 2020-12: https://radar.weather.gov/ridge/Overlays/
+    //EXAMPLE OF NEW DATA, FOR RADAR STATION 'OKX', NEW YORK CITY: https://radar.weather.gov/ridge/lite/KOKX_loop.gif ;
+    //HAS POOR TOPO; STATE LINES ONLY; the loop only shows the oldest frame of the loop, when downloaded by js; why?
+    //EXAMPLE OF NEW DATA, FOR RADAR STATION 'OKX', NEW YORK CITY: https://radar.weather.gov/ridge/lite/KOKX_0.gif ; most recent
+    var preamble = 'https://radar.weather.gov/ridge/lite/';
+    if (radar_station_us !== 'ALASKA'){
+      //the urls aren't uniform!
+      preamble = preamble + 'K';
+    }
+    radar_url = preamble + radar_station_us + '_0.gif';
+    console.log('US radar : ' + radar_url);
+    radar_img.src = UTIL.crossDomainUrl(radar_url); 
   };
   
   var show_clouds_and_radar = function(){
