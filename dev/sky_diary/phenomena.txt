@@ -1,698 +1,9 @@
                            PHENOMENA SEARCH                            
-                  From: 2021 Jan 01  To: 2022 Jan 31                   
+                  From: 2021 Dec 28  To: 2023 Jan 31                   
      
 Phenomena found:                            Date           Comment
                                             (UT1)
                                                    d  h
-Eunomia in conjunction with Moon         2021 Jan  1 05    5.16° South
-Cybele in conjunction with Venus         2021 Jan  1 11    2.08° North
-Venus in conjunction with Cybele         2021 Jan  1 11    2.08° South
-Hygiea in conjunction with Moon          2021 Jan  1 17    6.30° South
-Earth at perihelion                      2021 Jan  2 14    0.983257060 AU
-Regulus in conjunction with Moon         2021 Jan  2 22    4.72° South
-Vesta in conjunction with Moon           2021 Jan  4 14    1.46° North
-Pluto in conjunction with Mercury        2021 Jan  4 22    0.96° North
-Mercury in conjunction with Pluto        2021 Jan  4 22    0.96° South
-Last Quarter                             2021 Jan  6 10    371387.602 km
-Metis in conjunction with Moon           2021 Jan  6 12    1.40° North
-Spica in conjunction with Moon           2021 Jan  6 19    7.01° South
-Davida in conjunction with Moon          2021 Jan  7 12   12.58° North
-Interamnia in conjunction with Moon      2021 Jan  8 23   15.69° South
-Moon at perigee                          2021 Jan  9 16    367387.455 km
-Saturn in conjunction with Mercury       2021 Jan  9 21    1.67° North
-Mercury in conjunction with Saturn       2021 Jan  9 21    1.67° South
-Juno in conjunction with Moon            2021 Jan 10 01    8.99° North
-Antares in conjunction with Moon         2021 Jan 10 03    5.59° South
-Hebe in conjunction with Moon            2021 Jan 10 22   10.84° North
-Cybele in conjunction with Moon          2021 Jan 11 05    3.20° North
-Ceres in conjunction with Neptune        2021 Jan 11 07    8.61° South
-Neptune in conjunction with Ceres        2021 Jan 11 07    8.61° North
-Jupiter in conjunction with Mercury      2021 Jan 11 11    1.48° North
-Mercury in conjunction with Jupiter      2021 Jan 11 11    1.48° South
-Venus in conjunction with Moon           2021 Jan 11 20    1.48° North
-Pallas in conjunction with Mercury       2021 Jan 12 11   20.01° North
-Mercury in conjunction with Pallas       2021 Jan 12 11   20.01° South
-Aldebaran in conjunction with Psyche     2021 Jan 12 13    1.46° South
-Antares in conjunction with Juno         2021 Jan 12 14   14.74° South
-New Moon                                 2021 Jan 13 05    374128.716 km
-Pluto in conjunction with Moon           2021 Jan 13 07    1.77° North
-Saturn in conjunction with Moon          2021 Jan 13 21    3.22° North
-Jupiter in conjunction with Moon         2021 Jan 14 01    3.30° North
-Pallas in conjunction with Moon          2021 Jan 14 04   21.90° North
-Mercury in conjunction with Moon         2021 Jan 14 08    2.32° North
-Pluto in conjunction with Sun            2021 Jan 14 14    1.21° South
-Iris in conjunction with Moon            2021 Jan 14 21    8.40° North
-Neptune in conjunction with Moon         2021 Jan 17 06    4.45° North
-Ceres in conjunction with Moon           2021 Jan 17 10    3.93° South
-First Quarter                            2021 Jan 20 21    404060.540 km
-Mars in conjunction with Moon            2021 Jan 21 06    5.05° North
-Uranus in conjunction with Moon          2021 Jan 21 06    3.31° North
-Moon at apogee                           2021 Jan 21 13    404359.838 km
-Eunomia at opposition                    2021 Jan 21 19
-Flora in conjunction with Moon           2021 Jan 21 21    1.76° South
-Uranus in conjunction with Mars          2021 Jan 22 00    1.72° South
-Mars in conjunction with Uranus          2021 Jan 22 00    1.72° North
-Iris in conjunction with Mercury         2021 Jan 22 15    4.33° North
-Mercury in conjunction with Iris         2021 Jan 22 15    4.33° South
-Spica in conjunction with Metis          2021 Jan 23 23    9.15° South
-Mercury at greatest elongation           2021 Jan 24 02    18.6° East
-Saturn in conjunction with Sun           2021 Jan 24 03    0.41° South
-Psyche in conjunction with Moon          2021 Jan 24 04    2.94° South
-Aldebaran in conjunction with Moon       2021 Jan 24 05    4.76° South
-Europa in conjunction with Moon          2021 Jan 26 00    5.81° South
-Pollux in conjunction with Moon          2021 Jan 27 16    3.79° North
-Eunomia in conjunction with Moon         2021 Jan 28 01    6.85° South
-Hygiea in conjunction with Moon          2021 Jan 28 16    6.44° South
-Hygiea at opposition                     2021 Jan 28 19
-Pluto in conjunction with Venus          2021 Jan 28 19    0.75° South
-Venus in conjunction with Pluto          2021 Jan 28 19    0.75° North
-Full Moon                                2021 Jan 28 19    381520.878 km
-Jupiter in conjunction with Sun          2021 Jan 29 02    0.52° South
-Regulus in conjunction with Moon         2021 Jan 30 05    4.62° South
-Iris in conjunction with Mercury         2021 Jan 31 00    1.99° North
-Mercury in conjunction with Iris         2021 Jan 31 00    1.99° South
-Vesta in conjunction with Moon           2021 Jan 31 22    3.98° North
-Spica in conjunction with Moon           2021 Feb  3 00    6.80° South
-Metis in conjunction with Moon           2021 Feb  3 02    2.77° North
-Aldebaran in conjunction with Psyche     2021 Feb  3 09    2.06° South
-Moon at perigee                          2021 Feb  3 19    370116.150 km
-Davida in conjunction with Moon          2021 Feb  4 02   15.48° North
-Last Quarter                             2021 Feb  4 18    370327.722 km
-Interamnia in conjunction with Moon      2021 Feb  5 18   15.33° South
-Saturn in conjunction with Venus         2021 Feb  6 05    0.39° North
-Venus in conjunction with Saturn         2021 Feb  6 05    0.39° South
-Antares in conjunction with Moon         2021 Feb  6 09    5.43° South
-Juno in conjunction with Moon            2021 Feb  6 21   10.96° North
-Hebe in conjunction with Moon            2021 Feb  8 00   12.14° North
-Cybele in conjunction with Moon          2021 Feb  8 05    4.31° North
-Mercury in inferior conjunction          2021 Feb  8 14    3.63° North
-Pluto in conjunction with Moon           2021 Feb  9 17    1.83° North
-Pallas in conjunction with Sun           2021 Feb  9 20   15.71° North
-Saturn in conjunction with Moon          2021 Feb 10 11    3.41° North
-Pallas in conjunction with Mercury       2021 Feb 10 14   12.58° North
-Mercury in conjunction with Pallas       2021 Feb 10 14   12.58° South
-Venus in conjunction with Moon           2021 Feb 10 20    3.20° North
-Jupiter in conjunction with Moon         2021 Feb 10 22    3.67° North
-Mercury in conjunction with Moon         2021 Feb 11 03    8.28° North
-Pallas in conjunction with Moon          2021 Feb 11 05   20.89° North
-Jupiter in conjunction with Venus        2021 Feb 11 12    0.44° North
-Venus in conjunction with Jupiter        2021 Feb 11 12    0.44° South
-New Moon                                 2021 Feb 11 19    385520.198 km
-Iris in conjunction with Moon            2021 Feb 12 09    9.13° North
-Venus in conjunction with Mercury        2021 Feb 12 17    4.81° South
-Mercury in conjunction with Venus        2021 Feb 12 17    4.81° North
-Neptune in conjunction with Moon         2021 Feb 13 17    4.32° North
-Jupiter in conjunction with Mercury      2021 Feb 13 19    4.21° South
-Mercury in conjunction with Jupiter      2021 Feb 13 19    4.21° North
-Ceres in conjunction with Moon           2021 Feb 14 14    3.32° South
-Pallas in conjunction with Venus         2021 Feb 15 20   17.35° North
-Venus in conjunction with Pallas         2021 Feb 15 20   17.35° South
-Uranus in conjunction with Moon          2021 Feb 17 16    3.03° North
-Moon at apogee                           2021 Feb 18 10    404467.309 km
-Mars in conjunction with Moon            2021 Feb 18 23    3.69° North
-Flora in conjunction with Moon           2021 Feb 19 03    0.97° South
-First Quarter                            2021 Feb 19 19    403282.882 km
-Aldebaran in conjunction with Moon       2021 Feb 20 14    4.99° South
-Psyche in conjunction with Moon          2021 Feb 20 18    2.66° South
-Europa in conjunction with Moon          2021 Feb 22 07    4.38° South
-Pollux in conjunction with Eunomia       2021 Feb 23 02   11.77° North
-Eunomia in conjunction with Moon         2021 Feb 24 02    8.12° South
-Pollux in conjunction with Moon          2021 Feb 24 02    3.67° North
-Hygiea in conjunction with Moon          2021 Feb 24 17    6.46° South
-Regulus in conjunction with Moon         2021 Feb 26 15    4.60° South
-Full Moon                                2021 Feb 27 08    370594.927 km
-Vesta in conjunction with Moon           2021 Feb 27 23    6.03° North
-Moon at perigee                          2021 Mar  2 05    365423.177 km
-Spica in conjunction with Moon           2021 Mar  2 07    6.58° South
-Metis in conjunction with Moon           2021 Mar  2 09    3.82° North
-Davida in conjunction with Moon          2021 Mar  3 11   18.38° North
-Vesta at opposition                      2021 Mar  4 18
-Jupiter in conjunction with Mercury      2021 Mar  5 07    0.33° South
-Mercury in conjunction with Jupiter      2021 Mar  5 07    0.33° North
-Interamnia in conjunction with Moon      2021 Mar  5 09   15.41° South
-Antares in conjunction with Moon         2021 Mar  5 14    5.17° South
-Flora in conjunction with Mars           2021 Mar  5 18    3.71° South
-Mars in conjunction with Flora           2021 Mar  5 18    3.71° North
-Last Quarter                             2021 Mar  6 02    372121.853 km
-Mercury at greatest elongation           2021 Mar  6 11    27.3° West
-Juno in conjunction with Moon            2021 Mar  6 12   13.29° North
-Iris in conjunction with Sun             2021 Mar  7 09    3.69° North
-Hebe in conjunction with Moon            2021 Mar  7 22   13.64° North
-Cybele in conjunction with Moon          2021 Mar  8 02    5.43° North
-Pluto in conjunction with Moon           2021 Mar  9 00    2.00° North
-Saturn in conjunction with Moon          2021 Mar  9 23    3.68° North
-Jupiter in conjunction with Moon         2021 Mar 10 16    4.05° North
-Neptune in conjunction with Sun          2021 Mar 11 00    1.07° South
-Mercury in conjunction with Moon         2021 Mar 11 01    3.70° North
-Pallas in conjunction with Moon          2021 Mar 11 04   20.23° North
-Iris in conjunction with Venus           2021 Mar 11 05    5.57° North
-Venus in conjunction with Iris           2021 Mar 11 05    5.57° South
-Pallas in conjunction with Mercury       2021 Mar 12 16   16.63° North
-Mercury in conjunction with Pallas       2021 Mar 12 16   16.63° South
-Spica in conjunction with Metis          2021 Mar 12 18   10.49° South
-Iris in conjunction with Moon            2021 Mar 12 22    9.44° North
-Venus in conjunction with Moon           2021 Mar 13 00    3.87° North
-Neptune in conjunction with Moon         2021 Mar 13 03    4.26° North
-New Moon                                 2021 Mar 13 10    396124.281 km
-Neptune in conjunction with Venus        2021 Mar 14 01    0.40° North
-Venus in conjunction with Neptune        2021 Mar 14 01    0.40° South
-Ceres in conjunction with Moon           2021 Mar 14 18    3.11° South
-Uranus in conjunction with Moon          2021 Mar 17 02    2.72° North
-Iris in conjunction with Neptune         2021 Mar 17 14    5.17° North
-Neptune in conjunction with Iris         2021 Mar 17 14    5.17° South
-Moon at apogee                           2021 Mar 18 05    405252.546 km
-Flora in conjunction with Moon           2021 Mar 19 14    1.00° South
-Mars in conjunction with Moon            2021 Mar 19 18    1.93° North
-Aldebaran in conjunction with Moon       2021 Mar 19 22    5.27° South
-Equinox                                  2021 Mar 20 10
-Psyche in conjunction with Moon          2021 Mar 20 14    2.87° South
-First Quarter                            2021 Mar 21 15    398487.986 km
-Europa in conjunction with Moon          2021 Mar 21 22    3.64° South
-Aldebaran in conjunction with Mars       2021 Mar 23 00    7.02° South
-Eunomia in conjunction with Moon         2021 Mar 23 10    9.12° South
-Pollux in conjunction with Moon          2021 Mar 23 11    3.45° North
-Hygiea in conjunction with Moon          2021 Mar 23 23    6.59° South
-Regulus in conjunction with Moon         2021 Mar 26 01    4.72° South
-Venus in superior conjunction            2021 Mar 26 07    1.35° South
-Pollux in conjunction with Eunomia       2021 Mar 26 14   12.64° North
-Vesta in conjunction with Moon           2021 Mar 26 23    6.35° North
-Aldebaran in conjunction with Flora      2021 Mar 27 10    4.24° South
-Full Moon                                2021 Mar 28 19    362173.753 km
-Metis in conjunction with Moon           2021 Mar 29 10    3.80° North
-Spica in conjunction with Moon           2021 Mar 29 16    6.45° South
-Neptune in conjunction with Mercury      2021 Mar 29 19    1.40° North
-Mercury in conjunction with Neptune      2021 Mar 29 19    1.40° South
-Moon at perigee                          2021 Mar 30 06    360309.171 km
-Davida in conjunction with Moon          2021 Mar 30 15   20.23° North
-Interamnia in conjunction with Moon      2021 Apr  1 19   15.96° South
-Antares in conjunction with Moon         2021 Apr  1 21    4.92° South
-Juno in conjunction with Moon            2021 Apr  2 23   15.80° North
-Last Quarter                             2021 Apr  4 10    376583.184 km
-Metis at opposition                      2021 Apr  4 12
-Iris in conjunction with Mercury         2021 Apr  4 18    6.36° North
-Mercury in conjunction with Iris         2021 Apr  4 18    6.36° South
-Hebe in conjunction with Moon            2021 Apr  4 19   15.21° North
-Cybele in conjunction with Moon          2021 Apr  4 20    6.48° North
-Pluto in conjunction with Moon           2021 Apr  5 06    2.21° North
-Saturn in conjunction with Moon          2021 Apr  6 08    3.97° North
-Ceres in conjunction with Venus          2021 Apr  6 13    6.37° South
-Venus in conjunction with Ceres          2021 Apr  6 13    6.37° North
-Ceres in conjunction with Sun            2021 Apr  7 07    7.03° South
-Jupiter in conjunction with Moon         2021 Apr  7 07    4.39° North
-Pallas in conjunction with Moon          2021 Apr  8 01   19.74° North
-Neptune in conjunction with Moon         2021 Apr  9 11    4.33° North
-Iris in conjunction with Moon            2021 Apr 10 13    9.14° North
-Mercury in conjunction with Moon         2021 Apr 11 06    2.99° North
-Ceres in conjunction with Moon           2021 Apr 11 23    3.23° South
-New Moon                                 2021 Apr 12 03    403642.104 km
-Venus in conjunction with Moon           2021 Apr 12 10    2.87° North
-Uranus in conjunction with Moon          2021 Apr 13 12    2.49° North
-Moon at apogee                           2021 Apr 14 18    406118.765 km
-Davida at opposition                     2021 Apr 15 06
-Aldebaran in conjunction with Moon       2021 Apr 16 05    5.47° South
-Ceres in conjunction with Mercury        2021 Apr 16 10    6.39° South
-Mercury in conjunction with Ceres        2021 Apr 16 10    6.39° North
-Flora in conjunction with Moon           2021 Apr 17 02    1.44° South
-Mars in conjunction with Moon            2021 Apr 17 12    0.13° North
-Psyche in conjunction with Moon          2021 Apr 17 14    3.36° South
-Europa in conjunction with Moon          2021 Apr 18 19    3.42° South
-Mercury in superior conjunction          2021 Apr 19 02    0.57° South
-Pollux in conjunction with Moon          2021 Apr 19 19    3.22° North
-Eunomia in conjunction with Moon         2021 Apr 20 02   10.01° South
-First Quarter                            2021 Apr 20 07    391306.287 km
-Hygiea in conjunction with Moon          2021 Apr 20 12    6.90° South
-Psyche in conjunction with Mars          2021 Apr 20 19    3.37° South
-Mars in conjunction with Psyche          2021 Apr 20 19    3.37° North
-Regulus in conjunction with Moon         2021 Apr 22 10    4.90° South
-Uranus in conjunction with Venus         2021 Apr 22 23    0.25° North
-Venus in conjunction with Uranus         2021 Apr 22 23    0.25° South
-Vesta in conjunction with Moon           2021 Apr 23 04    5.17° North
-Hebe in conjunction with Cybele          2021 Apr 24 06    9.15° North
-Cybele in conjunction with Hebe          2021 Apr 24 06    9.15° South
-Uranus in conjunction with Mercury       2021 Apr 24 10    0.81° South
-Mercury in conjunction with Uranus       2021 Apr 24 10    0.81° North
-Metis in conjunction with Moon           2021 Apr 25 10    2.45° North
-Spica in conjunction with Moon           2021 Apr 26 03    6.46° South
-Venus in conjunction with Mercury        2021 Apr 26 09    1.29° South
-Mercury in conjunction with Venus        2021 Apr 26 09    1.29° North
-Davida in conjunction with Moon          2021 Apr 26 17   19.92° North
-Full Moon                                2021 Apr 27 04    357616.113 km
-Moon at perigee                          2021 Apr 27 15    357377.974 km
-Interamnia in conjunction with Moon      2021 Apr 29 00   16.66° South
-Antares in conjunction with Moon         2021 Apr 29 07    4.78° South
-Juno in conjunction with Moon            2021 Apr 30 06   18.08° North
-Uranus in conjunction with Sun           2021 Apr 30 20    0.41° South
-Cybele in conjunction with Moon          2021 May  2 11    7.29° North
-Hebe in conjunction with Moon            2021 May  2 12   16.61° North
-Pluto in conjunction with Moon           2021 May  2 13    2.35° North
-Saturn in conjunction with Moon          2021 May  3 17    4.17° North
-Last Quarter                             2021 May  3 20    383059.100 km
-Jupiter in conjunction with Moon         2021 May  4 21    4.61° North
-Pallas in conjunction with Moon          2021 May  5 21   19.22° North
-Hebe in conjunction with Pluto           2021 May  6 10   14.41° North
-Pluto in conjunction with Hebe           2021 May  6 10   14.41° South
-Neptune in conjunction with Moon         2021 May  6 18    4.43° North
-Iris in conjunction with Moon            2021 May  9 06    8.08° North
-Ceres in conjunction with Moon           2021 May 10 04    3.62° South
-Uranus in conjunction with Moon          2021 May 10 21    2.36° North
-Aldebaran in conjunction with Mercury    2021 May 11 03    7.99° South
-New Moon                                 2021 May 11 19    406507.120 km
-Moon at apogee                           2021 May 11 22    406511.956 km
-Venus in conjunction with Moon           2021 May 12 22    0.71° North
-Aldebaran in conjunction with Moon       2021 May 13 11    5.54° South
-Mercury in conjunction with Moon         2021 May 13 18    2.14° North
-Flora in conjunction with Moon           2021 May 15 13    1.98° South
-Psyche in conjunction with Moon          2021 May 15 15    3.94° South
-Mars in conjunction with Moon            2021 May 16 05    1.47° South
-Cybele in conjunction with Pluto         2021 May 16 17    5.20° North
-Pluto in conjunction with Cybele         2021 May 16 17    5.20° South
-Europa in conjunction with Moon          2021 May 16 19    3.44° South
-Pollux in conjunction with Moon          2021 May 17 01    3.11° North
-Mercury at greatest elongation           2021 May 17 06    22.0° East
-Eunomia in conjunction with Moon         2021 May 17 21   10.84° South
-Aldebaran in conjunction with Venus      2021 May 17 23    5.87° South
-Hygiea in conjunction with Moon          2021 May 18 04    7.29° South
-Regulus in conjunction with Moon         2021 May 19 18    5.02° South
-First Quarter                            2021 May 19 19    383678.778 km
-Vesta in conjunction with Moon           2021 May 20 18    3.63° North
-Metis in conjunction with Moon           2021 May 22 15    0.65° North
-Psyche in conjunction with Flora         2021 May 22 21    1.97° South
-Flora in conjunction with Psyche         2021 May 22 21    1.97° North
-Spica in conjunction with Moon           2021 May 23 14    6.52° South
-Davida in conjunction with Moon          2021 May 23 20   17.68° North
-Interamnia at opposition                 2021 May 24 06
-Pollux in conjunction with Europa        2021 May 25 14    6.56° North
-Interamnia in conjunction with Moon      2021 May 26 01   16.64° South
-Moon at perigee                          2021 May 26 02    357310.962 km
-Full Moon                                2021 May 26 11    357460.951 km
-Antares in conjunction with Moon         2021 May 26 17    4.76° South
-Juno in conjunction with Moon            2021 May 27 11   19.33° North
-Venus in conjunction with Mercury        2021 May 29 06    0.42° North
-Mercury in conjunction with Venus        2021 May 29 06    0.42° South
-Pluto in conjunction with Moon           2021 May 29 21    2.34° North
-Cybele in conjunction with Moon          2021 May 29 22    7.69° North
-Hebe in conjunction with Moon            2021 May 30 01   17.37° North
-Saturn in conjunction with Moon          2021 May 31 01    4.18° North
-Jupiter in conjunction with Moon         2021 Jun  1 09    4.63° North
-Last Quarter                             2021 Jun  2 07    390480.536 km
-Pollux in conjunction with Mars          2021 Jun  2 14    5.42° North
-Pallas in conjunction with Moon          2021 Jun  2 16   18.50° North
-Neptune in conjunction with Moon         2021 Jun  3 01    4.46° North
-Ceres in conjunction with Uranus         2021 Jun  5 02    6.43° South
-Uranus in conjunction with Ceres         2021 Jun  5 02    6.43° North
-Cybele in conjunction with Pluto         2021 Jun  6 04    5.40° North
-Pluto in conjunction with Cybele         2021 Jun  6 04    5.40° South
-Juno at opposition                       2021 Jun  6 22
-Iris in conjunction with Moon            2021 Jun  7 02    6.32° North
-Uranus in conjunction with Moon          2021 Jun  7 06    2.25° North
-Ceres in conjunction with Moon           2021 Jun  7 08    4.23° South
-Moon at apogee                           2021 Jun  8 02    406227.881 km
-Aldebaran in conjunction with Moon       2021 Jun  9 17    5.53° South
-New Moon                                 2021 Jun 10 11    404245.794 km
-Mercury in conjunction with Moon         2021 Jun 10 13    3.96° South
-Iris in conjunction with Uranus          2021 Jun 10 19    3.82° North
-Uranus in conjunction with Iris          2021 Jun 10 19    3.82° South
-Mercury in inferior conjunction          2021 Jun 11 01    3.14° South
-Venus in conjunction with Moon           2021 Jun 12 07    1.47° South
-Psyche in conjunction with Moon          2021 Jun 12 17    4.50° South
-Flora in conjunction with Moon           2021 Jun 12 23    2.47° South
-Pollux in conjunction with Moon          2021 Jun 13 07    3.11° North
-Mars in conjunction with Moon            2021 Jun 13 20    2.80° South
-Europa in conjunction with Moon          2021 Jun 13 21    3.50° South
-Eunomia in conjunction with Moon         2021 Jun 14 19   11.57° South
-Hygiea in conjunction with Moon          2021 Jun 15 00    7.66° South
-Europa in conjunction with Mars          2021 Jun 15 17    0.62° South
-Mars in conjunction with Europa          2021 Jun 15 17    0.62° North
-Regulus in conjunction with Moon         2021 Jun 16 00    5.01° South
-Vesta in conjunction with Moon           2021 Jun 17 13    2.40° North
-Iris in conjunction with Ceres           2021 Jun 17 13   10.05° North
-Ceres in conjunction with Iris           2021 Jun 17 13   10.05° South
-First Quarter                            2021 Jun 18 04    377060.898 km
-Psyche in conjunction with Venus         2021 Jun 18 11    2.73° South
-Venus in conjunction with Psyche         2021 Jun 18 11    2.73° North
-Metis in conjunction with Moon           2021 Jun 19 02    0.71° South
-Spica in conjunction with Moon           2021 Jun 19 22    6.50° South
-Davida in conjunction with Moon          2021 Jun 20 03   14.92° North
-Pollux in conjunction with Flora         2021 Jun 20 18    5.70° North
-Solstice                                 2021 Jun 21 04
-Interamnia in conjunction with Moon      2021 Jun 22 03   15.13° South
-Pollux in conjunction with Venus         2021 Jun 22 15    5.26° North
-Antares in conjunction with Moon         2021 Jun 23 04    4.75° South
-Moon at perigee                          2021 Jun 23 10    359956.064 km
-Juno in conjunction with Moon            2021 Jun 23 13   18.88° North
-Flora in conjunction with Venus          2021 Jun 24 00    0.40° South
-Venus in conjunction with Flora          2021 Jun 24 00    0.40° North
-Full Moon                                2021 Jun 24 19    361560.842 km
-Cybele in conjunction with Moon          2021 Jun 26 04    7.54° North
-Pluto in conjunction with Moon           2021 Jun 26 07    2.22° North
-Hebe in conjunction with Moon            2021 Jun 26 09   16.70° North
-Saturn in conjunction with Moon          2021 Jun 27 09    4.03° North
-Jupiter in conjunction with Moon         2021 Jun 28 19    4.45° North
-Pallas in conjunction with Moon          2021 Jun 30 07   17.40° North
-Neptune in conjunction with Moon         2021 Jun 30 09    4.36° North
-Pollux in conjunction with Psyche        2021 Jul  1 19    7.99° North
-Last Quarter                             2021 Jul  1 21    397469.380 km
-Hebe in conjunction with Pluto           2021 Jul  3 10   13.99° North
-Pluto in conjunction with Hebe           2021 Jul  3 10   13.99° South
-Uranus in conjunction with Moon          2021 Jul  4 15    2.08° North
-Mercury at greatest elongation           2021 Jul  4 20    21.6° West
-Ceres in conjunction with Moon           2021 Jul  5 11    5.01° South
-Moon at apogee                           2021 Jul  5 15    405341.161 km
-Iris in conjunction with Moon            2021 Jul  5 22    4.12° North
-Europa in conjunction with Venus         2021 Jul  5 22    0.56° South
-Venus in conjunction with Europa         2021 Jul  5 22    0.56° North
-Earth at aphelion                        2021 Jul  5 22    1.016729224 AU
-Aldebaran in conjunction with Moon       2021 Jul  6 23    5.56° South
-Mercury in conjunction with Moon         2021 Jul  8 05    3.75° South
-New Moon                                 2021 Jul 10 01    397520.337 km
-Pollux in conjunction with Moon          2021 Jul 10 13    3.15° North
-Psyche in conjunction with Moon          2021 Jul 10 19    5.00° South
-Flora in conjunction with Moon           2021 Jul 11 09    2.79° South
-Europa in conjunction with Moon          2021 Jul 11 23    3.47° South
-Venus in conjunction with Moon           2021 Jul 12 09    3.26° South
-Mars in conjunction with Moon            2021 Jul 12 10    3.78° South
-Eunomia in conjunction with Moon         2021 Jul 12 18   12.22° South
-Hygiea in conjunction with Moon          2021 Jul 12 22    7.95° South
-Regulus in conjunction with Moon         2021 Jul 13 06    4.90° South
-Mars in conjunction with Venus           2021 Jul 13 07    0.49° South
-Venus in conjunction with Mars           2021 Jul 13 07    0.49° North
-Cybele at opposition                     2021 Jul 14 06
-Vesta in conjunction with Moon           2021 Jul 15 13    1.68° North
-Metis in conjunction with Moon           2021 Jul 16 18    1.41° South
-Spica in conjunction with Moon           2021 Jul 17 05    6.34° South
-First Quarter                            2021 Jul 17 10    372334.538 km
-Hebe at opposition                       2021 Jul 17 11
-Davida in conjunction with Moon          2021 Jul 17 13   12.64° North
-Pluto at opposition                      2021 Jul 17 23
-Eunomia in conjunction with Venus        2021 Jul 18 01    8.79° South
-Venus in conjunction with Eunomia        2021 Jul 18 01    8.79° North
-Interamnia in conjunction with Moon      2021 Jul 19 09   12.40° South
-Antares in conjunction with Moon         2021 Jul 20 13    4.67° South
-Hygiea in conjunction with Venus         2021 Jul 20 15    4.37° South
-Venus in conjunction with Hygiea         2021 Jul 20 15    4.37° North
-Juno in conjunction with Moon            2021 Jul 20 16   17.15° North
-Moon at perigee                          2021 Jul 21 10    364520.495 km
-Regulus in conjunction with Venus        2021 Jul 21 19    1.17° South
-Cybele in conjunction with Moon          2021 Jul 23 07    6.89° North
-Hebe in conjunction with Moon            2021 Jul 23 10   13.78° North
-Pluto in conjunction with Moon           2021 Jul 23 16    2.10° North
-Full Moon                                2021 Jul 24 03    369211.389 km
-Regulus in conjunction with Hygiea       2021 Jul 24 12    3.19° North
-Saturn in conjunction with Moon          2021 Jul 24 17    3.82° North
-Pollux in conjunction with Mercury       2021 Jul 25 11    5.74° North
-Jupiter in conjunction with Moon         2021 Jul 26 01    4.17° North
-Aldebaran in conjunction with Iris       2021 Jul 26 13    8.09° South
-Pallas in conjunction with Moon          2021 Jul 27 17   15.67° North
-Neptune in conjunction with Moon         2021 Jul 27 18    4.18° North
-Psyche in conjunction with Sun           2021 Jul 27 18    0.99° South
-Eunomia in conjunction with Mars         2021 Jul 28 14    8.40° South
-Mars in conjunction with Eunomia         2021 Jul 28 14    8.40° North
-Regulus in conjunction with Mars         2021 Jul 29 16    0.68° South
-Regulus in conjunction with Eunomia      2021 Jul 30 11    7.74° North
-Psyche in conjunction with Mercury       2021 Jul 30 14    2.63° South
-Mercury in conjunction with Psyche       2021 Jul 30 14    2.63° North
-Last Quarter                             2021 Jul 31 13    402464.703 km
-Uranus in conjunction with Moon          2021 Aug  1 00    1.82° North
-Mercury in superior conjunction          2021 Aug  1 14    1.69° North
-Saturn at opposition                     2021 Aug  2 06
-Moon at apogee                           2021 Aug  2 08    404409.687 km
-Ceres in conjunction with Moon           2021 Aug  2 12    5.88° South
-Aldebaran in conjunction with Moon       2021 Aug  3 07    5.70° South
-Iris in conjunction with Moon            2021 Aug  3 17    1.78° North
-Flora in conjunction with Mercury        2021 Aug  5 16    0.19° North
-Mercury in conjunction with Flora        2021 Aug  5 16    0.19° South
-Hygiea in conjunction with Mars          2021 Aug  5 20    3.87° South
-Mars in conjunction with Hygiea          2021 Aug  5 20    3.87° North
-Spica in conjunction with Metis          2021 Aug  6 19    4.64° South
-Pollux in conjunction with Moon          2021 Aug  6 20    3.13° North
-Psyche in conjunction with Moon          2021 Aug  7 22    5.45° South
-New Moon                                 2021 Aug  8 14    387818.768 km
-Flora in conjunction with Moon           2021 Aug  8 18    2.88° South
-Mercury in conjunction with Moon         2021 Aug  9 03    3.38° South
-Europa in conjunction with Moon          2021 Aug  9 03    3.29° South
-Europa in conjunction with Mercury       2021 Aug  9 04    0.10° North
-Mercury in conjunction with Europa       2021 Aug  9 04    0.10° South
-Regulus in conjunction with Moon         2021 Aug  9 12    4.81° South
-Eunomia in conjunction with Moon         2021 Aug  9 19   12.77° South
-Hygiea in conjunction with Moon          2021 Aug  9 23    8.14° South
-Mars in conjunction with Moon            2021 Aug 10 01    4.30° South
-Venus in conjunction with Moon           2021 Aug 11 07    4.29° South
-Regulus in conjunction with Mercury      2021 Aug 11 18    1.17° South
-Vesta in conjunction with Moon           2021 Aug 12 16    1.47° North
-Spica in conjunction with Moon           2021 Aug 13 10    6.11° South
-Metis in conjunction with Moon           2021 Aug 13 14    1.52° South
-Davida in conjunction with Moon          2021 Aug 14 03   11.11° North
-Eunomia in conjunction with Mercury      2021 Aug 14 22    8.90° South
-Mercury in conjunction with Eunomia      2021 Aug 14 22    8.90° North
-Flora in conjunction with Sun            2021 Aug 15 06    2.12° North
-First Quarter                            2021 Aug 15 15    370026.344 km
-Interamnia in conjunction with Moon      2021 Aug 15 20    9.25° South
-Hygiea in conjunction with Mercury       2021 Aug 16 13    4.03° South
-Mercury in conjunction with Hygiea       2021 Aug 16 13    4.03° North
-Antares in conjunction with Moon         2021 Aug 16 19    4.47° South
-Juno in conjunction with Moon            2021 Aug 16 22   15.23° North
-Moon at perigee                          2021 Aug 17 09    369124.445 km
-Mars in conjunction with Mercury         2021 Aug 19 04    0.08° North
-Mercury in conjunction with Mars         2021 Aug 19 04    0.08° South
-Cybele in conjunction with Moon          2021 Aug 19 09    6.14° North
-Hebe in conjunction with Moon            2021 Aug 19 10    9.43° North
-Pluto in conjunction with Moon           2021 Aug 19 23    2.10° North
-Jupiter at opposition                    2021 Aug 20 00
-Regulus in conjunction with Europa       2021 Aug 20 16    1.65° South
-Saturn in conjunction with Moon          2021 Aug 20 22    3.70° North
-Jupiter in conjunction with Moon         2021 Aug 22 05    3.96° North
-Full Moon                                2021 Aug 22 12    379232.140 km
-Europa in conjunction with Sun           2021 Aug 23 18    2.07° North
-Pallas in conjunction with Moon          2021 Aug 23 21   12.97° North
-Neptune in conjunction with Moon         2021 Aug 24 02    4.03° North
-Uranus in conjunction with Moon          2021 Aug 28 09    1.53° North
-Regulus in conjunction with Flora        2021 Aug 29 00    2.04° South
-Moon at apogee                           2021 Aug 30 02    404099.867 km
-Last Quarter                             2021 Aug 30 07    404073.486 km
-Ceres in conjunction with Moon           2021 Aug 30 10    6.68° South
-Aldebaran in conjunction with Moon       2021 Aug 30 15    5.95° South
-Iris in conjunction with Moon            2021 Sep  1 08    0.51° South
-Pollux in conjunction with Moon          2021 Sep  3 05    2.99° North
-Spica in conjunction with Vesta          2021 Sep  3 10    7.57° South
-Psyche in conjunction with Moon          2021 Sep  5 01    5.81° South
-Spica in conjunction with Venus          2021 Sep  5 06    1.74° South
-Regulus in conjunction with Moon         2021 Sep  5 20    4.82° South
-Flora in conjunction with Moon           2021 Sep  6 03    2.67° South
-Europa in conjunction with Moon          2021 Sep  6 09    2.88° South
-Vesta in conjunction with Venus          2021 Sep  6 13    5.83° North
-Venus in conjunction with Vesta          2021 Sep  6 13    5.83° South
-Eunomia in conjunction with Moon         2021 Sep  6 21   13.26° South
-New Moon                                 2021 Sep  7 01    377018.912 km
-Hygiea in conjunction with Moon          2021 Sep  7 02    8.20° South
-Mars in conjunction with Moon            2021 Sep  7 16    4.24° South
-Mercury in conjunction with Moon         2021 Sep  8 20    6.52° South
-Spica in conjunction with Moon           2021 Sep  9 17    5.91° South
-Vesta in conjunction with Moon           2021 Sep  9 22    1.70° North
-Venus in conjunction with Moon           2021 Sep 10 02    4.08° South
-Metis in conjunction with Moon           2021 Sep 10 14    1.19° South
-Davida in conjunction with Moon          2021 Sep 10 20   10.24° North
-Pallas at opposition                     2021 Sep 11 02
-Moon at perigee                          2021 Sep 11 10    368461.354 km
-Aldebaran in conjunction with Ceres      2021 Sep 12 00    0.89° North
-Eunomia in conjunction with Sun          2021 Sep 12 04    7.34° South
-Interamnia in conjunction with Moon      2021 Sep 12 11    6.22° South
-Antares in conjunction with Moon         2021 Sep 13 01    4.21° South
-Hygiea in conjunction with Sun           2021 Sep 13 05    2.64° South
-Juno in conjunction with Moon            2021 Sep 13 09   13.77° North
-First Quarter                            2021 Sep 13 21    370428.263 km
-Mercury at greatest elongation           2021 Sep 14 04    26.8° East
-Neptune at opposition                    2021 Sep 14 09
-Cybele in conjunction with Moon          2021 Sep 15 15    5.68° North
-Hebe in conjunction with Moon            2021 Sep 15 17    5.62° North
-Pluto in conjunction with Moon           2021 Sep 16 05    2.23° North
-Saturn in conjunction with Moon          2021 Sep 17 03    3.76° North
-Jupiter in conjunction with Moon         2021 Sep 18 07    3.96° North
-Metis in conjunction with Venus          2021 Sep 18 14    2.77° North
-Venus in conjunction with Metis          2021 Sep 18 14    2.77° South
-Pallas in conjunction with Moon          2021 Sep 19 19    9.27° North
-Neptune in conjunction with Moon         2021 Sep 20 09    4.00° North
-Full Moon                                2021 Sep 21 00    389988.036 km
-Davida in conjunction with Venus         2021 Sep 21 21   13.72° North
-Venus in conjunction with Davida         2021 Sep 21 21   13.72° South
-Equinox                                  2021 Sep 22 19
-Spica in conjunction with Mercury        2021 Sep 23 12    1.67° North
-Uranus in conjunction with Moon          2021 Sep 24 16    1.35° North
-Moon at apogee                           2021 Sep 26 22    404640.374 km
-Aldebaran in conjunction with Moon       2021 Sep 26 23    6.20° South
-Ceres in conjunction with Moon           2021 Sep 27 02    7.16° South
-Last Quarter                             2021 Sep 29 02    401694.794 km
-Iris in conjunction with Moon            2021 Sep 29 19    2.72° South
-Pollux in conjunction with Moon          2021 Sep 30 13    2.77° North
-Spica in conjunction with Mercury        2021 Sep 30 15    1.74° North
-Psyche in conjunction with Moon          2021 Oct  3 04    6.04° South
-Regulus in conjunction with Moon         2021 Oct  3 06    4.95° South
-Flora in conjunction with Moon           2021 Oct  4 13    2.10° South
-Europa in conjunction with Moon          2021 Oct  4 15    2.20° South
-Eunomia in conjunction with Moon         2021 Oct  5 01   13.71° South
-Hygiea in conjunction with Moon          2021 Oct  5 06    8.11° South
-Regulus in conjunction with Psyche       2021 Oct  6 02    1.09° North
-Mars in conjunction with Moon            2021 Oct  6 10    3.55° South
-New Moon                                 2021 Oct  6 11    367080.665 km
-Mercury in conjunction with Moon         2021 Oct  6 18    6.91° South
-Spica in conjunction with Moon           2021 Oct  7 01    5.82° South
-Mars in conjunction with Sun             2021 Oct  8 04    0.65° North
-Vesta in conjunction with Moon           2021 Oct  8 06    2.25° North
-Metis in conjunction with Moon           2021 Oct  8 16    0.61° South
-Davida in conjunction with Moon          2021 Oct  8 17    9.85° North
-Moon at perigee                          2021 Oct  8 17    363385.698 km
-Antares in conjunction with Interamnia   2021 Oct  9 00    0.39° South
-Mars in conjunction with Mercury         2021 Oct  9 08    2.86° North
-Mercury in conjunction with Mars         2021 Oct  9 08    2.86° South
-Mercury in inferior conjunction          2021 Oct  9 16    1.90° South
-Venus in conjunction with Moon           2021 Oct  9 19    2.86° South
-Antares in conjunction with Moon         2021 Oct 10 07    4.00° South
-Interamnia in conjunction with Moon      2021 Oct 10 08    3.49° South
-Juno in conjunction with Moon            2021 Oct 11 01   12.87° North
-Metis in conjunction with Davida         2021 Oct 12 12   10.34° South
-Davida in conjunction with Metis         2021 Oct 12 12   10.34° North
-Cybele in conjunction with Moon          2021 Oct 13 03    5.56° North
-First Quarter                            2021 Oct 13 03    373570.663 km
-Hebe in conjunction with Moon            2021 Oct 13 09    3.07° North
-Pluto in conjunction with Moon           2021 Oct 13 10    2.42° North
-Saturn in conjunction with Moon          2021 Oct 14 07    3.93° North
-Jupiter in conjunction with Moon         2021 Oct 15 10    4.14° North
-Hebe in conjunction with Pluto           2021 Oct 15 23    0.44° North
-Pluto in conjunction with Hebe           2021 Oct 15 23    0.44° South
-Antares in conjunction with Venus        2021 Oct 16 14    1.47° South
-Pallas in conjunction with Moon          2021 Oct 16 18    5.40° North
-Neptune in conjunction with Moon         2021 Oct 17 14    4.11° North
-Interamnia in conjunction with Venus     2021 Oct 19 19    0.32° South
-Venus in conjunction with Interamnia     2021 Oct 19 19    0.32° North
-Flora in conjunction with Europa         2021 Oct 20 06    0.07° North
-Europa in conjunction with Flora         2021 Oct 20 06    0.07° South
-Spica in conjunction with Mars           2021 Oct 20 06    2.81° South
-Full Moon                                2021 Oct 20 15    399419.511 km
-Uranus in conjunction with Moon          2021 Oct 21 22    1.33° North
-Aldebaran in conjunction with Moon       2021 Oct 24 06    6.36° South
-Ceres in conjunction with Moon           2021 Oct 24 09    6.88° South
-Moon at apogee                           2021 Oct 24 15    405615.069 km
-Mercury at greatest elongation           2021 Oct 25 05    18.4° West
-Pollux in conjunction with Iris          2021 Oct 25 19    7.30° North
-Pollux in conjunction with Moon          2021 Oct 27 21    2.59° North
-Iris in conjunction with Moon            2021 Oct 27 22    4.87° South
-Last Quarter                             2021 Oct 28 20    395946.842 km
-Venus at greatest elongation             2021 Oct 29 21    47.0° East
-Regulus in conjunction with Moon         2021 Oct 30 15    5.10° South
-Psyche in conjunction with Moon          2021 Oct 31 05    6.07° South
-Spica in conjunction with Mercury        2021 Nov  1 02    4.44° South
-Juno in conjunction with Venus           2021 Nov  1 06   14.05° North
-Venus in conjunction with Juno           2021 Nov  1 06   14.05° South
-Europa in conjunction with Moon          2021 Nov  1 20    1.16° South
-Flora in conjunction with Moon           2021 Nov  1 22    1.10° South
-Eunomia in conjunction with Moon         2021 Nov  2 04   14.14° South
-Cybele in conjunction with Pluto         2021 Nov  2 11    3.08° North
-Pluto in conjunction with Cybele         2021 Nov  2 11    3.08° South
-Hygiea in conjunction with Moon          2021 Nov  2 12    7.83° South
-Aldebaran in conjunction with Ceres      2021 Nov  3 07    0.12° North
-Spica in conjunction with Moon           2021 Nov  3 12    5.84° South
-Mercury in conjunction with Moon         2021 Nov  3 19    1.22° South
-Mars in conjunction with Moon            2021 Nov  4 05    2.30° South
-New Moon                                 2021 Nov  4 21    359850.596 km
-Uranus at opposition                     2021 Nov  5 00
-Vesta in conjunction with Davida         2021 Nov  5 06    6.85° South
-Davida in conjunction with Vesta         2021 Nov  5 06    6.85° North
-Davida in conjunction with Moon          2021 Nov  5 17    9.80° North
-Vesta in conjunction with Moon           2021 Nov  5 17    2.96° North
-Metis in conjunction with Moon           2021 Nov  5 21    0.09° North
-Moon at perigee                          2021 Nov  5 22    358843.553 km
-Antares in conjunction with Moon         2021 Nov  6 16    3.91° South
-Interamnia in conjunction with Moon      2021 Nov  7 08    1.10° South
-Juno in conjunction with Moon            2021 Nov  7 22   12.39° North
-Venus in conjunction with Moon           2021 Nov  8 05    1.10° South
-Pluto in conjunction with Moon           2021 Nov  9 17    2.55° North
-Cybele in conjunction with Moon          2021 Nov  9 20    5.64° North
-Mars in conjunction with Mercury         2021 Nov 10 04    1.06° South
-Mercury in conjunction with Mars         2021 Nov 10 04    1.06° North
-Hebe in conjunction with Moon            2021 Nov 10 09    1.38° North
-Saturn in conjunction with Moon          2021 Nov 10 14    4.11° North
-First Quarter                            2021 Nov 11 13    379165.191 km
-Jupiter in conjunction with Moon         2021 Nov 11 17    4.36° North
-Pallas in conjunction with Moon          2021 Nov 12 23    2.15° North
-Neptune in conjunction with Moon         2021 Nov 13 19    4.24° North
-Uranus in conjunction with Moon          2021 Nov 18 02    1.45° North
-Davida in conjunction with Sun           2021 Nov 18 16    9.90° North
-Hebe in conjunction with Saturn          2021 Nov 19 01    3.19° South
-Saturn in conjunction with Hebe          2021 Nov 19 01    3.19° North
-Full Moon                                2021 Nov 19 09    405299.694 km
-Ceres in conjunction with Moon           2021 Nov 20 06    5.46° South
-Aldebaran in conjunction with Moon       2021 Nov 20 13    6.39° South
-Moon at apogee                           2021 Nov 21 02    406279.281 km
-Pollux in conjunction with Moon          2021 Nov 24 04    2.53° North
-Iris in conjunction with Moon            2021 Nov 24 14    6.97° South
-Davida in conjunction with Mercury       2021 Nov 25 03   10.31° North
-Mercury in conjunction with Davida       2021 Nov 25 03   10.31° South
-Regulus in conjunction with Moon         2021 Nov 26 23    5.16° South
-Ceres at opposition                      2021 Nov 27 04
-Last Quarter                             2021 Nov 27 12    388391.853 km
-Psyche in conjunction with Moon          2021 Nov 28 02    5.83° South
-Vesta in conjunction with Sun            2021 Nov 28 10    3.00° North
-Mercury in superior conjunction          2021 Nov 29 05    0.72° South
-Vesta in conjunction with Mercury        2021 Nov 29 11    3.78° North
-Mercury in conjunction with Vesta        2021 Nov 29 11    3.78° South
-Metis in conjunction with Mercury        2021 Nov 29 18    0.87° North
-Mercury in conjunction with Metis        2021 Nov 29 18    0.87° South
-Europa in conjunction with Moon          2021 Nov 30 00    0.29° North
-Metis in conjunction with Sun            2021 Nov 30 01    0.08° North
-Flora in conjunction with Moon           2021 Nov 30 05    0.33° North
-Eunomia in conjunction with Moon         2021 Nov 30 06   14.60° South
-Antares in conjunction with Mercury      2021 Nov 30 16    3.75° South
-Hygiea in conjunction with Moon          2021 Nov 30 17    7.36° South
-Spica in conjunction with Moon           2021 Nov 30 23    5.87° South
-Vesta in conjunction with Metis          2021 Dec  2 17    2.90° North
-Metis in conjunction with Vesta          2021 Dec  2 17    2.90° South
-Mars in conjunction with Moon            2021 Dec  3 00    0.70° South
-Antares in conjunction with Vesta        2021 Dec  3 02    7.56° South
-Antares in conjunction with Metis        2021 Dec  3 04    4.66° South
-Davida in conjunction with Moon          2021 Dec  3 17   10.02° North
-Antares in conjunction with Moon         2021 Dec  4 03    3.91° South
-Metis in conjunction with Moon           2021 Dec  4 04    0.78° North
-Vesta in conjunction with Moon           2021 Dec  4 04    3.68° North
-New Moon                                 2021 Dec  4 08    356803.846 km
-Moon at perigee                          2021 Dec  4 10    356794.105 km
-Mercury in conjunction with Moon         2021 Dec  4 13    0.02° North
-Interamnia in conjunction with Moon      2021 Dec  5 11    1.02° North
-Juno in conjunction with Moon            2021 Dec  5 22   12.23° North
-Venus in conjunction with Moon           2021 Dec  7 01    1.88° North
-Pluto in conjunction with Moon           2021 Dec  7 03    2.57° North
-Cybele in conjunction with Moon          2021 Dec  7 18    5.74° North
-Saturn in conjunction with Moon          2021 Dec  8 02    4.19° North
-Hebe in conjunction with Moon            2021 Dec  8 15    0.03° North
-Jupiter in conjunction with Moon         2021 Dec  9 06    4.48° North
-Spica in conjunction with Hygiea         2021 Dec 10 08    1.32° North
-Pallas in conjunction with Moon          2021 Dec 10 13    0.48° South
-Neptune in conjunction with Moon         2021 Dec 11 01    4.24° North
-First Quarter                            2021 Dec 11 02    386531.530 km
-Pluto in conjunction with Venus          2021 Dec 11 18    0.08° South
-Venus in conjunction with Pluto          2021 Dec 11 18    0.08° North
-Flora in conjunction with Eunomia        2021 Dec 12 04   15.91° North
-Eunomia in conjunction with Flora        2021 Dec 12 04   15.91° South
-Uranus in conjunction with Moon          2021 Dec 15 06    1.54° North
-Interamnia in conjunction with Mercury   2021 Dec 15 21    1.04° North
-Mercury in conjunction with Interamnia   2021 Dec 15 21    1.04° South
-Ceres in conjunction with Moon           2021 Dec 17 00    3.18° South
-Aldebaran in conjunction with Moon       2021 Dec 17 19    6.38° South
-Moon at apogee                           2021 Dec 18 02    406319.677 km
-Full Moon                                2021 Dec 19 05    405934.567 km
-Pollux in conjunction with Moon          2021 Dec 21 10    2.58° North
-Juno in conjunction with Mercury         2021 Dec 21 14   11.04° North
-Mercury in conjunction with Juno         2021 Dec 21 14   11.04° South
-Solstice                                 2021 Dec 21 16
-Iris in conjunction with Moon            2021 Dec 21 17    8.87° South
-Pluto in conjunction with Venus          2021 Dec 23 14    2.50° South
-Venus in conjunction with Pluto          2021 Dec 23 14    2.50° North
-Regulus in conjunction with Moon         2021 Dec 24 05    5.06° South
-Antares in conjunction with Davida       2021 Dec 24 19   14.25° South
-Psyche in conjunction with Moon          2021 Dec 25 17    5.36° South
-Antares in conjunction with Mars         2021 Dec 26 18    4.55° South
-Cybele in conjunction with Saturn        2021 Dec 26 20    1.57° North
-Saturn in conjunction with Cybele        2021 Dec 26 20    1.57° South
-Last Quarter                             2021 Dec 27 02    380818.523 km
-Europa in conjunction with Moon          2021 Dec 28 00    2.14° North
 Davida in conjunction with Mars          2021 Dec 28 01    9.69° North
 Mars in conjunction with Davida          2021 Dec 28 01    9.69° South
 Eunomia in conjunction with Moon         2021 Dec 28 05   15.25° South
@@ -778,4 +89,706 @@ Pluto in conjunction with Moon           2022 Jan 31 04    2.53° North
 Juno in conjunction with Moon            2022 Jan 31 05   12.57° North
 Vesta in conjunction with Venus          2022 Jan 31 14    5.24° South
 Venus in conjunction with Vesta          2022 Jan 31 14    5.24° North
+New Moon                                 2022 Feb  1 06    365182.588 km
+Saturn in conjunction with Moon          2022 Feb  1 09    4.21° North
+Cybele in conjunction with Moon          2022 Feb  2 00    5.67° North
+Jupiter in conjunction with Moon         2022 Feb  2 21    4.32° North
+Hebe in conjunction with Moon            2022 Feb  3 19    3.13° South
+Neptune in conjunction with Moon         2022 Feb  3 21    3.86° North
+Pallas in conjunction with Moon          2022 Feb  4 13    5.38° South
+Saturn in conjunction with Sun           2022 Feb  4 19    0.85° South
+Hebe in conjunction with Neptune         2022 Feb  5 18    7.10° South
+Neptune in conjunction with Hebe         2022 Feb  5 18    7.10° North
+Uranus in conjunction with Moon          2022 Feb  7 20    1.18° North
+First Quarter                            2022 Feb  8 14    400920.807 km
+Ceres in conjunction with Moon           2022 Feb  9 11    0.03° South
+Aldebaran in conjunction with Moon       2022 Feb 10 09    6.68° South
+Moon at apogee                           2022 Feb 11 03    404896.549 km
+Pluto in conjunction with Mercury        2022 Feb 12 10    2.94° South
+Mercury in conjunction with Pluto        2022 Feb 12 10    2.94° North
+Mars in conjunction with Venus           2022 Feb 13 01    6.58° South
+Venus in conjunction with Mars           2022 Feb 13 01    6.58° North
+Iris in conjunction with Moon            2022 Feb 13 08   10.26° South
+Pollux in conjunction with Moon          2022 Feb 13 23    2.55° North
+Full Moon                                2022 Feb 16 17    391887.790 km
+Regulus in conjunction with Moon         2022 Feb 16 18    4.84° South
+Mercury at greatest elongation           2022 Feb 16 21    26.3° West
+Psyche in conjunction with Moon          2022 Feb 17 23    4.32° South
+Interamnia in conjunction with Pluto     2022 Feb 18 23    3.70° North
+Pluto in conjunction with Interamnia     2022 Feb 18 23    3.70° South
+Juno in conjunction with Mercury         2022 Feb 19 22    8.27° North
+Mercury in conjunction with Juno         2022 Feb 19 22    8.27° South
+Cybele in conjunction with Sun           2022 Feb 20 12    0.19° North
+Spica in conjunction with Moon           2022 Feb 20 20    5.25° South
+Europa in conjunction with Moon          2022 Feb 21 01    6.36° North
+Eunomia in conjunction with Moon         2022 Feb 21 05   18.07° South
+Flora in conjunction with Moon           2022 Feb 21 14    6.30° North
+Hygiea in conjunction with Moon          2022 Feb 22 06    6.12° South
+Last Quarter                             2022 Feb 23 23    371026.934 km
+Antares in conjunction with Moon         2022 Feb 24 06    3.44° South
+Vesta in conjunction with Mars           2022 Feb 24 10    1.70° North
+Mars in conjunction with Vesta           2022 Feb 24 10    1.70° South
+Davida in conjunction with Moon          2022 Feb 25 07   12.12° North
+Metis in conjunction with Moon           2022 Feb 26 16    2.31° North
+Moon at perigee                          2022 Feb 26 22    367788.952 km
+Venus in conjunction with Moon           2022 Feb 27 06    8.74° North
+Vesta in conjunction with Moon           2022 Feb 27 08    5.14° North
+Mars in conjunction with Moon            2022 Feb 27 09    3.52° North
+Pluto in conjunction with Moon           2022 Feb 27 14    2.64° North
+Interamnia in conjunction with Moon      2022 Feb 27 19    6.95° North
+Juno in conjunction with Moon            2022 Feb 28 06   12.93° North
+Mercury in conjunction with Moon         2022 Feb 28 20    3.73° North
+Saturn in conjunction with Moon          2022 Mar  1 00    4.30° North
+Vesta in conjunction with Venus          2022 Mar  1 21    3.43° South
+Venus in conjunction with Vesta          2022 Mar  1 21    3.43° North
+Cybele in conjunction with Moon          2022 Mar  2 02    5.47° North
+Saturn in conjunction with Mercury       2022 Mar  2 13    0.69° North
+Mercury in conjunction with Saturn       2022 Mar  2 13    0.69° South
+New Moon                                 2022 Mar  2 18    375031.477 km
+Jupiter in conjunction with Moon         2022 Mar  2 19    4.14° North
+Neptune in conjunction with Moon         2022 Mar  3 09    3.71° North
+Psyche at opposition                     2022 Mar  3 10
+Pluto in conjunction with Mars           2022 Mar  3 15    0.98° South
+Mars in conjunction with Pluto           2022 Mar  3 15    0.98° North
+Hebe in conjunction with Moon            2022 Mar  4 13    5.11° South
+Pallas in conjunction with Moon          2022 Mar  4 19    8.08° South
+Pluto in conjunction with Venus          2022 Mar  5 03    5.69° South
+Venus in conjunction with Pluto          2022 Mar  5 03    5.69° North
+Jupiter in conjunction with Sun          2022 Mar  5 14    0.98° South
+Uranus in conjunction with Moon          2022 Mar  7 06    0.84° North
+Vesta in conjunction with Pluto          2022 Mar  7 13    2.46° North
+Pluto in conjunction with Vesta          2022 Mar  7 13    2.46° South
+Ceres in conjunction with Moon           2022 Mar  9 07    0.29° North
+Aldebaran in conjunction with Moon       2022 Mar  9 17    6.96° South
+First Quarter                            2022 Mar 10 11    404095.540 km
+Moon at apogee                           2022 Mar 10 23    404267.872 km
+Mars in conjunction with Venus           2022 Mar 12 14    3.99° South
+Venus in conjunction with Mars           2022 Mar 12 14    3.99° North
+Iris in conjunction with Moon            2022 Mar 12 18   10.18° South
+Pollux in conjunction with Moon          2022 Mar 13 08    2.36° North
+Interamnia in conjunction with Venus     2022 Mar 13 10    0.19° North
+Venus in conjunction with Interamnia     2022 Mar 13 10    0.19° South
+Neptune in conjunction with Sun          2022 Mar 13 12    1.12° South
+Interamnia in conjunction with Mars      2022 Mar 13 19    4.13° North
+Mars in conjunction with Interamnia      2022 Mar 13 19    4.13° South
+Cybele in conjunction with Mercury       2022 Mar 15 19    2.43° North
+Mercury in conjunction with Cybele       2022 Mar 15 19    2.43° South
+Regulus in conjunction with Moon         2022 Mar 16 02    4.91° South
+Psyche in conjunction with Moon          2022 Mar 16 21    4.11° South
+Full Moon                                2022 Mar 18 07    380830.618 km
+Spica in conjunction with Moon           2022 Mar 20 02    5.08° South
+Europa in conjunction with Moon          2022 Mar 20 04    7.82° North
+Pallas in conjunction with Hebe          2022 Mar 20 04    3.42° South
+Hebe in conjunction with Pallas          2022 Mar 20 04    3.42° North
+Eunomia in conjunction with Moon         2022 Mar 20 06   20.26° South
+Venus at greatest elongation             2022 Mar 20 09    46.6° West
+Equinox                                  2022 Mar 20 16
+Flora in conjunction with Moon           2022 Mar 20 17    7.75° North
+Jupiter in conjunction with Mercury      2022 Mar 20 22    1.29° North
+Mercury in conjunction with Jupiter      2022 Mar 20 22    1.29° South
+Hygiea in conjunction with Moon          2022 Mar 21 13    6.44° South
+Antares in conjunction with Moon         2022 Mar 23 11    3.20° South
+Neptune in conjunction with Mercury      2022 Mar 23 12    1.03° North
+Mercury in conjunction with Neptune      2022 Mar 23 12    1.03° South
+Moon at perigee                          2022 Mar 24 00    369760.001 km
+Davida in conjunction with Moon          2022 Mar 24 19   12.97° North
+Spica in conjunction with Europa         2022 Mar 24 23   13.02° South
+Last Quarter                             2022 Mar 25 06    370166.069 km
+Juno in conjunction with Venus           2022 Mar 25 13    6.33° North
+Venus in conjunction with Juno           2022 Mar 25 13    6.33° South
+Aldebaran in conjunction with Ceres      2022 Mar 25 15    7.36° South
+Metis in conjunction with Moon           2022 Mar 26 13    2.34° North
+Pluto in conjunction with Moon           2022 Mar 26 21    2.80° North
+Vesta in conjunction with Moon           2022 Mar 27 12    5.01° North
+Interamnia in conjunction with Moon      2022 Mar 27 16    9.16° North
+Mars in conjunction with Moon            2022 Mar 28 03    4.10° North
+Juno in conjunction with Moon            2022 Mar 28 06   13.27° North
+Venus in conjunction with Moon           2022 Mar 28 10    6.69° North
+Saturn in conjunction with Moon          2022 Mar 28 12    4.43° North
+Saturn in conjunction with Venus         2022 Mar 29 13    2.16° South
+Venus in conjunction with Saturn         2022 Mar 29 13    2.16° North
+Spica in conjunction with Eunomia        2022 Mar 30 01   15.92° North
+Cybele in conjunction with Moon          2022 Mar 30 04    5.12° North
+Jupiter in conjunction with Moon         2022 Mar 30 15    3.93° North
+Neptune in conjunction with Moon         2022 Mar 30 19    3.69° North
+Mercury in conjunction with Moon         2022 Apr  1 00    2.55° North
+New Moon                                 2022 Apr  1 06    386233.744 km
+Pallas in conjunction with Moon          2022 Apr  2 02   11.06° South
+Hebe in conjunction with Moon            2022 Apr  2 07    7.18° South
+Juno in conjunction with Mars            2022 Apr  2 09    9.18° North
+Mars in conjunction with Juno            2022 Apr  2 09    9.18° South
+Mercury in superior conjunction          2022 Apr  2 23    1.04° South
+Uranus in conjunction with Moon          2022 Apr  3 17    0.57° North
+Saturn in conjunction with Mars          2022 Apr  4 22    0.32° North
+Mars in conjunction with Saturn          2022 Apr  4 22    0.32° South
+Aldebaran in conjunction with Moon       2022 Apr  6 01    7.16° South
+Ceres in conjunction with Moon           2022 Apr  6 09    0.20° North
+Europa at opposition                     2022 Apr  6 14
+Moon at apogee                           2022 Apr  7 19    404437.938 km
+Juno in conjunction with Saturn          2022 Apr  8 15    8.89° North
+Saturn in conjunction with Juno          2022 Apr  8 15    8.89° South
+First Quarter                            2022 Apr  9 07    403029.927 km
+Pallas in conjunction with Mercury       2022 Apr  9 08   14.45° South
+Mercury in conjunction with Pallas       2022 Apr  9 08   14.45° North
+Iris in conjunction with Moon            2022 Apr  9 13   10.18° South
+Pollux in conjunction with Moon          2022 Apr  9 16    2.16° North
+Hebe in conjunction with Mercury         2022 Apr 11 21   10.44° South
+Mercury in conjunction with Hebe         2022 Apr 11 21   10.44° North
+Pallas in conjunction with Sun           2022 Apr 12 03   13.65° South
+Flora at opposition                      2022 Apr 12 11
+Regulus in conjunction with Moon         2022 Apr 12 11    5.05° South
+Neptune in conjunction with Jupiter      2022 Apr 12 20    0.11° South
+Jupiter in conjunction with Neptune      2022 Apr 12 20    0.11° North
+Psyche in conjunction with Moon          2022 Apr 12 23    4.07° South
+Metis in conjunction with Pluto          2022 Apr 13 05    0.75° South
+Pluto in conjunction with Metis          2022 Apr 13 05    0.75° North
+Vesta in conjunction with Interamnia     2022 Apr 13 06    5.92° South
+Interamnia in conjunction with Vesta     2022 Apr 13 06    5.92° North
+Pollux in conjunction with Iris          2022 Apr 14 12   12.33° North
+Europa in conjunction with Moon          2022 Apr 16 04    8.00° North
+Eunomia in conjunction with Moon         2022 Apr 16 04   21.80° South
+Eunomia at opposition                    2022 Apr 16 10
+Spica in conjunction with Moon           2022 Apr 16 11    5.06° South
+Flora in conjunction with Moon           2022 Apr 16 15    7.75° North
+Full Moon                                2022 Apr 16 19    370264.512 km
+Hygiea in conjunction with Moon          2022 Apr 17 15    7.07° South
+Europa in conjunction with Eunomia       2022 Apr 18 06   29.81° North
+Eunomia in conjunction with Europa       2022 Apr 18 06   29.81° South
+Uranus in conjunction with Mercury       2022 Apr 18 14    2.14° South
+Mercury in conjunction with Uranus       2022 Apr 18 14    2.14° North
+Moon at perigee                          2022 Apr 19 15    365143.266 km
+Antares in conjunction with Moon         2022 Apr 19 18    3.07° South
+Davida in conjunction with Moon          2022 Apr 21 02   13.51° North
+Pluto in conjunction with Moon           2022 Apr 23 03    2.90° North
+Metis in conjunction with Moon           2022 Apr 23 07    1.91° North
+Last Quarter                             2022 Apr 23 12    372072.679 km
+Spica in conjunction with Flora          2022 Apr 23 22   12.54° South
+Interamnia in conjunction with Moon      2022 Apr 24 11   11.63° North
+Vesta in conjunction with Moon           2022 Apr 24 14    4.31° North
+Saturn in conjunction with Moon          2022 Apr 24 21    4.51° North
+Juno in conjunction with Moon            2022 Apr 25 05   13.41° North
+Mars in conjunction with Moon            2022 Apr 25 22    3.90° North
+Venus in conjunction with Moon           2022 Apr 27 02    3.78° North
+Cybele in conjunction with Moon          2022 Apr 27 03    4.58° North
+Neptune in conjunction with Moon         2022 Apr 27 03    3.71° North
+Jupiter in conjunction with Moon         2022 Apr 27 08    3.64° North
+Cybele in conjunction with Venus         2022 Apr 27 13    0.84° North
+Venus in conjunction with Cybele         2022 Apr 27 13    0.84° South
+Neptune in conjunction with Venus        2022 Apr 27 19    0.01° North
+Venus in conjunction with Neptune        2022 Apr 27 19    0.01° South
+Hebe in conjunction with Sun             2022 Apr 28 00    9.55° South
+Cybele in conjunction with Neptune       2022 Apr 28 13    0.84° North
+Neptune in conjunction with Cybele       2022 Apr 28 13    0.84° South
+Hygiea at opposition                     2022 Apr 29 03
+Mercury at greatest elongation           2022 Apr 29 08    20.6° East
+Pallas in conjunction with Moon          2022 Apr 30 10   14.37° South
+Jupiter in conjunction with Venus        2022 Apr 30 19    0.25° North
+Venus in conjunction with Jupiter        2022 Apr 30 19    0.25° South
+New Moon                                 2022 Apr 30 20    396520.139 km
+Hebe in conjunction with Moon            2022 May  1 00    9.10° South
+Uranus in conjunction with Moon          2022 May  1 04    0.40° North
+Mercury in conjunction with Moon         2022 May  2 14    1.85° North
+Aldebaran in conjunction with Moon       2022 May  3 09    7.23° South
+Ceres in conjunction with Moon           2022 May  4 14    0.01° North
+Hebe in conjunction with Uranus          2022 May  4 23    9.72° South
+Uranus in conjunction with Hebe          2022 May  4 23    9.72° North
+Uranus in conjunction with Sun           2022 May  5 07    0.36° South
+Moon at apogee                           2022 May  5 13    405285.349 km
+Vesta in conjunction with Saturn         2022 May  6 16    0.72° South
+Saturn in conjunction with Vesta         2022 May  6 16    0.72° North
+Pollux in conjunction with Moon          2022 May  7 00    2.08° North
+Iris in conjunction with Moon            2022 May  7 14   10.23° South
+First Quarter                            2022 May  9 00    398275.651 km
+Regulus in conjunction with Moon         2022 May  9 20    5.13° South
+Psyche in conjunction with Moon          2022 May 10 08    4.04° South
+Eunomia in conjunction with Moon         2022 May 13 04   21.45° South
+Europa in conjunction with Moon          2022 May 13 07    7.11° North
+Flora in conjunction with Moon           2022 May 13 14    6.36° North
+Spica in conjunction with Moon           2022 May 13 21    5.09° South
+Hygiea in conjunction with Moon          2022 May 14 16    7.35° South
+Full Moon                                2022 May 16 04    362126.539 km
+Antares in conjunction with Moon         2022 May 17 03    3.05° South
+Moon at perigee                          2022 May 17 15    360298.232 km
+Neptune in conjunction with Mars         2022 May 17 23    0.57° North
+Mars in conjunction with Neptune         2022 May 17 23    0.57° South
+Davida in conjunction with Moon          2022 May 18 07   13.37° North
+Pluto in conjunction with Moon           2022 May 20 09    2.86° North
+Metis in conjunction with Moon           2022 May 20 20    0.90° North
+Mercury in inferior conjunction          2022 May 21 19    1.24° South
+Interamnia in conjunction with Moon      2022 May 22 03   14.52° North
+Saturn in conjunction with Moon          2022 May 22 05    4.46° North
+Vesta in conjunction with Moon           2022 May 22 13    2.89° North
+Last Quarter                             2022 May 22 19    376453.794 km
+Juno in conjunction with Moon            2022 May 23 02   13.23° North
+Pallas in conjunction with Uranus        2022 May 24 06   17.74° South
+Uranus in conjunction with Pallas        2022 May 24 06   17.74° North
+Neptune in conjunction with Moon         2022 May 24 10    3.67° North
+Mars in conjunction with Moon            2022 May 24 19    2.78° North
+Cybele in conjunction with Moon          2022 May 24 23    3.83° North
+Jupiter in conjunction with Moon         2022 May 25 00    3.25° North
+Venus in conjunction with Moon           2022 May 27 03    0.20° North
+Hebe in conjunction with Mercury         2022 May 28 07    7.14° South
+Mercury in conjunction with Hebe         2022 May 28 07    7.14° North
+Uranus in conjunction with Moon          2022 May 28 14    0.25° North
+Pallas in conjunction with Moon          2022 May 28 17   18.07° South
+Cybele in conjunction with Mars          2022 May 28 23    1.16° North
+Mars in conjunction with Cybele          2022 May 28 23    1.16° South
+Jupiter in conjunction with Mars         2022 May 29 00    0.63° North
+Mars in conjunction with Jupiter         2022 May 29 00    0.63° South
+Cybele in conjunction with Jupiter       2022 May 29 05    0.53° North
+Jupiter in conjunction with Cybele       2022 May 29 05    0.53° South
+Mercury in conjunction with Moon         2022 May 29 13    3.72° South
+Hebe in conjunction with Moon            2022 May 29 15   10.72° South
+New Moon                                 2022 May 30 12    403791.204 km
+Aldebaran in conjunction with Moon       2022 May 30 16    7.22° South
+Interamnia in conjunction with Saturn    2022 May 30 23   11.16° North
+Saturn in conjunction with Interamnia    2022 May 30 23   11.16° South
+Ceres in conjunction with Moon           2022 Jun  1 21    0.12° South
+Moon at apogee                           2022 Jun  2 01    406191.987 km
+Pollux in conjunction with Moon          2022 Jun  3 06    2.11° North
+Iris in conjunction with Moon            2022 Jun  4 17   10.22° South
+Regulus in conjunction with Moon         2022 Jun  6 03    5.07° South
+Psyche in conjunction with Moon          2022 Jun  6 23    3.87° South
+First Quarter                            2022 Jun  7 15    391288.432 km
+Eunomia in conjunction with Moon         2022 Jun  9 11   19.43° South
+Europa in conjunction with Moon          2022 Jun  9 15    6.02° North
+Flora in conjunction with Moon           2022 Jun  9 21    4.76° North
+Spica in conjunction with Moon           2022 Jun 10 07    5.04° South
+Hygiea in conjunction with Moon          2022 Jun 10 21    6.77° South
+Uranus in conjunction with Venus         2022 Jun 11 13    1.61° North
+Venus in conjunction with Uranus         2022 Jun 11 13    1.61° South
+Davida at opposition                     2022 Jun 13 02
+Antares in conjunction with Moon         2022 Jun 13 14    3.05° South
+Davida in conjunction with Moon          2022 Jun 14 10   12.29° North
+Full Moon                                2022 Jun 14 12    357656.377 km
+Moon at perigee                          2022 Jun 14 23    357432.471 km
+Mercury at greatest elongation           2022 Jun 16 15    23.2° West
+Pluto in conjunction with Moon           2022 Jun 16 18    2.71° North
+Metis in conjunction with Moon           2022 Jun 17 05    0.59° South
+Saturn in conjunction with Moon          2022 Jun 18 12    4.27° North
+Interamnia in conjunction with Moon      2022 Jun 18 15   18.02° North
+Vesta in conjunction with Moon           2022 Jun 19 08    0.73° North
+Juno in conjunction with Moon            2022 Jun 19 21   12.62° North
+Neptune in conjunction with Moon         2022 Jun 20 17    3.52° North
+Aldebaran in conjunction with Hebe       2022 Jun 21 00    4.55° North
+Last Quarter                             2022 Jun 21 03    382826.040 km
+Pallas in conjunction with Venus         2022 Jun 21 08   19.21° South
+Venus in conjunction with Pallas         2022 Jun 21 08   19.21° North
+Solstice                                 2022 Jun 21 09
+Jupiter in conjunction with Moon         2022 Jun 21 14    2.74° North
+Cybele in conjunction with Moon          2022 Jun 21 17    2.91° North
+Mars in conjunction with Moon            2022 Jun 22 18    0.95° North
+Aldebaran in conjunction with Mercury    2022 Jun 23 14    3.02° South
+Uranus in conjunction with Moon          2022 Jun 24 22    0.05° North
+Hebe in conjunction with Mercury         2022 Jun 25 06    7.87° South
+Mercury in conjunction with Hebe         2022 Jun 25 06    7.87° North
+Pallas in conjunction with Moon          2022 Jun 26 00   22.25° South
+Venus in conjunction with Moon           2022 Jun 26 08    2.69° South
+Aldebaran in conjunction with Moon       2022 Jun 26 22    7.24° South
+Hebe in conjunction with Moon            2022 Jun 27 04   12.04° South
+Mercury in conjunction with Moon         2022 Jun 27 08    3.94° South
+New Moon                                 2022 Jun 29 03    406573.819 km
+Moon at apogee                           2022 Jun 29 06    406580.103 km
+Ceres in conjunction with Moon           2022 Jun 30 04    0.09° South
+Pollux in conjunction with Moon          2022 Jun 30 12    2.19° North
+Aldebaran in conjunction with Venus      2022 Jul  2 00    4.17° South
+Iris in conjunction with Moon            2022 Jul  2 20   10.05° South
+Regulus in conjunction with Moon         2022 Jul  3 09    4.92° South
+Earth at aphelion                        2022 Jul  4 07    1.016715374 AU
+Psyche in conjunction with Moon          2022 Jul  4 17    3.47° South
+Eunomia in conjunction with Moon         2022 Jul  7 00   16.74° South
+First Quarter                            2022 Jul  7 02    383719.795 km
+Europa in conjunction with Moon          2022 Jul  7 05    5.35° North
+Flora in conjunction with Moon           2022 Jul  7 11    3.76° North
+Spica in conjunction with Moon           2022 Jul  7 16    4.86° South
+Hygiea in conjunction with Moon          2022 Jul  8 09    5.49° South
+Pollux in conjunction with Ceres         2022 Jul 10 01    2.23° North
+Hebe in conjunction with Venus           2022 Jul 10 13    9.02° South
+Venus in conjunction with Hebe           2022 Jul 10 13    9.02° North
+Antares in conjunction with Moon         2022 Jul 11 00    2.97° South
+Davida in conjunction with Moon          2022 Jul 11 14   10.54° North
+Moon at perigee                          2022 Jul 13 09    357263.701 km
+Full Moon                                2022 Jul 13 19    357417.822 km
+Pluto in conjunction with Moon           2022 Jul 14 03    2.57° North
+Metis in conjunction with Moon           2022 Jul 14 08    2.03° South
+Saturn in conjunction with Moon          2022 Jul 15 20    4.05° North
+Interamnia in conjunction with Moon      2022 Jul 15 22   22.01° North
+Mercury in superior conjunction          2022 Jul 16 20    1.52° North
+Vesta in conjunction with Moon           2022 Jul 16 20    1.89° South
+Pollux in conjunction with Mercury       2022 Jul 16 22    5.24° North
+Juno in conjunction with Moon            2022 Jul 17 12   11.49° North
+Neptune in conjunction with Moon         2022 Jul 18 01    3.29° North
+Ceres in conjunction with Mercury        2022 Jul 18 19    3.11° North
+Mercury in conjunction with Ceres        2022 Jul 18 19    3.11° South
+Regulus in conjunction with Iris         2022 Jul 19 00    5.03° North
+Jupiter in conjunction with Moon         2022 Jul 19 01    2.22° North
+Cybele in conjunction with Moon          2022 Jul 19 08    1.93° North
+Spica in conjunction with Flora          2022 Jul 19 21    8.28° South
+Pluto at opposition                      2022 Jul 20 02
+Aldebaran in conjunction with Pallas     2022 Jul 20 07   18.96° North
+Metis at opposition                      2022 Jul 20 14
+Last Quarter                             2022 Jul 20 14    390331.133 km
+Mars in conjunction with Moon            2022 Jul 21 17    1.06° South
+Ceres in conjunction with Sun            2022 Jul 22 01    4.78° North
+Uranus in conjunction with Moon          2022 Jul 22 06    0.24° South
+Aldebaran in conjunction with Moon       2022 Jul 24 04    7.37° South
+Pallas in conjunction with Moon          2022 Jul 24 07   27.02° South
+Hebe in conjunction with Moon            2022 Jul 25 15   13.13° South
+Moon at apogee                           2022 Jul 26 10    406274.499 km
+Venus in conjunction with Moon           2022 Jul 26 14    4.17° South
+Metis in conjunction with Pluto          2022 Jul 27 07    5.00° South
+Pluto in conjunction with Metis          2022 Jul 27 07    5.00° North
+Pollux in conjunction with Moon          2022 Jul 27 18    2.20° North
+Interamnia in conjunction with Saturn    2022 Jul 28 06   19.77° North
+Saturn in conjunction with Interamnia    2022 Jul 28 06   19.77° South
+Ceres in conjunction with Moon           2022 Jul 28 11    0.17° North
+New Moon                                 2022 Jul 28 18    404343.797 km
+Mercury in conjunction with Moon         2022 Jul 29 21    3.60° South
+Regulus in conjunction with Moon         2022 Jul 30 15    4.78° South
+Iris in conjunction with Moon            2022 Jul 31 01    9.69° South
+Uranus in conjunction with Mars          2022 Aug  1 09    1.37° North
+Mars in conjunction with Uranus          2022 Aug  1 09    1.37° South
+Psyche in conjunction with Moon          2022 Aug  1 14    2.86° South
+Spica in conjunction with Europa         2022 Aug  2 23    9.78° South
+Eunomia in conjunction with Moon         2022 Aug  3 18   14.00° South
+Spica in conjunction with Moon           2022 Aug  3 22    4.59° South
+Europa in conjunction with Moon          2022 Aug  3 22    5.19° North
+Regulus in conjunction with Mercury      2022 Aug  4 05    0.74° South
+Flora in conjunction with Moon           2022 Aug  4 06    3.43° North
+Hygiea in conjunction with Moon          2022 Aug  5 02    3.85° South
+First Quarter                            2022 Aug  5 11    377031.067 km
+Antares in conjunction with Moon         2022 Aug  7 09    2.77° South
+Pollux in conjunction with Venus         2022 Aug  7 10    6.56° North
+Davida in conjunction with Moon          2022 Aug  7 20    8.79° North
+Iris in conjunction with Mercury         2022 Aug 10 03    4.94° South
+Mercury in conjunction with Iris         2022 Aug 10 03    4.94° North
+Metis in conjunction with Moon           2022 Aug 10 08    2.63° South
+Pluto in conjunction with Moon           2022 Aug 10 13    2.54° North
+Moon at perigee                          2022 Aug 10 17    359827.980 km
+Spica in conjunction with Eunomia        2022 Aug 11 00    8.79° North
+Interamnia in conjunction with Moon      2022 Aug 12 01   25.46° North
+Full Moon                                2022 Aug 12 02    361411.858 km
+Saturn in conjunction with Moon          2022 Aug 12 04    3.91° North
+Vesta in conjunction with Moon           2022 Aug 13 01    4.12° South
+Juno in conjunction with Moon            2022 Aug 13 22    9.64° North
+Neptune in conjunction with Moon         2022 Aug 14 10    3.09° North
+Saturn at opposition                     2022 Aug 14 17
+Jupiter in conjunction with Moon         2022 Aug 15 10    1.86° North
+Cybele in conjunction with Moon          2022 Aug 15 19    1.11° North
+Uranus in conjunction with Moon          2022 Aug 18 15    0.55° South
+Interamnia at opposition                 2022 Aug 18 16
+Last Quarter                             2022 Aug 19 05    397557.125 km
+Mars in conjunction with Moon            2022 Aug 19 12    2.68° South
+Aldebaran in conjunction with Moon       2022 Aug 20 10    7.60° South
+Pallas in conjunction with Moon          2022 Aug 21 13   32.54° South
+Vesta at opposition                      2022 Aug 22 19
+Moon at apogee                           2022 Aug 22 22    405417.800 km
+Hebe in conjunction with Moon            2022 Aug 23 00   14.05° South
+Pollux in conjunction with Moon          2022 Aug 24 01    2.09° North
+Ceres in conjunction with Venus          2022 Aug 24 15    5.03° North
+Venus in conjunction with Ceres          2022 Aug 24 15    5.03° South
+Ceres in conjunction with Moon           2022 Aug 25 19    0.74° North
+Venus in conjunction with Moon           2022 Aug 25 21    4.29° South
+Regulus in conjunction with Moon         2022 Aug 26 21    4.74° South
+New Moon                                 2022 Aug 27 08    397575.973 km
+Mercury at greatest elongation           2022 Aug 27 16    27.3° East
+Iris in conjunction with Moon            2022 Aug 28 06    9.13° South
+Mercury in conjunction with Moon         2022 Aug 29 11    6.64° South
+Psyche in conjunction with Moon          2022 Aug 29 14    2.07° South
+Spica in conjunction with Moon           2022 Aug 31 04    4.35° South
+Eunomia in conjunction with Moon         2022 Aug 31 16   11.43° South
+Europa in conjunction with Moon          2022 Aug 31 19    5.42° North
+Flora in conjunction with Moon           2022 Sep  1 04    3.60° North
+Hygiea in conjunction with Moon          2022 Sep  1 23    2.12° South
+Psyche in conjunction with Mercury       2022 Sep  2 02    5.09° North
+Mercury in conjunction with Psyche       2022 Sep  2 02    5.09° South
+Antares in conjunction with Moon         2022 Sep  3 15    2.52° South
+First Quarter                            2022 Sep  3 18    372300.486 km
+Davida in conjunction with Moon          2022 Sep  4 04    7.46° North
+Regulus in conjunction with Venus        2022 Sep  5 01    0.78° South
+Metis in conjunction with Moon           2022 Sep  6 12    2.19° South
+Pluto in conjunction with Moon           2022 Sep  6 21    2.64° North
+Juno at opposition                       2022 Sep  7 17
+Moon at perigee                          2022 Sep  7 18    364492.051 km
+Interamnia in conjunction with Moon      2022 Sep  8 01   26.88° North
+Saturn in conjunction with Moon          2022 Sep  8 11    3.94° North
+Vesta in conjunction with Moon           2022 Sep  9 00    4.86° South
+Aldebaran in conjunction with Mars       2022 Sep  9 01    4.34° South
+Psyche in conjunction with Mercury       2022 Sep  9 12    6.08° North
+Mercury in conjunction with Psyche       2022 Sep  9 12    6.08° South
+Juno in conjunction with Moon            2022 Sep 10 00    6.87° North
+Full Moon                                2022 Sep 10 10    369131.268 km
+Neptune in conjunction with Moon         2022 Sep 10 19    3.03° North
+Jupiter in conjunction with Moon         2022 Sep 11 15    1.81° North
+Cybele in conjunction with Moon          2022 Sep 11 23    0.66° North
+Uranus in conjunction with Moon          2022 Sep 14 23    0.79° South
+Aldebaran in conjunction with Moon       2022 Sep 16 18    7.84° South
+Neptune at opposition                    2022 Sep 16 22
+Mars in conjunction with Moon            2022 Sep 17 02    3.61° South
+Last Quarter                             2022 Sep 17 22    402716.607 km
+Pallas in conjunction with Moon          2022 Sep 18 17   38.87° South
+Moon at apogee                           2022 Sep 19 15    404555.725 km
+Hebe in conjunction with Moon            2022 Sep 20 06   14.78° South
+Pollux in conjunction with Moon          2022 Sep 20 08    1.91° North
+Iris in conjunction with Sun             2022 Sep 22 13    3.96° South
+Pollux in conjunction with Hebe          2022 Sep 22 23   16.73° North
+Equinox                                  2022 Sep 23 01
+Ceres in conjunction with Moon           2022 Sep 23 04    1.73° North
+Regulus in conjunction with Moon         2022 Sep 23 05    4.82° South
+Mercury in inferior conjunction          2022 Sep 23 07    2.86° South
+Iris in conjunction with Mercury         2022 Sep 23 23    1.41° South
+Mercury in conjunction with Iris         2022 Sep 23 23    1.41° North
+Regulus in conjunction with Ceres        2022 Sep 24 07    6.61° South
+New Moon                                 2022 Aug 27 08    397575.971 km
+Venus in conjunction with Moon           2022 Sep 25 05    2.75° South
+Mercury in conjunction with Moon         2022 Sep 25 08    6.66° South
+Iris in conjunction with Moon            2022 Sep 25 12    8.40° South
+Venus in conjunction with Mercury        2022 Sep 26 01    3.76° North
+Mercury in conjunction with Venus        2022 Sep 26 01    3.76° South
+Psyche in conjunction with Moon          2022 Sep 26 15    1.16° South
+Jupiter at opposition                    2022 Sep 26 20
+Spica in conjunction with Moon           2022 Sep 27 10    4.23° South
+Eunomia in conjunction with Moon         2022 Sep 28 16    9.10° South
+Europa in conjunction with Moon          2022 Sep 28 17    5.88° North
+Flora in conjunction with Moon           2022 Sep 29 05    4.03° North
+Iris in conjunction with Venus           2022 Sep 29 07    5.87° South
+Venus in conjunction with Iris           2022 Sep 29 07    5.87° North
+Cybele at opposition                     2022 Sep 29 21
+Hygiea in conjunction with Moon          2022 Sep 29 23    0.47° South
+Antares in conjunction with Moon         2022 Sep 30 21    2.33° South
+Davida in conjunction with Moon          2022 Oct  1 16    6.58° North
+First Quarter                            2022 Oct  3 00    370124.856 km
+Metis in conjunction with Moon           2022 Oct  3 22    1.26° South
+Pluto in conjunction with Moon           2022 Oct  4 03    2.79° North
+Moon at perigee                          2022 Oct  4 17    369325.025 km
+Interamnia in conjunction with Moon      2022 Oct  5 05   26.25° North
+Saturn in conjunction with Moon          2022 Oct  5 16    4.08° North
+Vesta in conjunction with Moon           2022 Oct  6 03    4.21° South
+Juno in conjunction with Moon            2022 Oct  7 01    3.72° North
+Neptune in conjunction with Moon         2022 Oct  8 03    3.10° North
+Jupiter in conjunction with Moon         2022 Oct  8 18    2.07° North
+Mercury at greatest elongation           2022 Oct  8 21    18.0° West
+Cybele in conjunction with Moon          2022 Oct  9 00    0.69° North
+Full Moon                                2022 Oct  9 21    379482.926 km
+Psyche in conjunction with Sun           2022 Oct 10 10    1.73° North
+Uranus in conjunction with Moon          2022 Oct 12 07    0.85° South
+Aldebaran in conjunction with Moon       2022 Oct 14 03    7.99° South
+Psyche in conjunction with Venus         2022 Oct 14 05    0.54° North
+Venus in conjunction with Psyche         2022 Oct 14 05    0.54° South
+Mars in conjunction with Moon            2022 Oct 15 05    3.62° South
+Iris in conjunction with Mercury         2022 Oct 15 14    6.48° South
+Mercury in conjunction with Iris         2022 Oct 15 14    6.48° North
+Pallas in conjunction with Moon          2022 Oct 16 16   45.89° South
+Moon at apogee                           2022 Oct 17 10    404327.832 km
+Spica in conjunction with Venus          2022 Oct 17 15    3.48° South
+Pollux in conjunction with Moon          2022 Oct 17 16    1.76° North
+Last Quarter                             2022 Oct 17 17    404273.295 km
+Hebe in conjunction with Moon            2022 Oct 18 09   15.20° South
+Europa in conjunction with Eunomia       2022 Oct 18 23   13.89° North
+Eunomia in conjunction with Europa       2022 Oct 18 23   13.89° South
+Metis in conjunction with Pluto          2022 Oct 19 07    3.57° South
+Pluto in conjunction with Metis          2022 Oct 19 07    3.57° North
+Regulus in conjunction with Moon         2022 Oct 20 13    4.93° South
+Ceres in conjunction with Moon           2022 Oct 21 13    3.26° North
+Venus in superior conjunction            2022 Oct 22 21    1.05° North
+Iris in conjunction with Moon            2022 Oct 23 18    7.53° South
+Mercury in conjunction with Moon         2022 Oct 24 16    0.39° South
+Psyche in conjunction with Moon          2022 Oct 24 17    0.14° South
+Spica in conjunction with Moon           2022 Oct 24 18    4.23° South
+Psyche in conjunction with Mercury       2022 Oct 25 05    0.23° North
+Mercury in conjunction with Psyche       2022 Oct 25 05    0.23° South
+New Moon                                 2022 Oct 25 11    376366.905 km
+Spica in conjunction with Mercury        2022 Oct 25 11    3.90° South
+Venus in conjunction with Moon           2022 Oct 25 12    0.00° North
+Spica in conjunction with Psyche         2022 Oct 26 10    4.16° South
+Europa in conjunction with Moon          2022 Oct 26 18    6.46° North
+Eunomia in conjunction with Moon         2022 Oct 26 18    7.07° South
+Flora in conjunction with Moon           2022 Oct 27 09    4.55° North
+Hygiea in conjunction with Moon          2022 Oct 28 01    0.98° North
+Antares in conjunction with Moon         2022 Oct 28 03    2.25° South
+Davida in conjunction with Moon          2022 Oct 29 08    5.96° North
+Moon at perigee                          2022 Oct 29 15    368290.502 km
+Pluto in conjunction with Moon           2022 Oct 31 08    2.88° North
+Metis in conjunction with Moon           2022 Oct 31 14    0.32° South
+Antares in conjunction with Hygiea       2022 Nov  1 01    3.42° South
+First Quarter                            2022 Nov  1 07    370690.904 km
+Interamnia in conjunction with Moon      2022 Nov  1 15   24.75° North
+Saturn in conjunction with Moon          2022 Nov  1 21    4.19° North
+Vesta in conjunction with Moon           2022 Nov  2 13    3.19° South
+Juno in conjunction with Moon            2022 Nov  3 08    1.02° North
+Neptune in conjunction with Moon         2022 Nov  4 08    3.20° North
+Jupiter in conjunction with Moon         2022 Nov  4 20    2.39° North
+Cybele in conjunction with Moon          2022 Nov  5 01    0.92° North
+Full Moon                                2022 Nov  8 11    390659.790 km
+Uranus in conjunction with Moon          2022 Nov  8 13    0.75° South
+Mercury in superior conjunction          2022 Nov  8 17    0.09° North
+Uranus at opposition                     2022 Nov  9 08
+Aldebaran in conjunction with Moon       2022 Nov 10 11    8.02° South
+Mars in conjunction with Moon            2022 Nov 11 14    2.47° South
+Europa in conjunction with Venus         2022 Nov 12 16    5.30° North
+Venus in conjunction with Europa         2022 Nov 12 16    5.30° South
+Pallas in conjunction with Moon          2022 Nov 13 09   52.92° South
+Eunomia in conjunction with Venus        2022 Nov 14 00    7.55° South
+Venus in conjunction with Eunomia        2022 Nov 14 00    7.55° North
+Pollux in conjunction with Moon          2022 Nov 14 00    1.74° North
+Moon at apogee                           2022 Nov 14 07    404921.387 km
+Europa in conjunction with Mercury       2022 Nov 15 05    6.29° North
+Mercury in conjunction with Europa       2022 Nov 15 05    6.29° South
+Hebe in conjunction with Moon            2022 Nov 15 06   15.18° South
+Eunomia in conjunction with Mercury      2022 Nov 16 07    6.42° South
+Mercury in conjunction with Eunomia      2022 Nov 16 07    6.42° North
+Last Quarter                             2022 Nov 16 13    401640.891 km
+Regulus in conjunction with Moon         2022 Nov 16 22    4.95° South
+Europa in conjunction with Sun           2022 Nov 18 20    5.47° North
+Ceres in conjunction with Moon           2022 Nov 18 21    5.41° North
+Interamnia in conjunction with Saturn    2022 Nov 20 03   19.46° North
+Saturn in conjunction with Interamnia    2022 Nov 20 03   19.46° South
+Antares in conjunction with Flora        2022 Nov 20 22    7.26° South
+Iris in conjunction with Moon            2022 Nov 21 01    6.57° South
+Spica in conjunction with Moon           2022 Nov 21 04    4.23° South
+Psyche in conjunction with Moon          2022 Nov 21 21    0.99° North
+Venus in conjunction with Mercury        2022 Nov 22 17    1.35° North
+Mercury in conjunction with Venus        2022 Nov 22 17    1.35° South
+Antares in conjunction with Mercury      2022 Nov 23 13    3.16° South
+Antares in conjunction with Venus        2022 Nov 23 18    4.54° South
+Europa in conjunction with Moon          2022 Nov 23 20    7.11° North
+Eunomia in conjunction with Moon         2022 Nov 23 23    5.33° South
+New Moon                                 2022 Nov 23 23    366158.439 km
+Antares in conjunction with Moon         2022 Nov 24 12    2.26° South
+Venus in conjunction with Moon           2022 Nov 24 14    2.33° North
+Flora in conjunction with Mercury        2022 Nov 24 14    4.14° North
+Mercury in conjunction with Flora        2022 Nov 24 14    4.14° South
+Flora in conjunction with Moon           2022 Nov 24 15    5.07° North
+Mercury in conjunction with Moon         2022 Nov 24 15    0.94° North
+Hygiea in conjunction with Moon          2022 Nov 25 05    2.22° North
+Flora in conjunction with Venus          2022 Nov 25 08    2.71° North
+Venus in conjunction with Flora          2022 Nov 25 08    2.71° South
+Eunomia in conjunction with Sun          2022 Nov 25 14    6.84° South
+Spica in conjunction with Iris           2022 Nov 25 22    2.18° North
+Moon at perigee                          2022 Nov 26 02    362826.006 km
+Davida in conjunction with Moon          2022 Nov 26 04    5.48° North
+Pluto in conjunction with Moon           2022 Nov 27 16    2.84° North
+Metis in conjunction with Moon           2022 Nov 28 11    0.34° North
+Saturn in conjunction with Moon          2022 Nov 29 05    4.17° North
+Interamnia in conjunction with Moon      2022 Nov 29 08   23.12° North
+Vesta in conjunction with Moon           2022 Nov 30 07    2.47° South
+First Quarter                            2022 Nov 30 15    373976.351 km
+Juno in conjunction with Moon            2022 Dec  1 00    1.18° South
+Neptune in conjunction with Moon         2022 Dec  1 13    3.18° North
+Hygiea in conjunction with Mercury       2022 Dec  1 22    1.24° North
+Mercury in conjunction with Hygiea       2022 Dec  1 22    1.24° South
+Jupiter in conjunction with Moon         2022 Dec  2 01    2.51° North
+Cybele in conjunction with Moon          2022 Dec  2 06    0.99° North
+Hygiea in conjunction with Venus         2022 Dec  5 03    0.25° South
+Venus in conjunction with Hygiea         2022 Dec  5 03    0.25° North
+Uranus in conjunction with Moon          2022 Dec  5 18    0.65° South
+Aldebaran in conjunction with Moon       2022 Dec  7 19    7.99° South
+Full Moon                                2022 Dec  8 04    400238.742 km
+Mars in conjunction with Moon            2022 Dec  8 04    0.54° South
+Mars at opposition                       2022 Dec  8 06
+Flora in conjunction with Sun            2022 Dec  9 20    2.32° North
+Pallas in conjunction with Moon          2022 Dec 10 16   58.26° South
+Pollux in conjunction with Moon          2022 Dec 11 08    1.83° North
+Moon at apogee                           2022 Dec 12 00    405868.535 km
+Hebe in conjunction with Moon            2022 Dec 12 18   14.45° South
+Davida in conjunction with Mercury       2022 Dec 12 23    3.24° North
+Mercury in conjunction with Davida       2022 Dec 12 23    3.24° South
+Regulus in conjunction with Moon         2022 Dec 14 06    4.81° South
+Antares in conjunction with Eunomia      2022 Dec 14 07    2.00° North
+Last Quarter                             2022 Dec 16 09    395489.753 km
+Ceres in conjunction with Moon           2022 Dec 17 01    8.17° North
+Spica in conjunction with Moon           2022 Dec 18 14    4.11° South
+Davida in conjunction with Venus         2022 Dec 18 15    1.80° North
+Venus in conjunction with Davida         2022 Dec 18 15    1.80° South
+Iris in conjunction with Moon            2022 Dec 19 05    5.62° South
+Psyche in conjunction with Moon          2022 Dec 19 23    2.20° North
+Mercury at greatest elongation           2022 Dec 21 16    20.1° East
+Juno in conjunction with Neptune         2022 Dec 21 19    5.77° South
+Neptune in conjunction with Juno         2022 Dec 21 19    5.77° North
+Solstice                                 2022 Dec 21 22
+Europa in conjunction with Moon          2022 Dec 21 23    7.84° North
+Antares in conjunction with Moon         2022 Dec 21 23    2.25° South
+Eunomia in conjunction with Moon         2022 Dec 22 04    3.88° South
+Aldebaran in conjunction with Mars       2022 Dec 22 04    8.24° South
+Antares in conjunction with Europa       2022 Dec 22 20   10.11° South
+Flora in conjunction with Moon           2022 Dec 22 22    5.54° North
+Hygiea in conjunction with Sun           2022 Dec 23 05    0.60° South
+Hygiea in conjunction with Moon          2022 Dec 23 10    3.26° North
+New Moon                                 2022 Dec 23 10    359080.704 km
+Davida in conjunction with Moon          2022 Dec 24 03    5.06° North
+Moon at perigee                          2022 Dec 24 08    358270.156 km
+Venus in conjunction with Moon           2022 Dec 24 11    3.47° North
+Mercury in conjunction with Moon         2022 Dec 24 19    3.76° North
+Pluto in conjunction with Moon           2022 Dec 25 02    2.73° North
+Metis in conjunction with Moon           2022 Dec 26 14    0.62° North
+Saturn in conjunction with Moon          2022 Dec 26 16    4.02° North
+Interamnia in conjunction with Moon      2022 Dec 27 08   21.50° North
+Vesta in conjunction with Moon           2022 Dec 28 06    2.28° South
+Neptune in conjunction with Moon         2022 Dec 28 20    2.98° North
+Juno in conjunction with Moon            2022 Dec 29 01    3.28° South
+Venus in conjunction with Mercury        2022 Dec 29 09    1.41° South
+Mercury in conjunction with Venus        2022 Dec 29 09    1.41° North
+Jupiter in conjunction with Moon         2022 Dec 29 11    2.30° North
+Cybele in conjunction with Moon          2022 Dec 29 17    0.70° North
+Metis in conjunction with Saturn         2022 Dec 29 20    3.36° South
+Saturn in conjunction with Metis         2022 Dec 29 20    3.36° North
+First Quarter                            2022 Dec 30 01    379784.405 km
+Pluto in conjunction with Venus          2023 Jan  1 09    0.88° South
+Venus in conjunction with Pluto          2023 Jan  1 09    0.88° North
+Uranus in conjunction with Moon          2023 Jan  1 22    0.71° South
+Mars in conjunction with Moon            2023 Jan  3 20    0.54° North
+Aldebaran in conjunction with Moon       2023 Jan  4 01    8.05° South
+Earth at perihelion                      2023 Jan  4 16    0.983295578 AU
+Pallas in conjunction with Moon          2023 Jan  6 13   58.88° South
+Full Moon                                2023 Jan  6 23    405790.853 km
+Davida in conjunction with Mercury       2023 Jan  7 09    2.55° South
+Mercury in conjunction with Davida       2023 Jan  7 09    2.55° North
+Davida in conjunction with Sun           2023 Jan  7 11    0.23° North
+Mercury in inferior conjunction          2023 Jan  7 13    2.79° North
+Pollux in conjunction with Moon          2023 Jan  7 14    1.91° North
+Moon at apogee                           2023 Jan  8 09    406458.329 km
+Hebe in conjunction with Moon            2023 Jan  8 18   12.63° South
+Pallas at opposition                     2023 Jan  8 19
+Regulus in conjunction with Moon         2023 Jan 10 12    4.61° South
+Hygiea in conjunction with Mercury       2023 Jan 13 03    3.76° South
+Mercury in conjunction with Hygiea       2023 Jan 13 03    3.76° North
+Ceres in conjunction with Moon           2023 Jan 13 22   11.34° North
+Juno in conjunction with Jupiter         2023 Jan 14 02    6.54° South
+Jupiter in conjunction with Juno         2023 Jan 14 02    6.54° North
+Spica in conjunction with Moon           2023 Jan 14 23    3.84° South
+Last Quarter                             2023 Jan 15 02    387528.963 km
+Iris in conjunction with Moon            2023 Jan 16 06    4.83° South
+Psyche in conjunction with Moon          2023 Jan 16 23    3.47° North
+Antares in conjunction with Moon         2023 Jan 18 10    2.10° South
+Vesta in conjunction with Neptune        2023 Jan 18 14    5.24° South
+Neptune in conjunction with Vesta        2023 Jan 18 14    5.24° North
+Pluto in conjunction with Sun            2023 Jan 18 15    2.27° South
+Europa in conjunction with Moon          2023 Jan 19 00    8.68° North
+Eunomia in conjunction with Moon         2023 Jan 19 09    2.66° South
+Flora in conjunction with Moon           2023 Jan 20 06    5.91° North
+Mercury in conjunction with Moon         2023 Jan 20 08    6.94° North
+Hygiea in conjunction with Moon          2023 Jan 20 15    4.17° North
+Davida in conjunction with Moon          2023 Jan 21 03    4.63° North
+Pluto in conjunction with Moon           2023 Jan 21 15    2.67° North
+New Moon                                 2023 Jan 21 21    356568.957 km
+Moon at perigee                          2023 Jan 21 21    356568.950 km
+Saturn in conjunction with Venus         2023 Jan 22 20    0.37° North
+Venus in conjunction with Saturn         2023 Jan 22 20    0.37° South
+Saturn in conjunction with Moon          2023 Jan 23 07    3.83° North
+Venus in conjunction with Moon           2023 Jan 23 08    3.45° North
+Metis in conjunction with Moon           2023 Jan 23 21    0.51° North
+Interamnia in conjunction with Moon      2023 Jan 24 12   19.82° North
+Neptune in conjunction with Moon         2023 Jan 25 06    2.69° North
+Vesta in conjunction with Moon           2023 Jan 25 11    2.59° South
+Jupiter in conjunction with Moon         2023 Jan 26 02    1.81° North
+Juno in conjunction with Moon            2023 Jan 26 09    5.45° South
+Hebe at opposition                       2023 Jan 26 09
+Cybele in conjunction with Moon          2023 Jan 26 11    0.06° North
+First Quarter                            2023 Jan 28 15    387404.920 km
+Uranus in conjunction with Moon          2023 Jan 29 04    0.95° South
+Juno in conjunction with Cybele          2023 Jan 30 06    5.70° South
+Cybele in conjunction with Juno          2023 Jan 30 06    5.70° North
+Mercury at greatest elongation           2023 Jan 30 06    25.0° West
+Mars in conjunction with Moon            2023 Jan 31 04    0.11° North
+Aldebaran in conjunction with Moon       2023 Jan 31 07    8.25° South
 

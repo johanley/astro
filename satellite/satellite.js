@@ -180,9 +180,10 @@ var SATELLITE = (function(){
     return ('visible' === params.layer) ?  result + 'vis006' : result + 'ir108'; 
   };
   var real_earth_ssec_layer = function(params){
-    //Goes-16, Full Disk, True Color and IR 
-    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-TC
-    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-BAND13
+    //Goes-16, Full Disk, red-visible and IR 
+    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-BAND02  - RED 
+    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-TC  - TRUE COLO
+    //http://realearth.ssec.wisc.edu/products/G16-ABI-FD-BAND13  - IR
     return ('visible' === params.layer) ?  '?map=G16-ABI-FD-TC.map&LAYERS=latest' : '?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest';
   };
   var make_limits = function(λ_min, λ_max, φ_min, φ_max){
@@ -230,8 +231,9 @@ var SATELLITE = (function(){
   
   /*
    Real Earth SSEC examples:
-    vis: http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
-     ir: http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest&VERSION=1.3.0&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png&WIDTH=480&HEIGHT=480&BBOX=44.58,-66.28,47.58,-63.28&CRS=EPSG
+    vis (TRUE COLOR): http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-TC.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
+    vis (RED):        http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND02.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
+     ir:              http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest&VERSION=1.3.0&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png&WIDTH=480&HEIGHT=480&BBOX=44.58,-66.28,47.58,-63.28&CRS=EPSG
    Iowa State example (GOES): NO LONGER USED 
     ir: http://mesonet.agron.iastate.edu/cgi-bin/mapserv/mapserv?map=/mesonet/www/apps/iemwebsite/data/wms/goes/west_ir.map&LAYERS=west_ir_4km_gray&BBOX=-114.35,48.19,-111.35,51.19&WIDTH=480&HEIGHT=480&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG
    Nowcoast example (GOES East and West): NO LONGER USED
