@@ -52,6 +52,11 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
    <param-name>isDev</param-name>
    <param-value>false</param-value>
   </context-param>
+
+  <context-param>
+   <param-name>fontDirectory</param-name>
+   <param-value>/chroot/home/webjcom/web4j.com/tomcat/webapps-astronomytonight/ROOT/WEB-INF/fonts</param-value>
+  </context-param>
   
   <filter>
    <description>
@@ -98,6 +103,13 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
     <servlet-class>astro.HideImpl</servlet-class>
     <load-on-startup>2</load-on-startup> 
   </servlet>
+
+  <servlet>
+    <description>Generate PDF files for a planisphere.</description>
+    <servlet-name>Planisphere</servlet-name>
+    <servlet-class>astro.Planisphere</servlet-class>
+    <load-on-startup>2</load-on-startup> 
+  </servlet>
   
   <!-- 
    Servlet mappings come in various styles. 
@@ -117,6 +129,11 @@ Since Tomcat has its own conf/web.xml file, you can always copy it from there.
   <servlet-mapping>
     <servlet-name>HideImpl</servlet-name>
     <url-pattern>*.sky</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Planisphere</servlet-name>
+    <url-pattern>*.pln</url-pattern>
   </servlet-mapping>
   
   <session-config>
