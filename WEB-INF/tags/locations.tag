@@ -4,22 +4,22 @@
      <option value=''><s:txt>---Canada---</s:txt>
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Banff&latitude=51%2E18&longitude=-115%2E57&weather_station=49&radar_station=CASSM&clear_sky_clock_station_id=BnffAB'>AB Banff
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Calgary&latitude=51%2E03&longitude=-114%2E09&weather_station=52&radar_station=CASSM&clear_sky_clock_station_id=Calgary'>AB Calgary
-     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Edmonton&latitude=53%2E54&longitude=-113%2E50&weather_station=50&radar_station=WHK&clear_sky_clock_station_id=Edmonton'>AB Edmonton
-     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Elk+Island+–+Beaver+Hills&latitude=53%2E58&longitude=-112%2E82&weather_station=63&radar_station=WHK&clear_sky_clock_station_id=Blackfoot'>AB Elk Island – Beaver Hills
-     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Fort+McMurray&latitude=56%2E73&longitude=-111%2E38&weather_station=20&radar_station=&clear_sky_clock_station_id=FtMcmrryAB'>AB Fort McMurray
+     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Edmonton&latitude=53%2E54&longitude=-113%2E50&weather_station=50&radar_station=CASCV&clear_sky_clock_station_id=Edmonton'>AB Edmonton
+     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Elk+Island+–+Beaver+Hills&latitude=53%2E58&longitude=-112%2E82&weather_station=63&radar_station=CASCV&clear_sky_clock_station_id=Blackfoot'>AB Elk Island – Beaver Hills
+     <option value='graphic%2Esky?country=cda&prov=AB&location_name=Fort+McMurray&latitude=56%2E73&longitude=-111%2E38&weather_station=20&radar_station=CASFM&clear_sky_clock_station_id=FtMcmrryAB'>AB Fort McMurray
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Grande+Prairie&latitude=55%2E17&longitude=-118%2E80&weather_station=31&radar_station=CASSR&clear_sky_clock_station_id=NDgObAB'>AB Grande Prairie
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Jasper&latitude=52%2E87&longitude=-118%2E08&weather_station=70&radar_station=&clear_sky_clock_station_id=MlngLkAB'>AB Jasper
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Lethbridge&latitude=49%2E69&longitude=-112%2E85&weather_station=30&radar_station=CASSM&clear_sky_clock_station_id=LethAB'>AB Lethbridge
      <option value='graphic%2Esky?country=cda&prov=AB&location_name=Red+Deer&latitude=52%2E26&longitude=-113%2E80&weather_station=29&radar_station=CASSM&clear_sky_clock_station_id=RdDrAB'>AB Red Deer
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Cranbrook&latitude=49%2E51&longitude=-115%2E76&weather_station=77&radar_station=&clear_sky_clock_station_id=SprcRdObBC'>BC Cranbrook
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Kamloops&latitude=50%2E67&longitude=-120%2E29&weather_station=45&radar_station=XSS&clear_sky_clock_station_id=Kamloops'>BC Kamloops
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Penticton&latitude=49%2E49&longitude=-119%2E57&weather_station=84&radar_station=XSS&clear_sky_clock_station_id=PntctonBC'>BC Penticton
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Prince+George&latitude=53%2E92&longitude=-122%2E75&weather_station=79&radar_station=XPG&clear_sky_clock_station_id=Prince_George'>BC Prince George
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Cranbrook&latitude=49%2E51&longitude=-115%2E76&weather_station=77&radar_station=CASSS&clear_sky_clock_station_id=SprcRdObBC'>BC Cranbrook
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Kamloops&latitude=50%2E67&longitude=-120%2E29&weather_station=45&radar_station=CASSS&clear_sky_clock_station_id=Kamloops'>BC Kamloops
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Penticton&latitude=49%2E49&longitude=-119%2E57&weather_station=84&radar_station=CASSS&clear_sky_clock_station_id=PntctonBC'>BC Penticton
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Prince+George&latitude=53%2E92&longitude=-122%2E75&weather_station=79&radar_station=CASPG&clear_sky_clock_station_id=Prince_George'>BC Prince George
      <option value='graphic%2Esky?country=cda&prov=BC&location_name=Terrace&latitude=54%2E53&longitude=-128%2E61&weather_station=80&radar_station=&clear_sky_clock_station_id=TrrcBC'>BC Terrace
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Tofino&latitude=49%2E14&longitude=-125%2E90&weather_station=17&radar_station=XSI&clear_sky_clock_station_id=TofinoBC'>BC Tofino
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Vancouver&latitude=49%2E30&longitude=-123%2E14&weather_station=74&radar_station=WUJ&clear_sky_clock_station_id=Vancouver'>BC Vancouver
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Victoria&latitude=48%2E41&longitude=-123%2E37&weather_station=85&radar_station=XSI&clear_sky_clock_station_id=Victoria'>BC Victoria
-     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Whistler&latitude=50%2E12&longitude=-122%2E96&weather_station=86&radar_station=WUJ&clear_sky_clock_station_id=WhstlrBC'>BC Whistler
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Tofino&latitude=49%2E14&longitude=-125%2E90&weather_station=17&radar_station=CASHP&clear_sky_clock_station_id=TofinoBC'>BC Tofino
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Vancouver&latitude=49%2E30&longitude=-123%2E14&weather_station=74&radar_station=CASAG&clear_sky_clock_station_id=Vancouver'>BC Vancouver
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Victoria&latitude=48%2E41&longitude=-123%2E37&weather_station=85&radar_station=CASHP&clear_sky_clock_station_id=Victoria'>BC Victoria
+     <option value='graphic%2Esky?country=cda&prov=BC&location_name=Whistler&latitude=50%2E12&longitude=-122%2E96&weather_station=86&radar_station=CASAG&clear_sky_clock_station_id=WhstlrBC'>BC Whistler
      <option value='graphic%2Esky?country=cda&prov=MB&location_name=Brandon&latitude=49%2E85&longitude=-99%2E95&weather_station=52&radar_station=CASFW&clear_sky_clock_station_id=BrndnMB'>MB Brandon
      <option value='graphic%2Esky?country=cda&prov=MB&location_name=Churchill&latitude=58%2E77&longitude=-94%2E16&weather_station=42&radar_station=&clear_sky_clock_station_id=ChrchllMB'>MB Churchill
      <option value='graphic%2Esky?country=cda&prov=MB&location_name=Dauphin&latitude=51%2E15&longitude=-100%2E06&weather_station=58&radar_station=CASFW&clear_sky_clock_station_id=MRossObs'>MB Dauphin
@@ -38,33 +38,33 @@
      <option value='graphic%2Esky?country=cda&prov=NL&location_name=Cornerbrook&latitude=48%2E95&longitude=-57%2E95&weather_station=41&radar_station=XME&clear_sky_clock_station_id=CrnrBrkNF'>NL Cornerbrook
      <option value='graphic%2Esky?country=cda&prov=NL&location_name=Happy+Valley-Goose+Bay&latitude=53%2E30&longitude=-60%2E35&weather_station=23&radar_station=&clear_sky_clock_station_id=GssByNFLD'>NL Happy Valley-Goose Bay
      <option value='graphic%2Esky?country=cda&prov=NL&location_name=St%2E+John%27s&latitude=47%2E56&longitude=-52%2E69&weather_station=24&radar_station=CASHR&clear_sky_clock_station_id=StJohns'>NL St. John's
-     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Halifax&latitude=44%2E66&longitude=-63%2E59&weather_station=19&radar_station=XGO&clear_sky_clock_station_id=Halifax'>NS Halifax
-     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Kejimkujik&latitude=44%2E42&longitude=-65%2E26&weather_station=42&radar_station=XGO&clear_sky_clock_station_id=KjmkjkNS'>NS Kejimkujik
+     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Halifax&latitude=44%2E66&longitude=-63%2E59&weather_station=19&radar_station=CASGO&clear_sky_clock_station_id=Halifax'>NS Halifax
+     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Kejimkujik&latitude=44%2E42&longitude=-65%2E26&weather_station=42&radar_station=CASGO&clear_sky_clock_station_id=KjmkjkNS'>NS Kejimkujik
      <option value='graphic%2Esky?country=cda&prov=NS&location_name=Sydney&latitude=46%2E13&longitude=-60%2E19&weather_station=31&radar_station=CASMB&clear_sky_clock_station_id=SydnyNS'>NS Sydney
-     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Truro&latitude=45%2E36&longitude=-63%2E29&weather_station=25&radar_station=XGO&clear_sky_clock_station_id=TruroNS'>NS Truro
-     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Yarmouth&latitude=43%2E83&longitude=-66%2E12&weather_station=29&radar_station=XGO&clear_sky_clock_station_id=ArgyleNS'>NS Yarmouth
+     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Truro&latitude=45%2E36&longitude=-63%2E29&weather_station=25&radar_station=CASGO&clear_sky_clock_station_id=TruroNS'>NS Truro
+     <option value='graphic%2Esky?country=cda&prov=NS&location_name=Yarmouth&latitude=43%2E83&longitude=-66%2E12&weather_station=29&radar_station=CASGO&clear_sky_clock_station_id=ArgyleNS'>NS Yarmouth
      <option value='graphic%2Esky?country=cda&prov=NT&location_name=Yellowknife&latitude=62%2E45&longitude=-114%2E37&weather_station=24&radar_station=&clear_sky_clock_station_id=YllwknfNWT'>NT Yellowknife
      <option value='graphic%2Esky?country=cda&prov=NU&location_name=Iqaluit&latitude=63%2E75&longitude=-68%2E52&weather_station=21&radar_station=&clear_sky_clock_station_id=IqltNvT'>NU Iqaluit
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Algonquin+Park&latitude=45%2E58&longitude=-78%2E41&weather_station=29&radar_station=WBI&clear_sky_clock_station_id=RckLkAqON'>ON Algonquin Park
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Barrie&latitude=44%2E39&longitude=-79%2E69&weather_station=151&radar_station=WKR&clear_sky_clock_station_id=Barrie'>ON Barrie
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Hamilton&latitude=43%2E25&longitude=-79%2E87&weather_station=77&radar_station=WKR&clear_sky_clock_station_id=Hamilton'>ON Hamilton
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Algonquin+Park&latitude=45%2E58&longitude=-78%2E41&weather_station=29&radar_station=CASBI&clear_sky_clock_station_id=RckLkAqON'>ON Algonquin Park
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Barrie&latitude=44%2E39&longitude=-79%2E69&weather_station=151&radar_station=CASKR&clear_sky_clock_station_id=Barrie'>ON Barrie
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Hamilton&latitude=43%2E25&longitude=-79%2E87&weather_station=77&radar_station=CASKR&clear_sky_clock_station_id=Hamilton'>ON Hamilton
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Kenora&latitude=49%2E77&longitude=-94%2E50&weather_station=96&radar_station=CASDR&clear_sky_clock_station_id=KenoraON'>ON Kenora
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Kingston&latitude=44%2E23&longitude=-76%2E54&weather_station=69&radar_station=XFT&clear_sky_clock_station_id=Kingston'>ON Kingston
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Kingston&latitude=44%2E23&longitude=-76%2E54&weather_station=69&radar_station=CASFT&clear_sky_clock_station_id=Kingston'>ON Kingston
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=London&latitude=42%2E99&longitude=-81%2E25&weather_station=137&radar_station=CASET&clear_sky_clock_station_id=London'>ON London
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Moosonee&latitude=51%2E28&longitude=-80%2E65&weather_station=113&radar_station=CASRF&clear_sky_clock_station_id=MsneeON'>ON Moosonee
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=North+Frontenac&latitude=44%2E92&longitude=-76%2E94&weather_station=106&radar_station=XFT&clear_sky_clock_station_id=PlvnAdON'>ON North Frontenac
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Ottawa&latitude=45%2E40&longitude=-75%2E66&weather_station=118&radar_station=XFT&clear_sky_clock_station_id=FLO'>ON Ottawa
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Parry+Sound&latitude=45%2E35&longitude=-80%2E04&weather_station=103&radar_station=WBI&clear_sky_clock_station_id=PrrySndON'>ON Parry Sound
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Peterborough&latitude=44%2E31&longitude=-78%2E32&weather_station=121&radar_station=WKR&clear_sky_clock_station_id=Peterborough'>ON Peterborough
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=North+Frontenac&latitude=44%2E92&longitude=-76%2E94&weather_station=106&radar_station=CASFT&clear_sky_clock_station_id=PlvnAdON'>ON North Frontenac
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Ottawa&latitude=45%2E40&longitude=-75%2E66&weather_station=118&radar_station=CASFT&clear_sky_clock_station_id=FLO'>ON Ottawa
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Parry+Sound&latitude=45%2E35&longitude=-80%2E04&weather_station=103&radar_station=CASBI&clear_sky_clock_station_id=PrrySndON'>ON Parry Sound
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Peterborough&latitude=44%2E31&longitude=-78%2E32&weather_station=121&radar_station=CASKR&clear_sky_clock_station_id=Peterborough'>ON Peterborough
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Sarnia&latitude=42%2E98&longitude=-82%2E41&weather_station=147&radar_station=CASET&clear_sky_clock_station_id=Sarnia'>ON Sarnia
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Sault+Ste%2E+Marie&latitude=46%2E53&longitude=-84%2E36&weather_station=162&radar_station=CASMR&clear_sky_clock_station_id=SaultON'>ON Sault Ste. Marie
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Sudbury&latitude=46%2E52&longitude=-80%2E96&weather_station=40&radar_station=WBI&clear_sky_clock_station_id=Sudbury'>ON Sudbury
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Thunder+Bay&latitude=48%2E38&longitude=-89%2E24&weather_station=100&radar_station=XNI&clear_sky_clock_station_id=ThunderBay'>ON Thunder Bay
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Sudbury&latitude=46%2E52&longitude=-80%2E96&weather_station=40&radar_station=CASBI&clear_sky_clock_station_id=Sudbury'>ON Sudbury
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Thunder+Bay&latitude=48%2E38&longitude=-89%2E24&weather_station=100&radar_station=CASSN&clear_sky_clock_station_id=ThunderBay'>ON Thunder Bay
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Timmins&latitude=48%2E48&longitude=-81%2E34&weather_station=127&radar_station=CASRF&clear_sky_clock_station_id=Timmins'>ON Timmins
-     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Toronto&latitude=43%2E65&longitude=-79%2E38&weather_station=143&radar_station=WKR&clear_sky_clock_station_id=Toronto'>ON Toronto
+     <option value='graphic%2Esky?country=cda&prov=ON&location_name=Toronto&latitude=43%2E65&longitude=-79%2E38&weather_station=143&radar_station=CASKR&clear_sky_clock_station_id=Toronto'>ON Toronto
      <option value='graphic%2Esky?country=cda&prov=ON&location_name=Windsor&latitude=42%2E31&longitude=-83%2E04&weather_station=94&radar_station=CASET&clear_sky_clock_station_id=Windsor'>ON Windsor
-     <option value='graphic%2Esky?country=cda&prov=PE&location_name=Charlottetown&latitude=46%2E26&longitude=-63%2E14&weather_station=5&radar_station=XGO&clear_sky_clock_station_id=Charlottetown'>PE Charlottetown
-     <option value='graphic%2Esky?country=cda&prov=PE&location_name=Summerside&latitude=46%2E39&longitude=-63%2E79&weather_station=3&radar_station=XGO&clear_sky_clock_station_id=SlmnPkPEI'>PE Summerside
+     <option value='graphic%2Esky?country=cda&prov=PE&location_name=Charlottetown&latitude=46%2E26&longitude=-63%2E14&weather_station=5&radar_station=CASGO&clear_sky_clock_station_id=Charlottetown'>PE Charlottetown
+     <option value='graphic%2Esky?country=cda&prov=PE&location_name=Summerside&latitude=46%2E39&longitude=-63%2E79&weather_station=3&radar_station=CASGO&clear_sky_clock_station_id=SlmnPkPEI'>PE Summerside
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Gaspé&latitude=48%2E83&longitude=-64%2E51&weather_station=101&radar_station=CASVD&clear_sky_clock_station_id=GaspePQ'>QC Gaspé
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Iles-de-la-Madeleine&latitude=47%2E40&longitude=-61%2E84&weather_station=103&radar_station=CASMB&clear_sky_clock_station_id=BtMntTQC'>QC Iles-de-la-Madeleine
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=La+Vérendrye&latitude=46%2E98&longitude=-76%2E48&weather_station=30&radar_station=CASLA&clear_sky_clock_station_id=RsrvFnqPQ'>QC La Vérendrye
@@ -72,8 +72,8 @@
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Montréal&latitude=45%2E50&longitude=-73%2E58&weather_station=147&radar_station=CASBV&clear_sky_clock_station_id=BvObQC'>QC Montréal
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Québec&latitude=46%2E82&longitude=-71%2E22&weather_station=133&radar_station=CASSF&clear_sky_clock_station_id=Quebec'>QC Québec
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Rimouski&latitude=48%2E45&longitude=-68%2E53&weather_station=138&radar_station=CASVD&clear_sky_clock_station_id=RmskiQC'>QC Rimouski
-     <option value='graphic%2Esky?country=cda&prov=QC&location_name=Rivière-du-Loup&latitude=47%2E83&longitude=-69%2E54&weather_station=108&radar_station=WMB&clear_sky_clock_station_id=PtQllObPQ'>QC Rivière-du-Loup
-     <option value='graphic%2Esky?country=cda&prov=QC&location_name=Saguenay&latitude=48%2E43&longitude=-71%2E07&weather_station=166&radar_station=WMB&clear_sky_clock_station_id=SrsSgnyPQ'>QC Saguenay
+     <option value='graphic%2Esky?country=cda&prov=QC&location_name=Rivière-du-Loup&latitude=47%2E83&longitude=-69%2E54&weather_station=108&radar_station=CASMA&clear_sky_clock_station_id=PtQllObPQ'>QC Rivière-du-Loup
+     <option value='graphic%2Esky?country=cda&prov=QC&location_name=Saguenay&latitude=48%2E43&longitude=-71%2E07&weather_station=166&radar_station=CASMA&clear_sky_clock_station_id=SrsSgnyPQ'>QC Saguenay
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Sept-Iles&latitude=50%2E22&longitude=-66%2E37&weather_station=141&radar_station=CASVD&clear_sky_clock_station_id=SeptIlesPQ'>QC Sept-Iles
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Sherbrooke&latitude=45%2E40&longitude=-71%2E88&weather_station=136&radar_station=CASSF&clear_sky_clock_station_id=BspUObQC'>QC Sherbrooke
      <option value='graphic%2Esky?country=cda&prov=QC&location_name=Trois-Rivières&latitude=46%2E35&longitude=-72%2E59&weather_station=130&radar_station=CASSF&clear_sky_clock_station_id=TroisRivPQ'>QC Trois-Rivières
