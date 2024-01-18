@@ -16,6 +16,7 @@
      2020-04-16: seeing again, 2020-04-16 Thursday.
        same error as above; also:
        'error on line 1 at column 1: Extra content at the end of the document' 
+     2022-02-08:  Unable to access file. (/home/reuser/data/mapfiles/G16-ABI-FD-TC.map)
   - RETIRED: NOAA Nowcoast
       https://nowcoast.noaa.gov/help/#!section=mapservices
       https://nowcoast.noaa.gov/help/#!section=map-service-list
@@ -196,7 +197,7 @@ var SATELLITE = (function(){
     var result = {};
     //CURRENTLY USED FOR ALL OF NORTH AMERICA
     result.real_earth_ssec = make_wms_server(
-      'http://realearth.ssec.wisc.edu/cgi-bin/mapserv',
+      'https://realearth.ssec.wisc.edu/cgi-bin/mapserv',
       real_earth_ssec_layer,
       make_limits(-140,-50,0,70),
       '1.3.0'
@@ -231,9 +232,9 @@ var SATELLITE = (function(){
   
   /*
    Real Earth SSEC examples:
-    vis (TRUE COLOR): http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-TC.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
-    vis (RED):        http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND02.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
-     ir:              http://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest&VERSION=1.3.0&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png&WIDTH=480&HEIGHT=480&BBOX=44.58,-66.28,47.58,-63.28&CRS=EPSG
+    vis (TRUE COLOR): https://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-TC.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
+    vis (RED):        https://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND02.map&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&LAYERS=latest&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&CRS=EPSG:4326&BBOX=35.7656742955095,-117.006018627837,45.8201672081869,-107.454250360794&WIDTH=817&HEIGHT=860
+     ir:              https://realearth.ssec.wisc.edu/cgi-bin/mapserv?map=G16-ABI-FD-BAND13.map&LAYERS=latest&LAYERS=latest&VERSION=1.3.0&REQUEST=GetMap&SERVICE=WMS&STYLES=&FORMAT=image/png&WIDTH=480&HEIGHT=480&BBOX=44.58,-66.28,47.58,-63.28&CRS=EPSG
    Iowa State example (GOES): NO LONGER USED 
     ir: http://mesonet.agron.iastate.edu/cgi-bin/mapserv/mapserv?map=/mesonet/www/apps/iemwebsite/data/wms/goes/west_ir.map&LAYERS=west_ir_4km_gray&BBOX=-114.35,48.19,-111.35,51.19&WIDTH=480&HEIGHT=480&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&STYLES=&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE&SRS=EPSG
    Nowcoast example (GOES East and West): NO LONGER USED
@@ -278,7 +279,7 @@ var SATELLITE = (function(){
   
   var supports_cors = function(params){
     var result = 
-      params.server_name === 'real_earth_ssec' ||  
+      //params.server_name === 'real_earth_ssec' ||   2022-01 degraded image when accessed via browser
       params.server_name === 'iowa_state' || 
       params.server_name === 'nowcoast'
     ;
@@ -302,7 +303,7 @@ var SATELLITE = (function(){
       }
     };
     img.onerror = function(evt){
-      console.log("Error loading satellite image." + img.src); //the evt object has no useful error data; sad!
+      console.log("Error loading satellite image: " + url); //the evt object has no useful error data; sad!
     };
     //WACKY: need to add this function; otherwise the onload doesn't fire!! why??
     img.abort = function(){
@@ -316,6 +317,9 @@ var SATELLITE = (function(){
     else {
       img.style.display = 'none';
       img.src = UTIL.crossDomainUrl(encodeURIComponent(url) + '&ext=png'); //starts the fetch of the image bytes
+      //img.src = encodeURIComponent(url) + '&ext=png'; //starts the fetch of the image bytes
+      //img.src = url + '&ext=png'; //starts the fetch of the image bytes
+      //img.src ='https://duckduckgo.com/assets/onboarding/bathroomguy/teaser-2@2x.png';
     }
   };
 

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang='en'>
 <head>
+ <tags:analytics/>
  <meta charset='UTF-8'>
  <meta name="keywords" content="astronomy">
  <meta name="description" content="Astronomical ephemerides for amateur astronomers">
@@ -241,8 +242,6 @@
     <th><s:txt>Type</s:txt>
     <th><s:txt>Comment</s:txt>
  </table>
- 
- <tags:analytics/>
  
 </body>
 </html>

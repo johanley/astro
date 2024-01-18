@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang='<s:txt>en</s:txt>'>
 <head>
+ <tags:analytics/>
  <meta charset='UTF-8'>
  <meta name="keywords" content="<s:txt>astronomy, ephemerides, low precision, amateur, canada, united states, united kingdom, weather, radar, clouds</s:txt>">
  <meta name="description" content="<s:txt>Data of interest to amateur astronomers. Includes weather for North America and the United Kingdom.</s:txt>">
@@ -531,7 +532,7 @@ If you need a work-around, then just temporarily change your computer's time zon
  <!--<li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: server for NOAA images captured by the GOES-West satellite (clouds).-->
  <li><a href='https://nowcoast.noaa.gov/help/#!section=wms-layer-ids'>NowCOAST</a>: server for NOAA images captured by the GOES satellites (clouds).
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> of the Royal Astronomical Society of Canada: comments on the Messier objects, and osculating orbital elements for planets.
- <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>revision 5</a>.
+ <li><a href='https://github.com/johanley/star-catalog'>My custom star catalog</a> is the source of star positions.
  <li>Allen Rahill (Canadian Meteorological Center) and Attilla Danko: <a href='http://www.cleardarksky.com/csk/'>Clear Sky Clock</a> images.
  <li><a href='http://www.imo.net'>International Meteor Organization</a> : Meteor shower <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>data</a>.
  <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, Comet section : current comet data.
@@ -546,16 +547,11 @@ If you need a work-around, then just temporarily change your computer's time zon
  -->
 </ul></s:txt>
 
-<P><s:txt>Code last updated on</s:txt>: ${initParam.lastUpdatedOn}. 
-<s:txt>Support for the UK has been removed, due to changes to data servers. Sorry about that.</s:txt>
- 
-<s:txt><P>Help to improve astronomytonight.net: 
- <ul>  
-  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Moncton, Canada).
-  <li>contribute via <a href='https://github.com/johanley/astro'>github</a>.
- </ul></s:txt> 
+<P><s:txt>This site also allows you to generate <a href='../planisphere/form.jsp'>a customizable, precise planisphere</a> for your location (as two PDF files).</s:txt>
 
-<tags:analytics/>
+<s:txt><P>You can help to improve astronomytonight.net, by contributing to its <a href='https://github.com/johanley/astro'>github</a> repository.</s:txt>
+
+<P><s:txt>Code last updated on</s:txt>: ${initParam.lastUpdatedOn}. 
 
 </body>
 </html>

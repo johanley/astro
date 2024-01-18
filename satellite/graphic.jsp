@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang='<s:txt>en</s:txt>'>
 <head>
+ <tags:analytics/>
  <meta charset='UTF-8'>
  <meta name="keywords" content="<s:txt>canada, united states, weather, clouds, satellite, goes, visible, infrared, imagery</s:txt>">
  <meta name="description" content="<s:txt>Recent satellite images from the GOES weather satellite (NOAA).</s:txt>">
@@ -74,7 +75,5 @@
   <s:txt>Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.</s:txt>
 </div>
 
-<tags:analytics/>
-  
 </body>
 </html>

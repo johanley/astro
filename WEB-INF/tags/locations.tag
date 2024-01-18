@@ -34,8 +34,8 @@
      <option value='graphic%2Esky?country=cda&prov=NB&location_name=Moncton&latitude=46%2E08&longitude=-64%2E78&weather_station=36&radar_station=CASCM&clear_sky_clock_station_id=Moncton'>NB Moncton
      <option value='graphic%2Esky?country=cda&prov=NB&location_name=Mount+Carleton+Provincial+Park&latitude=47%2E43&longitude=-66%2E91&weather_station=10&radar_station=CASCM&clear_sky_clock_station_id=AASPNB'>NB Mount Carleton Provincial Park
      <option value='graphic%2Esky?country=cda&prov=NB&location_name=St%2E+John&latitude=45%2E27&longitude=-66%2E07&weather_station=23&radar_station=CASCM&clear_sky_clock_station_id=SntJhnNMB'>NB St. John
-     <option value='graphic%2Esky?country=cda&prov=NL&location_name=Badger&latitude=49%2E50&longitude=-56%2E07&weather_station=34&radar_station=XME&clear_sky_clock_station_id=SprngdNL'>NL Badger
-     <option value='graphic%2Esky?country=cda&prov=NL&location_name=Cornerbrook&latitude=48%2E95&longitude=-57%2E95&weather_station=41&radar_station=XME&clear_sky_clock_station_id=CrnrBrkNF'>NL Cornerbrook
+     <option value='graphic%2Esky?country=cda&prov=NL&location_name=Badger&latitude=49%2E50&longitude=-56%2E07&weather_station=34&radar_station=CASMM&clear_sky_clock_station_id=SprngdNL'>NL Badger
+     <option value='graphic%2Esky?country=cda&prov=NL&location_name=Cornerbrook&latitude=48%2E95&longitude=-57%2E95&weather_station=41&radar_station=CASMM&clear_sky_clock_station_id=CrnrBrkNF'>NL Cornerbrook
      <option value='graphic%2Esky?country=cda&prov=NL&location_name=Happy+Valley-Goose+Bay&latitude=53%2E30&longitude=-60%2E35&weather_station=23&radar_station=&clear_sky_clock_station_id=GssByNFLD'>NL Happy Valley-Goose Bay
      <option value='graphic%2Esky?country=cda&prov=NL&location_name=St%2E+John%27s&latitude=47%2E56&longitude=-52%2E69&weather_station=24&radar_station=CASHR&clear_sky_clock_station_id=StJohns'>NL St. John's
      <option value='graphic%2Esky?country=cda&prov=NS&location_name=Halifax&latitude=44%2E66&longitude=-63%2E59&weather_station=19&radar_station=CASGO&clear_sky_clock_station_id=Halifax'>NS Halifax

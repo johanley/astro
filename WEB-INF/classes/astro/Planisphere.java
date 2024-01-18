@@ -53,7 +53,8 @@ public class Planisphere extends HttpServlet {
       Double longitude = asRads("longitude", request);
       Integer hoursOffsetFromUT = asInt("hoursOffsetFromUT", request);
       Double declinationGap = asDouble("declinationGap", request);
-      if (anythingIsNull(year, location, latitude, longitude, hoursOffsetFromUT, declinationGap)){
+      Integer greyScaleAltAz = asInt("greyScaleAltAz", request);
+      if (anythingIsNull(year, location, latitude, longitude, hoursOffsetFromUT, declinationGap, greyScaleAltAz)){
         request.setAttribute("error", "Error occurred. Please try again.");
         showTheForm(request, response); //goes back to the default form
       }
@@ -71,11 +72,12 @@ public class Planisphere extends HttpServlet {
         String lunar_transits_title = "Daily Lunar Transits";
         String planetary_transits_title = "Planetary Transits on the 15th of the Month";
         String planet_names = "Mercury, Venus, Earth, Mars, Jupiter, Saturn";
+        Boolean discardPolaris = true;
         
         Config config = new Config(
           year, location, latitude, longitude, hoursOffsetFromUT, minutesOffsetFromUT, declinationGap, width, height, 
-          outputDir, fontDir,  greyConstellationLines, smallestTimeDivision, radiants, monthNames, 
-          lunar_transits_title, planetary_transits_title, planet_names
+          outputDir, fontDir,  greyConstellationLines, greyScaleAltAz, smallestTimeDivision, radiants, monthNames, 
+          lunar_transits_title, planetary_transits_title, planet_names, discardPolaris
         );
         fLogger.info("Planisphere lat:" + Maths.radsToDegs(config.latitude()) + " long:" + Maths.radsToDegs(config.longitude()));
         response.setContentType("application/pdf");

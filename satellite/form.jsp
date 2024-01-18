@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang='<s:txt>en</s:txt>'>
 <head>
+ <tags:analytics/>
  <meta charset='UTF-8'>
  <meta name="keywords" content="<s:txt>canada, united states, weather, clouds, satellite, goes, visible, infrared, imagery</s:txt>">
  <meta name="description" content="<s:txt>Recent satellite images from the GOES weather satellite (NOAA).</s:txt>">
@@ -71,8 +72,6 @@
  <li><a href='http://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html'>EUMETSAT</a>: <s:txt>imagery from the Meteosat geostationary weather satellite</s:txt>.
  -->
 </ul>
-
-<tags:analytics/>
 
 </body>
 </html>

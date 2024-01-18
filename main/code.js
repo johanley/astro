@@ -1066,7 +1066,8 @@ var show = function(input, MET_OFFICE_API_KEY, is_dev, lang){
     //EXAMPLE OF NEW DATA, FOR RADAR STATION 'OKX', NEW YORK CITY: https://radar.weather.gov/ridge/lite/KOKX_loop.gif ;
     //HAS POOR TOPO; STATE LINES ONLY; the loop only shows the oldest frame of the loop, when downloaded by js; why?
     //EXAMPLE OF NEW DATA, FOR RADAR STATION 'OKX', NEW YORK CITY: https://radar.weather.gov/ridge/lite/KOKX_0.gif ; most recent
-    var preamble = 'https://radar.weather.gov/ridge/lite/';
+    //var preamble = 'https://radar.weather.gov/ridge/lite/';
+    var preamble = 'https://radar.weather.gov/ridge/standard/';
     if (radar_station_us !== 'ALASKA'){
       //the urls aren't uniform!
       preamble = preamble + 'K';

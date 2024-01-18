@@ -236,16 +236,11 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 {Code last updated on}
 {Dernier mise à jour}
 
-{<P>Help to improve astronomytonight.net: 
- <ul>  
-  <li>send corrections and suggestions to <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Moncton, Canada).
-  <li>contribute via <a href='https://github.com/johanley/astro'>github</a>.
- </ul>} 
-{<P>Pour améliorer le site astronomytonight.net: 
- <ul>  
-  <li>envoyez des corrections et suggestions à <a href='mailto:webmaster@javapractices.com'>John O'Hanley</a> (Moncton, Canada).
-  <li>contribuez au moyen de <a href='https://github.com/johanley/astro'>github</a>.
- </ul>} 
+
+
+{<P>You can help to improve astronomytonight.net, by contributing to its <a href='https://github.com/johanley/astro'>github</a> repository.}
+{<P>Pour améliorer le site astronomytonight.net, veuillez utiliser le site <a href='https://github.com/johanley/astro'>github</a>.}
+
 
 {<ul>
  <li><em><a href='http://www.willbell.com/math/mc1.htm'>Astronomical Algorithms</a></em>, Jean Meeus: many algorithms used here are taken from this book.  
@@ -254,7 +249,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <!--<li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: server for NOAA images captured by the GOES-West satellite (clouds).-->
  <li><a href='https://nowcoast.noaa.gov/help/#!section=wms-layer-ids'>NowCOAST</a>: server for NOAA images captured by the GOES satellites (clouds).
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> of the Royal Astronomical Society of Canada: comments on the Messier objects, and osculating orbital elements for planets.
- <li>Yale Bright Star catalog, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>revision 5</a>.
+ <li><a href='https://github.com/johanley/star-catalog'>My custom star catalog</a> is the source of star positions.
  <li>Allen Rahill (Canadian Meteorological Center) and Attilla Danko: <a href='http://www.cleardarksky.com/csk/'>Clear Sky Clock</a> images.
  <li><a href='http://www.imo.net'>International Meteor Organization</a> : Meteor shower <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>data</a>.
  <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, Comet section : current comet data.
@@ -274,7 +269,7 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
  <li><a href='http://radar.weather.gov/'>NOAA/NWS</a> : conditions actuelles pour les É-U, prévisions, et images radars.
  <!-- <li><a href='https://mesonet.agron.iastate.edu/'>Iowa State University</a>: serveur pour les images satellite GOES (pour les nuages).-->
  <li><a href='http://rasc.ca/handbook'>Observer's Handbook</a> du Royal Astronomical Society of Canada: commentaires sur les objets de Messier, et les éléments orbitaux osculateurs des planètes.
- <li>le catalogue Yale Bright Star, <a href='http://cdsarc.u-strasbg.fr/viz-bin/Cat?V/50'>révision 5</a>.
+ <li><a href='https://github.com/johanley/star-catalog'>Mon propre catalogue</a> est la source des positions des étoiles.
  <li>Allen Rahill (Centre météorologique canadien) et Attilla Danko: images <a href='http://www.cleardarksky.com/csk/'>Prévision Astro du Ciel</a>.
  <li><a href='http://www.imo.net'>International Meteor Organization</a> : <a href='http://www.imo.net/files/data/vmdb/vmdbrad.txt'>données</a> pour les essaims météores.
  <li><a href='https://www.ast.cam.ac.uk/~jds/'>British Astronomical Association</a>, section comète : données pour les comètes actuelles.
@@ -466,3 +461,6 @@ S'il faut voir les données correctes pour une location dans un autre fuseau hor
 
 {Support for the UK has been removed, due to changes to data servers. Sorry about that.}
 {Les données particulières au Royaume Uni ne sont plus disponibles, à cause des changements au serveurs. Désolé.}
+
+{This site also allows you to generate <a href='../planisphere/form.jsp'>a customizable, precise planisphere</a> for your location (as two PDF files).}
+{Ce site vous permet de créer <a href='../planisphere/form.jsp'>un planisphère céleste précis </a> pour votre location (deux fichiers PDF).}

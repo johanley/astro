@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang='<s:txt>en</s:txt>'>
 <head>
+ <tags:analytics/>
  <meta charset='UTF-8'>
  <meta name="keywords" content="<s:txt>astronomy, custom, star chart</s:txt>">
  <meta name="description" content="<s:txt>Star charts for amateur astronomers.</s:txt>">
@@ -94,8 +95,6 @@
  </table>
  <P><s:txt>Navigation: arrow keys, page up/down, mouse-drag, mouse-wheel.</s:txt>
 </div>
- 
- <tags:analytics/>
  
 </body>
 </html>
